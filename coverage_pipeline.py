@@ -971,8 +971,9 @@ def main():
             "est_insurance_pays": f"{ins_pays:.2f}",
             "est_patient_out_of_pocket": f"{oop:.2f}",
             # additional out-of-pocket IF the alternate-benefit downgrade is applied
-            # (base-metal allowance; not confirmed by eligibility - a labeled scenario)
+            # (PFM base-metal allowance; not confirmed by eligibility - a labeled scenario)
             "downgrade_exposure_if_applied": f"{downgrade_exposure_total:.2f}" if downgrade_exposure_total else "",
+            "patient_oop_if_downgraded": f"{oop + downgrade_exposure_total:.2f}" if downgrade_exposure_total else "",
             # scannable flag columns (details live in notes / procedure_detail.csv)
             "has_secondary_coverage": "Y" if (benefits and benefits.get("secondary_payers")) else "",
             "waiting_period_risk": "Y" if any(d.get("waiting_period_risk") == "Y" for d in detail) else "",

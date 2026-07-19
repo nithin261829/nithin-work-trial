@@ -365,8 +365,17 @@ class WebAgent:
 
 
 # ----------------------------------------------------------------------------- calculator
-def estimate_patient(patient, benefits, fallback):
-    """Compute (insurance_pays, patient_oop, detail_rows, notes) for one patient."""
+def estimate_patient(patient, benefits, fallback, no_coverage=False):
+    """Compute (insurance_pays, patient_oop, detail_rows, notes) for one patient.
+
+    Each detail row carries a confidence level:
+      certain          - house/lab code, or patient has no active coverage
+      per-code         - the payer stated a benefit for this exact CDT code
+      category         - priced from the payer's category coinsurance
+      web-estimate     - carrier-typical rates from the web fallback agent
+      conservative     - payer reported nothing for this code/category; full
+                         fee assumed so the patient is never under-quoted
+    """
     detail, notes = [], []
     ins_total = oop_total = 0.0
 
@@ -387,11 +396,12 @@ def estimate_patient(patient, benefits, fallback):
     for proc in patient["pending"]:
         fee, code = proc["fee"], proc["code"]
         stc = cdt_to_stc(code)
-        pat_amt, basis = None, ""
+        pat_amt, basis, conf = None, "", ""
 
         if stc is None:
-            pat_amt, basis = fee, "house/lab code - not billable to insurance"
+            pat_amt, basis, conf = fee, "house/lab code - not billable to insurance", "certain"
         elif code in percode:
+            conf = "per-code"
             e = percode[code]
             if e.get("noncovered"):
                 pat_amt = fee
@@ -410,9 +420,13 @@ def estimate_patient(patient, benefits, fallback):
                 pat_amt = round(fee - covered, 2)
                 ded_left -= ded_use
                 basis = f"{STC_NAMES.get(stc, stc)} coinsurance {share:.0%} patient share"
+                conf = "web-estimate" if fallback else "category"
 
         if pat_amt is None:
-            pat_amt, basis = fee, "no benefit info - assume full fee"
+            if no_coverage:
+                pat_amt, basis, conf = fee, "no active coverage - full fee", "certain"
+            else:
+                pat_amt, basis, conf = fee, "no benefit info - assume full fee", "conservative"
 
         ins_pay = max(fee - pat_amt, 0)
         if ins_pay > max_left:  # annual maximum cap
@@ -427,7 +441,7 @@ def estimate_patient(patient, benefits, fallback):
             "patient": patient["name"], "procedure_code": code, "description": proc["desc"],
             "tooth": proc["tooth"], "fee": f"{fee:.2f}",
             "insurance_pays_est": f"{ins_pay:.2f}", "patient_oop_est": f"{pat_amt:.2f}",
-            "basis": basis,
+            "basis": basis, "confidence": conf,
         })
     return ins_total, oop_total, detail, notes
 
@@ -478,7 +492,8 @@ def main():
                 source = f"web_fallback ({wsrc})"
                 fallback = (shares, ded, amax)
 
-        ins_pays, oop, detail, calc_notes = estimate_patient(p, benefits, fallback)
+        no_cov = not ins or covstat.startswith("INACTIVE")
+        ins_pays, oop, detail, calc_notes = estimate_patient(p, benefits, fallback, no_coverage=no_cov)
         notes += calc_notes
         all_detail += detail
 

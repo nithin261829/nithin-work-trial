@@ -1,128 +1,128 @@
-patient,procedure_code,description,tooth,fee,insurance_pays_est,patient_oop_est,basis
-Carl Thompson,D6104,"Bone Graft, Implant Placement",5,279.00,139.50,139.50,prosthodontics coinsurance 50% patient share
-Carl Thompson,D6104,"Bone Graft, Implant Placement",4,279.00,139.50,139.50,prosthodontics coinsurance 50% patient share
-Carl Thompson,D7140,"Extract,erupted th/exposed rt",5,70.00,0.00,70.00,no benefit info - assume full fee
-Carl Thompson,D7140,"Extract,erupted th/exposed rt",4,70.00,0.00,70.00,no benefit info - assume full fee
-Carl Thompson,1111,Send case back to lab,,0.00,0.00,0.00,house/lab code - not billable to insurance
-Carl Thompson,D2391,"Resin composite-1s, posterior",14,92.00,73.60,18.40,restorative(basic) coinsurance 20% patient share
-Carl Thompson,D2950,"Core buildup, include any pins",11,145.00,72.50,72.50,crowns(major) coinsurance 50% patient share
-Carl Thompson,D2740,Crown - porcelain/ceramic,11,1003.00,501.50,501.50,crowns(major) coinsurance 50% patient share
-Carl Thompson,D2950,"Core buildup, include any pins",10,145.00,72.50,72.50,crowns(major) coinsurance 50% patient share
-Carl Thompson,D2740,Crown - porcelain/ceramic,10,1003.00,501.50,501.50,crowns(major) coinsurance 50% patient share
-El-khatib Suzy,D9944,"Occlusal guard- hard, full arch",,373.00,258.40,114.60,adjunctive coinsurance 20% patient share
-El-khatib Suzy,D2954,Prefab post/core in add to crn,19,160.00,80.00,80.00,crowns(major) coinsurance 50% patient share
-El-khatib Suzy,D2740,Crown - porcelain/ceramic,19,1003.00,501.50,501.50,crowns(major) coinsurance 50% patient share
-El-khatib Suzy,D2954,Prefab post/core in add to crn,13,160.00,80.00,80.00,crowns(major) coinsurance 50% patient share
-El-khatib Suzy,D2740,Crown - porcelain/ceramic,13,1003.00,482.10,520.90,crowns(major) coinsurance 50% patient share (annual max reached)
-El-khatib Suzy,D2954,Prefab post/core in add to crn,12,160.00,0.00,160.00,crowns(major) coinsurance 50% patient share (annual max reached)
-El-khatib Suzy,D2740,Crown - porcelain/ceramic,12,1003.00,0.00,1003.00,crowns(major) coinsurance 50% patient share (annual max reached)
-Robert Frieling,D2332,"Resin-three surfaces, anterior",27,125.00,125.00,0.00,per-code copay $0
-Robert Frieling,D2332,"Resin-three surfaces, anterior",26,125.00,125.00,0.00,per-code copay $0
-Robert Frieling,D2332,"Resin-three surfaces, anterior",25,125.00,125.00,0.00,per-code copay $0
-Robert Frieling,D2332,"Resin-three surfaces, anterior",24,125.00,125.00,0.00,per-code copay $0
-Robert Frieling,D2332,"Resin-three surfaces, anterior",23,125.00,125.00,0.00,per-code copay $0
-Robert Frieling,D2332,"Resin-three surfaces, anterior",22,125.00,125.00,0.00,per-code copay $0
-Robert Frieling,D2332,"Resin-three surfaces, anterior",11,125.00,125.00,0.00,per-code copay $0
-Marisa Delmonte,D6057,Custom abutment-incl placement,18,752.00,0.00,752.00,no benefit info - assume full fee
-Marisa Delmonte,D6010,Surgical Placement of Implant,18,1819.00,0.00,1819.00,no benefit info - assume full fee
-Marisa Delmonte,D9636,"Whitening Tray, Lower",,0.00,0.00,0.00,no benefit info - assume full fee
-Marisa Delmonte,D9635,"Whitening Tray, Upper",,249.00,0.00,249.00,no benefit info - assume full fee
-Marisa Delmonte,D6057,Custom abutment-incl placement,30,752.00,0.00,752.00,no benefit info - assume full fee
-Marisa Delmonte,D6065,Implant supp porc/cer crown,30,802.00,401.00,401.00,per-code coinsurance 50% patient share
-Kelly Carruthers,D2394,"Resin composite-4+s, posterior",3,179.00,0.00,179.00,per-code coinsurance 100% patient share
-Kelly Carruthers,D8210,Removable appliance therapy,,770.00,0.00,770.00,orthodontics coinsurance 100% patient share
-Kelly Carruthers,ESSIX,ESSIX RETAINER,,250.00,0.00,250.00,house/lab code - not billable to insurance
-Kelly Carruthers,ESSIX,ESSIX RETAINER,,250.00,0.00,250.00,house/lab code - not billable to insurance
-Patricia Salinas,D3310,Endodontic therapy - anterior,2,0.00,0.00,0.00,no benefit info - assume full fee
-Patricia Salinas,D2950,"Core buildup, include any pins",30,80.00,0.00,80.00,no benefit info - assume full fee
-Patricia Salinas,D2740,Crown - porcelain/ceramic,30,545.00,0.00,545.00,no benefit info - assume full fee
-Patricia Salinas,D2392,"Resin composite-2s, posterior",28,65.00,0.00,65.00,no benefit info - assume full fee
-Patricia Salinas,D2392,"Resin composite-2s, posterior",20,65.00,0.00,65.00,no benefit info - assume full fee
-Patricia Salinas,D2392,"Resin composite-2s, posterior",19,65.00,0.00,65.00,no benefit info - assume full fee
-Patricia Salinas,D2392,"Resin composite-2s, posterior",18,65.00,0.00,65.00,no benefit info - assume full fee
-Patricia Salinas,D2392,"Resin composite-2s, posterior",14,65.00,0.00,65.00,no benefit info - assume full fee
-Patricia Salinas,D2393,"Resin composite-3s, posterior",13,75.00,0.00,75.00,no benefit info - assume full fee
-Patricia Salinas,D2392,"Resin composite-2s, posterior",12,65.00,0.00,65.00,no benefit info - assume full fee
-Patricia Salinas,D2392,"Resin composite-2s, posterior",5,65.00,0.00,65.00,no benefit info - assume full fee
-Patricia Salinas,D2392,"Resin composite-2s, posterior",3,65.00,0.00,65.00,no benefit info - assume full fee
-Patricia Salinas,D2950,"Core buildup, include any pins",2,80.00,0.00,80.00,no benefit info - assume full fee
-Patricia Salinas,D2740,Crown - porcelain/ceramic,2,545.00,0.00,545.00,no benefit info - assume full fee
-Gonzales Jesse,D4921,Gingival Irrigation - Per Quad,,25.00,12.50,12.50,periodontics coinsurance 50% patient share
-Gonzales Jesse,D4921,Gingival Irrigation - Per Quad,,25.00,12.50,12.50,periodontics coinsurance 50% patient share
-Gonzales Jesse,D4921,Gingival Irrigation - Per Quad,,25.00,12.50,12.50,periodontics coinsurance 50% patient share
-Gonzales Jesse,D4921,Gingival Irrigation - Per Quad,,25.00,12.50,12.50,periodontics coinsurance 50% patient share
-Gonzales Jesse,D4341,Perio scale/root pln-4+per quad,,156.00,78.00,78.00,per-code coinsurance 50% patient share
-Gonzales Jesse,D4341,Perio scale/root pln-4+per quad,,156.00,78.00,78.00,per-code coinsurance 50% patient share
-Gonzales Jesse,D4341,Perio scale/root pln-4+per quad,,156.00,78.00,78.00,per-code coinsurance 50% patient share
-Gonzales Jesse,D4341,Perio scale/root pln-4+per quad,,156.00,78.00,78.00,per-code coinsurance 50% patient share
-Gonzales Jesse,D2740,Crown - porcelain/ceramic,4,803.00,401.50,401.50,crowns(major) coinsurance 50% patient share
-Gonzales Jesse,D2950,"Core buildup, include any pins",4,161.00,80.50,80.50,per-code coinsurance 50% patient share
-Gonzales Jesse,D2950,"Core buildup, include any pins",30,161.00,80.50,80.50,per-code coinsurance 50% patient share
-Gonzales Jesse,D2740,Crown - porcelain/ceramic,30,803.00,401.50,401.50,crowns(major) coinsurance 50% patient share
-Sharon Mascari,D2950,"Core buildup, include any pins",3,111.00,55.50,55.50,per-code coinsurance 50% patient share
-Sharon Mascari,D2740,Crown - porcelain/ceramic,3,803.00,401.50,401.50,crowns(major) coinsurance 50% patient share
-Lorena Quinones,D2950,"Core buildup, include any pins",30,134.00,42.00,92.00,crowns(major) coinsurance 50% patient share
-Lorena Quinones,D2740,Crown - porcelain/ceramic,30,802.00,401.00,401.00,crowns(major) coinsurance 50% patient share
-Roy Otterbein,D0140,Limited oral evaluation,,113.00,0.00,113.00,no benefit info - assume full fee
-Roy Otterbein,D2740,Crown - porcelain/ceramic,29,1424.00,0.00,1424.00,no benefit info - assume full fee
-Roy Otterbein,D2954,Prefab post/core in add to crn,29,466.00,0.00,466.00,no benefit info - assume full fee
-Roy Otterbein,D2950,"Core buildup, include any pins",18,341.00,0.00,341.00,no benefit info - assume full fee
-Roy Otterbein,D2740,Crown - porcelain/ceramic,18,1271.00,0.00,1271.00,no benefit info - assume full fee
-Roy Otterbein,D2950,"Core buildup, include any pins",30,341.00,0.00,341.00,no benefit info - assume full fee
-Roy Otterbein,D2740,Crown - porcelain/ceramic,30,1271.00,0.00,1271.00,no benefit info - assume full fee
-Roy Otterbein,D9944,"Occlusal guard- hard, full arch",,0.00,0.00,0.00,no benefit info - assume full fee
-Ryan Scott,D2394,"Resin composite-4+s, posterior",2,179.00,0.00,179.00,restorative(basic) coinsurance 20% patient share (annual max reached)
-Patrick Kolb,D2391,"Resin composite-1s, posterior",30,101.00,46.00,55.00,per-code copay $55
-Patrick Kolb,D2391,"Resin composite-1s, posterior",15,101.00,46.00,55.00,per-code copay $55
-Felipe Leyva,9995,Post Op,,0.00,0.00,0.00,house/lab code - not billable to insurance
-Felipe Leyva,D0272,Bitewing Two Image,,20.00,20.00,0.00,per-code copay $0
-Felipe Leyva,D5225,Maxillary partial-flexible base,,453.00,3.00,450.00,per-code copay $450
-Felipe Leyva,D6245,Pontic-porcelain/ceramic,14,592.00,67.00,525.00,per-code copay $525
-Felipe Leyva,D4910,Periodontal maintenance,,89.00,29.00,60.00,per-code copay $60
-Felipe Leyva,D7210,"Extract, erupted th, rem oth",1,132.00,0.00,132.00,no benefit info - assume full fee
-Felipe Leyva,D2950,"Core buildup, include any pins",18,125.00,0.00,125.00,per-code copay $125
-Felipe Leyva,D2740,Crown - porcelain/ceramic,18,525.00,0.00,525.00,per-code copay $525
-Sid Moore,D6740,Ret crn-porcelain/ceramic,19,750.00,525.00,225.00,per-code coinsurance 30% patient share
-Sid Moore,D6245,Pontic-porcelain/ceramic,20,750.00,525.00,225.00,per-code coinsurance 30% patient share
-Sid Moore,D2950,"Core buildup, include any pins",19,135.00,135.00,0.00,per-code coinsurance 0% patient share
-Sid Moore,D2740,Crown - porcelain/ceramic,19,750.00,750.00,0.00,per-code coinsurance 0% patient share
-John Johnson,D5140,Immediate denture - mandibular,,993.00,496.50,496.50,prosthodontics coinsurance 50% patient share
-John Johnson,D5622,"Repair cast partial frmwk, max",,118.00,59.00,59.00,prosthodontics coinsurance 50% patient share
-John Johnson,D5650,Add tooth to exist part denture,31,121.00,60.50,60.50,prosthodontics coinsurance 50% patient share
-John Johnson,D5750,Reline complete maxillary (lab),,282.00,141.00,141.00,prosthodontics coinsurance 50% patient share
-John Johnson,D5140,Immediate denture - mandibular,,699.00,349.50,349.50,prosthodontics coinsurance 50% patient share
-Rachel Iniguez,12345,Denture/Partial Lab Fee,,250.00,0.00,250.00,house/lab code - not billable to insurance
-Rachel Iniguez,12345,Denture/Partial Lab Fee,,300.00,0.00,300.00,house/lab code - not billable to insurance
-Rachel Iniguez,12345,Denture/Partial Lab Fee,,300.00,0.00,300.00,house/lab code - not billable to insurance
-Rachel Iniguez,D5110,Complete denture - maxillary,,778.00,468.00,310.00,per-code copay $310
-Rachel Iniguez,D5130,Immediate denture - maxillary,,837.00,527.00,310.00,per-code copay $310
-Rachel Iniguez,D5650,Add tooth to exist part denture,10,91.00,51.00,40.00,per-code copay $40
-Rachel Iniguez,D2393,"Resin composite-3s, posterior",14,125.00,55.00,70.00,per-code copay $70
-Rachel Iniguez,D2392,"Resin composite-2s, posterior",31,50.00,0.00,50.00,per-code copay $50
-Rachel Iniguez,D3310,Endodontic therapy - anterior,18,451.00,441.00,10.00,per-code copay $10
-Rachel Iniguez,D7140,"Extract,erupted th/exposed rt",16,91.00,0.00,91.00,no benefit info - assume full fee
-Rachel Iniguez,D2393,"Resin composite-3s, posterior",2,70.00,0.00,70.00,per-code copay $70
-Rachel Iniguez,D7140,"Extract,erupted th/exposed rt",1,91.00,0.00,91.00,no benefit info - assume full fee
-Rachel Iniguez,D4341,Perio scale/root pln-4+per quad,,35.00,0.00,35.00,per-code copay $35
-Rachel Iniguez,D4341,Perio scale/root pln-4+per quad,,35.00,0.00,35.00,per-code copay $35
-Rachel Iniguez,D4341,Perio scale/root pln-4+per quad,,35.00,0.00,35.00,per-code copay $35
-Rachel Iniguez,D4341,Perio scale/root pln-4+per quad,,35.00,0.00,35.00,per-code copay $35
-Rachel Iniguez,D4921,Gingival Irrigation - Per Quad,,25.00,0.00,25.00,no benefit info - assume full fee
-Rachel Iniguez,D4921,Gingival Irrigation - Per Quad,,25.00,0.00,25.00,no benefit info - assume full fee
-Rachel Iniguez,D4921,Gingival Irrigation - Per Quad,,25.00,0.00,25.00,no benefit info - assume full fee
-Rachel Iniguez,D4921,Gingival Irrigation - Per Quad,,25.00,0.00,25.00,no benefit info - assume full fee
-Charles Ellis,D0230,Intraoral-periapical each add'l,,6.00,6.00,0.00,diagnostic coinsurance 0% patient share
-Charles Ellis,D0220,Intraoral Periapical Images,,12.00,12.00,0.00,diagnostic coinsurance 0% patient share
-Charles Ellis,D5120,Complete denture - mandibular,,878.00,439.00,439.00,prosthodontics coinsurance 50% patient share
-Charles Ellis,D5110,Complete denture - maxillary,,878.00,439.00,439.00,prosthodontics coinsurance 50% patient share
-Roman Gomez Espinosa,D2000,Crown Lab Fee,20,450.00,0.00,450.00,no benefit info - assume full fee
-Roman Gomez Espinosa,D2000,Crown Lab Fee,2,450.00,0.00,450.00,no benefit info - assume full fee
-Roman Gomez Espinosa,D5214,Mand partl-cast metal w/resin,,650.00,200.00,450.00,per-code copay $450
-Roman Gomez Espinosa,D5213,Maxil partl-cast metal w/resin,,650.00,200.00,450.00,per-code copay $450
-Barbara Paul,D2950,"Core buildup, include any pins",8,166.00,166.00,0.00,per-code coinsurance 0% patient share
-Barbara Paul,D2740,Crown - porcelain/ceramic,8,843.00,843.00,0.00,per-code coinsurance 0% patient share
-Barbara Paul,D9944,"Occlusal guard- hard, full arch",,450.00,450.00,0.00,per-code coinsurance 0% patient share
-Barbara Paul,D2950,"Core buildup, include any pins",9,161.00,161.00,0.00,per-code coinsurance 0% patient share
-Barbara Paul,D2740,Crown - porcelain/ceramic,9,843.00,843.00,0.00,per-code coinsurance 0% patient share
-Zvonko Nikolich,D2950,"Core buildup, include any pins",13,135.00,67.50,67.50,per-code coinsurance 50% patient share
-Zvonko Nikolich,D2740,Crown - porcelain/ceramic,13,740.00,370.00,370.00,per-code coinsurance 50% patient share
+patient,procedure_code,description,tooth,fee,insurance_pays_est,patient_oop_est,basis,confidence
+Carl Thompson,D6104,"Bone Graft, Implant Placement",5,279.00,139.50,139.50,prosthodontics coinsurance 50% patient share,category
+Carl Thompson,D6104,"Bone Graft, Implant Placement",4,279.00,139.50,139.50,prosthodontics coinsurance 50% patient share,category
+Carl Thompson,D7140,"Extract,erupted th/exposed rt",5,70.00,0.00,70.00,no benefit info - assume full fee,conservative
+Carl Thompson,D7140,"Extract,erupted th/exposed rt",4,70.00,0.00,70.00,no benefit info - assume full fee,conservative
+Carl Thompson,1111,Send case back to lab,,0.00,0.00,0.00,house/lab code - not billable to insurance,certain
+Carl Thompson,D2391,"Resin composite-1s, posterior",14,92.00,73.60,18.40,restorative(basic) coinsurance 20% patient share,category
+Carl Thompson,D2950,"Core buildup, include any pins",11,145.00,72.50,72.50,crowns(major) coinsurance 50% patient share,category
+Carl Thompson,D2740,Crown - porcelain/ceramic,11,1003.00,501.50,501.50,crowns(major) coinsurance 50% patient share,category
+Carl Thompson,D2950,"Core buildup, include any pins",10,145.00,72.50,72.50,crowns(major) coinsurance 50% patient share,category
+Carl Thompson,D2740,Crown - porcelain/ceramic,10,1003.00,501.50,501.50,crowns(major) coinsurance 50% patient share,category
+El-khatib Suzy,D9944,"Occlusal guard- hard, full arch",,373.00,258.40,114.60,adjunctive coinsurance 20% patient share,category
+El-khatib Suzy,D2954,Prefab post/core in add to crn,19,160.00,80.00,80.00,crowns(major) coinsurance 50% patient share,category
+El-khatib Suzy,D2740,Crown - porcelain/ceramic,19,1003.00,501.50,501.50,crowns(major) coinsurance 50% patient share,category
+El-khatib Suzy,D2954,Prefab post/core in add to crn,13,160.00,80.00,80.00,crowns(major) coinsurance 50% patient share,category
+El-khatib Suzy,D2740,Crown - porcelain/ceramic,13,1003.00,482.10,520.90,crowns(major) coinsurance 50% patient share (annual max reached),category
+El-khatib Suzy,D2954,Prefab post/core in add to crn,12,160.00,0.00,160.00,crowns(major) coinsurance 50% patient share (annual max reached),category
+El-khatib Suzy,D2740,Crown - porcelain/ceramic,12,1003.00,0.00,1003.00,crowns(major) coinsurance 50% patient share (annual max reached),category
+Robert Frieling,D2332,"Resin-three surfaces, anterior",27,125.00,125.00,0.00,per-code copay $0,per-code
+Robert Frieling,D2332,"Resin-three surfaces, anterior",26,125.00,125.00,0.00,per-code copay $0,per-code
+Robert Frieling,D2332,"Resin-three surfaces, anterior",25,125.00,125.00,0.00,per-code copay $0,per-code
+Robert Frieling,D2332,"Resin-three surfaces, anterior",24,125.00,125.00,0.00,per-code copay $0,per-code
+Robert Frieling,D2332,"Resin-three surfaces, anterior",23,125.00,125.00,0.00,per-code copay $0,per-code
+Robert Frieling,D2332,"Resin-three surfaces, anterior",22,125.00,125.00,0.00,per-code copay $0,per-code
+Robert Frieling,D2332,"Resin-three surfaces, anterior",11,125.00,125.00,0.00,per-code copay $0,per-code
+Marisa Delmonte,D6057,Custom abutment-incl placement,18,752.00,0.00,752.00,no benefit info - assume full fee,conservative
+Marisa Delmonte,D6010,Surgical Placement of Implant,18,1819.00,0.00,1819.00,no benefit info - assume full fee,conservative
+Marisa Delmonte,D9636,"Whitening Tray, Lower",,0.00,0.00,0.00,no benefit info - assume full fee,conservative
+Marisa Delmonte,D9635,"Whitening Tray, Upper",,249.00,0.00,249.00,no benefit info - assume full fee,conservative
+Marisa Delmonte,D6057,Custom abutment-incl placement,30,752.00,0.00,752.00,no benefit info - assume full fee,conservative
+Marisa Delmonte,D6065,Implant supp porc/cer crown,30,802.00,401.00,401.00,per-code coinsurance 50% patient share,per-code
+Kelly Carruthers,D2394,"Resin composite-4+s, posterior",3,179.00,0.00,179.00,per-code coinsurance 100% patient share,per-code
+Kelly Carruthers,D8210,Removable appliance therapy,,770.00,0.00,770.00,orthodontics coinsurance 100% patient share,category
+Kelly Carruthers,ESSIX,ESSIX RETAINER,,250.00,0.00,250.00,house/lab code - not billable to insurance,certain
+Kelly Carruthers,ESSIX,ESSIX RETAINER,,250.00,0.00,250.00,house/lab code - not billable to insurance,certain
+Patricia Salinas,D3310,Endodontic therapy - anterior,2,0.00,0.00,0.00,no active coverage - full fee,certain
+Patricia Salinas,D2950,"Core buildup, include any pins",30,80.00,0.00,80.00,no active coverage - full fee,certain
+Patricia Salinas,D2740,Crown - porcelain/ceramic,30,545.00,0.00,545.00,no active coverage - full fee,certain
+Patricia Salinas,D2392,"Resin composite-2s, posterior",28,65.00,0.00,65.00,no active coverage - full fee,certain
+Patricia Salinas,D2392,"Resin composite-2s, posterior",20,65.00,0.00,65.00,no active coverage - full fee,certain
+Patricia Salinas,D2392,"Resin composite-2s, posterior",19,65.00,0.00,65.00,no active coverage - full fee,certain
+Patricia Salinas,D2392,"Resin composite-2s, posterior",18,65.00,0.00,65.00,no active coverage - full fee,certain
+Patricia Salinas,D2392,"Resin composite-2s, posterior",14,65.00,0.00,65.00,no active coverage - full fee,certain
+Patricia Salinas,D2393,"Resin composite-3s, posterior",13,75.00,0.00,75.00,no active coverage - full fee,certain
+Patricia Salinas,D2392,"Resin composite-2s, posterior",12,65.00,0.00,65.00,no active coverage - full fee,certain
+Patricia Salinas,D2392,"Resin composite-2s, posterior",5,65.00,0.00,65.00,no active coverage - full fee,certain
+Patricia Salinas,D2392,"Resin composite-2s, posterior",3,65.00,0.00,65.00,no active coverage - full fee,certain
+Patricia Salinas,D2950,"Core buildup, include any pins",2,80.00,0.00,80.00,no active coverage - full fee,certain
+Patricia Salinas,D2740,Crown - porcelain/ceramic,2,545.00,0.00,545.00,no active coverage - full fee,certain
+Gonzales Jesse,D4921,Gingival Irrigation - Per Quad,,25.00,12.50,12.50,periodontics coinsurance 50% patient share,category
+Gonzales Jesse,D4921,Gingival Irrigation - Per Quad,,25.00,12.50,12.50,periodontics coinsurance 50% patient share,category
+Gonzales Jesse,D4921,Gingival Irrigation - Per Quad,,25.00,12.50,12.50,periodontics coinsurance 50% patient share,category
+Gonzales Jesse,D4921,Gingival Irrigation - Per Quad,,25.00,12.50,12.50,periodontics coinsurance 50% patient share,category
+Gonzales Jesse,D4341,Perio scale/root pln-4+per quad,,156.00,78.00,78.00,per-code coinsurance 50% patient share,per-code
+Gonzales Jesse,D4341,Perio scale/root pln-4+per quad,,156.00,78.00,78.00,per-code coinsurance 50% patient share,per-code
+Gonzales Jesse,D4341,Perio scale/root pln-4+per quad,,156.00,78.00,78.00,per-code coinsurance 50% patient share,per-code
+Gonzales Jesse,D4341,Perio scale/root pln-4+per quad,,156.00,78.00,78.00,per-code coinsurance 50% patient share,per-code
+Gonzales Jesse,D2740,Crown - porcelain/ceramic,4,803.00,401.50,401.50,crowns(major) coinsurance 50% patient share,category
+Gonzales Jesse,D2950,"Core buildup, include any pins",4,161.00,80.50,80.50,per-code coinsurance 50% patient share,per-code
+Gonzales Jesse,D2950,"Core buildup, include any pins",30,161.00,80.50,80.50,per-code coinsurance 50% patient share,per-code
+Gonzales Jesse,D2740,Crown - porcelain/ceramic,30,803.00,401.50,401.50,crowns(major) coinsurance 50% patient share,category
+Sharon Mascari,D2950,"Core buildup, include any pins",3,111.00,55.50,55.50,per-code coinsurance 50% patient share,per-code
+Sharon Mascari,D2740,Crown - porcelain/ceramic,3,803.00,401.50,401.50,crowns(major) coinsurance 50% patient share,category
+Lorena Quinones,D2950,"Core buildup, include any pins",30,134.00,42.00,92.00,crowns(major) coinsurance 50% patient share,category
+Lorena Quinones,D2740,Crown - porcelain/ceramic,30,802.00,401.00,401.00,crowns(major) coinsurance 50% patient share,category
+Roy Otterbein,D0140,Limited oral evaluation,,113.00,0.00,113.00,no active coverage - full fee,certain
+Roy Otterbein,D2740,Crown - porcelain/ceramic,29,1424.00,0.00,1424.00,no active coverage - full fee,certain
+Roy Otterbein,D2954,Prefab post/core in add to crn,29,466.00,0.00,466.00,no active coverage - full fee,certain
+Roy Otterbein,D2950,"Core buildup, include any pins",18,341.00,0.00,341.00,no active coverage - full fee,certain
+Roy Otterbein,D2740,Crown - porcelain/ceramic,18,1271.00,0.00,1271.00,no active coverage - full fee,certain
+Roy Otterbein,D2950,"Core buildup, include any pins",30,341.00,0.00,341.00,no active coverage - full fee,certain
+Roy Otterbein,D2740,Crown - porcelain/ceramic,30,1271.00,0.00,1271.00,no active coverage - full fee,certain
+Roy Otterbein,D9944,"Occlusal guard- hard, full arch",,0.00,0.00,0.00,no active coverage - full fee,certain
+Ryan Scott,D2394,"Resin composite-4+s, posterior",2,179.00,0.00,179.00,restorative(basic) coinsurance 20% patient share (annual max reached),category
+Patrick Kolb,D2391,"Resin composite-1s, posterior",30,101.00,46.00,55.00,per-code copay $55,per-code
+Patrick Kolb,D2391,"Resin composite-1s, posterior",15,101.00,46.00,55.00,per-code copay $55,per-code
+Felipe Leyva,9995,Post Op,,0.00,0.00,0.00,house/lab code - not billable to insurance,certain
+Felipe Leyva,D0272,Bitewing Two Image,,20.00,20.00,0.00,per-code copay $0,per-code
+Felipe Leyva,D5225,Maxillary partial-flexible base,,453.00,3.00,450.00,per-code copay $450,per-code
+Felipe Leyva,D6245,Pontic-porcelain/ceramic,14,592.00,67.00,525.00,per-code copay $525,per-code
+Felipe Leyva,D4910,Periodontal maintenance,,89.00,29.00,60.00,per-code copay $60,per-code
+Felipe Leyva,D7210,"Extract, erupted th, rem oth",1,132.00,0.00,132.00,no benefit info - assume full fee,conservative
+Felipe Leyva,D2950,"Core buildup, include any pins",18,125.00,0.00,125.00,per-code copay $125,per-code
+Felipe Leyva,D2740,Crown - porcelain/ceramic,18,525.00,0.00,525.00,per-code copay $525,per-code
+Sid Moore,D6740,Ret crn-porcelain/ceramic,19,750.00,525.00,225.00,per-code coinsurance 30% patient share,per-code
+Sid Moore,D6245,Pontic-porcelain/ceramic,20,750.00,525.00,225.00,per-code coinsurance 30% patient share,per-code
+Sid Moore,D2950,"Core buildup, include any pins",19,135.00,135.00,0.00,per-code coinsurance 0% patient share,per-code
+Sid Moore,D2740,Crown - porcelain/ceramic,19,750.00,750.00,0.00,per-code coinsurance 0% patient share,per-code
+John Johnson,D5140,Immediate denture - mandibular,,993.00,496.50,496.50,prosthodontics coinsurance 50% patient share,category
+John Johnson,D5622,"Repair cast partial frmwk, max",,118.00,59.00,59.00,prosthodontics coinsurance 50% patient share,category
+John Johnson,D5650,Add tooth to exist part denture,31,121.00,60.50,60.50,prosthodontics coinsurance 50% patient share,category
+John Johnson,D5750,Reline complete maxillary (lab),,282.00,141.00,141.00,prosthodontics coinsurance 50% patient share,category
+John Johnson,D5140,Immediate denture - mandibular,,699.00,349.50,349.50,prosthodontics coinsurance 50% patient share,category
+Rachel Iniguez,12345,Denture/Partial Lab Fee,,250.00,0.00,250.00,house/lab code - not billable to insurance,certain
+Rachel Iniguez,12345,Denture/Partial Lab Fee,,300.00,0.00,300.00,house/lab code - not billable to insurance,certain
+Rachel Iniguez,12345,Denture/Partial Lab Fee,,300.00,0.00,300.00,house/lab code - not billable to insurance,certain
+Rachel Iniguez,D5110,Complete denture - maxillary,,778.00,468.00,310.00,per-code copay $310,per-code
+Rachel Iniguez,D5130,Immediate denture - maxillary,,837.00,527.00,310.00,per-code copay $310,per-code
+Rachel Iniguez,D5650,Add tooth to exist part denture,10,91.00,51.00,40.00,per-code copay $40,per-code
+Rachel Iniguez,D2393,"Resin composite-3s, posterior",14,125.00,55.00,70.00,per-code copay $70,per-code
+Rachel Iniguez,D2392,"Resin composite-2s, posterior",31,50.00,0.00,50.00,per-code copay $50,per-code
+Rachel Iniguez,D3310,Endodontic therapy - anterior,18,451.00,441.00,10.00,per-code copay $10,per-code
+Rachel Iniguez,D7140,"Extract,erupted th/exposed rt",16,91.00,0.00,91.00,no benefit info - assume full fee,conservative
+Rachel Iniguez,D2393,"Resin composite-3s, posterior",2,70.00,0.00,70.00,per-code copay $70,per-code
+Rachel Iniguez,D7140,"Extract,erupted th/exposed rt",1,91.00,0.00,91.00,no benefit info - assume full fee,conservative
+Rachel Iniguez,D4341,Perio scale/root pln-4+per quad,,35.00,0.00,35.00,per-code copay $35,per-code
+Rachel Iniguez,D4341,Perio scale/root pln-4+per quad,,35.00,0.00,35.00,per-code copay $35,per-code
+Rachel Iniguez,D4341,Perio scale/root pln-4+per quad,,35.00,0.00,35.00,per-code copay $35,per-code
+Rachel Iniguez,D4341,Perio scale/root pln-4+per quad,,35.00,0.00,35.00,per-code copay $35,per-code
+Rachel Iniguez,D4921,Gingival Irrigation - Per Quad,,25.00,0.00,25.00,no benefit info - assume full fee,conservative
+Rachel Iniguez,D4921,Gingival Irrigation - Per Quad,,25.00,0.00,25.00,no benefit info - assume full fee,conservative
+Rachel Iniguez,D4921,Gingival Irrigation - Per Quad,,25.00,0.00,25.00,no benefit info - assume full fee,conservative
+Rachel Iniguez,D4921,Gingival Irrigation - Per Quad,,25.00,0.00,25.00,no benefit info - assume full fee,conservative
+Charles Ellis,D0230,Intraoral-periapical each add'l,,6.00,6.00,0.00,diagnostic coinsurance 0% patient share,category
+Charles Ellis,D0220,Intraoral Periapical Images,,12.00,12.00,0.00,diagnostic coinsurance 0% patient share,category
+Charles Ellis,D5120,Complete denture - mandibular,,878.00,439.00,439.00,prosthodontics coinsurance 50% patient share,category
+Charles Ellis,D5110,Complete denture - maxillary,,878.00,439.00,439.00,prosthodontics coinsurance 50% patient share,category
+Roman Gomez Espinosa,D2000,Crown Lab Fee,20,450.00,0.00,450.00,no benefit info - assume full fee,conservative
+Roman Gomez Espinosa,D2000,Crown Lab Fee,2,450.00,0.00,450.00,no benefit info - assume full fee,conservative
+Roman Gomez Espinosa,D5214,Mand partl-cast metal w/resin,,650.00,200.00,450.00,per-code copay $450,per-code
+Roman Gomez Espinosa,D5213,Maxil partl-cast metal w/resin,,650.00,200.00,450.00,per-code copay $450,per-code
+Barbara Paul,D2950,"Core buildup, include any pins",8,166.00,166.00,0.00,per-code coinsurance 0% patient share,per-code
+Barbara Paul,D2740,Crown - porcelain/ceramic,8,843.00,843.00,0.00,per-code coinsurance 0% patient share,per-code
+Barbara Paul,D9944,"Occlusal guard- hard, full arch",,450.00,450.00,0.00,per-code coinsurance 0% patient share,per-code
+Barbara Paul,D2950,"Core buildup, include any pins",9,161.00,161.00,0.00,per-code coinsurance 0% patient share,per-code
+Barbara Paul,D2740,Crown - porcelain/ceramic,9,843.00,843.00,0.00,per-code coinsurance 0% patient share,per-code
+Zvonko Nikolich,D2950,"Core buildup, include any pins",13,135.00,67.50,67.50,per-code coinsurance 50% patient share,per-code
+Zvonko Nikolich,D2740,Crown - porcelain/ceramic,13,740.00,370.00,370.00,per-code coinsurance 50% patient share,per-code

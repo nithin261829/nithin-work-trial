@@ -21,7 +21,10 @@ Usage:
   export STEDI_API_KEY=...
   export OPENAI_API_KEY=...
   export PROVIDER_NPI=...        # optional: real practice NPI (needed for Aetna)
-  python3 coverage_pipeline.py
+  export CACHE_TTL_DAYS=7        # optional: re-verify eligibility older than N days (default 7)
+  python3 coverage_pipeline.py [--live]
+
+  --live   ignore the cache entirely and re-check every patient against the payer
 """
 
 import csv
@@ -40,6 +43,8 @@ OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
 OPENAI_MODEL = os.environ.get("OPENAI_MODEL", "gpt-4o")
 PROVIDER_NPI = os.environ.get("PROVIDER_NPI", "1999999984")  # Stedi test NPI; use the real practice NPI for Aetna
 PROVIDER_NAME = os.environ.get("PROVIDER_NAME", "Dental Practice")
+CACHE_TTL_DAYS = float(os.environ.get("CACHE_TTL_DAYS", "7"))  # eligibility older than this is re-verified
+FORCE_LIVE = "--live" in sys.argv                              # bypass the cache entirely
 CACHE_DIR = os.path.join(DATA_DIR, "stedi_cache")
 STEDI_URL = "https://healthcare.us.stedi.com/2024-04-01/change/medicalnetwork/eligibility/v3"
 
@@ -137,11 +142,24 @@ class StediAgent:
             {"Authorization": "Key " + self.api_key, "Content-Type": "application/json"})
         return json.load(urllib.request.urlopen(req, timeout=90))
 
+    @staticmethod
+    def cache_is_fresh(path):
+        """A cached 271 is usable only if it exists, is younger than CACHE_TTL_DAYS,
+        and --live was not passed. Benefits drift (deductibles get consumed, plans
+        terminate, Jan 1 resets), so eligibility should be re-verified regularly."""
+        if FORCE_LIVE or not os.path.exists(path):
+            return False
+        age_days = (time.time() - os.path.getmtime(path)) / 86400
+        return age_days <= CACHE_TTL_DAYS
+
     def check(self, patient):
         """Return the raw 271 JSON for a patient (cached on disk to avoid re-billing)."""
         cache = os.path.join(CACHE_DIR, re.sub(r"\W+", "_", patient["name"]) + ".json")
-        if os.path.exists(cache):
+        if self.cache_is_fresh(cache):
             return json.load(open(cache))
+        if os.path.exists(cache):
+            reason = "--live" if FORCE_LIVE else f"cache older than {CACHE_TTL_DAYS:g} days"
+            print(f"    re-checking {patient['name']} live ({reason})")
 
         ins = patient["insurance"][0]
         member_id = re.sub(r"\s+\d+$", "", ins["member_id"]).replace("-00", "").strip()

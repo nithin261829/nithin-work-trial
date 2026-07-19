@@ -39,12 +39,29 @@ export default function App() {
         body: JSON.stringify({ session_id: sessionId.current, message }),
       })
       const data = await r.json()
-      setMessages(m => [...m, { role: 'assistant', content: data.reply || 'Something went wrong.' }])
+      setMessages(m => [
+        ...m,
+        {
+          role: 'assistant',
+          content: data.reply || 'Something went wrong.',
+          slots: data.slots || [],
+          booked: data.booked || null,
+        },
+      ])
     } catch {
       setMessages(m => [...m, { role: 'assistant', content: 'Backend unreachable — is uvicorn running on :8000?' }])
     } finally {
       setBusy(false)
     }
+  }
+
+  function pickSlot(mi, slot) {
+    setMessages(m => m.map((msg, i) => (i === mi ? { ...msg, chosen: slot.start } : msg)))
+    send(
+      `Book the ${slot.label} slot (category ${slot.category}, start_time ${slot.start}, provider_id ${slot.provider_id}${
+        slot.operatory_id ? `, operatory_id ${slot.operatory_id}` : ''
+      }). Yes, that time is confirmed.`,
+    )
   }
 
   return (
@@ -88,8 +105,28 @@ export default function App() {
       <main className="chat">
         <div className="messages">
           {messages.map((m, i) => (
-            <div key={i} className={`msg ${m.role}`}>
-              {m.content}
+            <div key={i} className={`bubble-group ${m.role}`}>
+              <div className={`msg ${m.role}`}>{m.content}</div>
+              {m.slots?.length > 0 && (
+                <div className="slots">
+                  {m.slots.map(s => (
+                    <button
+                      key={s.start + s.provider_id}
+                      className={`slot-pill ${m.chosen === s.start ? 'chosen' : ''}`}
+                      disabled={busy || m.chosen}
+                      onClick={() => pickSlot(i, s)}
+                    >
+                      {s.label}
+                    </button>
+                  ))}
+                </div>
+              )}
+              {m.booked && (
+                <div className="booked-card">
+                  ✅ Booked — appt #{m.booked.appointment_id} · {m.booked.minutes} min
+                  <div className="booked-note">{m.booked.note_on_appointment}</div>
+                </div>
+              )}
             </div>
           ))}
           {busy && <div className="msg assistant typing">…</div>}

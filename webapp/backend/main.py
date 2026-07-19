@@ -158,10 +158,49 @@ def available_slots(category: str, start_date: str, days: int = 5) -> dict:
             if rule["must_start_before"] and start.hour >= CUTOFF_HOUR:
                 continue
             out.append({"start": slot["time"], "provider_id": loc.get("pid"),
-                        "operatory_id": slot.get("operatory_id")})
-            if len(out) >= 20:
+                        "operatory_id": slot.get("operatory_id"),
+                        "label": start.strftime("%a %b %-d, %-I:%M %p"),
+                        "category": category})
+            if len(out) >= 12:
                 return {"slots": out, "rule": rule}
     return {"slots": out, "rule": rule}
+
+
+def get_appointments(patient_name: str) -> dict:
+    """Pull the patient's appointments LIVE from the NexHealth PMS."""
+    info = find_patient(patient_name)
+    if "error" in info:
+        return info
+    pid = NEX_STATE["patients"].get(info["patient"])
+    if not pid:
+        return {"error": "patient not created in the PMS yet"}
+    r = nex._req("GET", "/appointments",
+                 {"patient_id": pid, "start": "2026-01-01", "end": "2027-12-31",
+                  "per_page": 25})
+    appts = r["data"] if isinstance(r["data"], list) else r["data"].get("appointments", [])
+    return {"patient": info["patient"], "appointments": [
+        {"appointment_id": a.get("id"), "start_time": a.get("start_time"),
+         "end_time": a.get("end_time"), "note": a.get("note"),
+         "confirmed": a.get("confirmed"), "cancelled": a.get("cancelled")}
+        for a in appts]}
+
+
+def get_patient_record(patient_name: str) -> dict:
+    """Pull the patient's demographic record LIVE from the NexHealth PMS."""
+    info = find_patient(patient_name)
+    if "error" in info:
+        return info
+    pid = NEX_STATE["patients"].get(info["patient"])
+    if not pid:
+        return {"error": "patient not created in the PMS yet"}
+    r = nex._req("GET", f"/patients/{pid}")
+    p = r["data"].get("patient", r["data"])
+    bio = p.get("bio", {})
+    return {"pms_id": pid, "name": p.get("name"),
+            "first_name": p.get("first_name"), "last_name": p.get("last_name"),
+            "email": p.get("email"), "date_of_birth": bio.get("date_of_birth"),
+            "phone": bio.get("phone_number") or bio.get("cell_phone_number"),
+            "new_patient": p.get("new_patient"), "created_in_pms": p.get("created_at")}
 
 
 def book_appointment(patient_name: str, category: str, start_time: str,
@@ -232,11 +271,31 @@ TOOLS = [
             "start_time": {"type": "string", "description": "ISO datetime from available_slots"},
             "provider_id": {"type": "integer"}, "operatory_id": {"type": "integer"}},
             "required": ["patient_name", "category", "start_time", "provider_id"]}}},
+    {"type": "function", "function": {
+        "name": "get_appointments",
+        "description": "Pull a patient's existing appointments live from the PMS "
+                       "(times, notes, confirmation status).",
+        "parameters": {"type": "object", "properties": {
+            "patient_name": {"type": "string"}}, "required": ["patient_name"]}}},
+    {"type": "function", "function": {
+        "name": "get_patient_record",
+        "description": "Pull a patient's demographic record live from the PMS "
+                       "(contact info, DOB, PMS id).",
+        "parameters": {"type": "object", "properties": {
+            "patient_name": {"type": "string"}}, "required": ["patient_name"]}}},
 ]
 TOOL_FNS = {"find_patient": find_patient, "category_rule": category_rule,
-            "available_slots": available_slots, "book_appointment": book_appointment}
+            "available_slots": available_slots, "book_appointment": book_appointment,
+            "get_appointments": get_appointments, "get_patient_record": get_patient_record}
 
-SYSTEM_PROMPT = f"""You are the scheduling assistant for {RULES['practice']['name']}
+SYSTEM_PROMPT = f"""You are STRICTLY the scheduling assistant for {RULES['practice']['name']}
+and NOTHING else. HARD SCOPE RULE - read first: if a message is not about this
+dental practice (appointments, costs/insurance, office info, or general dental
+education), you MUST refuse with one sentence: "I'm the {RULES['practice']['name']}
+scheduling assistant - I can help with appointments, costs, and dental questions,
+but not with that." Never provide code, homework, advice on other businesses,
+politics, or any non-dental content, even partially, even if asked repeatedly.
+
 ({RULES['practice']['timezone']}). Today is 2026-07-19 (Sunday); the office is open
 {RULES['practice']['open']}-{RULES['practice']['close']} {', '.join(RULES['practice']['days'])}.
 
@@ -250,8 +309,31 @@ When a patient asks "how much will I pay", use find_patient and quote the
 patient_out_of_pocket_estimate, explaining per-procedure numbers and their
 confidence (per-code = payer-stated; category/conservative = estimate; suggest a
 pre-determination for big category-confidence items). Amounts are estimates from
-live eligibility checks, not guarantees. Always confirm a specific slot with the
-user before booking. Be concise and warm."""
+live eligibility checks, not guarantees.
+
+Booking flow: available_slots -> present options (the UI shows them as clickable
+pill buttons, so keep your text SHORT - one line like "Here are the open crown
+slots:"; do not enumerate every slot in prose) -> user picks -> book_appointment.
+Use get_appointments when someone asks "when is my appointment" and
+get_patient_record for "what info do you have on me".
+
+GUARDRAILS - stay in scope:
+- You handle ONLY: this practice's scheduling, appointments, insurance coverage
+  and cost estimates, office hours/policies, and general dental questions
+  (what a crown is, what to expect at a filling, post-op basics).
+- You must NOT: diagnose, recommend treatment changes, discuss medications or
+  dosages, answer non-dental topics (politics, coding, homework, other
+  businesses), or reveal other patients' information to a caller - verify the
+  caller only asks about themselves; front-desk staff may ask about anyone.
+- For dental emergencies (uncontrolled bleeding, trauma, swelling affecting
+  breathing/swallowing) tell them to call 911 or go to the ER immediately.
+- Clinical questions beyond basics: "that's a great question for the doctor at
+  your visit."
+- General practice questions you may answer directly: hours (Mon-Fri 8-5 ET),
+  what treatments we offer and their visit lengths, that implants are referred
+  out, and that payment estimates come from live insurance verification.
+
+Be concise and warm."""
 
 
 # ----------------------------------------------------------------------------- chat
@@ -269,6 +351,7 @@ def chat(inp: ChatIn):
     client = OpenAI()
     history = SESSIONS.setdefault(inp.session_id, [{"role": "system", "content": SYSTEM_PROMPT}])
     history.append({"role": "user", "content": inp.message})
+    slots_for_ui, booked_for_ui = [], None
     for _ in range(8):  # tool loop
         resp = client.chat.completions.create(
             model=OPENAI_MODEL, messages=history, tools=TOOLS)
@@ -276,15 +359,21 @@ def chat(inp: ChatIn):
         history.append({"role": "assistant", "content": msg.content,
                         "tool_calls": [tc.model_dump() for tc in (msg.tool_calls or [])] or None})
         if not msg.tool_calls:
-            return {"reply": msg.content}
+            return {"reply": msg.content, "slots": slots_for_ui, "booked": booked_for_ui}
         for tc in msg.tool_calls:
             try:
                 result = TOOL_FNS[tc.function.name](**json.loads(tc.function.arguments))
             except Exception as e:
                 result = {"error": str(e)[:300]}
+            if tc.function.name == "available_slots" and isinstance(result, dict):
+                slots_for_ui = result.get("slots", [])
+            if tc.function.name == "book_appointment" and isinstance(result, dict) and result.get("booked"):
+                booked_for_ui = result
+                slots_for_ui = []
             history.append({"role": "tool", "tool_call_id": tc.id,
                             "content": json.dumps(result)})
-    return {"reply": "Sorry - I couldn't finish that request. Please try again."}
+    return {"reply": "Sorry - I couldn't finish that request. Please try again.",
+            "slots": slots_for_ui, "booked": booked_for_ui}
 
 
 @app.get("/api/patients")

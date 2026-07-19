@@ -32,3 +32,18 @@ body { font-family: -apple-system, 'Segoe UI', Roboto, sans-serif; background: #
 .composer button:disabled { opacity: .45; cursor: default; }
 
 @media (max-width: 760px) { .app { grid-template-columns: 1fr; } .sidebar { display: none; } }
+
+.bubble-group { display: flex; flex-direction: column; gap: 8px; }
+.bubble-group.user { align-items: flex-end; }
+.bubble-group.assistant { align-items: flex-start; }
+
+.slots { display: flex; flex-wrap: wrap; gap: 8px; max-width: 72ch; }
+.slot-pill { padding: 8px 14px; border: 1.5px solid #2e6da4; border-radius: 999px; background: #fff;
+  color: #10304a; font-size: 13px; cursor: pointer; transition: all .12s; }
+.slot-pill:hover:not(:disabled) { background: #2e6da4; color: #fff; }
+.slot-pill:disabled { opacity: .45; cursor: default; }
+.slot-pill.chosen { background: #10304a; border-color: #10304a; color: #fff; opacity: 1; }
+
+.booked-card { background: #e8f5ec; border: 1px solid #9fd3ae; border-radius: 12px; padding: 12px 16px;
+  font-size: 13.5px; color: #175e2e; max-width: 72ch; }
+.booked-note { margin-top: 6px; font-size: 12px; opacity: .8; }

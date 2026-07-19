@@ -322,6 +322,11 @@ class StediAgent:
         """Extract usable benefit terms from a 271 response."""
         coins, copays, percode = {}, {}, {}
         ded_cal = ded_rem = max_cal = max_rem = None
+        # per-category deductible: stc -> remaining $ (payers report $0 for the
+        # categories they waive - preventive/diagnostic - and the real amount for
+        # basic/major). Lets us apply the deductible only where it actually bites.
+        ded_by_stc = {}
+        alt_benefit_stcs = set()  # categories flagged "ALTERNATE BENEFITS MAY APPLY"
         active = inactive = False
 
         for b in resp.get("benefitsInformation", []):
@@ -336,6 +341,13 @@ class StediAgent:
 
             if code == "1": active = True
             if code == "6": inactive = True
+
+            # alternate-benefit (downgrade) disclaimer - the payer reserves the
+            # right to pay a premium procedure at a cheaper alternative's rate
+            _txt_all = " ".join(a.get("description", "") for a in (b.get("additionalInformation") or []))
+            if "alternate benefit" in _txt_all.lower():
+                for s in stcs:
+                    alt_benefit_stcs.add(s)
 
             # per-CDT-code benefits arrive two ways:
             #  1. structured: EB13 compositeMedicalProcedureIdentifier (Delta, UHC)
@@ -372,12 +384,21 @@ class StediAgent:
                 for s in stcs:
                     copays.setdefault(s, []).append(float(amt))
             if code == "C" and amt not in (None, "") and lvl in ("IND", ""):
+                a = float(amt)
+                # plan-level deductible (stc 30/35) - what we report as "the" number
                 if any(s in ("35", "30", "") for s in stcs):
-                    a = float(amt)
                     if tq == "Remaining":
                         ded_rem = a if ded_rem is None else min(ded_rem, a)
                     elif tq == "Calendar Year":
                         ded_cal = a if ded_cal is None else max(ded_cal, a)
+                # per-category deductible - remaining preferred over calendar-year
+                if tq in ("Remaining", "Calendar Year", ""):
+                    for s in stcs:
+                        if s in ("", "30"):
+                            continue
+                        prev = ded_by_stc.get(s)
+                        if prev is None or tq == "Remaining":
+                            ded_by_stc[s] = a
             if code == "F" and amt not in (None, "") and lvl in ("IND", ""):
                 if any(s in ("35", "30") for s in stcs):
                     a = float(amt)
@@ -395,6 +416,8 @@ class StediAgent:
             "copays": {s: min(v) for s, v in copays.items()},
             "percode": percode,
             "deductible": ded_rem if ded_rem is not None else ded_cal,
+            "deductible_by_stc": ded_by_stc,
+            "alt_benefit_stcs": alt_benefit_stcs,
             "annual_max": max_cal,
             # trust a Remaining value (even $0 = exhausted) only when it is positive
             # or the plan reported a positive annual max; bare $0s are placeholders
@@ -505,10 +528,13 @@ def estimate_patient(patient, benefits, fallback, no_coverage=False):
     detail, notes = [], []
     ins_total = oop_total = 0.0
 
+    ded_by_stc, alt_stcs = {}, set()
     if benefits:
         coins = benefits["coins"] or None
         percode = benefits["percode"]
         ded_left = benefits["deductible"] or 0
+        ded_by_stc = dict(benefits.get("deductible_by_stc") or {})
+        alt_stcs = set(benefits.get("alt_benefit_stcs") or set())
         max_left = benefits["annual_max_remaining"]
     else:
         coins, percode, ded_left, max_left = None, {}, 0, 0
@@ -519,10 +545,27 @@ def estimate_patient(patient, benefits, fallback, no_coverage=False):
         max_left = float("inf")
         notes.append("annual max not reported by payer - uncapped estimate")
 
+    # a plan-wide alternate-benefit disclaimer (attached to stc 30/35) flags every
+    # elective-material procedure; note it once so staff send a pre-determination
+    plan_wide_alt = bool(alt_stcs & {"30", "35", ""})
+    if alt_stcs:
+        notes.append("plan reports ALTERNATE BENEFITS MAY APPLY - insurance may pay premium "
+                     "materials (crowns, composites) at a cheaper alternative's rate; "
+                     "confirm with a pre-determination")
+
+    def category_deductible(stc):
+        """Remaining deductible that applies to this category. Prefer the payer's
+        per-category figure; fall back to the plan-level number for categories the
+        payer didn't itemize. $0 means the category is exempt (e.g. preventive)."""
+        if stc in ded_by_stc:
+            return ded_by_stc[stc]
+        return None  # unknown at category level -> use the shared plan deductible
+
     for proc in patient["pending"]:
         fee, code = proc["fee"], proc["code"]
         stc = cdt_to_stc(code)
         pat_amt, basis, conf = None, "", ""
+        alt_flag = ""
 
         if stc is None:
             pat_amt, basis, conf = fee, "house/lab code - not billable to insurance", "certain"
@@ -541,11 +584,22 @@ def estimate_patient(patient, benefits, fallback, no_coverage=False):
         elif coins:
             share = coins.get(stc, coins.get("35"))
             if share is not None:
-                ded_use = min(ded_left, fee) if share < 1 else 0
+                # deductible: apply only for categories that actually charge one
+                cat_ded = category_deductible(stc)
+                pool = cat_ded if cat_ded is not None else ded_left
+                if share < 1 and pool > 0:
+                    ded_use = min(pool, fee)
+                else:
+                    ded_use = 0  # exempt category, or 100% patient share
                 covered = max(fee - ded_use, 0) * (1 - share)
                 pat_amt = round(fee - covered, 2)
-                ded_left -= ded_use
-                basis = f"{STC_NAMES.get(stc, stc)} coinsurance {share:.0%} patient share"
+                # decrement whichever deductible pool we drew from
+                if cat_ded is not None:
+                    ded_by_stc[stc] = max(cat_ded - ded_use, 0)
+                else:
+                    ded_left -= ded_use
+                deducted = f", ${ded_use:.0f} deductible" if ded_use else ""
+                basis = f"{STC_NAMES.get(stc, stc)} coinsurance {share:.0%} patient share{deducted}"
                 conf = "web-estimate" if fallback else "category"
 
         if pat_amt is None:
@@ -553,6 +607,14 @@ def estimate_patient(patient, benefits, fallback, no_coverage=False):
                 pat_amt, basis, conf = fee, "no active coverage - full fee", "certain"
             else:
                 pat_amt, basis, conf = fee, "no benefit info - assume full fee", "conservative"
+
+        # alternate-benefit (downgrade) exposure: crowns/onlays and posterior
+        # composites are the classic downgrade targets. We can flag but not size it
+        # (the 271 carries no downgrade allowance) - so the patient's real OOP on
+        # these could be HIGHER than shown, pending a pre-determination.
+        downgradeable = code in {"D2391", "D2392", "D2393", "D2394"} or stc in ("36", "39")
+        if (plan_wide_alt or stc in alt_stcs) and downgradeable and pat_amt is not None and pat_amt < fee:
+            alt_flag = "Y"
 
         ins_pay = max(fee - pat_amt, 0)
         if ins_pay > max_left:  # annual maximum cap
@@ -569,6 +631,7 @@ def estimate_patient(patient, benefits, fallback, no_coverage=False):
             "insurance_pays_est": f"{ins_pay:.2f}", "patient_oop_est": f"{pat_amt:.2f}",
             "basis": basis, "confidence": conf,
             "prior_auth_required": "Y" if percode.get(code, {}).get("prior_auth") else "",
+            "alt_benefit_downgrade_risk": alt_flag,
         })
     return ins_total, oop_total, detail, notes
 

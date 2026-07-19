@@ -240,11 +240,13 @@ class StediAgent:
                     elif tq == "Calendar Year":
                         ded_cal = a if ded_cal is None else max(ded_cal, a)
             if code == "F" and amt not in (None, "") and lvl in ("IND", ""):
-                if any(s in ("35", "30") for s in stcs) and float(amt) > 0:
+                if any(s in ("35", "30") for s in stcs):
                     a = float(amt)
+                    # $0 Calendar Year rows are placeholders, but a $0 Remaining is
+                    # genuine exhaustion when the plan reports a positive annual max
                     if "Remaining" in tq and "Lifetime" not in tq:
                         max_rem = a if max_rem is None else max(max_rem, a)
-                    elif tq == "Calendar Year":
+                    elif tq == "Calendar Year" and a > 0:
                         max_cal = a if max_cal is None else max(max_cal, a)
 
         return {
@@ -255,7 +257,11 @@ class StediAgent:
             "percode": percode,
             "deductible": ded_rem if ded_rem is not None else ded_cal,
             "annual_max": max_cal,
-            "annual_max_remaining": max_rem if max_rem is not None else max_cal,
+            # trust a Remaining value (even $0 = exhausted) only when it is positive
+            # or the plan reported a positive annual max; bare $0s are placeholders
+            "annual_max_remaining": (
+                max_rem if max_rem is not None and (max_rem > 0 or max_cal)
+                else max_cal),
         }
 
 

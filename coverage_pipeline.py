@@ -331,6 +331,11 @@ class StediAgent:
         freq_limits = {}          # CDT code -> {"quantity": n, "months": window}
         active = inactive = False
 
+        # plan/eligibility dates (top-level planDateInformation)
+        pdi = resp.get("planDateInformation") or {}
+        eligibility_begin = pdi.get("eligibilityBegin") or pdi.get("planBegin")
+        latest_visit = pdi.get("latestVisitOrConsultation")
+
         for b in resp.get("benefitsInformation", []):
             if b.get("inPlanNetworkIndicatorCode") == "N":
                 continue  # out-of-network rows
@@ -452,6 +457,8 @@ class StediAgent:
             "alt_benefit_stcs": alt_benefit_stcs,
             "secondary_payers": secondary_payers,
             "freq_limits": freq_limits,
+            "eligibility_begin": eligibility_begin,   # YYYYMMDD
+            "latest_visit": latest_visit,             # YYYYMMDD, payer's own last-visit record
             "annual_max": max_cal,
             # trust a Remaining value (even $0 = exhausted) only when it is positive
             # or the plan reported a positive annual max; bare $0s are placeholders
@@ -579,31 +586,58 @@ def estimate_patient(patient, benefits, fallback, no_coverage=False):
     else:
         coins, percode, ded_left, max_left = None, {}, 0, 0
 
-    # frequency cross-check: how many times has each code been completed within its
-    # limit window (ending today)? If the quota is used up, a repeat likely isn't covered.
     from datetime import date
     TODAY = date(2026, 7, 19)
+
+    def _ymd(s):
+        try:
+            return date(int(s[:4]), int(s[4:6]), int(s[6:8]))
+        except (TypeError, ValueError):
+            return None
+
+    # waiting-period risk: a recent eligibility start means major work (crowns,
+    # bridges, dentures, implants) may sit inside a 6-12 month waiting period and
+    # not be covered yet. eligibilityBegin == Jan 1 is ambiguous (renewal vs new),
+    # so we FLAG for verification rather than deny.
+    major_wait_risk = False
+    if benefits:
+        eb = _ymd(benefits.get("eligibility_begin"))
+        if eb and (TODAY.toordinal() - eb.toordinal()) < 365:
+            major_wait_risk = True
+            months_in = round((TODAY.toordinal() - eb.toordinal()) / 30.44)
+            notes.append(f"coverage began {eb.isoformat()} (~{months_in} mo ago) - VERIFY no "
+                         "waiting period on major work; if new enrollee, major treatment "
+                         "may not be covered yet and OOP would be full fee")
+
+    # frequency cross-check: how many times has each code been used within its limit
+    # window (ending today)? Counts our completed-procedure history AND the payer's
+    # own latest-visit date (latestVisitOrConsultation) - the payer's record is
+    # authoritative for whole-mouth services (exams, cleanings, x-rays).
     completed = patient.get("completed", [])
+    payer_last_visit = _ymd(benefits.get("latest_visit")) if benefits else None
+    WHOLE_MOUTH = {"23", "41"}  # diagnostic / preventive - one latest-visit date applies
 
     def frequency_exhausted(code, tooth):
         lim = freq_limits.get(code)
         if not lim:
             return False
-        cutoff_ordinal = TODAY.toordinal() - int(lim["months"] * 30.44)
-        used = 0
+        cutoff = TODAY.toordinal() - int(lim["months"] * 30.44)
+        dates = []
         for c in completed:
             if c["code"] != code:
                 continue
-            # per-tooth procedures (crowns/buildups/fillings) count only the same tooth
             if tooth and c.get("tooth") and c["tooth"] != tooth:
-                continue
-            ds = (c.get("date") or "")[:10]
-            try:
-                if date.fromisoformat(ds).toordinal() >= cutoff_ordinal:
-                    used += 1
-            except ValueError:
-                continue
-        return used >= lim["quantity"]
+                continue  # per-tooth procedures count only the same tooth
+            cd = _ymd((c.get("date") or "").replace("-", "")[:8])
+            if cd and cd.toordinal() >= cutoff:
+                dates.append(cd.toordinal())
+        # the payer's authoritative last-visit date adds one use for whole-mouth
+        # services (exams/x-rays), unless we already counted a visit that day
+        if (payer_last_visit and cdt_to_stc(code) in WHOLE_MOUTH
+                and payer_last_visit.toordinal() >= cutoff
+                and payer_last_visit.toordinal() not in dates):
+            dates.append(payer_last_visit.toordinal())
+        return len(dates) >= lim["quantity"]
     if fallback:
         coins, ded_left, max_left = fallback[0], fallback[1], fallback[2]
         percode = {}
@@ -691,6 +725,10 @@ def estimate_patient(patient, benefits, fallback, no_coverage=False):
         if (plan_wide_alt or stc in alt_stcs) and downgradeable and pat_amt is not None and pat_amt < fee:
             alt_flag = "Y"
 
+        # waiting-period exposure on major work (crowns/prostho/oral surgery)
+        wait_flag = "Y" if (major_wait_risk and stc in ("36", "39", "40")
+                            and pat_amt is not None and pat_amt < fee) else ""
+
         ins_pay = max(fee - pat_amt, 0)
         if ins_pay > max_left:  # annual maximum cap
             pat_amt = round(fee - max_left, 2)
@@ -708,6 +746,7 @@ def estimate_patient(patient, benefits, fallback, no_coverage=False):
             "prior_auth_required": "Y" if percode.get(code, {}).get("prior_auth") else "",
             "alt_benefit_downgrade_risk": alt_flag,
             "frequency_limit_reached": freq_flag,
+            "waiting_period_risk": wait_flag,
         })
     return ins_total, oop_total, detail, notes
 

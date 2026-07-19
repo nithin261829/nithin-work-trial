@@ -77,7 +77,7 @@ Patrick Kolb,D2391,"Resin composite-1s, posterior",15,101.00,46.00,55.00,per-cod
 Felipe Leyva,9995,Post Op,,0.00,0.00,0.00,house/lab code - not billable to insurance,certain,,,,
 Felipe Leyva,D0272,Bitewing Two Image,,20.00,20.00,0.00,per-code copay $0,per-code,,,,
 Felipe Leyva,D5225,Maxillary partial-flexible base,,453.00,3.00,450.00,per-code copay $450,per-code,,,,
-Felipe Leyva,D6245,Pontic-porcelain/ceramic,14,592.00,67.00,525.00,per-code copay $525,per-code,,,,
+Felipe Leyva,D6245,Pontic-porcelain/ceramic,14,592.00,0.00,592.00,frequency limit reached (1 per 60mo) - not covered,per-code,,,Y,
 Felipe Leyva,D4910,Periodontal maintenance,,89.00,29.00,60.00,per-code copay $60,per-code,,,,
 Felipe Leyva,D7210,"Extract, erupted th, rem oth",1,132.00,132.00,0.00,per-code copay $0,per-code,,,,
 Felipe Leyva,D2950,"Core buildup, include any pins",18,125.00,0.00,125.00,per-code copay $125,per-code,,,,

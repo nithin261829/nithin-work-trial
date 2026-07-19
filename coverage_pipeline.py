@@ -356,28 +356,50 @@ class StediAgent:
                     if nm and nm not in secondary_payers:
                         secondary_payers.append(nm)
 
-            # frequency limitations: "F" rows carry a quantity + a time window, in
-            # two shapes - benefitQuantity (+ timeQualifier), or benefitsServiceDelivery
-            fcode = (b.get("compositeMedicalProcedureIdentifier") or {}).get("procedureCode")
-            if code == "F" and fcode:
+            # frequency limitations: "F" rows carry a quantity + a time window in two
+            # shapes (benefitQuantity+timeQualifier, or benefitsServiceDelivery), and
+            # the affected CDT codes arrive three ways: the EB13 composite field
+            # (UHC/Delta), or CDT codes in the additionalInformation text (Cigna).
+            if code == "F":
                 qty = months = None
                 if b.get("benefitQuantity"):
                     try:
                         qty = int(float(b["benefitQuantity"]))
                     except ValueError:
                         qty = None
-                    tq = (b.get("timeQualifier") or "").lower()
-                    months = 12 if ("year" in tq or "calendar" in tq) else 12
+                    months = 12  # benefitQuantity is per the timeQualifier window (calendar year)
                 for sd in (b.get("benefitsServiceDelivery") or []):
                     try:
                         qty = int(float(sd.get("quantity", qty or 1)))
-                        n = int(float(sd.get("numOfPeriods", 1)))
                     except (ValueError, TypeError):
                         continue
-                    unit = (sd.get("timePeriodQualifier") or "").lower()
+                    # the real window is sampleSelectionModulus + unitForMeasurement
+                    # (e.g. 5 Years); numOfPeriods+timePeriodQualifier is often just a
+                    # "Remaining" marker, so only fall back to it when no modulus exists
+                    mod = sd.get("sampleSelectionModulus")
+                    unit = (sd.get("unitForMeasurementQualifier") or sd.get("unitForMeasurement") or "").lower()
+                    if mod:
+                        try:
+                            n = int(float(mod))
+                        except (ValueError, TypeError):
+                            n = 1
+                    else:
+                        try:
+                            n = int(float(sd.get("numOfPeriods", 1)))
+                        except (ValueError, TypeError):
+                            n = 1
+                        unit = (sd.get("timePeriodQualifier") or "").lower()
                     months = n * (12 if "year" in unit else 1 if "month" in unit else 12)
-                if qty and months and (fcode not in freq_limits or months > freq_limits[fcode]["months"]):
-                    freq_limits[fcode] = {"quantity": qty, "months": months}
+                if qty and months:
+                    fcodes = set()
+                    cm = (b.get("compositeMedicalProcedureIdentifier") or {}).get("procedureCode")
+                    if cm:
+                        fcodes.add(cm)
+                    ftxt = " ".join(a.get("description", "") for a in (b.get("additionalInformation") or []))
+                    fcodes.update(re.findall(r"\bD\d{4}\b", ftxt))
+                    for fc in fcodes:
+                        if fc not in freq_limits or months > freq_limits[fc]["months"]:
+                            freq_limits[fc] = {"quantity": qty, "months": months}
 
             # alternate-benefit (downgrade) disclaimer - the payer reserves the
             # right to pay a premium procedure at a cheaper alternative's rate

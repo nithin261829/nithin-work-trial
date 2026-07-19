@@ -51,7 +51,7 @@ Ryan Scott,D2394,"Resin composite-4+s, posterior",2,179.00,0.00,179.00,"restorat
 Patrick Kolb,D2391,"Resin composite-1s, posterior",30,101.00,46.00,55.00,per-code copay $55,per-code,,,,
 Patrick Kolb,D2391,"Resin composite-1s, posterior",15,101.00,46.00,55.00,per-code copay $55,per-code,,,,
 Felipe Leyva,D5225,Maxillary partial-flexible base,,453.00,3.00,450.00,per-code copay $450,per-code,,,,
-Felipe Leyva,D6245,Pontic-porcelain/ceramic,14,592.00,67.00,525.00,per-code copay $525,per-code,,,,
+Felipe Leyva,D6245,Pontic-porcelain/ceramic,14,592.00,0.00,592.00,frequency limit reached (1 per 60mo) - not covered,per-code,,,Y,
 Sid Moore,D6740,Ret crn-porcelain/ceramic,19,750.00,525.00,225.00,per-code coinsurance 30% patient share,per-code,,,,Y
 John Johnson,D5140,Immediate denture - mandibular,,993.00,496.50,496.50,prosthodontics coinsurance 50% patient share,category,,,,
 John Johnson,D5622,"Repair cast partial frmwk, max",,118.00,59.00,59.00,prosthodontics coinsurance 50% patient share,category,,,,

@@ -45,6 +45,9 @@ PROVIDER_NPI = os.environ.get("PROVIDER_NPI", "1999999984")  # Stedi test NPI; u
 PROVIDER_NAME = os.environ.get("PROVIDER_NAME", "Dental Practice")
 CACHE_TTL_DAYS = float(os.environ.get("CACHE_TTL_DAYS", "7"))  # eligibility older than this is re-verified
 FORCE_LIVE = "--live" in sys.argv                              # bypass the cache entirely
+# restrict the analysis to each patient's campaign target codes (the
+# procedure_codes column in patients.csv) and write targeted_*.csv instead
+TARGET_ONLY = "--target-only" in sys.argv or os.environ.get("TARGET_CODES_ONLY") == "1"
 CACHE_DIR = os.path.join(DATA_DIR, "stedi_cache")
 STEDI_URL = "https://healthcare.us.stedi.com/2024-04-01/change/medicalnetwork/eligibility/v3"
 
@@ -114,6 +117,10 @@ def load_dataset():
     for pt in patients:
         pid = pt["patient_id"]
         d = procs_by_patient[pid]
+        targets = json.loads(pt["procedure_codes"]) if pt.get("procedure_codes") else []
+        pending = d["pending"]
+        if TARGET_ONLY and targets:
+            pending = [x for x in pending if x["code"] in targets]
         out.append({
             "name": pt["patient_name"],
             "dob": pt["birth_date"],
@@ -121,7 +128,7 @@ def load_dataset():
             "status": pt["status"],
             "insurance": sorted(ins_by_patient.get(pid, []), key=lambda x: x["priority"])[:1],
             "completed": sorted(d["completed"], key=lambda x: x["date"] or "", reverse=True),
-            "pending": d["pending"],
+            "pending": pending,
         })
     return out
 
@@ -660,8 +667,9 @@ def main():
             "notes": "; ".join(notes),
         })
 
-    out1 = os.path.join(DATA_DIR, "final_patient_coverage_report.csv")
-    out2 = os.path.join(DATA_DIR, "final_procedure_detail.csv")
+    prefix = "targeted" if TARGET_ONLY else "final"
+    out1 = os.path.join(DATA_DIR, f"{prefix}_patient_coverage_report.csv")
+    out2 = os.path.join(DATA_DIR, f"{prefix}_procedure_detail.csv")
     with open(out1, "w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
         w.writeheader(); w.writerows(rows)

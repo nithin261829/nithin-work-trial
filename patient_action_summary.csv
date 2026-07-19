@@ -1,0 +1,21 @@
+patient_name,treatment,carrier,coverage_status,treatment_fee,insurance_pays_est,patient_oop_est,confidence_flags,recommended_action
+Roy Otterbein,crown,NONE,NO INSURANCE,4432.00,0.00,4432.00,none,"Uninsured - offer in-house discount plan; insurance discovery found an inactive UHC policy, confirm with patient"
+Marisa Delmonte,implant,"CIGNA, Dental",ACTIVE (verified via Stedi),4125.00,376.00,3749.00,none,Standard - quote estimate and schedule
+El-khatib Suzy,crown,Aetna,ACTIVE (verified via Stedi),3489.00,1332.50,2156.50,downgrade:sized,Crown downgraded to metal allowance - OOP already reflects it; confirm via pre-determination
+Patricia Salinas,crown,EMI Health TDA,INACTIVE (terminated per Stedi 271),1845.00,0.00,1845.00,none,Coverage TERMINATED - collect full fee or help re-enroll before treatment
+Felipe Leyva,bridge,Cigna DHMO,ACTIVE (verified via Stedi),1045.00,3.00,1042.00,frequency-denial,"A procedure repeats inside its frequency window - not covered, patient owes full"
+John Johnson,denture,***UHC,ACTIVE (verified via Stedi),1931.00,965.50,965.50,secondary,Has SECONDARY (Medicare) - true OOP likely LOWER; run secondary eligibility
+Gonzales Jesse,crown,***UHC  5000-100-50-50-,ACTIVE (verified via Stedi),1928.00,964.00,964.00,secondary,Has SECONDARY (Medicare) - true OOP likely LOWER; run secondary eligibility
+Roman Gomez Espinosa,denture,Cigna DHMO,ACTIVE (verified via Stedi),1300.00,400.00,900.00,waiting-period,VERIFY no waiting period (recent enrollee) - major work may not be covered yet
+Charles Ellis,denture,Aetna Medicare 3000,ACTIVE (verified via Stedi),1756.00,878.00,878.00,"waiting-period,downgrade:flag",VERIFY no waiting period (recent enrollee) - major work may not be covered yet | Alternate-benefit may apply - send pre-determination before quoting
+Rachel Iniguez,denture,Cigna DHMO,ACTIVE (verified via Stedi),1706.00,1046.00,660.00,none,Standard - quote estimate and schedule
+Carl Thompson,implant,AETNA  DENTAL PLAN,ACTIVE (verified via Stedi),698.00,112.00,586.00,waiting-period,VERIFY no waiting period (recent enrollee) - major work may not be covered yet
+Lorena Quinones,crown,***Delta Dental AZ,ACTIVE (verified via Stedi),936.00,443.00,493.00,none,Standard - quote estimate and schedule
+Zvonko Nikolich,crown,Cigna,ACTIVE (verified via Stedi),875.00,412.50,462.50,none,Standard - quote estimate and schedule
+Sharon Mascari,crown,***UHC 1000,ACTIVE (verified via Stedi),914.00,457.00,457.00,secondary,Has SECONDARY (Medicare) - true OOP likely LOWER; run secondary eligibility
+Sid Moore,bridge,Humana,ACTIVE (verified via Stedi),750.00,525.00,225.00,waiting-period,VERIFY no waiting period (recent enrollee) - major work may not be covered yet
+Kelly Carruthers,filling,Delta Dental of AZ,ACTIVE (verified via Stedi),179.00,0.00,179.00,none,Standard - quote estimate and schedule
+Ryan Scott,filling,Delta Dental CA,ACTIVE (verified via Stedi),179.00,0.00,179.00,none,Standard - quote estimate and schedule
+Patrick Kolb,filling,CIGNA DHMO,ACTIVE (verified via Stedi),202.00,92.00,110.00,none,Standard - quote estimate and schedule
+Robert Frieling,filling,Cigna DHMO,ACTIVE (verified via Stedi),875.00,875.00,0.00,none,Fully covered - $0 out of pocket; easiest to schedule
+Barbara Paul,crown,***Cigna,ACTIVE (verified via Stedi),2013.00,2013.00,0.00,waiting-period,VERIFY no waiting period (recent enrollee) - major work may not be covered yet

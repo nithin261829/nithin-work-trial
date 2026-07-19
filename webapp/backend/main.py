@@ -60,6 +60,16 @@ for d in _read("targeted_procedure_detail.csv"):
 BOOKINGS = {r["patient"]: r for r in _read("nexhealth_booking_results.csv")}
 NEX_STATE = json.load(open(os.path.join(REPO_DIR, "nexhealth_cache", "state.json")))
 
+# The sandbox practice has no live PMS sync, so NexHealth rejects PATCHes to
+# appointments. Production uses PATCH; here a local shadow ledger records
+# cancellations/reschedules and get_appointments honors it.
+OVERRIDES_PATH = os.path.join(REPO_DIR, "nexhealth_cache", "overrides.json")
+OVERRIDES = json.load(open(OVERRIDES_PATH)) if os.path.exists(OVERRIDES_PATH) else {}
+
+
+def _save_overrides():
+    json.dump(OVERRIDES, open(OVERRIDES_PATH, "w"), indent=1)
+
 
 # ----------------------------------------------------------------------------- NexHealth client
 class NexHealth:
@@ -178,11 +188,112 @@ def get_appointments(patient_name: str) -> dict:
                  {"patient_id": pid, "start": "2026-01-01", "end": "2027-12-31",
                   "per_page": 25})
     appts = r["data"] if isinstance(r["data"], list) else r["data"].get("appointments", [])
-    return {"patient": info["patient"], "appointments": [
-        {"appointment_id": a.get("id"), "start_time": a.get("start_time"),
-         "end_time": a.get("end_time"), "note": a.get("note"),
-         "confirmed": a.get("confirmed"), "cancelled": a.get("cancelled")}
-        for a in appts]}
+    out = []
+    for a in appts:
+        ov = OVERRIDES.get(str(a.get("id")), {})
+        out.append({"appointment_id": a.get("id"), "start_time": a.get("start_time"),
+                    "end_time": a.get("end_time"), "note": a.get("note"),
+                    "provider_id": a.get("provider_id"), "operatory_id": a.get("operatory_id"),
+                    "confirmed": a.get("confirmed"),
+                    "cancelled": a.get("cancelled") or ov.get("status") == "cancelled",
+                    "superseded": ov.get("status") == "superseded"})
+    return {"patient": info["patient"], "appointments": out}
+
+
+def _category_of_booking(patient_key: str, minutes: int | None = None) -> str | None:
+    """Recover the treatment category for a patient's booking (manifest first,
+    falling back to matching the appointment length against the rules)."""
+    type_name = BOOKINGS.get(patient_key, {}).get("type")
+    for cat, a in RULES["appointments"].items():
+        if a["type_name"] == type_name:
+            return cat
+    if minutes:
+        for cat, a in RULES["appointments"].items():
+            if a["minutes"] == minutes:
+                return cat
+    return None
+
+
+def _find_active_appointment(patient_key: str):
+    appts = get_appointments(patient_key).get("appointments", [])
+    live = [a for a in appts if not a.get("cancelled") and not a.get("superseded")]
+    return live[0] if live else None
+
+
+def cancel_appointment(patient_name: str, confirm: bool = False) -> dict:
+    """Cancel the patient's upcoming appointment. Requires confirm=true after
+    the user explicitly agrees."""
+    info = find_patient(patient_name)
+    if "error" in info:
+        return info
+    appt = _find_active_appointment(info["patient"])
+    if not appt:
+        return {"error": "no active appointment found for this patient"}
+    if not confirm:
+        return {"needs_confirmation": True, "appointment": appt,
+                "message": "ask the user to confirm cancelling this appointment"}
+    try:
+        nex._req("PATCH", f"/appointments/{appt['appointment_id']}", None,
+                 {"appt": {"cancelled": True}})
+    except RuntimeError as e:
+        if "not synced" not in str(e):
+            raise
+        # sandbox: no PMS sync -> record in the local ledger instead
+        OVERRIDES[str(appt["appointment_id"])] = {"status": "cancelled"}
+        _save_overrides()
+    return {"cancelled": True, "appointment_id": appt["appointment_id"],
+            "was_at": appt["start_time"]}
+
+
+def reschedule_appointment(patient_name: str, new_start_time: str) -> dict:
+    """Move the patient's upcoming appointment to a new time, re-checking every
+    office rule (afternoon cutoff, duration preserved)."""
+    info = find_patient(patient_name)
+    if "error" in info:
+        return info
+    appt = _find_active_appointment(info["patient"])
+    if not appt:
+        return {"error": "no active appointment found for this patient"}
+    old_start = datetime.fromisoformat(appt["start_time"].replace("Z", "+00:00"))
+    old_end = datetime.fromisoformat(appt["end_time"].replace("Z", "+00:00"))
+    minutes = int((old_end - old_start).total_seconds() // 60)
+    category = _category_of_booking(info["patient"], minutes)
+    start = datetime.fromisoformat(new_start_time)
+    if category in CUTOFF["applies_to"] and start.hour >= CUTOFF_HOUR:
+        return {"refused": True,
+                "reason": f"{category} must start before {CUTOFF['time']} - offer an earlier slot"}
+    if start.weekday() >= 5:
+        return {"refused": True, "reason": "office is closed on weekends"}
+    try:
+        nex._req("PATCH", f"/appointments/{appt['appointment_id']}", None,
+                 {"appt": {"start_time": start.isoformat(),
+                           "end_time": (start + timedelta(minutes=minutes)).isoformat()}})
+        new_id = appt["appointment_id"]
+    except RuntimeError as e:
+        if "not synced" not in str(e):
+            raise
+        # sandbox: PATCH unavailable -> book a replacement and mark the old
+        # appointment superseded in the local ledger
+        pid = NEX_STATE["patients"][info["patient"]]
+        type_name = BOOKINGS.get(info["patient"], {}).get("type") or \
+            RULES["appointments"].get(category, {}).get("type_name")
+        note = (f"RESCHEDULED from {appt['start_time'][:16]}. "
+                + (appt.get("note") or ""))[:128]
+        body = {"appt": {"patient_id": pid,
+                         "provider_id": appt.get("provider_id"),
+                         "start_time": start.isoformat(),
+                         "end_time": (start + timedelta(minutes=minutes)).isoformat(),
+                         "appointment_type_id": NEX_STATE["appointment_types"].get(type_name),
+                         "note": note}}
+        if appt.get("operatory_id"):
+            body["appt"]["operatory_id"] = appt["operatory_id"]
+        r = nex._req("POST", "/appointments", {"notify_patient": "false"}, body)
+        new_id = r["data"].get("appt", r["data"]).get("id")
+        OVERRIDES[str(appt["appointment_id"])] = {"status": "superseded", "by": new_id}
+        _save_overrides()
+    return {"rescheduled": True, "appointment_id": new_id,
+            "from": appt["start_time"], "to": start.isoformat(), "minutes": minutes,
+            "category": category}
 
 
 def get_patient_record(patient_name: str) -> dict:
@@ -213,6 +324,15 @@ def book_appointment(patient_name: str, category: str, start_time: str,
     if not rule.get("offered"):
         return {"refused": True, "reason": rule["policy"]}
     start = datetime.fromisoformat(start_time)
+    if start.weekday() >= 5:
+        return {"refused": True, "reason": "office is closed on weekends"}
+    open_h = int(RULES["practice"]["open"].split(":")[0])
+    close_h = int(RULES["practice"]["close"].split(":")[0])
+    end_t = start + timedelta(minutes=rule["minutes"])
+    if start.hour < open_h or end_t.hour > close_h or (end_t.hour == close_h and end_t.minute > 0):
+        return {"refused": True,
+                "reason": f"appointment must fit within office hours "
+                          f"{RULES['practice']['open']}-{RULES['practice']['close']}"}
     if rule["must_start_before"] and start.hour >= CUTOFF_HOUR:
         return {"refused": True,
                 "reason": f"{category} must start before {CUTOFF['time']} - pick a morning/early-afternoon slot"}
@@ -283,10 +403,29 @@ TOOLS = [
                        "(contact info, DOB, PMS id).",
         "parameters": {"type": "object", "properties": {
             "patient_name": {"type": "string"}}, "required": ["patient_name"]}}},
+    {"type": "function", "function": {
+        "name": "cancel_appointment",
+        "description": "Cancel the patient's upcoming appointment. Call once without "
+                       "confirm to preview, then with confirm=true after the user agrees.",
+        "parameters": {"type": "object", "properties": {
+            "patient_name": {"type": "string"},
+            "confirm": {"type": "boolean", "default": False}},
+            "required": ["patient_name"]}}},
+    {"type": "function", "function": {
+        "name": "reschedule_appointment",
+        "description": "Move the patient's upcoming appointment to a new time. Duration is "
+                       "preserved and office rules (afternoon cutoff, weekdays) are re-checked. "
+                       "Use available_slots first so the new time is a real opening.",
+        "parameters": {"type": "object", "properties": {
+            "patient_name": {"type": "string"},
+            "new_start_time": {"type": "string", "description": "ISO datetime for the new start"}},
+            "required": ["patient_name", "new_start_time"]}}},
 ]
 TOOL_FNS = {"find_patient": find_patient, "category_rule": category_rule,
             "available_slots": available_slots, "book_appointment": book_appointment,
-            "get_appointments": get_appointments, "get_patient_record": get_patient_record}
+            "get_appointments": get_appointments, "get_patient_record": get_patient_record,
+            "cancel_appointment": cancel_appointment,
+            "reschedule_appointment": reschedule_appointment}
 
 SYSTEM_PROMPT = f"""You are STRICTLY the scheduling assistant for {RULES['practice']['name']}
 and NOTHING else. HARD SCOPE RULE - read first: if a message is not about this
@@ -316,6 +455,10 @@ pill buttons, so keep your text SHORT - one line like "Here are the open crown
 slots:"; do not enumerate every slot in prose) -> user picks -> book_appointment.
 Use get_appointments when someone asks "when is my appointment" and
 get_patient_record for "what info do you have on me".
+Cancelling: preview with cancel_appointment, get explicit agreement, then call
+again with confirm=true. Rescheduling: show available_slots pills for their
+category first, then reschedule_appointment with the chosen time - the same
+afternoon-cutoff rules apply to the new time.
 
 GUARDRAILS - stay in scope:
 - You handle ONLY: this practice's scheduling, appointments, insurance coverage

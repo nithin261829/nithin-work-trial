@@ -1,0 +1,6750 @@
+{
+ "codes": [
+  "D5140",
+  "D5622",
+  "D5650",
+  "D5750"
+ ],
+ "response": {
+  "meta": {
+   "senderId": "STEDI",
+   "submitterId": "117151744",
+   "applicationMode": "production",
+   "traceId": "01KXXS7ZR6DHF9NFPDK9CYMGHW",
+   "outboundTraceId": "01KXXS7ZR6DHF9NFPDK9CYMGHW"
+  },
+  "controlNumber": "823761081",
+  "reassociationKey": "823761081",
+  "tradingPartnerServiceId": "52133",
+  "provider": {
+   "providerName": "GHASEM DARIAN",
+   "entityIdentifier": "Provider",
+   "entityType": "Non-Person Entity",
+   "npi": "1942363775"
+  },
+  "subscriber": {
+   "memberId": "902014476",
+   "firstName": "JOHN",
+   "lastName": "JOHNSON",
+   "middleName": "M",
+   "gender": "M",
+   "entityIdentifier": "Insured or Subscriber",
+   "entityType": "Person",
+   "dateOfBirth": "19380213",
+   "address": {
+    "address1": "3413 EAST TURNEY AVENUE",
+    "city": "PHOENIX",
+    "state": "AZ",
+    "postalCode": "85018"
+   }
+  },
+  "subscriberTraceNumbers": [
+   {
+    "traceTypeCode": "1",
+    "traceType": "Current Transaction Trace Numbers",
+    "referenceIdentification": "01KXXS7ZRJJSWE3KGS1BGEBFYM",
+    "originatingCompanyIdentifier": "3117151744"
+   }
+  ],
+  "payer": {
+   "entityIdentifier": "Payer",
+   "entityType": "Non-Person Entity",
+   "name": "UNITEDHEALTHCARE DENTAL",
+   "payorIdentification": "52133"
+  },
+  "planStatus": [
+   {
+    "statusCode": "1",
+    "status": "Active Coverage",
+    "planDetails": "HMOPOS-AARP MEDICARE ADVANTAGE EXTRAS FROM UHC AZ-",
+    "serviceTypeCodes": [
+     "30"
+    ]
+   },
+   {
+    "statusCode": "1",
+    "status": "Active Coverage",
+    "serviceTypeCodes": [
+     "98"
+    ]
+   },
+   {
+    "statusCode": "1",
+    "status": "Active Coverage",
+    "serviceTypeCodes": [
+     "48"
+    ]
+   },
+   {
+    "statusCode": "1",
+    "status": "Active Coverage",
+    "serviceTypeCodes": [
+     "50"
+    ]
+   },
+   {
+    "statusCode": "1",
+    "status": "Active Coverage",
+    "serviceTypeCodes": [
+     "33"
+    ]
+   },
+   {
+    "statusCode": "1",
+    "status": "Active Coverage",
+    "serviceTypeCodes": [
+     "96",
+     "1"
+    ]
+   },
+   {
+    "statusCode": "1",
+    "status": "Active Coverage",
+    "serviceTypeCodes": [
+     "47",
+     "50"
+    ]
+   },
+   {
+    "statusCode": "1",
+    "status": "Active Coverage",
+    "serviceTypeCodes": [
+     "MH"
+    ]
+   },
+   {
+    "statusCode": "1",
+    "status": "Active Coverage",
+    "serviceTypeCodes": [
+     "86",
+     "UC"
+    ]
+   },
+   {
+    "statusCode": "1",
+    "status": "Active Coverage",
+    "serviceTypeCodes": [
+     "PT"
+    ]
+   },
+   {
+    "statusCode": "1",
+    "status": "Active Coverage",
+    "planDetails": "SPECTERA VISION PLAN",
+    "serviceTypeCodes": [
+     "30"
+    ]
+   },
+   {
+    "statusCode": "1",
+    "status": "Active Coverage",
+    "serviceTypeCodes": [
+     "AL"
+    ]
+   }
+  ],
+  "benefitsInformation": [
+   {
+    "code": "R",
+    "name": "Other or Additional Payor",
+    "benefitsAdditionalInformation": {
+     "hicNumber": "6JQ6G48XA61"
+    }
+   },
+   {
+    "code": "1",
+    "name": "Active Coverage",
+    "serviceTypeCodes": [
+     "30"
+    ],
+    "serviceTypes": [
+     "Health Benefit Plan Coverage"
+    ],
+    "insuranceTypeCode": "PS",
+    "insuranceType": "Point of Service (POS)",
+    "planCoverage": "HMOPOS-AARP MEDICARE ADVANTAGE EXTRAS FROM UHC AZ-",
+    "authOrCertIndicator": "Y",
+    "benefitsAdditionalInformation": {
+     "policyNumber": "00327",
+     "planNetworkIdNumber": "H0609-046-000"
+    },
+    "benefitsDateInformation": {
+     "planBegin": "20260101"
+    },
+    "benefitsRelatedEntity": {
+     "entityIdentifier": "Primary Payer",
+     "entityType": "Non-Person Entity",
+     "entityName": "UNITEDHEALTHCARE",
+     "entityIdentification": "PI",
+     "entityIdentificationValue": "LIFE1",
+     "address": {
+      "address1": "PO BOX 30539",
+      "city": "SALT LAKE CITY",
+      "state": "UT",
+      "postalCode": "84130"
+     },
+     "contactInformation": {
+      "contacts": [
+       {
+        "communicationMode": "Uniform Resource Locator (URL)",
+        "communicationNumber": "WWW.UHCPROVIDER.COM"
+       }
+      ]
+     }
+    },
+    "benefitsRelatedEntities": [
+     {
+      "entityIdentifier": "Primary Payer",
+      "entityType": "Non-Person Entity",
+      "entityName": "UNITEDHEALTHCARE",
+      "entityIdentification": "PI",
+      "entityIdentificationValue": "LIFE1",
+      "address": {
+       "address1": "PO BOX 30539",
+       "city": "SALT LAKE CITY",
+       "state": "UT",
+       "postalCode": "84130"
+      },
+      "contactInformation": {
+       "contacts": [
+        {
+         "communicationMode": "Uniform Resource Locator (URL)",
+         "communicationNumber": "WWW.UHCPROVIDER.COM"
+        }
+       ]
+      }
+     },
+     {
+      "entityIdentifier": "Utilization Management Organization",
+      "entityType": "Non-Person Entity",
+      "entityName": "OPTUM HEALTH NETWORKS AZ",
+      "contactInformation": {
+       "contacts": [
+        {
+         "communicationMode": "Telephone",
+         "communicationNumber": "8773702845"
+        }
+       ]
+      }
+     }
+    ],
+    "additionalInformation": [
+     {
+      "description": "PCP TO SUBMIT A SPECIALIST REFERRAL"
+     },
+     {
+      "description": "A PRIOR AUTHORIZATION OR NOTIFICATION INQUIRY REQUEST MAY BE SUBMITTED"
+     },
+     {
+      "description": "ACCESS TO PASSPORT BENEFIT"
+     }
+    ]
+   },
+   {
+    "code": "G",
+    "name": "Out of Pocket (Stop Loss)",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "30"
+    ],
+    "serviceTypes": [
+     "Health Benefit Plan Coverage"
+    ],
+    "insuranceTypeCode": "PS",
+    "insuranceType": "Point of Service (POS)",
+    "timeQualifierCode": "23",
+    "timeQualifier": "Calendar Year",
+    "benefitAmount": "4200",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsDateInformation": {
+     "planBegin": "20260101"
+    }
+   },
+   {
+    "code": "G",
+    "name": "Out of Pocket (Stop Loss)",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "30"
+    ],
+    "serviceTypes": [
+     "Health Benefit Plan Coverage"
+    ],
+    "insuranceTypeCode": "PS",
+    "insuranceType": "Point of Service (POS)",
+    "timeQualifierCode": "29",
+    "timeQualifier": "Remaining",
+    "benefitAmount": "3292.72",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsDateInformation": {
+     "planBegin": "20260101"
+    }
+   },
+   {
+    "code": "G",
+    "name": "Out of Pocket (Stop Loss)",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "30"
+    ],
+    "serviceTypes": [
+     "Health Benefit Plan Coverage"
+    ],
+    "insuranceTypeCode": "PS",
+    "insuranceType": "Point of Service (POS)",
+    "timeQualifierCode": "24",
+    "timeQualifier": "Year to Date",
+    "benefitAmount": "907.28",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsDateInformation": {
+     "planBegin": "20260101"
+    }
+   },
+   {
+    "code": "L",
+    "name": "Primary Care Provider",
+    "benefitsRelatedEntity": {
+     "entityIdentifier": "Primary Care Provider",
+     "entityType": "Person",
+     "entityName": "SULLIVAN",
+     "entityFirstname": "SHAWN",
+     "entityIdentification": "XX",
+     "entityIdentificationValue": "1972544450",
+     "address": {
+      "address1": "3295 N DRINKWATER BLVD STE 5",
+      "city": "SCOTTSDALE",
+      "state": "AZ",
+      "postalCode": "85251"
+     },
+     "contactInformation": {
+      "contacts": [
+       {
+        "communicationMode": "Telephone",
+        "communicationNumber": "4809490298"
+       },
+       {
+        "communicationMode": "Facsimile",
+        "communicationNumber": "0000000000"
+       }
+      ]
+     },
+     "providerInformation": {
+      "providerCode": "PC",
+      "referenceIdentification": "207Q00000X"
+     }
+    },
+    "benefitsRelatedEntities": [
+     {
+      "entityIdentifier": "Primary Care Provider",
+      "entityType": "Person",
+      "entityName": "SULLIVAN",
+      "entityFirstname": "SHAWN",
+      "entityIdentification": "XX",
+      "entityIdentificationValue": "1972544450",
+      "address": {
+       "address1": "3295 N DRINKWATER BLVD STE 5",
+       "city": "SCOTTSDALE",
+       "state": "AZ",
+       "postalCode": "85251"
+      },
+      "contactInformation": {
+       "contacts": [
+        {
+         "communicationMode": "Telephone",
+         "communicationNumber": "4809490298"
+        },
+        {
+         "communicationMode": "Facsimile",
+         "communicationNumber": "0000000000"
+        }
+       ]
+      },
+      "providerInformation": {
+       "providerCode": "PC",
+       "referenceIdentification": "207Q00000X"
+      }
+     }
+    ]
+   },
+   {
+    "code": "1",
+    "name": "Active Coverage",
+    "serviceTypeCodes": [
+     "98"
+    ],
+    "serviceTypes": [
+     "Professional (Physician) Visit - Office"
+    ],
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsDateInformation": {
+     "planBegin": "20260101"
+    },
+    "additionalInformation": [
+     {
+      "description": "OFFICE VISIT PCP"
+     }
+    ]
+   },
+   {
+    "code": "1",
+    "name": "Active Coverage",
+    "serviceTypeCodes": [
+     "48"
+    ],
+    "serviceTypes": [
+     "Hospital - Inpatient"
+    ],
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsDateInformation": {
+     "planBegin": "20260101"
+    },
+    "additionalInformation": [
+     {
+      "description": "INPATIENT HOSPITAL"
+     }
+    ]
+   },
+   {
+    "code": "1",
+    "name": "Active Coverage",
+    "serviceTypeCodes": [
+     "50"
+    ],
+    "serviceTypes": [
+     "Hospital - Outpatient"
+    ],
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsDateInformation": {
+     "planBegin": "20260101"
+    },
+    "additionalInformation": [
+     {
+      "description": "OUTPATIENT SURGERY"
+     }
+    ]
+   },
+   {
+    "code": "1",
+    "name": "Active Coverage",
+    "serviceTypeCodes": [
+     "33"
+    ],
+    "serviceTypes": [
+     "Chiropractic"
+    ],
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsDateInformation": {
+     "planBegin": "20260101"
+    },
+    "additionalInformation": [
+     {
+      "description": "CHIROPRACTIC"
+     }
+    ]
+   },
+   {
+    "code": "1",
+    "name": "Active Coverage",
+    "serviceTypeCodes": [
+     "96",
+     "1"
+    ],
+    "serviceTypes": [
+     "Professional (Physician)",
+     "Medical Care"
+    ],
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsDateInformation": {
+     "planBegin": "20260101"
+    },
+    "additionalInformation": [
+     {
+      "description": "OFFICE VISIT SPECIALIST"
+     }
+    ]
+   },
+   {
+    "code": "1",
+    "name": "Active Coverage",
+    "serviceTypeCodes": [
+     "47",
+     "50"
+    ],
+    "serviceTypes": [
+     "Hospital",
+     "Hospital - Outpatient"
+    ],
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsDateInformation": {
+     "planBegin": "20260101"
+    },
+    "additionalInformation": [
+     {
+      "description": "OUTPATIENT HOSPITAL"
+     }
+    ]
+   },
+   {
+    "code": "1",
+    "name": "Active Coverage",
+    "serviceTypeCodes": [
+     "MH"
+    ],
+    "serviceTypes": [
+     "Mental Health"
+    ],
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsDateInformation": {
+     "planBegin": "20260101"
+    },
+    "additionalInformation": [
+     {
+      "description": "MENTAL HEALTH INDIVIDUAL VISIT"
+     }
+    ]
+   },
+   {
+    "code": "1",
+    "name": "Active Coverage",
+    "serviceTypeCodes": [
+     "86",
+     "UC"
+    ],
+    "serviceTypes": [
+     "Emergency Services",
+     "Urgent Care"
+    ],
+    "inPlanNetworkIndicatorCode": "W",
+    "inPlanNetworkIndicator": "Not Applicable",
+    "benefitsDateInformation": {
+     "planBegin": "20260101"
+    }
+   },
+   {
+    "code": "1",
+    "name": "Active Coverage",
+    "serviceTypeCodes": [
+     "PT"
+    ],
+    "serviceTypes": [
+     "Physical Therapy"
+    ],
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsDateInformation": {
+     "planBegin": "20260101"
+    },
+    "additionalInformation": [
+     {
+      "description": "PHYSICAL THERAPY"
+     }
+    ]
+   },
+   {
+    "code": "A",
+    "name": "Co-Insurance",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "48"
+    ],
+    "serviceTypes": [
+     "Hospital - Inpatient"
+    ],
+    "timeQualifierCode": "7",
+    "timeQualifier": "Day",
+    "benefitPercent": "0",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsDateInformation": {
+     "planBegin": "20260101"
+    },
+    "benefitsServiceDelivery": [
+     {
+      "timePeriodQualifierCode": "31",
+      "timePeriodQualifier": "Not Exceeded",
+      "numOfPeriods": "7"
+     }
+    ],
+    "additionalInformation": [
+     {
+      "description": "INPATIENT HOSPITAL"
+     }
+    ]
+   },
+   {
+    "code": "A",
+    "name": "Co-Insurance",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "48"
+    ],
+    "serviceTypes": [
+     "Hospital - Inpatient"
+    ],
+    "timeQualifierCode": "7",
+    "timeQualifier": "Day",
+    "benefitPercent": "0",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsDateInformation": {
+     "planBegin": "20260101"
+    },
+    "benefitsServiceDelivery": [
+     {
+      "timePeriodQualifierCode": "29",
+      "timePeriodQualifier": "Remaining"
+     }
+    ],
+    "additionalInformation": [
+     {
+      "description": "INPATIENT HOSPITAL"
+     }
+    ]
+   },
+   {
+    "code": "A",
+    "name": "Co-Insurance",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "33"
+    ],
+    "serviceTypes": [
+     "Chiropractic"
+    ],
+    "timeQualifierCode": "7",
+    "timeQualifier": "Day",
+    "benefitPercent": "0",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsDateInformation": {
+     "planBegin": "20260101"
+    },
+    "additionalInformation": [
+     {
+      "description": "CHIROPRACTIC"
+     }
+    ]
+   },
+   {
+    "code": "A",
+    "name": "Co-Insurance",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "9"
+    ],
+    "serviceTypes": [
+     "Other Medical"
+    ],
+    "timeQualifierCode": "27",
+    "timeQualifier": "Visit",
+    "benefitPercent": "0",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsDateInformation": {
+     "planBegin": "20260101"
+    },
+    "additionalInformation": [
+     {
+      "description": "VIRTUAL VISITS/TELEMEDICINE"
+     }
+    ]
+   },
+   {
+    "code": "A",
+    "name": "Co-Insurance",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "86",
+     "UC"
+    ],
+    "serviceTypes": [
+     "Emergency Services",
+     "Urgent Care"
+    ],
+    "timeQualifierCode": "7",
+    "timeQualifier": "Day",
+    "benefitPercent": "0",
+    "inPlanNetworkIndicatorCode": "W",
+    "inPlanNetworkIndicator": "Not Applicable",
+    "benefitsDateInformation": {
+     "planBegin": "20260101"
+    }
+   },
+   {
+    "code": "A",
+    "name": "Co-Insurance",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "96"
+    ],
+    "serviceTypes": [
+     "Professional (Physician)"
+    ],
+    "timeQualifierCode": "7",
+    "timeQualifier": "Day",
+    "benefitPercent": "0",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsDateInformation": {
+     "planBegin": "20260101"
+    },
+    "additionalInformation": [
+     {
+      "description": "OFFICE VISIT SPECIALIST"
+     }
+    ]
+   },
+   {
+    "code": "A",
+    "name": "Co-Insurance",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "50"
+    ],
+    "serviceTypes": [
+     "Hospital - Outpatient"
+    ],
+    "timeQualifierCode": "7",
+    "timeQualifier": "Day",
+    "benefitPercent": "0",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsDateInformation": {
+     "planBegin": "20260101"
+    },
+    "additionalInformation": [
+     {
+      "description": "OUTPATIENT SURGERY"
+     }
+    ]
+   },
+   {
+    "code": "A",
+    "name": "Co-Insurance",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "PT"
+    ],
+    "serviceTypes": [
+     "Physical Therapy"
+    ],
+    "timeQualifierCode": "7",
+    "timeQualifier": "Day",
+    "benefitPercent": "0",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsDateInformation": {
+     "planBegin": "20260101"
+    },
+    "additionalInformation": [
+     {
+      "description": "PHYSICAL THERAPY"
+     }
+    ]
+   },
+   {
+    "code": "A",
+    "name": "Co-Insurance",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "50"
+    ],
+    "serviceTypes": [
+     "Hospital - Outpatient"
+    ],
+    "timeQualifierCode": "7",
+    "timeQualifier": "Day",
+    "benefitPercent": "0",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsDateInformation": {
+     "planBegin": "20260101"
+    },
+    "additionalInformation": [
+     {
+      "description": "OUTPATIENT HOSPITAL"
+     }
+    ]
+   },
+   {
+    "code": "A",
+    "name": "Co-Insurance",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "98"
+    ],
+    "serviceTypes": [
+     "Professional (Physician) Visit - Office"
+    ],
+    "timeQualifierCode": "27",
+    "timeQualifier": "Visit",
+    "benefitPercent": "0",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsDateInformation": {
+     "planBegin": "20260101"
+    },
+    "additionalInformation": [
+     {
+      "description": "OFFICE VISIT PCP"
+     }
+    ]
+   },
+   {
+    "code": "B",
+    "name": "Co-Payment",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "48"
+    ],
+    "serviceTypes": [
+     "Hospital - Inpatient"
+    ],
+    "timeQualifierCode": "7",
+    "timeQualifier": "Day",
+    "benefitAmount": "295",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsDateInformation": {
+     "planBegin": "20260101"
+    },
+    "benefitsServiceDelivery": [
+     {
+      "timePeriodQualifierCode": "31",
+      "timePeriodQualifier": "Not Exceeded",
+      "numOfPeriods": "7"
+     }
+    ],
+    "additionalInformation": [
+     {
+      "description": "INPATIENT HOSPITAL"
+     }
+    ]
+   },
+   {
+    "code": "B",
+    "name": "Co-Payment",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "48"
+    ],
+    "serviceTypes": [
+     "Hospital - Inpatient"
+    ],
+    "timeQualifierCode": "7",
+    "timeQualifier": "Day",
+    "benefitAmount": "0",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsDateInformation": {
+     "planBegin": "20260101"
+    },
+    "benefitsServiceDelivery": [
+     {
+      "timePeriodQualifierCode": "29",
+      "timePeriodQualifier": "Remaining"
+     }
+    ],
+    "additionalInformation": [
+     {
+      "description": "INPATIENT HOSPITAL"
+     }
+    ]
+   },
+   {
+    "code": "B",
+    "name": "Co-Payment",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "86"
+    ],
+    "serviceTypes": [
+     "Emergency Services"
+    ],
+    "timeQualifierCode": "7",
+    "timeQualifier": "Day",
+    "benefitAmount": "150",
+    "inPlanNetworkIndicatorCode": "W",
+    "inPlanNetworkIndicator": "Not Applicable",
+    "benefitsDateInformation": {
+     "planBegin": "20260101"
+    }
+   },
+   {
+    "code": "B",
+    "name": "Co-Payment",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "PT"
+    ],
+    "serviceTypes": [
+     "Physical Therapy"
+    ],
+    "timeQualifierCode": "7",
+    "timeQualifier": "Day",
+    "benefitAmount": "20",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsDateInformation": {
+     "planBegin": "20260101"
+    },
+    "additionalInformation": [
+     {
+      "description": "PHYSICAL THERAPY"
+     }
+    ]
+   },
+   {
+    "code": "B",
+    "name": "Co-Payment",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "98"
+    ],
+    "serviceTypes": [
+     "Professional (Physician) Visit - Office"
+    ],
+    "timeQualifierCode": "27",
+    "timeQualifier": "Visit",
+    "benefitAmount": "0",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsDateInformation": {
+     "planBegin": "20260101"
+    },
+    "additionalInformation": [
+     {
+      "description": "OFFICE VISIT PCP"
+     }
+    ]
+   },
+   {
+    "code": "B",
+    "name": "Co-Payment",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "33"
+    ],
+    "serviceTypes": [
+     "Chiropractic"
+    ],
+    "timeQualifierCode": "7",
+    "timeQualifier": "Day",
+    "benefitAmount": "10",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsDateInformation": {
+     "planBegin": "20260101"
+    },
+    "additionalInformation": [
+     {
+      "description": "CHIROPRACTIC"
+     }
+    ]
+   },
+   {
+    "code": "B",
+    "name": "Co-Payment",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "50"
+    ],
+    "serviceTypes": [
+     "Hospital - Outpatient"
+    ],
+    "timeQualifierCode": "7",
+    "timeQualifier": "Day",
+    "benefitAmount": "295",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsDateInformation": {
+     "planBegin": "20260101"
+    },
+    "additionalInformation": [
+     {
+      "description": "OUTPATIENT SURGERY"
+     }
+    ]
+   },
+   {
+    "code": "B",
+    "name": "Co-Payment",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "96"
+    ],
+    "serviceTypes": [
+     "Professional (Physician)"
+    ],
+    "timeQualifierCode": "7",
+    "timeQualifier": "Day",
+    "benefitAmount": "45",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsDateInformation": {
+     "planBegin": "20260101"
+    },
+    "additionalInformation": [
+     {
+      "description": "OFFICE VISIT SPECIALIST"
+     }
+    ]
+   },
+   {
+    "code": "B",
+    "name": "Co-Payment",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "9"
+    ],
+    "serviceTypes": [
+     "Other Medical"
+    ],
+    "timeQualifierCode": "27",
+    "timeQualifier": "Visit",
+    "benefitAmount": "0",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsDateInformation": {
+     "planBegin": "20260101"
+    },
+    "additionalInformation": [
+     {
+      "description": "VIRTUAL VISITS/TELEMEDICINE"
+     }
+    ]
+   },
+   {
+    "code": "B",
+    "name": "Co-Payment",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "UC"
+    ],
+    "serviceTypes": [
+     "Urgent Care"
+    ],
+    "timeQualifierCode": "7",
+    "timeQualifier": "Day",
+    "benefitAmount": "65",
+    "inPlanNetworkIndicatorCode": "W",
+    "inPlanNetworkIndicator": "Not Applicable",
+    "benefitsDateInformation": {
+     "planBegin": "20260101"
+    }
+   },
+   {
+    "code": "B",
+    "name": "Co-Payment",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "50"
+    ],
+    "serviceTypes": [
+     "Hospital - Outpatient"
+    ],
+    "timeQualifierCode": "7",
+    "timeQualifier": "Day",
+    "benefitAmount": "295",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsDateInformation": {
+     "planBegin": "20260101"
+    },
+    "additionalInformation": [
+     {
+      "description": "OUTPATIENT HOSPITAL"
+     }
+    ]
+   },
+   {
+    "code": "R",
+    "name": "Other or Additional Payor",
+    "serviceTypeCodes": [
+     "88"
+    ],
+    "serviceTypes": [
+     "Pharmacy"
+    ],
+    "benefitsDateInformation": {
+     "coordinationOfBenefits": "20101011-99991231"
+    },
+    "benefitsRelatedEntity": {
+     "entityIdentifier": "Payer",
+     "entityType": "Non-Person Entity",
+     "entityName": "SCF ARIZONA"
+    },
+    "benefitsRelatedEntities": [
+     {
+      "entityIdentifier": "Payer",
+      "entityType": "Non-Person Entity",
+      "entityName": "SCF ARIZONA"
+     }
+    ]
+   },
+   {
+    "code": "1",
+    "name": "Active Coverage",
+    "serviceTypeCodes": [
+     "30"
+    ],
+    "serviceTypes": [
+     "Health Benefit Plan Coverage"
+    ],
+    "planCoverage": "SPECTERA VISION PLAN",
+    "benefitsDateInformation": {
+     "plan": "20260101-20261231"
+    },
+    "benefitsRelatedEntity": {
+     "entityIdentifier": "Payer",
+     "entityType": "Non-Person Entity",
+     "entityName": "UNITEDHEALTHCARE",
+     "entityIdentification": "PI",
+     "entityIdentificationValue": "87726",
+     "address": {
+      "address1": "PO BOX 30978",
+      "city": "SALT LAKE CITY",
+      "state": "UT",
+      "postalCode": "841300978"
+     }
+    },
+    "benefitsRelatedEntities": [
+     {
+      "entityIdentifier": "Payer",
+      "entityType": "Non-Person Entity",
+      "entityName": "UNITEDHEALTHCARE",
+      "entityIdentification": "PI",
+      "entityIdentificationValue": "87726",
+      "address": {
+       "address1": "PO BOX 30978",
+       "city": "SALT LAKE CITY",
+       "state": "UT",
+       "postalCode": "841300978"
+      }
+     }
+    ]
+   },
+   {
+    "code": "C",
+    "name": "Deductible",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "30"
+    ],
+    "serviceTypes": [
+     "Health Benefit Plan Coverage"
+    ],
+    "timeQualifierCode": "23",
+    "timeQualifier": "Calendar Year",
+    "benefitAmount": "0",
+    "inPlanNetworkIndicatorCode": "W",
+    "inPlanNetworkIndicator": "Not Applicable",
+    "benefitsDateInformation": {
+     "plan": "20260101-20261231"
+    }
+   },
+   {
+    "code": "C",
+    "name": "Deductible",
+    "coverageLevelCode": "FAM",
+    "coverageLevel": "Family",
+    "serviceTypeCodes": [
+     "30"
+    ],
+    "serviceTypes": [
+     "Health Benefit Plan Coverage"
+    ],
+    "timeQualifierCode": "23",
+    "timeQualifier": "Calendar Year",
+    "benefitAmount": "0",
+    "inPlanNetworkIndicatorCode": "W",
+    "inPlanNetworkIndicator": "Not Applicable",
+    "benefitsDateInformation": {
+     "plan": "20260101-20261231"
+    }
+   },
+   {
+    "code": "G",
+    "name": "Out of Pocket (Stop Loss)",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "30"
+    ],
+    "serviceTypes": [
+     "Health Benefit Plan Coverage"
+    ],
+    "timeQualifierCode": "23",
+    "timeQualifier": "Calendar Year",
+    "benefitAmount": "0",
+    "inPlanNetworkIndicatorCode": "W",
+    "inPlanNetworkIndicator": "Not Applicable",
+    "benefitsDateInformation": {
+     "plan": "20260101-20261231"
+    }
+   },
+   {
+    "code": "G",
+    "name": "Out of Pocket (Stop Loss)",
+    "coverageLevelCode": "FAM",
+    "coverageLevel": "Family",
+    "serviceTypeCodes": [
+     "30"
+    ],
+    "serviceTypes": [
+     "Health Benefit Plan Coverage"
+    ],
+    "timeQualifierCode": "23",
+    "timeQualifier": "Calendar Year",
+    "benefitAmount": "0",
+    "inPlanNetworkIndicatorCode": "W",
+    "inPlanNetworkIndicator": "Not Applicable",
+    "benefitsDateInformation": {
+     "plan": "20260101-20261231"
+    }
+   },
+   {
+    "code": "1",
+    "name": "Active Coverage",
+    "serviceTypeCodes": [
+     "AL"
+    ],
+    "serviceTypes": [
+     "Vision (Optometry)"
+    ],
+    "benefitsDateInformation": {
+     "plan": "20260101-20261231"
+    }
+   },
+   {
+    "code": "U",
+    "name": "Contact Following Entity for Eligibility or Benefit Information",
+    "serviceTypeCodes": [
+     "88"
+    ],
+    "serviceTypes": [
+     "Pharmacy"
+    ],
+    "benefitsRelatedEntity": {
+     "entityIdentifier": "Vendor",
+     "entityType": "Non-Person Entity",
+     "entityName": "OPTUMRX",
+     "contactInformation": {
+      "contacts": [
+       {
+        "communicationMode": "Uniform Resource Locator (URL)",
+        "communicationNumber": "PROFESSIONALS.OPTUMRX.COM"
+       }
+      ]
+     }
+    },
+    "benefitsRelatedEntities": [
+     {
+      "entityIdentifier": "Vendor",
+      "entityType": "Non-Person Entity",
+      "entityName": "OPTUMRX",
+      "contactInformation": {
+       "contacts": [
+        {
+         "communicationMode": "Uniform Resource Locator (URL)",
+         "communicationNumber": "PROFESSIONALS.OPTUMRX.COM"
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "code": "U",
+    "name": "Contact Following Entity for Eligibility or Benefit Information",
+    "serviceTypeCodes": [
+     "35"
+    ],
+    "serviceTypes": [
+     "Dental Care"
+    ],
+    "benefitsRelatedEntity": {
+     "entityIdentifier": "Vendor",
+     "entityType": "Non-Person Entity",
+     "entityName": "UNITEDHEALTHCARE DENTAL",
+     "contactInformation": {
+      "contacts": [
+       {
+        "communicationMode": "Uniform Resource Locator (URL)",
+        "communicationNumber": "WWW.DBP.COM"
+       }
+      ]
+     }
+    },
+    "benefitsRelatedEntities": [
+     {
+      "entityIdentifier": "Vendor",
+      "entityType": "Non-Person Entity",
+      "entityName": "UNITEDHEALTHCARE DENTAL",
+      "contactInformation": {
+       "contacts": [
+        {
+         "communicationMode": "Uniform Resource Locator (URL)",
+         "communicationNumber": "WWW.DBP.COM"
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "code": "X",
+    "name": "Health Care Facility",
+    "benefitsRelatedEntity": {
+     "entityIdentifier": "Provider",
+     "entityType": "Non-Person Entity",
+     "entityName": "GHASEM DARIAN",
+     "entityIdentification": "XX",
+     "entityIdentificationValue": "1942363775"
+    },
+    "benefitsRelatedEntities": [
+     {
+      "entityIdentifier": "Provider",
+      "entityType": "Non-Person Entity",
+      "entityName": "GHASEM DARIAN",
+      "entityIdentification": "XX",
+      "entityIdentificationValue": "1942363775"
+     }
+    ]
+   }
+  ],
+  "errors": [],
+  "x12": "ISA*00*          *00*          *ZZ*STEDI          *01*117151744      *260719*1812*^*00501*823761081*0*P*`~GS*HB*STEDI*117151744*20260719*1312*823761081*X*005010X279A1~ST*271*823761081*005010X279A1~BHT*0022*11*01KXXS7ZR6DHF9NFPDK9CYMGHW*20260719*141205~HL*1**20*1~NM1*PR*2*UNITEDHEALTHCARE DENTAL*****PI*52133~HL*2*1*21*1~NM1*1P*2*GHASEM DARIAN*****XX*1942363775~HL*3*2*22*0~TRN*1*01KXXS7ZRJJSWE3KGS1BGEBFYM*3117151744~NM1*IL*1*JOHNSON*JOHN*M***MI*902014476~N3*3413 EAST TURNEY AVENUE~N4*PHOENIX*AZ*85018~DMG*D8*19380213*M~EB*R~REF*F6*6JQ6G48XA61~EB*1**30*PS*HMOPOS-AARP MEDICARE ADVANTAGE EXTRAS FROM UHC AZ-******Y~REF*1L*00327~REF*N6*H0609-046-000~DTP*346*D8*20260101~MSG*PCP TO SUBMIT A SPECIALIST REFERRAL~MSG*A PRIOR AUTHORIZATION OR NOTIFICATION INQUIRY REQUEST MAY BE SUBMITTED~MSG*ACCESS TO PASSPORT BENEFIT~LS*2120~NM1*PRP*2*UNITEDHEALTHCARE*****PI*LIFE1~N3*PO BOX 30539~N4*SALT LAKE CITY*UT*84130~PER*IC**UR*WWW.UHCPROVIDER.COM~NM1*X3*2*OPTUM HEALTH NETWORKS AZ~PER*IC**TE*8773702845~LE*2120~EB*G*IND*30*PS**23*4200*****Y~DTP*346*D8*20260101~EB*G*IND*30*PS**29*3292.72*****Y~DTP*346*D8*20260101~EB*G*IND*30*PS**24*907.28*****Y~DTP*346*D8*20260101~EB*L~LS*2120~NM1*P3*1*SULLIVAN*SHAWN****XX*1972544450~N3*3295 N DRINKWATER BLVD STE 5~N4*SCOTTSDALE*AZ*85251~PER*IC**TE*4809490298*FX*0000000000~PRV*PC*PXC*207Q00000X~LE*2120~EB*1**98*********Y~DTP*346*D8*20260101~MSG*OFFICE VISIT PCP~EB*1**48*********Y~DTP*346*D8*20260101~MSG*INPATIENT HOSPITAL~EB*1**50*********Y~DTP*346*D8*20260101~MSG*OUTPATIENT SURGERY~EB*1**33*********Y~DTP*346*D8*20260101~MSG*CHIROPRACTIC~EB*1**96^1*********Y~DTP*346*D8*20260101~MSG*OFFICE VISIT SPECIALIST~EB*1**47^50*********Y~DTP*346*D8*20260101~MSG*OUTPATIENT HOSPITAL~EB*1**MH*********Y~DTP*346*D8*20260101~MSG*MENTAL HEALTH INDIVIDUAL VISIT~EB*1**86^UC*********W~DTP*346*D8*20260101~EB*1**PT*********Y~DTP*346*D8*20260101~MSG*PHYSICAL THERAPY~EB*A*IND*48***7**0****Y~HSD*****31*7~DTP*346*D8*20260101~MSG*INPATIENT HOSPITAL~EB*A*IND*48***7**0****Y~HSD*****29~DTP*346*D8*20260101~MSG*INPATIENT HOSPITAL~EB*A*IND*33***7**0****Y~DTP*346*D8*20260101~MSG*CHIROPRACTIC~EB*A*IND*9***27**0****Y~DTP*346*D8*20260101~MSG*VIRTUAL VISITS/TELEMEDICINE~EB*A*IND*86^UC***7**0****W~DTP*346*D8*20260101~EB*A*IND*96***7**0****Y~DTP*346*D8*20260101~MSG*OFFICE VISIT SPECIALIST~EB*A*IND*50***7**0****Y~DTP*346*D8*20260101~MSG*OUTPATIENT SURGERY~EB*A*IND*PT***7**0****Y~DTP*346*D8*20260101~MSG*PHYSICAL THERAPY~EB*A*IND*50***7**0****Y~DTP*346*D8*20260101~MSG*OUTPATIENT HOSPITAL~EB*A*IND*98***27**0****Y~DTP*346*D8*20260101~MSG*OFFICE VISIT PCP~EB*B*IND*48***7*295*****Y~HSD*****31*7~DTP*346*D8*20260101~MSG*INPATIENT HOSPITAL~EB*B*IND*48***7*0*****Y~HSD*****29~DTP*346*D8*20260101~MSG*INPATIENT HOSPITAL~EB*B*IND*86***7*150*****W~DTP*346*D8*20260101~EB*B*IND*PT***7*20*****Y~DTP*346*D8*20260101~MSG*PHYSICAL THERAPY~EB*B*IND*98***27*0*****Y~DTP*346*D8*20260101~MSG*OFFICE VISIT PCP~EB*B*IND*33***7*10*****Y~DTP*346*D8*20260101~MSG*CHIROPRACTIC~EB*B*IND*50***7*295*****Y~DTP*346*D8*20260101~MSG*OUTPATIENT SURGERY~EB*B*IND*96***7*45*****Y~DTP*346*D8*20260101~MSG*OFFICE VISIT SPECIALIST~EB*B*IND*9***27*0*****Y~DTP*346*D8*20260101~MSG*VIRTUAL VISITS/TELEMEDICINE~EB*B*IND*UC***7*65*****W~DTP*346*D8*20260101~EB*B*IND*50***7*295*****Y~DTP*346*D8*20260101~MSG*OUTPATIENT HOSPITAL~EB*R**88~DTP*290*RD8*20101011-99991231~LS*2120~NM1*PR*2*SCF ARIZONA~LE*2120~EB*1**30**SPECTERA VISION PLAN~DTP*291*RD8*20260101-20261231~LS*2120~NM1*PR*2*UNITEDHEALTHCARE*****PI*87726~N3*PO BOX 30978~N4*SALT LAKE CITY*UT*841300978~LE*2120~EB*C*IND*30***23*0*****W~DTP*291*RD8*20260101-20261231~EB*C*FAM*30***23*0*****W~DTP*291*RD8*20260101-20261231~EB*G*IND*30***23*0*****W~DTP*291*RD8*20260101-20261231~EB*G*FAM*30***23*0*****W~DTP*291*RD8*20260101-20261231~EB*1**AL~DTP*291*RD8*20260101-20261231~EB*U**88~LS*2120~NM1*VN*2*OPTUMRX~PER*IC**UR*PROFESSIONALS.OPTUMRX.COM~LE*2120~EB*U**35~LS*2120~NM1*VN*2*UNITEDHEALTHCARE DENTAL~PER*IC**UR*WWW.DBP.COM~LE*2120~EB*X~LS*2120~NM1*1P*2*GHASEM DARIAN*****XX*1942363775~LE*2120~SE*170*823761081~GE*1*823761081~IEA*1*823761081~",
+  "eligibilitySearchId": "019f7b93-ff06-7092-8efe-3ccfcc1220f5",
+  "id": "ec_019f7b93-ff05-7873-9ab5-c38d4b3413bc"
+ },
+ "singles": {
+  "D5140": {
+   "meta": {
+    "senderId": "STEDI",
+    "submitterId": "117151744",
+    "applicationMode": "production",
+    "traceId": "01KXXSDQA5BZTNT49SSJ6FGT7R",
+    "outboundTraceId": "01KXXSDQA5BZTNT49SSJ6FGT7R"
+   },
+   "controlNumber": "823773329",
+   "reassociationKey": "823773329",
+   "tradingPartnerServiceId": "52133",
+   "provider": {
+    "providerName": "GHASEM DARIAN",
+    "entityIdentifier": "Provider",
+    "entityType": "Non-Person Entity",
+    "npi": "1942363775"
+   },
+   "subscriber": {
+    "memberId": "902014476",
+    "firstName": "JOHN",
+    "lastName": "JOHNSON",
+    "middleName": "M",
+    "gender": "M",
+    "entityIdentifier": "Insured or Subscriber",
+    "entityType": "Person",
+    "dateOfBirth": "19380213",
+    "address": {
+     "address1": "3413 EAST TURNEY AVENUE",
+     "city": "PHOENIX",
+     "state": "AZ",
+     "postalCode": "85018"
+    }
+   },
+   "subscriberTraceNumbers": [
+    {
+     "traceTypeCode": "1",
+     "traceType": "Current Transaction Trace Numbers",
+     "referenceIdentification": "01KXXSDQANEXJYWPQTMFCBDTSX",
+     "originatingCompanyIdentifier": "3117151744"
+    }
+   ],
+   "payer": {
+    "entityIdentifier": "Payer",
+    "entityType": "Non-Person Entity",
+    "name": "UNITEDHEALTHCARE DENTAL",
+    "payorIdentification": "52133"
+   },
+   "planStatus": [
+    {
+     "statusCode": "1",
+     "status": "Active Coverage",
+     "planDetails": "HMOPOS-AARP MEDICARE ADVANTAGE EXTRAS FROM UHC AZ-",
+     "serviceTypeCodes": [
+      "30"
+     ]
+    },
+    {
+     "statusCode": "1",
+     "status": "Active Coverage",
+     "serviceTypeCodes": [
+      "98"
+     ]
+    },
+    {
+     "statusCode": "1",
+     "status": "Active Coverage",
+     "serviceTypeCodes": [
+      "48"
+     ]
+    },
+    {
+     "statusCode": "1",
+     "status": "Active Coverage",
+     "serviceTypeCodes": [
+      "50"
+     ]
+    },
+    {
+     "statusCode": "1",
+     "status": "Active Coverage",
+     "serviceTypeCodes": [
+      "33"
+     ]
+    },
+    {
+     "statusCode": "1",
+     "status": "Active Coverage",
+     "serviceTypeCodes": [
+      "96",
+      "1"
+     ]
+    },
+    {
+     "statusCode": "1",
+     "status": "Active Coverage",
+     "serviceTypeCodes": [
+      "47",
+      "50"
+     ]
+    },
+    {
+     "statusCode": "1",
+     "status": "Active Coverage",
+     "serviceTypeCodes": [
+      "MH"
+     ]
+    },
+    {
+     "statusCode": "1",
+     "status": "Active Coverage",
+     "serviceTypeCodes": [
+      "86",
+      "UC"
+     ]
+    },
+    {
+     "statusCode": "1",
+     "status": "Active Coverage",
+     "serviceTypeCodes": [
+      "PT"
+     ]
+    },
+    {
+     "statusCode": "1",
+     "status": "Active Coverage",
+     "planDetails": "SPECTERA VISION PLAN",
+     "serviceTypeCodes": [
+      "30"
+     ]
+    },
+    {
+     "statusCode": "1",
+     "status": "Active Coverage",
+     "serviceTypeCodes": [
+      "AL"
+     ]
+    }
+   ],
+   "benefitsInformation": [
+    {
+     "code": "R",
+     "name": "Other or Additional Payor",
+     "benefitsAdditionalInformation": {
+      "hicNumber": "6JQ6G48XA61"
+     }
+    },
+    {
+     "code": "1",
+     "name": "Active Coverage",
+     "serviceTypeCodes": [
+      "30"
+     ],
+     "serviceTypes": [
+      "Health Benefit Plan Coverage"
+     ],
+     "insuranceTypeCode": "PS",
+     "insuranceType": "Point of Service (POS)",
+     "planCoverage": "HMOPOS-AARP MEDICARE ADVANTAGE EXTRAS FROM UHC AZ-",
+     "authOrCertIndicator": "Y",
+     "benefitsAdditionalInformation": {
+      "policyNumber": "00327",
+      "planNetworkIdNumber": "H0609-046-000"
+     },
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "benefitsRelatedEntity": {
+      "entityIdentifier": "Primary Payer",
+      "entityType": "Non-Person Entity",
+      "entityName": "UNITEDHEALTHCARE",
+      "entityIdentification": "PI",
+      "entityIdentificationValue": "LIFE1",
+      "address": {
+       "address1": "PO BOX 30539",
+       "city": "SALT LAKE CITY",
+       "state": "UT",
+       "postalCode": "84130"
+      },
+      "contactInformation": {
+       "contacts": [
+        {
+         "communicationMode": "Uniform Resource Locator (URL)",
+         "communicationNumber": "WWW.UHCPROVIDER.COM"
+        }
+       ]
+      }
+     },
+     "benefitsRelatedEntities": [
+      {
+       "entityIdentifier": "Primary Payer",
+       "entityType": "Non-Person Entity",
+       "entityName": "UNITEDHEALTHCARE",
+       "entityIdentification": "PI",
+       "entityIdentificationValue": "LIFE1",
+       "address": {
+        "address1": "PO BOX 30539",
+        "city": "SALT LAKE CITY",
+        "state": "UT",
+        "postalCode": "84130"
+       },
+       "contactInformation": {
+        "contacts": [
+         {
+          "communicationMode": "Uniform Resource Locator (URL)",
+          "communicationNumber": "WWW.UHCPROVIDER.COM"
+         }
+        ]
+       }
+      },
+      {
+       "entityIdentifier": "Utilization Management Organization",
+       "entityType": "Non-Person Entity",
+       "entityName": "OPTUM HEALTH NETWORKS AZ",
+       "contactInformation": {
+        "contacts": [
+         {
+          "communicationMode": "Telephone",
+          "communicationNumber": "8773702845"
+         }
+        ]
+       }
+      }
+     ],
+     "additionalInformation": [
+      {
+       "description": "PCP TO SUBMIT A SPECIALIST REFERRAL"
+      },
+      {
+       "description": "A PRIOR AUTHORIZATION OR NOTIFICATION INQUIRY REQUEST MAY BE SUBMITTED"
+      },
+      {
+       "description": "ACCESS TO PASSPORT BENEFIT"
+      }
+     ]
+    },
+    {
+     "code": "G",
+     "name": "Out of Pocket (Stop Loss)",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "30"
+     ],
+     "serviceTypes": [
+      "Health Benefit Plan Coverage"
+     ],
+     "insuranceTypeCode": "PS",
+     "insuranceType": "Point of Service (POS)",
+     "timeQualifierCode": "23",
+     "timeQualifier": "Calendar Year",
+     "benefitAmount": "4200",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     }
+    },
+    {
+     "code": "G",
+     "name": "Out of Pocket (Stop Loss)",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "30"
+     ],
+     "serviceTypes": [
+      "Health Benefit Plan Coverage"
+     ],
+     "insuranceTypeCode": "PS",
+     "insuranceType": "Point of Service (POS)",
+     "timeQualifierCode": "29",
+     "timeQualifier": "Remaining",
+     "benefitAmount": "3292.72",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     }
+    },
+    {
+     "code": "G",
+     "name": "Out of Pocket (Stop Loss)",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "30"
+     ],
+     "serviceTypes": [
+      "Health Benefit Plan Coverage"
+     ],
+     "insuranceTypeCode": "PS",
+     "insuranceType": "Point of Service (POS)",
+     "timeQualifierCode": "24",
+     "timeQualifier": "Year to Date",
+     "benefitAmount": "907.28",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     }
+    },
+    {
+     "code": "L",
+     "name": "Primary Care Provider",
+     "benefitsRelatedEntity": {
+      "entityIdentifier": "Primary Care Provider",
+      "entityType": "Person",
+      "entityName": "SULLIVAN",
+      "entityFirstname": "SHAWN",
+      "entityIdentification": "XX",
+      "entityIdentificationValue": "1972544450",
+      "address": {
+       "address1": "3295 N DRINKWATER BLVD STE 5",
+       "city": "SCOTTSDALE",
+       "state": "AZ",
+       "postalCode": "85251"
+      },
+      "contactInformation": {
+       "contacts": [
+        {
+         "communicationMode": "Telephone",
+         "communicationNumber": "4809490298"
+        },
+        {
+         "communicationMode": "Facsimile",
+         "communicationNumber": "0000000000"
+        }
+       ]
+      },
+      "providerInformation": {
+       "providerCode": "PC",
+       "referenceIdentification": "207Q00000X"
+      }
+     },
+     "benefitsRelatedEntities": [
+      {
+       "entityIdentifier": "Primary Care Provider",
+       "entityType": "Person",
+       "entityName": "SULLIVAN",
+       "entityFirstname": "SHAWN",
+       "entityIdentification": "XX",
+       "entityIdentificationValue": "1972544450",
+       "address": {
+        "address1": "3295 N DRINKWATER BLVD STE 5",
+        "city": "SCOTTSDALE",
+        "state": "AZ",
+        "postalCode": "85251"
+       },
+       "contactInformation": {
+        "contacts": [
+         {
+          "communicationMode": "Telephone",
+          "communicationNumber": "4809490298"
+         },
+         {
+          "communicationMode": "Facsimile",
+          "communicationNumber": "0000000000"
+         }
+        ]
+       },
+       "providerInformation": {
+        "providerCode": "PC",
+        "referenceIdentification": "207Q00000X"
+       }
+      }
+     ]
+    },
+    {
+     "code": "1",
+     "name": "Active Coverage",
+     "serviceTypeCodes": [
+      "98"
+     ],
+     "serviceTypes": [
+      "Professional (Physician) Visit - Office"
+     ],
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "OFFICE VISIT PCP"
+      }
+     ]
+    },
+    {
+     "code": "1",
+     "name": "Active Coverage",
+     "serviceTypeCodes": [
+      "48"
+     ],
+     "serviceTypes": [
+      "Hospital - Inpatient"
+     ],
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "INPATIENT HOSPITAL"
+      }
+     ]
+    },
+    {
+     "code": "1",
+     "name": "Active Coverage",
+     "serviceTypeCodes": [
+      "50"
+     ],
+     "serviceTypes": [
+      "Hospital - Outpatient"
+     ],
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "OUTPATIENT SURGERY"
+      }
+     ]
+    },
+    {
+     "code": "1",
+     "name": "Active Coverage",
+     "serviceTypeCodes": [
+      "33"
+     ],
+     "serviceTypes": [
+      "Chiropractic"
+     ],
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "CHIROPRACTIC"
+      }
+     ]
+    },
+    {
+     "code": "1",
+     "name": "Active Coverage",
+     "serviceTypeCodes": [
+      "96",
+      "1"
+     ],
+     "serviceTypes": [
+      "Professional (Physician)",
+      "Medical Care"
+     ],
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "OFFICE VISIT SPECIALIST"
+      }
+     ]
+    },
+    {
+     "code": "1",
+     "name": "Active Coverage",
+     "serviceTypeCodes": [
+      "47",
+      "50"
+     ],
+     "serviceTypes": [
+      "Hospital",
+      "Hospital - Outpatient"
+     ],
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "OUTPATIENT HOSPITAL"
+      }
+     ]
+    },
+    {
+     "code": "1",
+     "name": "Active Coverage",
+     "serviceTypeCodes": [
+      "MH"
+     ],
+     "serviceTypes": [
+      "Mental Health"
+     ],
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "MENTAL HEALTH INDIVIDUAL VISIT"
+      }
+     ]
+    },
+    {
+     "code": "1",
+     "name": "Active Coverage",
+     "serviceTypeCodes": [
+      "86",
+      "UC"
+     ],
+     "serviceTypes": [
+      "Emergency Services",
+      "Urgent Care"
+     ],
+     "inPlanNetworkIndicatorCode": "W",
+     "inPlanNetworkIndicator": "Not Applicable",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     }
+    },
+    {
+     "code": "1",
+     "name": "Active Coverage",
+     "serviceTypeCodes": [
+      "PT"
+     ],
+     "serviceTypes": [
+      "Physical Therapy"
+     ],
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "PHYSICAL THERAPY"
+      }
+     ]
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "48"
+     ],
+     "serviceTypes": [
+      "Hospital - Inpatient"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitPercent": "0",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "benefitsServiceDelivery": [
+      {
+       "timePeriodQualifierCode": "31",
+       "timePeriodQualifier": "Not Exceeded",
+       "numOfPeriods": "7"
+      }
+     ],
+     "additionalInformation": [
+      {
+       "description": "INPATIENT HOSPITAL"
+      }
+     ]
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "48"
+     ],
+     "serviceTypes": [
+      "Hospital - Inpatient"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitPercent": "0",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "benefitsServiceDelivery": [
+      {
+       "timePeriodQualifierCode": "29",
+       "timePeriodQualifier": "Remaining"
+      }
+     ],
+     "additionalInformation": [
+      {
+       "description": "INPATIENT HOSPITAL"
+      }
+     ]
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "33"
+     ],
+     "serviceTypes": [
+      "Chiropractic"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitPercent": "0",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "CHIROPRACTIC"
+      }
+     ]
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "9"
+     ],
+     "serviceTypes": [
+      "Other Medical"
+     ],
+     "timeQualifierCode": "27",
+     "timeQualifier": "Visit",
+     "benefitPercent": "0",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "VIRTUAL VISITS/TELEMEDICINE"
+      }
+     ]
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "86",
+      "UC"
+     ],
+     "serviceTypes": [
+      "Emergency Services",
+      "Urgent Care"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitPercent": "0",
+     "inPlanNetworkIndicatorCode": "W",
+     "inPlanNetworkIndicator": "Not Applicable",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     }
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "96"
+     ],
+     "serviceTypes": [
+      "Professional (Physician)"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitPercent": "0",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "OFFICE VISIT SPECIALIST"
+      }
+     ]
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "50"
+     ],
+     "serviceTypes": [
+      "Hospital - Outpatient"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitPercent": "0",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "OUTPATIENT SURGERY"
+      }
+     ]
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "PT"
+     ],
+     "serviceTypes": [
+      "Physical Therapy"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitPercent": "0",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "PHYSICAL THERAPY"
+      }
+     ]
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "50"
+     ],
+     "serviceTypes": [
+      "Hospital - Outpatient"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitPercent": "0",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "OUTPATIENT HOSPITAL"
+      }
+     ]
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "98"
+     ],
+     "serviceTypes": [
+      "Professional (Physician) Visit - Office"
+     ],
+     "timeQualifierCode": "27",
+     "timeQualifier": "Visit",
+     "benefitPercent": "0",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "OFFICE VISIT PCP"
+      }
+     ]
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "48"
+     ],
+     "serviceTypes": [
+      "Hospital - Inpatient"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitAmount": "295",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "benefitsServiceDelivery": [
+      {
+       "timePeriodQualifierCode": "31",
+       "timePeriodQualifier": "Not Exceeded",
+       "numOfPeriods": "7"
+      }
+     ],
+     "additionalInformation": [
+      {
+       "description": "INPATIENT HOSPITAL"
+      }
+     ]
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "48"
+     ],
+     "serviceTypes": [
+      "Hospital - Inpatient"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitAmount": "0",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "benefitsServiceDelivery": [
+      {
+       "timePeriodQualifierCode": "29",
+       "timePeriodQualifier": "Remaining"
+      }
+     ],
+     "additionalInformation": [
+      {
+       "description": "INPATIENT HOSPITAL"
+      }
+     ]
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "86"
+     ],
+     "serviceTypes": [
+      "Emergency Services"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitAmount": "150",
+     "inPlanNetworkIndicatorCode": "W",
+     "inPlanNetworkIndicator": "Not Applicable",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     }
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "PT"
+     ],
+     "serviceTypes": [
+      "Physical Therapy"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitAmount": "20",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "PHYSICAL THERAPY"
+      }
+     ]
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "98"
+     ],
+     "serviceTypes": [
+      "Professional (Physician) Visit - Office"
+     ],
+     "timeQualifierCode": "27",
+     "timeQualifier": "Visit",
+     "benefitAmount": "0",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "OFFICE VISIT PCP"
+      }
+     ]
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "33"
+     ],
+     "serviceTypes": [
+      "Chiropractic"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitAmount": "10",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "CHIROPRACTIC"
+      }
+     ]
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "50"
+     ],
+     "serviceTypes": [
+      "Hospital - Outpatient"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitAmount": "295",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "OUTPATIENT SURGERY"
+      }
+     ]
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "96"
+     ],
+     "serviceTypes": [
+      "Professional (Physician)"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitAmount": "45",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "OFFICE VISIT SPECIALIST"
+      }
+     ]
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "9"
+     ],
+     "serviceTypes": [
+      "Other Medical"
+     ],
+     "timeQualifierCode": "27",
+     "timeQualifier": "Visit",
+     "benefitAmount": "0",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "VIRTUAL VISITS/TELEMEDICINE"
+      }
+     ]
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "UC"
+     ],
+     "serviceTypes": [
+      "Urgent Care"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitAmount": "65",
+     "inPlanNetworkIndicatorCode": "W",
+     "inPlanNetworkIndicator": "Not Applicable",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     }
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "50"
+     ],
+     "serviceTypes": [
+      "Hospital - Outpatient"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitAmount": "295",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "OUTPATIENT HOSPITAL"
+      }
+     ]
+    },
+    {
+     "code": "R",
+     "name": "Other or Additional Payor",
+     "serviceTypeCodes": [
+      "88"
+     ],
+     "serviceTypes": [
+      "Pharmacy"
+     ],
+     "benefitsDateInformation": {
+      "coordinationOfBenefits": "20101011-99991231"
+     },
+     "benefitsRelatedEntity": {
+      "entityIdentifier": "Payer",
+      "entityType": "Non-Person Entity",
+      "entityName": "SCF ARIZONA"
+     },
+     "benefitsRelatedEntities": [
+      {
+       "entityIdentifier": "Payer",
+       "entityType": "Non-Person Entity",
+       "entityName": "SCF ARIZONA"
+      }
+     ]
+    },
+    {
+     "code": "1",
+     "name": "Active Coverage",
+     "serviceTypeCodes": [
+      "30"
+     ],
+     "serviceTypes": [
+      "Health Benefit Plan Coverage"
+     ],
+     "planCoverage": "SPECTERA VISION PLAN",
+     "benefitsDateInformation": {
+      "plan": "20260101-20261231"
+     },
+     "benefitsRelatedEntity": {
+      "entityIdentifier": "Payer",
+      "entityType": "Non-Person Entity",
+      "entityName": "UNITEDHEALTHCARE",
+      "entityIdentification": "PI",
+      "entityIdentificationValue": "87726",
+      "address": {
+       "address1": "PO BOX 30978",
+       "city": "SALT LAKE CITY",
+       "state": "UT",
+       "postalCode": "841300978"
+      }
+     },
+     "benefitsRelatedEntities": [
+      {
+       "entityIdentifier": "Payer",
+       "entityType": "Non-Person Entity",
+       "entityName": "UNITEDHEALTHCARE",
+       "entityIdentification": "PI",
+       "entityIdentificationValue": "87726",
+       "address": {
+        "address1": "PO BOX 30978",
+        "city": "SALT LAKE CITY",
+        "state": "UT",
+        "postalCode": "841300978"
+       }
+      }
+     ]
+    },
+    {
+     "code": "C",
+     "name": "Deductible",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "30"
+     ],
+     "serviceTypes": [
+      "Health Benefit Plan Coverage"
+     ],
+     "timeQualifierCode": "23",
+     "timeQualifier": "Calendar Year",
+     "benefitAmount": "0",
+     "inPlanNetworkIndicatorCode": "W",
+     "inPlanNetworkIndicator": "Not Applicable",
+     "benefitsDateInformation": {
+      "plan": "20260101-20261231"
+     }
+    },
+    {
+     "code": "C",
+     "name": "Deductible",
+     "coverageLevelCode": "FAM",
+     "coverageLevel": "Family",
+     "serviceTypeCodes": [
+      "30"
+     ],
+     "serviceTypes": [
+      "Health Benefit Plan Coverage"
+     ],
+     "timeQualifierCode": "23",
+     "timeQualifier": "Calendar Year",
+     "benefitAmount": "0",
+     "inPlanNetworkIndicatorCode": "W",
+     "inPlanNetworkIndicator": "Not Applicable",
+     "benefitsDateInformation": {
+      "plan": "20260101-20261231"
+     }
+    },
+    {
+     "code": "G",
+     "name": "Out of Pocket (Stop Loss)",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "30"
+     ],
+     "serviceTypes": [
+      "Health Benefit Plan Coverage"
+     ],
+     "timeQualifierCode": "23",
+     "timeQualifier": "Calendar Year",
+     "benefitAmount": "0",
+     "inPlanNetworkIndicatorCode": "W",
+     "inPlanNetworkIndicator": "Not Applicable",
+     "benefitsDateInformation": {
+      "plan": "20260101-20261231"
+     }
+    },
+    {
+     "code": "G",
+     "name": "Out of Pocket (Stop Loss)",
+     "coverageLevelCode": "FAM",
+     "coverageLevel": "Family",
+     "serviceTypeCodes": [
+      "30"
+     ],
+     "serviceTypes": [
+      "Health Benefit Plan Coverage"
+     ],
+     "timeQualifierCode": "23",
+     "timeQualifier": "Calendar Year",
+     "benefitAmount": "0",
+     "inPlanNetworkIndicatorCode": "W",
+     "inPlanNetworkIndicator": "Not Applicable",
+     "benefitsDateInformation": {
+      "plan": "20260101-20261231"
+     }
+    },
+    {
+     "code": "1",
+     "name": "Active Coverage",
+     "serviceTypeCodes": [
+      "AL"
+     ],
+     "serviceTypes": [
+      "Vision (Optometry)"
+     ],
+     "benefitsDateInformation": {
+      "plan": "20260101-20261231"
+     }
+    },
+    {
+     "code": "U",
+     "name": "Contact Following Entity for Eligibility or Benefit Information",
+     "serviceTypeCodes": [
+      "88"
+     ],
+     "serviceTypes": [
+      "Pharmacy"
+     ],
+     "benefitsRelatedEntity": {
+      "entityIdentifier": "Vendor",
+      "entityType": "Non-Person Entity",
+      "entityName": "OPTUMRX",
+      "contactInformation": {
+       "contacts": [
+        {
+         "communicationMode": "Uniform Resource Locator (URL)",
+         "communicationNumber": "PROFESSIONALS.OPTUMRX.COM"
+        }
+       ]
+      }
+     },
+     "benefitsRelatedEntities": [
+      {
+       "entityIdentifier": "Vendor",
+       "entityType": "Non-Person Entity",
+       "entityName": "OPTUMRX",
+       "contactInformation": {
+        "contacts": [
+         {
+          "communicationMode": "Uniform Resource Locator (URL)",
+          "communicationNumber": "PROFESSIONALS.OPTUMRX.COM"
+         }
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "code": "U",
+     "name": "Contact Following Entity for Eligibility or Benefit Information",
+     "serviceTypeCodes": [
+      "35"
+     ],
+     "serviceTypes": [
+      "Dental Care"
+     ],
+     "benefitsRelatedEntity": {
+      "entityIdentifier": "Vendor",
+      "entityType": "Non-Person Entity",
+      "entityName": "UNITEDHEALTHCARE DENTAL",
+      "contactInformation": {
+       "contacts": [
+        {
+         "communicationMode": "Uniform Resource Locator (URL)",
+         "communicationNumber": "WWW.DBP.COM"
+        }
+       ]
+      }
+     },
+     "benefitsRelatedEntities": [
+      {
+       "entityIdentifier": "Vendor",
+       "entityType": "Non-Person Entity",
+       "entityName": "UNITEDHEALTHCARE DENTAL",
+       "contactInformation": {
+        "contacts": [
+         {
+          "communicationMode": "Uniform Resource Locator (URL)",
+          "communicationNumber": "WWW.DBP.COM"
+         }
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "code": "X",
+     "name": "Health Care Facility",
+     "benefitsRelatedEntity": {
+      "entityIdentifier": "Provider",
+      "entityType": "Non-Person Entity",
+      "entityName": "GHASEM DARIAN",
+      "entityIdentification": "XX",
+      "entityIdentificationValue": "1942363775"
+     },
+     "benefitsRelatedEntities": [
+      {
+       "entityIdentifier": "Provider",
+       "entityType": "Non-Person Entity",
+       "entityName": "GHASEM DARIAN",
+       "entityIdentification": "XX",
+       "entityIdentificationValue": "1942363775"
+      }
+     ]
+    }
+   ],
+   "errors": [],
+   "x12": "ISA*00*          *00*          *ZZ*STEDI          *01*117151744      *260719*1815*^*00501*823773329*0*P*`~GS*HB*STEDI*117151744*20260719*1315*823773329*X*005010X279A1~ST*271*823773329*005010X279A1~BHT*0022*11*01KXXSDQA5BZTNT49SSJ6FGT7R*20260719*141513~HL*1**20*1~NM1*PR*2*UNITEDHEALTHCARE DENTAL*****PI*52133~HL*2*1*21*1~NM1*1P*2*GHASEM DARIAN*****XX*1942363775~HL*3*2*22*0~TRN*1*01KXXSDQANEXJYWPQTMFCBDTSX*3117151744~NM1*IL*1*JOHNSON*JOHN*M***MI*902014476~N3*3413 EAST TURNEY AVENUE~N4*PHOENIX*AZ*85018~DMG*D8*19380213*M~EB*R~REF*F6*6JQ6G48XA61~EB*1**30*PS*HMOPOS-AARP MEDICARE ADVANTAGE EXTRAS FROM UHC AZ-******Y~REF*1L*00327~REF*N6*H0609-046-000~DTP*346*D8*20260101~MSG*PCP TO SUBMIT A SPECIALIST REFERRAL~MSG*A PRIOR AUTHORIZATION OR NOTIFICATION INQUIRY REQUEST MAY BE SUBMITTED~MSG*ACCESS TO PASSPORT BENEFIT~LS*2120~NM1*PRP*2*UNITEDHEALTHCARE*****PI*LIFE1~N3*PO BOX 30539~N4*SALT LAKE CITY*UT*84130~PER*IC**UR*WWW.UHCPROVIDER.COM~NM1*X3*2*OPTUM HEALTH NETWORKS AZ~PER*IC**TE*8773702845~LE*2120~EB*G*IND*30*PS**23*4200*****Y~DTP*346*D8*20260101~EB*G*IND*30*PS**29*3292.72*****Y~DTP*346*D8*20260101~EB*G*IND*30*PS**24*907.28*****Y~DTP*346*D8*20260101~EB*L~LS*2120~NM1*P3*1*SULLIVAN*SHAWN****XX*1972544450~N3*3295 N DRINKWATER BLVD STE 5~N4*SCOTTSDALE*AZ*85251~PER*IC**TE*4809490298*FX*0000000000~PRV*PC*PXC*207Q00000X~LE*2120~EB*1**98*********Y~DTP*346*D8*20260101~MSG*OFFICE VISIT PCP~EB*1**48*********Y~DTP*346*D8*20260101~MSG*INPATIENT HOSPITAL~EB*1**50*********Y~DTP*346*D8*20260101~MSG*OUTPATIENT SURGERY~EB*1**33*********Y~DTP*346*D8*20260101~MSG*CHIROPRACTIC~EB*1**96^1*********Y~DTP*346*D8*20260101~MSG*OFFICE VISIT SPECIALIST~EB*1**47^50*********Y~DTP*346*D8*20260101~MSG*OUTPATIENT HOSPITAL~EB*1**MH*********Y~DTP*346*D8*20260101~MSG*MENTAL HEALTH INDIVIDUAL VISIT~EB*1**86^UC*********W~DTP*346*D8*20260101~EB*1**PT*********Y~DTP*346*D8*20260101~MSG*PHYSICAL THERAPY~EB*A*IND*48***7**0****Y~HSD*****31*7~DTP*346*D8*20260101~MSG*INPATIENT HOSPITAL~EB*A*IND*48***7**0****Y~HSD*****29~DTP*346*D8*20260101~MSG*INPATIENT HOSPITAL~EB*A*IND*33***7**0****Y~DTP*346*D8*20260101~MSG*CHIROPRACTIC~EB*A*IND*9***27**0****Y~DTP*346*D8*20260101~MSG*VIRTUAL VISITS/TELEMEDICINE~EB*A*IND*86^UC***7**0****W~DTP*346*D8*20260101~EB*A*IND*96***7**0****Y~DTP*346*D8*20260101~MSG*OFFICE VISIT SPECIALIST~EB*A*IND*50***7**0****Y~DTP*346*D8*20260101~MSG*OUTPATIENT SURGERY~EB*A*IND*PT***7**0****Y~DTP*346*D8*20260101~MSG*PHYSICAL THERAPY~EB*A*IND*50***7**0****Y~DTP*346*D8*20260101~MSG*OUTPATIENT HOSPITAL~EB*A*IND*98***27**0****Y~DTP*346*D8*20260101~MSG*OFFICE VISIT PCP~EB*B*IND*48***7*295*****Y~HSD*****31*7~DTP*346*D8*20260101~MSG*INPATIENT HOSPITAL~EB*B*IND*48***7*0*****Y~HSD*****29~DTP*346*D8*20260101~MSG*INPATIENT HOSPITAL~EB*B*IND*86***7*150*****W~DTP*346*D8*20260101~EB*B*IND*PT***7*20*****Y~DTP*346*D8*20260101~MSG*PHYSICAL THERAPY~EB*B*IND*98***27*0*****Y~DTP*346*D8*20260101~MSG*OFFICE VISIT PCP~EB*B*IND*33***7*10*****Y~DTP*346*D8*20260101~MSG*CHIROPRACTIC~EB*B*IND*50***7*295*****Y~DTP*346*D8*20260101~MSG*OUTPATIENT SURGERY~EB*B*IND*96***7*45*****Y~DTP*346*D8*20260101~MSG*OFFICE VISIT SPECIALIST~EB*B*IND*9***27*0*****Y~DTP*346*D8*20260101~MSG*VIRTUAL VISITS/TELEMEDICINE~EB*B*IND*UC***7*65*****W~DTP*346*D8*20260101~EB*B*IND*50***7*295*****Y~DTP*346*D8*20260101~MSG*OUTPATIENT HOSPITAL~EB*R**88~DTP*290*RD8*20101011-99991231~LS*2120~NM1*PR*2*SCF ARIZONA~LE*2120~EB*1**30**SPECTERA VISION PLAN~DTP*291*RD8*20260101-20261231~LS*2120~NM1*PR*2*UNITEDHEALTHCARE*****PI*87726~N3*PO BOX 30978~N4*SALT LAKE CITY*UT*841300978~LE*2120~EB*C*IND*30***23*0*****W~DTP*291*RD8*20260101-20261231~EB*C*FAM*30***23*0*****W~DTP*291*RD8*20260101-20261231~EB*G*IND*30***23*0*****W~DTP*291*RD8*20260101-20261231~EB*G*FAM*30***23*0*****W~DTP*291*RD8*20260101-20261231~EB*1**AL~DTP*291*RD8*20260101-20261231~EB*U**88~LS*2120~NM1*VN*2*OPTUMRX~PER*IC**UR*PROFESSIONALS.OPTUMRX.COM~LE*2120~EB*U**35~LS*2120~NM1*VN*2*UNITEDHEALTHCARE DENTAL~PER*IC**UR*WWW.DBP.COM~LE*2120~EB*X~LS*2120~NM1*1P*2*GHASEM DARIAN*****XX*1942363775~LE*2120~SE*170*823773329~GE*1*823773329~IEA*1*823773329~",
+   "eligibilitySearchId": "019f7b96-dd45-78d3-a0a3-1c370a8ead6f",
+   "id": "ec_019f7b96-dd44-7073-a37d-bcce268acd05"
+  },
+  "D5622": {
+   "meta": {
+    "senderId": "STEDI",
+    "submitterId": "117151744",
+    "applicationMode": "production",
+    "traceId": "01KXXSDTDAFXPQ7SYJN1MEGMEW",
+    "outboundTraceId": "01KXXSDTDAFXPQ7SYJN1MEGMEW"
+   },
+   "controlNumber": "823773649",
+   "reassociationKey": "823773649",
+   "tradingPartnerServiceId": "52133",
+   "provider": {
+    "providerName": "GHASEM DARIAN",
+    "entityIdentifier": "Provider",
+    "entityType": "Non-Person Entity",
+    "npi": "1942363775"
+   },
+   "subscriber": {
+    "memberId": "902014476",
+    "firstName": "JOHN",
+    "lastName": "JOHNSON",
+    "middleName": "M",
+    "gender": "M",
+    "entityIdentifier": "Insured or Subscriber",
+    "entityType": "Person",
+    "dateOfBirth": "19380213",
+    "address": {
+     "address1": "3413 EAST TURNEY AVENUE",
+     "city": "PHOENIX",
+     "state": "AZ",
+     "postalCode": "85018"
+    }
+   },
+   "subscriberTraceNumbers": [
+    {
+     "traceTypeCode": "1",
+     "traceType": "Current Transaction Trace Numbers",
+     "referenceIdentification": "01KXXSDTDWEVM8S6F8WZKNGQ80",
+     "originatingCompanyIdentifier": "3117151744"
+    }
+   ],
+   "payer": {
+    "entityIdentifier": "Payer",
+    "entityType": "Non-Person Entity",
+    "name": "UNITEDHEALTHCARE DENTAL",
+    "payorIdentification": "52133"
+   },
+   "planStatus": [
+    {
+     "statusCode": "1",
+     "status": "Active Coverage",
+     "planDetails": "HMOPOS-AARP MEDICARE ADVANTAGE EXTRAS FROM UHC AZ-",
+     "serviceTypeCodes": [
+      "30"
+     ]
+    },
+    {
+     "statusCode": "1",
+     "status": "Active Coverage",
+     "serviceTypeCodes": [
+      "98"
+     ]
+    },
+    {
+     "statusCode": "1",
+     "status": "Active Coverage",
+     "serviceTypeCodes": [
+      "48"
+     ]
+    },
+    {
+     "statusCode": "1",
+     "status": "Active Coverage",
+     "serviceTypeCodes": [
+      "50"
+     ]
+    },
+    {
+     "statusCode": "1",
+     "status": "Active Coverage",
+     "serviceTypeCodes": [
+      "33"
+     ]
+    },
+    {
+     "statusCode": "1",
+     "status": "Active Coverage",
+     "serviceTypeCodes": [
+      "96",
+      "1"
+     ]
+    },
+    {
+     "statusCode": "1",
+     "status": "Active Coverage",
+     "serviceTypeCodes": [
+      "47",
+      "50"
+     ]
+    },
+    {
+     "statusCode": "1",
+     "status": "Active Coverage",
+     "serviceTypeCodes": [
+      "MH"
+     ]
+    },
+    {
+     "statusCode": "1",
+     "status": "Active Coverage",
+     "serviceTypeCodes": [
+      "86",
+      "UC"
+     ]
+    },
+    {
+     "statusCode": "1",
+     "status": "Active Coverage",
+     "serviceTypeCodes": [
+      "PT"
+     ]
+    },
+    {
+     "statusCode": "1",
+     "status": "Active Coverage",
+     "planDetails": "SPECTERA VISION PLAN",
+     "serviceTypeCodes": [
+      "30"
+     ]
+    },
+    {
+     "statusCode": "1",
+     "status": "Active Coverage",
+     "serviceTypeCodes": [
+      "AL"
+     ]
+    }
+   ],
+   "benefitsInformation": [
+    {
+     "code": "R",
+     "name": "Other or Additional Payor",
+     "benefitsAdditionalInformation": {
+      "hicNumber": "6JQ6G48XA61"
+     }
+    },
+    {
+     "code": "1",
+     "name": "Active Coverage",
+     "serviceTypeCodes": [
+      "30"
+     ],
+     "serviceTypes": [
+      "Health Benefit Plan Coverage"
+     ],
+     "insuranceTypeCode": "PS",
+     "insuranceType": "Point of Service (POS)",
+     "planCoverage": "HMOPOS-AARP MEDICARE ADVANTAGE EXTRAS FROM UHC AZ-",
+     "authOrCertIndicator": "Y",
+     "benefitsAdditionalInformation": {
+      "policyNumber": "00327",
+      "planNetworkIdNumber": "H0609-046-000"
+     },
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "benefitsRelatedEntity": {
+      "entityIdentifier": "Primary Payer",
+      "entityType": "Non-Person Entity",
+      "entityName": "UNITEDHEALTHCARE",
+      "entityIdentification": "PI",
+      "entityIdentificationValue": "LIFE1",
+      "address": {
+       "address1": "PO BOX 30539",
+       "city": "SALT LAKE CITY",
+       "state": "UT",
+       "postalCode": "84130"
+      },
+      "contactInformation": {
+       "contacts": [
+        {
+         "communicationMode": "Uniform Resource Locator (URL)",
+         "communicationNumber": "WWW.UHCPROVIDER.COM"
+        }
+       ]
+      }
+     },
+     "benefitsRelatedEntities": [
+      {
+       "entityIdentifier": "Primary Payer",
+       "entityType": "Non-Person Entity",
+       "entityName": "UNITEDHEALTHCARE",
+       "entityIdentification": "PI",
+       "entityIdentificationValue": "LIFE1",
+       "address": {
+        "address1": "PO BOX 30539",
+        "city": "SALT LAKE CITY",
+        "state": "UT",
+        "postalCode": "84130"
+       },
+       "contactInformation": {
+        "contacts": [
+         {
+          "communicationMode": "Uniform Resource Locator (URL)",
+          "communicationNumber": "WWW.UHCPROVIDER.COM"
+         }
+        ]
+       }
+      },
+      {
+       "entityIdentifier": "Utilization Management Organization",
+       "entityType": "Non-Person Entity",
+       "entityName": "OPTUM HEALTH NETWORKS AZ",
+       "contactInformation": {
+        "contacts": [
+         {
+          "communicationMode": "Telephone",
+          "communicationNumber": "8773702845"
+         }
+        ]
+       }
+      }
+     ],
+     "additionalInformation": [
+      {
+       "description": "PCP TO SUBMIT A SPECIALIST REFERRAL"
+      },
+      {
+       "description": "A PRIOR AUTHORIZATION OR NOTIFICATION INQUIRY REQUEST MAY BE SUBMITTED"
+      },
+      {
+       "description": "ACCESS TO PASSPORT BENEFIT"
+      }
+     ]
+    },
+    {
+     "code": "G",
+     "name": "Out of Pocket (Stop Loss)",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "30"
+     ],
+     "serviceTypes": [
+      "Health Benefit Plan Coverage"
+     ],
+     "insuranceTypeCode": "PS",
+     "insuranceType": "Point of Service (POS)",
+     "timeQualifierCode": "23",
+     "timeQualifier": "Calendar Year",
+     "benefitAmount": "4200",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     }
+    },
+    {
+     "code": "G",
+     "name": "Out of Pocket (Stop Loss)",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "30"
+     ],
+     "serviceTypes": [
+      "Health Benefit Plan Coverage"
+     ],
+     "insuranceTypeCode": "PS",
+     "insuranceType": "Point of Service (POS)",
+     "timeQualifierCode": "29",
+     "timeQualifier": "Remaining",
+     "benefitAmount": "3292.72",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     }
+    },
+    {
+     "code": "G",
+     "name": "Out of Pocket (Stop Loss)",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "30"
+     ],
+     "serviceTypes": [
+      "Health Benefit Plan Coverage"
+     ],
+     "insuranceTypeCode": "PS",
+     "insuranceType": "Point of Service (POS)",
+     "timeQualifierCode": "24",
+     "timeQualifier": "Year to Date",
+     "benefitAmount": "907.28",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     }
+    },
+    {
+     "code": "L",
+     "name": "Primary Care Provider",
+     "benefitsRelatedEntity": {
+      "entityIdentifier": "Primary Care Provider",
+      "entityType": "Person",
+      "entityName": "SULLIVAN",
+      "entityFirstname": "SHAWN",
+      "entityIdentification": "XX",
+      "entityIdentificationValue": "1972544450",
+      "address": {
+       "address1": "3295 N DRINKWATER BLVD STE 5",
+       "city": "SCOTTSDALE",
+       "state": "AZ",
+       "postalCode": "85251"
+      },
+      "contactInformation": {
+       "contacts": [
+        {
+         "communicationMode": "Telephone",
+         "communicationNumber": "4809490298"
+        },
+        {
+         "communicationMode": "Facsimile",
+         "communicationNumber": "0000000000"
+        }
+       ]
+      },
+      "providerInformation": {
+       "providerCode": "PC",
+       "referenceIdentification": "207Q00000X"
+      }
+     },
+     "benefitsRelatedEntities": [
+      {
+       "entityIdentifier": "Primary Care Provider",
+       "entityType": "Person",
+       "entityName": "SULLIVAN",
+       "entityFirstname": "SHAWN",
+       "entityIdentification": "XX",
+       "entityIdentificationValue": "1972544450",
+       "address": {
+        "address1": "3295 N DRINKWATER BLVD STE 5",
+        "city": "SCOTTSDALE",
+        "state": "AZ",
+        "postalCode": "85251"
+       },
+       "contactInformation": {
+        "contacts": [
+         {
+          "communicationMode": "Telephone",
+          "communicationNumber": "4809490298"
+         },
+         {
+          "communicationMode": "Facsimile",
+          "communicationNumber": "0000000000"
+         }
+        ]
+       },
+       "providerInformation": {
+        "providerCode": "PC",
+        "referenceIdentification": "207Q00000X"
+       }
+      }
+     ]
+    },
+    {
+     "code": "1",
+     "name": "Active Coverage",
+     "serviceTypeCodes": [
+      "98"
+     ],
+     "serviceTypes": [
+      "Professional (Physician) Visit - Office"
+     ],
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "OFFICE VISIT PCP"
+      }
+     ]
+    },
+    {
+     "code": "1",
+     "name": "Active Coverage",
+     "serviceTypeCodes": [
+      "48"
+     ],
+     "serviceTypes": [
+      "Hospital - Inpatient"
+     ],
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "INPATIENT HOSPITAL"
+      }
+     ]
+    },
+    {
+     "code": "1",
+     "name": "Active Coverage",
+     "serviceTypeCodes": [
+      "50"
+     ],
+     "serviceTypes": [
+      "Hospital - Outpatient"
+     ],
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "OUTPATIENT SURGERY"
+      }
+     ]
+    },
+    {
+     "code": "1",
+     "name": "Active Coverage",
+     "serviceTypeCodes": [
+      "33"
+     ],
+     "serviceTypes": [
+      "Chiropractic"
+     ],
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "CHIROPRACTIC"
+      }
+     ]
+    },
+    {
+     "code": "1",
+     "name": "Active Coverage",
+     "serviceTypeCodes": [
+      "96",
+      "1"
+     ],
+     "serviceTypes": [
+      "Professional (Physician)",
+      "Medical Care"
+     ],
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "OFFICE VISIT SPECIALIST"
+      }
+     ]
+    },
+    {
+     "code": "1",
+     "name": "Active Coverage",
+     "serviceTypeCodes": [
+      "47",
+      "50"
+     ],
+     "serviceTypes": [
+      "Hospital",
+      "Hospital - Outpatient"
+     ],
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "OUTPATIENT HOSPITAL"
+      }
+     ]
+    },
+    {
+     "code": "1",
+     "name": "Active Coverage",
+     "serviceTypeCodes": [
+      "MH"
+     ],
+     "serviceTypes": [
+      "Mental Health"
+     ],
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "MENTAL HEALTH INDIVIDUAL VISIT"
+      }
+     ]
+    },
+    {
+     "code": "1",
+     "name": "Active Coverage",
+     "serviceTypeCodes": [
+      "86",
+      "UC"
+     ],
+     "serviceTypes": [
+      "Emergency Services",
+      "Urgent Care"
+     ],
+     "inPlanNetworkIndicatorCode": "W",
+     "inPlanNetworkIndicator": "Not Applicable",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     }
+    },
+    {
+     "code": "1",
+     "name": "Active Coverage",
+     "serviceTypeCodes": [
+      "PT"
+     ],
+     "serviceTypes": [
+      "Physical Therapy"
+     ],
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "PHYSICAL THERAPY"
+      }
+     ]
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "48"
+     ],
+     "serviceTypes": [
+      "Hospital - Inpatient"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitPercent": "0",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "benefitsServiceDelivery": [
+      {
+       "timePeriodQualifierCode": "31",
+       "timePeriodQualifier": "Not Exceeded",
+       "numOfPeriods": "7"
+      }
+     ],
+     "additionalInformation": [
+      {
+       "description": "INPATIENT HOSPITAL"
+      }
+     ]
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "48"
+     ],
+     "serviceTypes": [
+      "Hospital - Inpatient"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitPercent": "0",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "benefitsServiceDelivery": [
+      {
+       "timePeriodQualifierCode": "29",
+       "timePeriodQualifier": "Remaining"
+      }
+     ],
+     "additionalInformation": [
+      {
+       "description": "INPATIENT HOSPITAL"
+      }
+     ]
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "33"
+     ],
+     "serviceTypes": [
+      "Chiropractic"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitPercent": "0",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "CHIROPRACTIC"
+      }
+     ]
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "9"
+     ],
+     "serviceTypes": [
+      "Other Medical"
+     ],
+     "timeQualifierCode": "27",
+     "timeQualifier": "Visit",
+     "benefitPercent": "0",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "VIRTUAL VISITS/TELEMEDICINE"
+      }
+     ]
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "86",
+      "UC"
+     ],
+     "serviceTypes": [
+      "Emergency Services",
+      "Urgent Care"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitPercent": "0",
+     "inPlanNetworkIndicatorCode": "W",
+     "inPlanNetworkIndicator": "Not Applicable",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     }
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "96"
+     ],
+     "serviceTypes": [
+      "Professional (Physician)"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitPercent": "0",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "OFFICE VISIT SPECIALIST"
+      }
+     ]
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "50"
+     ],
+     "serviceTypes": [
+      "Hospital - Outpatient"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitPercent": "0",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "OUTPATIENT SURGERY"
+      }
+     ]
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "PT"
+     ],
+     "serviceTypes": [
+      "Physical Therapy"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitPercent": "0",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "PHYSICAL THERAPY"
+      }
+     ]
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "50"
+     ],
+     "serviceTypes": [
+      "Hospital - Outpatient"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitPercent": "0",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "OUTPATIENT HOSPITAL"
+      }
+     ]
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "98"
+     ],
+     "serviceTypes": [
+      "Professional (Physician) Visit - Office"
+     ],
+     "timeQualifierCode": "27",
+     "timeQualifier": "Visit",
+     "benefitPercent": "0",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "OFFICE VISIT PCP"
+      }
+     ]
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "48"
+     ],
+     "serviceTypes": [
+      "Hospital - Inpatient"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitAmount": "295",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "benefitsServiceDelivery": [
+      {
+       "timePeriodQualifierCode": "31",
+       "timePeriodQualifier": "Not Exceeded",
+       "numOfPeriods": "7"
+      }
+     ],
+     "additionalInformation": [
+      {
+       "description": "INPATIENT HOSPITAL"
+      }
+     ]
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "48"
+     ],
+     "serviceTypes": [
+      "Hospital - Inpatient"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitAmount": "0",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "benefitsServiceDelivery": [
+      {
+       "timePeriodQualifierCode": "29",
+       "timePeriodQualifier": "Remaining"
+      }
+     ],
+     "additionalInformation": [
+      {
+       "description": "INPATIENT HOSPITAL"
+      }
+     ]
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "86"
+     ],
+     "serviceTypes": [
+      "Emergency Services"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitAmount": "150",
+     "inPlanNetworkIndicatorCode": "W",
+     "inPlanNetworkIndicator": "Not Applicable",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     }
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "PT"
+     ],
+     "serviceTypes": [
+      "Physical Therapy"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitAmount": "20",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "PHYSICAL THERAPY"
+      }
+     ]
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "98"
+     ],
+     "serviceTypes": [
+      "Professional (Physician) Visit - Office"
+     ],
+     "timeQualifierCode": "27",
+     "timeQualifier": "Visit",
+     "benefitAmount": "0",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "OFFICE VISIT PCP"
+      }
+     ]
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "33"
+     ],
+     "serviceTypes": [
+      "Chiropractic"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitAmount": "10",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "CHIROPRACTIC"
+      }
+     ]
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "50"
+     ],
+     "serviceTypes": [
+      "Hospital - Outpatient"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitAmount": "295",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "OUTPATIENT SURGERY"
+      }
+     ]
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "96"
+     ],
+     "serviceTypes": [
+      "Professional (Physician)"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitAmount": "45",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "OFFICE VISIT SPECIALIST"
+      }
+     ]
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "9"
+     ],
+     "serviceTypes": [
+      "Other Medical"
+     ],
+     "timeQualifierCode": "27",
+     "timeQualifier": "Visit",
+     "benefitAmount": "0",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "VIRTUAL VISITS/TELEMEDICINE"
+      }
+     ]
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "UC"
+     ],
+     "serviceTypes": [
+      "Urgent Care"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitAmount": "65",
+     "inPlanNetworkIndicatorCode": "W",
+     "inPlanNetworkIndicator": "Not Applicable",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     }
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "50"
+     ],
+     "serviceTypes": [
+      "Hospital - Outpatient"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitAmount": "295",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "OUTPATIENT HOSPITAL"
+      }
+     ]
+    },
+    {
+     "code": "R",
+     "name": "Other or Additional Payor",
+     "serviceTypeCodes": [
+      "88"
+     ],
+     "serviceTypes": [
+      "Pharmacy"
+     ],
+     "benefitsDateInformation": {
+      "coordinationOfBenefits": "20101011-99991231"
+     },
+     "benefitsRelatedEntity": {
+      "entityIdentifier": "Payer",
+      "entityType": "Non-Person Entity",
+      "entityName": "SCF ARIZONA"
+     },
+     "benefitsRelatedEntities": [
+      {
+       "entityIdentifier": "Payer",
+       "entityType": "Non-Person Entity",
+       "entityName": "SCF ARIZONA"
+      }
+     ]
+    },
+    {
+     "code": "1",
+     "name": "Active Coverage",
+     "serviceTypeCodes": [
+      "30"
+     ],
+     "serviceTypes": [
+      "Health Benefit Plan Coverage"
+     ],
+     "planCoverage": "SPECTERA VISION PLAN",
+     "benefitsDateInformation": {
+      "plan": "20260101-20261231"
+     },
+     "benefitsRelatedEntity": {
+      "entityIdentifier": "Payer",
+      "entityType": "Non-Person Entity",
+      "entityName": "UNITEDHEALTHCARE",
+      "entityIdentification": "PI",
+      "entityIdentificationValue": "87726",
+      "address": {
+       "address1": "PO BOX 30978",
+       "city": "SALT LAKE CITY",
+       "state": "UT",
+       "postalCode": "841300978"
+      }
+     },
+     "benefitsRelatedEntities": [
+      {
+       "entityIdentifier": "Payer",
+       "entityType": "Non-Person Entity",
+       "entityName": "UNITEDHEALTHCARE",
+       "entityIdentification": "PI",
+       "entityIdentificationValue": "87726",
+       "address": {
+        "address1": "PO BOX 30978",
+        "city": "SALT LAKE CITY",
+        "state": "UT",
+        "postalCode": "841300978"
+       }
+      }
+     ]
+    },
+    {
+     "code": "C",
+     "name": "Deductible",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "30"
+     ],
+     "serviceTypes": [
+      "Health Benefit Plan Coverage"
+     ],
+     "timeQualifierCode": "23",
+     "timeQualifier": "Calendar Year",
+     "benefitAmount": "0",
+     "inPlanNetworkIndicatorCode": "W",
+     "inPlanNetworkIndicator": "Not Applicable",
+     "benefitsDateInformation": {
+      "plan": "20260101-20261231"
+     }
+    },
+    {
+     "code": "C",
+     "name": "Deductible",
+     "coverageLevelCode": "FAM",
+     "coverageLevel": "Family",
+     "serviceTypeCodes": [
+      "30"
+     ],
+     "serviceTypes": [
+      "Health Benefit Plan Coverage"
+     ],
+     "timeQualifierCode": "23",
+     "timeQualifier": "Calendar Year",
+     "benefitAmount": "0",
+     "inPlanNetworkIndicatorCode": "W",
+     "inPlanNetworkIndicator": "Not Applicable",
+     "benefitsDateInformation": {
+      "plan": "20260101-20261231"
+     }
+    },
+    {
+     "code": "G",
+     "name": "Out of Pocket (Stop Loss)",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "30"
+     ],
+     "serviceTypes": [
+      "Health Benefit Plan Coverage"
+     ],
+     "timeQualifierCode": "23",
+     "timeQualifier": "Calendar Year",
+     "benefitAmount": "0",
+     "inPlanNetworkIndicatorCode": "W",
+     "inPlanNetworkIndicator": "Not Applicable",
+     "benefitsDateInformation": {
+      "plan": "20260101-20261231"
+     }
+    },
+    {
+     "code": "G",
+     "name": "Out of Pocket (Stop Loss)",
+     "coverageLevelCode": "FAM",
+     "coverageLevel": "Family",
+     "serviceTypeCodes": [
+      "30"
+     ],
+     "serviceTypes": [
+      "Health Benefit Plan Coverage"
+     ],
+     "timeQualifierCode": "23",
+     "timeQualifier": "Calendar Year",
+     "benefitAmount": "0",
+     "inPlanNetworkIndicatorCode": "W",
+     "inPlanNetworkIndicator": "Not Applicable",
+     "benefitsDateInformation": {
+      "plan": "20260101-20261231"
+     }
+    },
+    {
+     "code": "1",
+     "name": "Active Coverage",
+     "serviceTypeCodes": [
+      "AL"
+     ],
+     "serviceTypes": [
+      "Vision (Optometry)"
+     ],
+     "benefitsDateInformation": {
+      "plan": "20260101-20261231"
+     }
+    },
+    {
+     "code": "U",
+     "name": "Contact Following Entity for Eligibility or Benefit Information",
+     "serviceTypeCodes": [
+      "88"
+     ],
+     "serviceTypes": [
+      "Pharmacy"
+     ],
+     "benefitsRelatedEntity": {
+      "entityIdentifier": "Vendor",
+      "entityType": "Non-Person Entity",
+      "entityName": "OPTUMRX",
+      "contactInformation": {
+       "contacts": [
+        {
+         "communicationMode": "Uniform Resource Locator (URL)",
+         "communicationNumber": "PROFESSIONALS.OPTUMRX.COM"
+        }
+       ]
+      }
+     },
+     "benefitsRelatedEntities": [
+      {
+       "entityIdentifier": "Vendor",
+       "entityType": "Non-Person Entity",
+       "entityName": "OPTUMRX",
+       "contactInformation": {
+        "contacts": [
+         {
+          "communicationMode": "Uniform Resource Locator (URL)",
+          "communicationNumber": "PROFESSIONALS.OPTUMRX.COM"
+         }
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "code": "U",
+     "name": "Contact Following Entity for Eligibility or Benefit Information",
+     "serviceTypeCodes": [
+      "35"
+     ],
+     "serviceTypes": [
+      "Dental Care"
+     ],
+     "benefitsRelatedEntity": {
+      "entityIdentifier": "Vendor",
+      "entityType": "Non-Person Entity",
+      "entityName": "UNITEDHEALTHCARE DENTAL",
+      "contactInformation": {
+       "contacts": [
+        {
+         "communicationMode": "Uniform Resource Locator (URL)",
+         "communicationNumber": "WWW.DBP.COM"
+        }
+       ]
+      }
+     },
+     "benefitsRelatedEntities": [
+      {
+       "entityIdentifier": "Vendor",
+       "entityType": "Non-Person Entity",
+       "entityName": "UNITEDHEALTHCARE DENTAL",
+       "contactInformation": {
+        "contacts": [
+         {
+          "communicationMode": "Uniform Resource Locator (URL)",
+          "communicationNumber": "WWW.DBP.COM"
+         }
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "code": "X",
+     "name": "Health Care Facility",
+     "benefitsRelatedEntity": {
+      "entityIdentifier": "Provider",
+      "entityType": "Non-Person Entity",
+      "entityName": "GHASEM DARIAN",
+      "entityIdentification": "XX",
+      "entityIdentificationValue": "1942363775"
+     },
+     "benefitsRelatedEntities": [
+      {
+       "entityIdentifier": "Provider",
+       "entityType": "Non-Person Entity",
+       "entityName": "GHASEM DARIAN",
+       "entityIdentification": "XX",
+       "entityIdentificationValue": "1942363775"
+      }
+     ]
+    }
+   ],
+   "errors": [],
+   "x12": "ISA*00*          *00*          *ZZ*STEDI          *01*117151744      *260719*1815*^*00501*823773649*0*P*`~GS*HB*STEDI*117151744*20260719*1315*823773649*X*005010X279A1~ST*271*823773649*005010X279A1~BHT*0022*11*01KXXSDTDAFXPQ7SYJN1MEGMEW*20260719*141517~HL*1**20*1~NM1*PR*2*UNITEDHEALTHCARE DENTAL*****PI*52133~HL*2*1*21*1~NM1*1P*2*GHASEM DARIAN*****XX*1942363775~HL*3*2*22*0~TRN*1*01KXXSDTDWEVM8S6F8WZKNGQ80*3117151744~NM1*IL*1*JOHNSON*JOHN*M***MI*902014476~N3*3413 EAST TURNEY AVENUE~N4*PHOENIX*AZ*85018~DMG*D8*19380213*M~EB*R~REF*F6*6JQ6G48XA61~EB*1**30*PS*HMOPOS-AARP MEDICARE ADVANTAGE EXTRAS FROM UHC AZ-******Y~REF*1L*00327~REF*N6*H0609-046-000~DTP*346*D8*20260101~MSG*PCP TO SUBMIT A SPECIALIST REFERRAL~MSG*A PRIOR AUTHORIZATION OR NOTIFICATION INQUIRY REQUEST MAY BE SUBMITTED~MSG*ACCESS TO PASSPORT BENEFIT~LS*2120~NM1*PRP*2*UNITEDHEALTHCARE*****PI*LIFE1~N3*PO BOX 30539~N4*SALT LAKE CITY*UT*84130~PER*IC**UR*WWW.UHCPROVIDER.COM~NM1*X3*2*OPTUM HEALTH NETWORKS AZ~PER*IC**TE*8773702845~LE*2120~EB*G*IND*30*PS**23*4200*****Y~DTP*346*D8*20260101~EB*G*IND*30*PS**29*3292.72*****Y~DTP*346*D8*20260101~EB*G*IND*30*PS**24*907.28*****Y~DTP*346*D8*20260101~EB*L~LS*2120~NM1*P3*1*SULLIVAN*SHAWN****XX*1972544450~N3*3295 N DRINKWATER BLVD STE 5~N4*SCOTTSDALE*AZ*85251~PER*IC**TE*4809490298*FX*0000000000~PRV*PC*PXC*207Q00000X~LE*2120~EB*1**98*********Y~DTP*346*D8*20260101~MSG*OFFICE VISIT PCP~EB*1**48*********Y~DTP*346*D8*20260101~MSG*INPATIENT HOSPITAL~EB*1**50*********Y~DTP*346*D8*20260101~MSG*OUTPATIENT SURGERY~EB*1**33*********Y~DTP*346*D8*20260101~MSG*CHIROPRACTIC~EB*1**96^1*********Y~DTP*346*D8*20260101~MSG*OFFICE VISIT SPECIALIST~EB*1**47^50*********Y~DTP*346*D8*20260101~MSG*OUTPATIENT HOSPITAL~EB*1**MH*********Y~DTP*346*D8*20260101~MSG*MENTAL HEALTH INDIVIDUAL VISIT~EB*1**86^UC*********W~DTP*346*D8*20260101~EB*1**PT*********Y~DTP*346*D8*20260101~MSG*PHYSICAL THERAPY~EB*A*IND*48***7**0****Y~HSD*****31*7~DTP*346*D8*20260101~MSG*INPATIENT HOSPITAL~EB*A*IND*48***7**0****Y~HSD*****29~DTP*346*D8*20260101~MSG*INPATIENT HOSPITAL~EB*A*IND*33***7**0****Y~DTP*346*D8*20260101~MSG*CHIROPRACTIC~EB*A*IND*9***27**0****Y~DTP*346*D8*20260101~MSG*VIRTUAL VISITS/TELEMEDICINE~EB*A*IND*86^UC***7**0****W~DTP*346*D8*20260101~EB*A*IND*96***7**0****Y~DTP*346*D8*20260101~MSG*OFFICE VISIT SPECIALIST~EB*A*IND*50***7**0****Y~DTP*346*D8*20260101~MSG*OUTPATIENT SURGERY~EB*A*IND*PT***7**0****Y~DTP*346*D8*20260101~MSG*PHYSICAL THERAPY~EB*A*IND*50***7**0****Y~DTP*346*D8*20260101~MSG*OUTPATIENT HOSPITAL~EB*A*IND*98***27**0****Y~DTP*346*D8*20260101~MSG*OFFICE VISIT PCP~EB*B*IND*48***7*295*****Y~HSD*****31*7~DTP*346*D8*20260101~MSG*INPATIENT HOSPITAL~EB*B*IND*48***7*0*****Y~HSD*****29~DTP*346*D8*20260101~MSG*INPATIENT HOSPITAL~EB*B*IND*86***7*150*****W~DTP*346*D8*20260101~EB*B*IND*PT***7*20*****Y~DTP*346*D8*20260101~MSG*PHYSICAL THERAPY~EB*B*IND*98***27*0*****Y~DTP*346*D8*20260101~MSG*OFFICE VISIT PCP~EB*B*IND*33***7*10*****Y~DTP*346*D8*20260101~MSG*CHIROPRACTIC~EB*B*IND*50***7*295*****Y~DTP*346*D8*20260101~MSG*OUTPATIENT SURGERY~EB*B*IND*96***7*45*****Y~DTP*346*D8*20260101~MSG*OFFICE VISIT SPECIALIST~EB*B*IND*9***27*0*****Y~DTP*346*D8*20260101~MSG*VIRTUAL VISITS/TELEMEDICINE~EB*B*IND*UC***7*65*****W~DTP*346*D8*20260101~EB*B*IND*50***7*295*****Y~DTP*346*D8*20260101~MSG*OUTPATIENT HOSPITAL~EB*R**88~DTP*290*RD8*20101011-99991231~LS*2120~NM1*PR*2*SCF ARIZONA~LE*2120~EB*1**30**SPECTERA VISION PLAN~DTP*291*RD8*20260101-20261231~LS*2120~NM1*PR*2*UNITEDHEALTHCARE*****PI*87726~N3*PO BOX 30978~N4*SALT LAKE CITY*UT*841300978~LE*2120~EB*C*IND*30***23*0*****W~DTP*291*RD8*20260101-20261231~EB*C*FAM*30***23*0*****W~DTP*291*RD8*20260101-20261231~EB*G*IND*30***23*0*****W~DTP*291*RD8*20260101-20261231~EB*G*FAM*30***23*0*****W~DTP*291*RD8*20260101-20261231~EB*1**AL~DTP*291*RD8*20260101-20261231~EB*U**88~LS*2120~NM1*VN*2*OPTUMRX~PER*IC**UR*PROFESSIONALS.OPTUMRX.COM~LE*2120~EB*U**35~LS*2120~NM1*VN*2*UNITEDHEALTHCARE DENTAL~PER*IC**UR*WWW.DBP.COM~LE*2120~EB*X~LS*2120~NM1*1P*2*GHASEM DARIAN*****XX*1942363775~LE*2120~SE*170*823773649~GE*1*823773649~IEA*1*823773649~",
+   "eligibilitySearchId": "019f7b96-e9aa-71f2-a18c-fe41369837a4",
+   "id": "ec_019f7b96-e9a9-7b62-a510-85be25b321ce"
+  },
+  "D5650": {
+   "meta": {
+    "senderId": "STEDI",
+    "submitterId": "117151744",
+    "applicationMode": "production",
+    "traceId": "01KXXSDXPS5A2YX6QPHMQ7JFVV",
+    "outboundTraceId": "01KXXSDXPS5A2YX6QPHMQ7JFVV"
+   },
+   "controlNumber": "823773919",
+   "reassociationKey": "823773919",
+   "tradingPartnerServiceId": "52133",
+   "provider": {
+    "providerName": "GHASEM DARIAN",
+    "entityIdentifier": "Provider",
+    "entityType": "Non-Person Entity",
+    "npi": "1942363775"
+   },
+   "subscriber": {
+    "memberId": "902014476",
+    "firstName": "JOHN",
+    "lastName": "JOHNSON",
+    "middleName": "M",
+    "gender": "M",
+    "entityIdentifier": "Insured or Subscriber",
+    "entityType": "Person",
+    "dateOfBirth": "19380213",
+    "address": {
+     "address1": "3413 EAST TURNEY AVENUE",
+     "city": "PHOENIX",
+     "state": "AZ",
+     "postalCode": "85018"
+    }
+   },
+   "subscriberTraceNumbers": [
+    {
+     "traceTypeCode": "1",
+     "traceType": "Current Transaction Trace Numbers",
+     "referenceIdentification": "01KXXSDXQ1VMG8CS0HDBF142T7",
+     "originatingCompanyIdentifier": "3117151744"
+    }
+   ],
+   "payer": {
+    "entityIdentifier": "Payer",
+    "entityType": "Non-Person Entity",
+    "name": "UNITEDHEALTHCARE DENTAL",
+    "payorIdentification": "52133"
+   },
+   "planStatus": [
+    {
+     "statusCode": "1",
+     "status": "Active Coverage",
+     "planDetails": "HMOPOS-AARP MEDICARE ADVANTAGE EXTRAS FROM UHC AZ-",
+     "serviceTypeCodes": [
+      "30"
+     ]
+    },
+    {
+     "statusCode": "1",
+     "status": "Active Coverage",
+     "serviceTypeCodes": [
+      "98"
+     ]
+    },
+    {
+     "statusCode": "1",
+     "status": "Active Coverage",
+     "serviceTypeCodes": [
+      "48"
+     ]
+    },
+    {
+     "statusCode": "1",
+     "status": "Active Coverage",
+     "serviceTypeCodes": [
+      "50"
+     ]
+    },
+    {
+     "statusCode": "1",
+     "status": "Active Coverage",
+     "serviceTypeCodes": [
+      "33"
+     ]
+    },
+    {
+     "statusCode": "1",
+     "status": "Active Coverage",
+     "serviceTypeCodes": [
+      "96",
+      "1"
+     ]
+    },
+    {
+     "statusCode": "1",
+     "status": "Active Coverage",
+     "serviceTypeCodes": [
+      "47",
+      "50"
+     ]
+    },
+    {
+     "statusCode": "1",
+     "status": "Active Coverage",
+     "serviceTypeCodes": [
+      "MH"
+     ]
+    },
+    {
+     "statusCode": "1",
+     "status": "Active Coverage",
+     "serviceTypeCodes": [
+      "86",
+      "UC"
+     ]
+    },
+    {
+     "statusCode": "1",
+     "status": "Active Coverage",
+     "serviceTypeCodes": [
+      "PT"
+     ]
+    },
+    {
+     "statusCode": "1",
+     "status": "Active Coverage",
+     "planDetails": "SPECTERA VISION PLAN",
+     "serviceTypeCodes": [
+      "30"
+     ]
+    },
+    {
+     "statusCode": "1",
+     "status": "Active Coverage",
+     "serviceTypeCodes": [
+      "AL"
+     ]
+    }
+   ],
+   "benefitsInformation": [
+    {
+     "code": "R",
+     "name": "Other or Additional Payor",
+     "benefitsAdditionalInformation": {
+      "hicNumber": "6JQ6G48XA61"
+     }
+    },
+    {
+     "code": "1",
+     "name": "Active Coverage",
+     "serviceTypeCodes": [
+      "30"
+     ],
+     "serviceTypes": [
+      "Health Benefit Plan Coverage"
+     ],
+     "insuranceTypeCode": "PS",
+     "insuranceType": "Point of Service (POS)",
+     "planCoverage": "HMOPOS-AARP MEDICARE ADVANTAGE EXTRAS FROM UHC AZ-",
+     "authOrCertIndicator": "Y",
+     "benefitsAdditionalInformation": {
+      "policyNumber": "00327",
+      "planNetworkIdNumber": "H0609-046-000"
+     },
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "benefitsRelatedEntity": {
+      "entityIdentifier": "Primary Payer",
+      "entityType": "Non-Person Entity",
+      "entityName": "UNITEDHEALTHCARE",
+      "entityIdentification": "PI",
+      "entityIdentificationValue": "LIFE1",
+      "address": {
+       "address1": "PO BOX 30539",
+       "city": "SALT LAKE CITY",
+       "state": "UT",
+       "postalCode": "84130"
+      },
+      "contactInformation": {
+       "contacts": [
+        {
+         "communicationMode": "Uniform Resource Locator (URL)",
+         "communicationNumber": "WWW.UHCPROVIDER.COM"
+        }
+       ]
+      }
+     },
+     "benefitsRelatedEntities": [
+      {
+       "entityIdentifier": "Primary Payer",
+       "entityType": "Non-Person Entity",
+       "entityName": "UNITEDHEALTHCARE",
+       "entityIdentification": "PI",
+       "entityIdentificationValue": "LIFE1",
+       "address": {
+        "address1": "PO BOX 30539",
+        "city": "SALT LAKE CITY",
+        "state": "UT",
+        "postalCode": "84130"
+       },
+       "contactInformation": {
+        "contacts": [
+         {
+          "communicationMode": "Uniform Resource Locator (URL)",
+          "communicationNumber": "WWW.UHCPROVIDER.COM"
+         }
+        ]
+       }
+      },
+      {
+       "entityIdentifier": "Utilization Management Organization",
+       "entityType": "Non-Person Entity",
+       "entityName": "OPTUM HEALTH NETWORKS AZ",
+       "contactInformation": {
+        "contacts": [
+         {
+          "communicationMode": "Telephone",
+          "communicationNumber": "8773702845"
+         }
+        ]
+       }
+      }
+     ],
+     "additionalInformation": [
+      {
+       "description": "PCP TO SUBMIT A SPECIALIST REFERRAL"
+      },
+      {
+       "description": "A PRIOR AUTHORIZATION OR NOTIFICATION INQUIRY REQUEST MAY BE SUBMITTED"
+      },
+      {
+       "description": "ACCESS TO PASSPORT BENEFIT"
+      }
+     ]
+    },
+    {
+     "code": "G",
+     "name": "Out of Pocket (Stop Loss)",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "30"
+     ],
+     "serviceTypes": [
+      "Health Benefit Plan Coverage"
+     ],
+     "insuranceTypeCode": "PS",
+     "insuranceType": "Point of Service (POS)",
+     "timeQualifierCode": "23",
+     "timeQualifier": "Calendar Year",
+     "benefitAmount": "4200",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     }
+    },
+    {
+     "code": "G",
+     "name": "Out of Pocket (Stop Loss)",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "30"
+     ],
+     "serviceTypes": [
+      "Health Benefit Plan Coverage"
+     ],
+     "insuranceTypeCode": "PS",
+     "insuranceType": "Point of Service (POS)",
+     "timeQualifierCode": "29",
+     "timeQualifier": "Remaining",
+     "benefitAmount": "3292.72",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     }
+    },
+    {
+     "code": "G",
+     "name": "Out of Pocket (Stop Loss)",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "30"
+     ],
+     "serviceTypes": [
+      "Health Benefit Plan Coverage"
+     ],
+     "insuranceTypeCode": "PS",
+     "insuranceType": "Point of Service (POS)",
+     "timeQualifierCode": "24",
+     "timeQualifier": "Year to Date",
+     "benefitAmount": "907.28",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     }
+    },
+    {
+     "code": "L",
+     "name": "Primary Care Provider",
+     "benefitsRelatedEntity": {
+      "entityIdentifier": "Primary Care Provider",
+      "entityType": "Person",
+      "entityName": "SULLIVAN",
+      "entityFirstname": "SHAWN",
+      "entityIdentification": "XX",
+      "entityIdentificationValue": "1972544450",
+      "address": {
+       "address1": "3295 N DRINKWATER BLVD STE 5",
+       "city": "SCOTTSDALE",
+       "state": "AZ",
+       "postalCode": "85251"
+      },
+      "contactInformation": {
+       "contacts": [
+        {
+         "communicationMode": "Telephone",
+         "communicationNumber": "4809490298"
+        },
+        {
+         "communicationMode": "Facsimile",
+         "communicationNumber": "0000000000"
+        }
+       ]
+      },
+      "providerInformation": {
+       "providerCode": "PC",
+       "referenceIdentification": "207Q00000X"
+      }
+     },
+     "benefitsRelatedEntities": [
+      {
+       "entityIdentifier": "Primary Care Provider",
+       "entityType": "Person",
+       "entityName": "SULLIVAN",
+       "entityFirstname": "SHAWN",
+       "entityIdentification": "XX",
+       "entityIdentificationValue": "1972544450",
+       "address": {
+        "address1": "3295 N DRINKWATER BLVD STE 5",
+        "city": "SCOTTSDALE",
+        "state": "AZ",
+        "postalCode": "85251"
+       },
+       "contactInformation": {
+        "contacts": [
+         {
+          "communicationMode": "Telephone",
+          "communicationNumber": "4809490298"
+         },
+         {
+          "communicationMode": "Facsimile",
+          "communicationNumber": "0000000000"
+         }
+        ]
+       },
+       "providerInformation": {
+        "providerCode": "PC",
+        "referenceIdentification": "207Q00000X"
+       }
+      }
+     ]
+    },
+    {
+     "code": "1",
+     "name": "Active Coverage",
+     "serviceTypeCodes": [
+      "98"
+     ],
+     "serviceTypes": [
+      "Professional (Physician) Visit - Office"
+     ],
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "OFFICE VISIT PCP"
+      }
+     ]
+    },
+    {
+     "code": "1",
+     "name": "Active Coverage",
+     "serviceTypeCodes": [
+      "48"
+     ],
+     "serviceTypes": [
+      "Hospital - Inpatient"
+     ],
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "INPATIENT HOSPITAL"
+      }
+     ]
+    },
+    {
+     "code": "1",
+     "name": "Active Coverage",
+     "serviceTypeCodes": [
+      "50"
+     ],
+     "serviceTypes": [
+      "Hospital - Outpatient"
+     ],
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "OUTPATIENT SURGERY"
+      }
+     ]
+    },
+    {
+     "code": "1",
+     "name": "Active Coverage",
+     "serviceTypeCodes": [
+      "33"
+     ],
+     "serviceTypes": [
+      "Chiropractic"
+     ],
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "CHIROPRACTIC"
+      }
+     ]
+    },
+    {
+     "code": "1",
+     "name": "Active Coverage",
+     "serviceTypeCodes": [
+      "96",
+      "1"
+     ],
+     "serviceTypes": [
+      "Professional (Physician)",
+      "Medical Care"
+     ],
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "OFFICE VISIT SPECIALIST"
+      }
+     ]
+    },
+    {
+     "code": "1",
+     "name": "Active Coverage",
+     "serviceTypeCodes": [
+      "47",
+      "50"
+     ],
+     "serviceTypes": [
+      "Hospital",
+      "Hospital - Outpatient"
+     ],
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "OUTPATIENT HOSPITAL"
+      }
+     ]
+    },
+    {
+     "code": "1",
+     "name": "Active Coverage",
+     "serviceTypeCodes": [
+      "MH"
+     ],
+     "serviceTypes": [
+      "Mental Health"
+     ],
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "MENTAL HEALTH INDIVIDUAL VISIT"
+      }
+     ]
+    },
+    {
+     "code": "1",
+     "name": "Active Coverage",
+     "serviceTypeCodes": [
+      "86",
+      "UC"
+     ],
+     "serviceTypes": [
+      "Emergency Services",
+      "Urgent Care"
+     ],
+     "inPlanNetworkIndicatorCode": "W",
+     "inPlanNetworkIndicator": "Not Applicable",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     }
+    },
+    {
+     "code": "1",
+     "name": "Active Coverage",
+     "serviceTypeCodes": [
+      "PT"
+     ],
+     "serviceTypes": [
+      "Physical Therapy"
+     ],
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "PHYSICAL THERAPY"
+      }
+     ]
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "48"
+     ],
+     "serviceTypes": [
+      "Hospital - Inpatient"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitPercent": "0",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "benefitsServiceDelivery": [
+      {
+       "timePeriodQualifierCode": "31",
+       "timePeriodQualifier": "Not Exceeded",
+       "numOfPeriods": "7"
+      }
+     ],
+     "additionalInformation": [
+      {
+       "description": "INPATIENT HOSPITAL"
+      }
+     ]
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "48"
+     ],
+     "serviceTypes": [
+      "Hospital - Inpatient"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitPercent": "0",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "benefitsServiceDelivery": [
+      {
+       "timePeriodQualifierCode": "29",
+       "timePeriodQualifier": "Remaining"
+      }
+     ],
+     "additionalInformation": [
+      {
+       "description": "INPATIENT HOSPITAL"
+      }
+     ]
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "33"
+     ],
+     "serviceTypes": [
+      "Chiropractic"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitPercent": "0",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "CHIROPRACTIC"
+      }
+     ]
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "9"
+     ],
+     "serviceTypes": [
+      "Other Medical"
+     ],
+     "timeQualifierCode": "27",
+     "timeQualifier": "Visit",
+     "benefitPercent": "0",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "VIRTUAL VISITS/TELEMEDICINE"
+      }
+     ]
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "86",
+      "UC"
+     ],
+     "serviceTypes": [
+      "Emergency Services",
+      "Urgent Care"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitPercent": "0",
+     "inPlanNetworkIndicatorCode": "W",
+     "inPlanNetworkIndicator": "Not Applicable",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     }
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "96"
+     ],
+     "serviceTypes": [
+      "Professional (Physician)"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitPercent": "0",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "OFFICE VISIT SPECIALIST"
+      }
+     ]
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "50"
+     ],
+     "serviceTypes": [
+      "Hospital - Outpatient"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitPercent": "0",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "OUTPATIENT SURGERY"
+      }
+     ]
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "PT"
+     ],
+     "serviceTypes": [
+      "Physical Therapy"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitPercent": "0",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "PHYSICAL THERAPY"
+      }
+     ]
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "50"
+     ],
+     "serviceTypes": [
+      "Hospital - Outpatient"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitPercent": "0",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "OUTPATIENT HOSPITAL"
+      }
+     ]
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "98"
+     ],
+     "serviceTypes": [
+      "Professional (Physician) Visit - Office"
+     ],
+     "timeQualifierCode": "27",
+     "timeQualifier": "Visit",
+     "benefitPercent": "0",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "OFFICE VISIT PCP"
+      }
+     ]
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "48"
+     ],
+     "serviceTypes": [
+      "Hospital - Inpatient"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitAmount": "295",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "benefitsServiceDelivery": [
+      {
+       "timePeriodQualifierCode": "31",
+       "timePeriodQualifier": "Not Exceeded",
+       "numOfPeriods": "7"
+      }
+     ],
+     "additionalInformation": [
+      {
+       "description": "INPATIENT HOSPITAL"
+      }
+     ]
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "48"
+     ],
+     "serviceTypes": [
+      "Hospital - Inpatient"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitAmount": "0",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "benefitsServiceDelivery": [
+      {
+       "timePeriodQualifierCode": "29",
+       "timePeriodQualifier": "Remaining"
+      }
+     ],
+     "additionalInformation": [
+      {
+       "description": "INPATIENT HOSPITAL"
+      }
+     ]
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "86"
+     ],
+     "serviceTypes": [
+      "Emergency Services"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitAmount": "150",
+     "inPlanNetworkIndicatorCode": "W",
+     "inPlanNetworkIndicator": "Not Applicable",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     }
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "PT"
+     ],
+     "serviceTypes": [
+      "Physical Therapy"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitAmount": "20",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "PHYSICAL THERAPY"
+      }
+     ]
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "98"
+     ],
+     "serviceTypes": [
+      "Professional (Physician) Visit - Office"
+     ],
+     "timeQualifierCode": "27",
+     "timeQualifier": "Visit",
+     "benefitAmount": "0",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "OFFICE VISIT PCP"
+      }
+     ]
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "33"
+     ],
+     "serviceTypes": [
+      "Chiropractic"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitAmount": "10",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "CHIROPRACTIC"
+      }
+     ]
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "50"
+     ],
+     "serviceTypes": [
+      "Hospital - Outpatient"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitAmount": "295",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "OUTPATIENT SURGERY"
+      }
+     ]
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "96"
+     ],
+     "serviceTypes": [
+      "Professional (Physician)"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitAmount": "45",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "OFFICE VISIT SPECIALIST"
+      }
+     ]
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "9"
+     ],
+     "serviceTypes": [
+      "Other Medical"
+     ],
+     "timeQualifierCode": "27",
+     "timeQualifier": "Visit",
+     "benefitAmount": "0",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "VIRTUAL VISITS/TELEMEDICINE"
+      }
+     ]
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "UC"
+     ],
+     "serviceTypes": [
+      "Urgent Care"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitAmount": "65",
+     "inPlanNetworkIndicatorCode": "W",
+     "inPlanNetworkIndicator": "Not Applicable",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     }
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "50"
+     ],
+     "serviceTypes": [
+      "Hospital - Outpatient"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitAmount": "295",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "OUTPATIENT HOSPITAL"
+      }
+     ]
+    },
+    {
+     "code": "R",
+     "name": "Other or Additional Payor",
+     "serviceTypeCodes": [
+      "88"
+     ],
+     "serviceTypes": [
+      "Pharmacy"
+     ],
+     "benefitsDateInformation": {
+      "coordinationOfBenefits": "20101011-99991231"
+     },
+     "benefitsRelatedEntity": {
+      "entityIdentifier": "Payer",
+      "entityType": "Non-Person Entity",
+      "entityName": "SCF ARIZONA"
+     },
+     "benefitsRelatedEntities": [
+      {
+       "entityIdentifier": "Payer",
+       "entityType": "Non-Person Entity",
+       "entityName": "SCF ARIZONA"
+      }
+     ]
+    },
+    {
+     "code": "1",
+     "name": "Active Coverage",
+     "serviceTypeCodes": [
+      "30"
+     ],
+     "serviceTypes": [
+      "Health Benefit Plan Coverage"
+     ],
+     "planCoverage": "SPECTERA VISION PLAN",
+     "benefitsDateInformation": {
+      "plan": "20260101-20261231"
+     },
+     "benefitsRelatedEntity": {
+      "entityIdentifier": "Payer",
+      "entityType": "Non-Person Entity",
+      "entityName": "UNITEDHEALTHCARE",
+      "entityIdentification": "PI",
+      "entityIdentificationValue": "87726",
+      "address": {
+       "address1": "PO BOX 30978",
+       "city": "SALT LAKE CITY",
+       "state": "UT",
+       "postalCode": "841300978"
+      }
+     },
+     "benefitsRelatedEntities": [
+      {
+       "entityIdentifier": "Payer",
+       "entityType": "Non-Person Entity",
+       "entityName": "UNITEDHEALTHCARE",
+       "entityIdentification": "PI",
+       "entityIdentificationValue": "87726",
+       "address": {
+        "address1": "PO BOX 30978",
+        "city": "SALT LAKE CITY",
+        "state": "UT",
+        "postalCode": "841300978"
+       }
+      }
+     ]
+    },
+    {
+     "code": "C",
+     "name": "Deductible",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "30"
+     ],
+     "serviceTypes": [
+      "Health Benefit Plan Coverage"
+     ],
+     "timeQualifierCode": "23",
+     "timeQualifier": "Calendar Year",
+     "benefitAmount": "0",
+     "inPlanNetworkIndicatorCode": "W",
+     "inPlanNetworkIndicator": "Not Applicable",
+     "benefitsDateInformation": {
+      "plan": "20260101-20261231"
+     }
+    },
+    {
+     "code": "C",
+     "name": "Deductible",
+     "coverageLevelCode": "FAM",
+     "coverageLevel": "Family",
+     "serviceTypeCodes": [
+      "30"
+     ],
+     "serviceTypes": [
+      "Health Benefit Plan Coverage"
+     ],
+     "timeQualifierCode": "23",
+     "timeQualifier": "Calendar Year",
+     "benefitAmount": "0",
+     "inPlanNetworkIndicatorCode": "W",
+     "inPlanNetworkIndicator": "Not Applicable",
+     "benefitsDateInformation": {
+      "plan": "20260101-20261231"
+     }
+    },
+    {
+     "code": "G",
+     "name": "Out of Pocket (Stop Loss)",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "30"
+     ],
+     "serviceTypes": [
+      "Health Benefit Plan Coverage"
+     ],
+     "timeQualifierCode": "23",
+     "timeQualifier": "Calendar Year",
+     "benefitAmount": "0",
+     "inPlanNetworkIndicatorCode": "W",
+     "inPlanNetworkIndicator": "Not Applicable",
+     "benefitsDateInformation": {
+      "plan": "20260101-20261231"
+     }
+    },
+    {
+     "code": "G",
+     "name": "Out of Pocket (Stop Loss)",
+     "coverageLevelCode": "FAM",
+     "coverageLevel": "Family",
+     "serviceTypeCodes": [
+      "30"
+     ],
+     "serviceTypes": [
+      "Health Benefit Plan Coverage"
+     ],
+     "timeQualifierCode": "23",
+     "timeQualifier": "Calendar Year",
+     "benefitAmount": "0",
+     "inPlanNetworkIndicatorCode": "W",
+     "inPlanNetworkIndicator": "Not Applicable",
+     "benefitsDateInformation": {
+      "plan": "20260101-20261231"
+     }
+    },
+    {
+     "code": "1",
+     "name": "Active Coverage",
+     "serviceTypeCodes": [
+      "AL"
+     ],
+     "serviceTypes": [
+      "Vision (Optometry)"
+     ],
+     "benefitsDateInformation": {
+      "plan": "20260101-20261231"
+     }
+    },
+    {
+     "code": "U",
+     "name": "Contact Following Entity for Eligibility or Benefit Information",
+     "serviceTypeCodes": [
+      "88"
+     ],
+     "serviceTypes": [
+      "Pharmacy"
+     ],
+     "benefitsRelatedEntity": {
+      "entityIdentifier": "Vendor",
+      "entityType": "Non-Person Entity",
+      "entityName": "OPTUMRX",
+      "contactInformation": {
+       "contacts": [
+        {
+         "communicationMode": "Uniform Resource Locator (URL)",
+         "communicationNumber": "PROFESSIONALS.OPTUMRX.COM"
+        }
+       ]
+      }
+     },
+     "benefitsRelatedEntities": [
+      {
+       "entityIdentifier": "Vendor",
+       "entityType": "Non-Person Entity",
+       "entityName": "OPTUMRX",
+       "contactInformation": {
+        "contacts": [
+         {
+          "communicationMode": "Uniform Resource Locator (URL)",
+          "communicationNumber": "PROFESSIONALS.OPTUMRX.COM"
+         }
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "code": "U",
+     "name": "Contact Following Entity for Eligibility or Benefit Information",
+     "serviceTypeCodes": [
+      "35"
+     ],
+     "serviceTypes": [
+      "Dental Care"
+     ],
+     "benefitsRelatedEntity": {
+      "entityIdentifier": "Vendor",
+      "entityType": "Non-Person Entity",
+      "entityName": "UNITEDHEALTHCARE DENTAL",
+      "contactInformation": {
+       "contacts": [
+        {
+         "communicationMode": "Uniform Resource Locator (URL)",
+         "communicationNumber": "WWW.DBP.COM"
+        }
+       ]
+      }
+     },
+     "benefitsRelatedEntities": [
+      {
+       "entityIdentifier": "Vendor",
+       "entityType": "Non-Person Entity",
+       "entityName": "UNITEDHEALTHCARE DENTAL",
+       "contactInformation": {
+        "contacts": [
+         {
+          "communicationMode": "Uniform Resource Locator (URL)",
+          "communicationNumber": "WWW.DBP.COM"
+         }
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "code": "X",
+     "name": "Health Care Facility",
+     "benefitsRelatedEntity": {
+      "entityIdentifier": "Provider",
+      "entityType": "Non-Person Entity",
+      "entityName": "GHASEM DARIAN",
+      "entityIdentification": "XX",
+      "entityIdentificationValue": "1942363775"
+     },
+     "benefitsRelatedEntities": [
+      {
+       "entityIdentifier": "Provider",
+       "entityType": "Non-Person Entity",
+       "entityName": "GHASEM DARIAN",
+       "entityIdentification": "XX",
+       "entityIdentificationValue": "1942363775"
+      }
+     ]
+    }
+   ],
+   "errors": [],
+   "x12": "ISA*00*          *00*          *ZZ*STEDI          *01*117151744      *260719*1815*^*00501*823773919*0*P*`~GS*HB*STEDI*117151744*20260719*1315*823773919*X*005010X279A1~ST*271*823773919*005010X279A1~BHT*0022*11*01KXXSDXPS5A2YX6QPHMQ7JFVV*20260719*141520~HL*1**20*1~NM1*PR*2*UNITEDHEALTHCARE DENTAL*****PI*52133~HL*2*1*21*1~NM1*1P*2*GHASEM DARIAN*****XX*1942363775~HL*3*2*22*0~TRN*1*01KXXSDXQ1VMG8CS0HDBF142T7*3117151744~NM1*IL*1*JOHNSON*JOHN*M***MI*902014476~N3*3413 EAST TURNEY AVENUE~N4*PHOENIX*AZ*85018~DMG*D8*19380213*M~EB*R~REF*F6*6JQ6G48XA61~EB*1**30*PS*HMOPOS-AARP MEDICARE ADVANTAGE EXTRAS FROM UHC AZ-******Y~REF*1L*00327~REF*N6*H0609-046-000~DTP*346*D8*20260101~MSG*PCP TO SUBMIT A SPECIALIST REFERRAL~MSG*A PRIOR AUTHORIZATION OR NOTIFICATION INQUIRY REQUEST MAY BE SUBMITTED~MSG*ACCESS TO PASSPORT BENEFIT~LS*2120~NM1*PRP*2*UNITEDHEALTHCARE*****PI*LIFE1~N3*PO BOX 30539~N4*SALT LAKE CITY*UT*84130~PER*IC**UR*WWW.UHCPROVIDER.COM~NM1*X3*2*OPTUM HEALTH NETWORKS AZ~PER*IC**TE*8773702845~LE*2120~EB*G*IND*30*PS**23*4200*****Y~DTP*346*D8*20260101~EB*G*IND*30*PS**29*3292.72*****Y~DTP*346*D8*20260101~EB*G*IND*30*PS**24*907.28*****Y~DTP*346*D8*20260101~EB*L~LS*2120~NM1*P3*1*SULLIVAN*SHAWN****XX*1972544450~N3*3295 N DRINKWATER BLVD STE 5~N4*SCOTTSDALE*AZ*85251~PER*IC**TE*4809490298*FX*0000000000~PRV*PC*PXC*207Q00000X~LE*2120~EB*1**98*********Y~DTP*346*D8*20260101~MSG*OFFICE VISIT PCP~EB*1**48*********Y~DTP*346*D8*20260101~MSG*INPATIENT HOSPITAL~EB*1**50*********Y~DTP*346*D8*20260101~MSG*OUTPATIENT SURGERY~EB*1**33*********Y~DTP*346*D8*20260101~MSG*CHIROPRACTIC~EB*1**96^1*********Y~DTP*346*D8*20260101~MSG*OFFICE VISIT SPECIALIST~EB*1**47^50*********Y~DTP*346*D8*20260101~MSG*OUTPATIENT HOSPITAL~EB*1**MH*********Y~DTP*346*D8*20260101~MSG*MENTAL HEALTH INDIVIDUAL VISIT~EB*1**86^UC*********W~DTP*346*D8*20260101~EB*1**PT*********Y~DTP*346*D8*20260101~MSG*PHYSICAL THERAPY~EB*A*IND*48***7**0****Y~HSD*****31*7~DTP*346*D8*20260101~MSG*INPATIENT HOSPITAL~EB*A*IND*48***7**0****Y~HSD*****29~DTP*346*D8*20260101~MSG*INPATIENT HOSPITAL~EB*A*IND*33***7**0****Y~DTP*346*D8*20260101~MSG*CHIROPRACTIC~EB*A*IND*9***27**0****Y~DTP*346*D8*20260101~MSG*VIRTUAL VISITS/TELEMEDICINE~EB*A*IND*86^UC***7**0****W~DTP*346*D8*20260101~EB*A*IND*96***7**0****Y~DTP*346*D8*20260101~MSG*OFFICE VISIT SPECIALIST~EB*A*IND*50***7**0****Y~DTP*346*D8*20260101~MSG*OUTPATIENT SURGERY~EB*A*IND*PT***7**0****Y~DTP*346*D8*20260101~MSG*PHYSICAL THERAPY~EB*A*IND*50***7**0****Y~DTP*346*D8*20260101~MSG*OUTPATIENT HOSPITAL~EB*A*IND*98***27**0****Y~DTP*346*D8*20260101~MSG*OFFICE VISIT PCP~EB*B*IND*48***7*295*****Y~HSD*****31*7~DTP*346*D8*20260101~MSG*INPATIENT HOSPITAL~EB*B*IND*48***7*0*****Y~HSD*****29~DTP*346*D8*20260101~MSG*INPATIENT HOSPITAL~EB*B*IND*86***7*150*****W~DTP*346*D8*20260101~EB*B*IND*PT***7*20*****Y~DTP*346*D8*20260101~MSG*PHYSICAL THERAPY~EB*B*IND*98***27*0*****Y~DTP*346*D8*20260101~MSG*OFFICE VISIT PCP~EB*B*IND*33***7*10*****Y~DTP*346*D8*20260101~MSG*CHIROPRACTIC~EB*B*IND*50***7*295*****Y~DTP*346*D8*20260101~MSG*OUTPATIENT SURGERY~EB*B*IND*96***7*45*****Y~DTP*346*D8*20260101~MSG*OFFICE VISIT SPECIALIST~EB*B*IND*9***27*0*****Y~DTP*346*D8*20260101~MSG*VIRTUAL VISITS/TELEMEDICINE~EB*B*IND*UC***7*65*****W~DTP*346*D8*20260101~EB*B*IND*50***7*295*****Y~DTP*346*D8*20260101~MSG*OUTPATIENT HOSPITAL~EB*R**88~DTP*290*RD8*20101011-99991231~LS*2120~NM1*PR*2*SCF ARIZONA~LE*2120~EB*1**30**SPECTERA VISION PLAN~DTP*291*RD8*20260101-20261231~LS*2120~NM1*PR*2*UNITEDHEALTHCARE*****PI*87726~N3*PO BOX 30978~N4*SALT LAKE CITY*UT*841300978~LE*2120~EB*C*IND*30***23*0*****W~DTP*291*RD8*20260101-20261231~EB*C*FAM*30***23*0*****W~DTP*291*RD8*20260101-20261231~EB*G*IND*30***23*0*****W~DTP*291*RD8*20260101-20261231~EB*G*FAM*30***23*0*****W~DTP*291*RD8*20260101-20261231~EB*1**AL~DTP*291*RD8*20260101-20261231~EB*U**88~LS*2120~NM1*VN*2*OPTUMRX~PER*IC**UR*PROFESSIONALS.OPTUMRX.COM~LE*2120~EB*U**35~LS*2120~NM1*VN*2*UNITEDHEALTHCARE DENTAL~PER*IC**UR*WWW.DBP.COM~LE*2120~EB*X~LS*2120~NM1*1P*2*GHASEM DARIAN*****XX*1942363775~LE*2120~SE*170*823773919~GE*1*823773919~IEA*1*823773919~",
+   "eligibilitySearchId": "019f7b96-f6d9-7200-9219-0ac1d813ba40",
+   "id": "ec_019f7b96-f6d8-74a3-9851-901bea7a69b9"
+  },
+  "D5750": {
+   "meta": {
+    "senderId": "STEDI",
+    "submitterId": "117151744",
+    "applicationMode": "production",
+    "traceId": "01KXXSE0QY5ET8NEXD0A1XX376",
+    "outboundTraceId": "01KXXSE0QY5ET8NEXD0A1XX376"
+   },
+   "controlNumber": "823774144",
+   "reassociationKey": "823774144",
+   "tradingPartnerServiceId": "52133",
+   "provider": {
+    "providerName": "GHASEM DARIAN",
+    "entityIdentifier": "Provider",
+    "entityType": "Non-Person Entity",
+    "npi": "1942363775"
+   },
+   "subscriber": {
+    "memberId": "902014476",
+    "firstName": "JOHN",
+    "lastName": "JOHNSON",
+    "middleName": "M",
+    "gender": "M",
+    "entityIdentifier": "Insured or Subscriber",
+    "entityType": "Person",
+    "dateOfBirth": "19380213",
+    "address": {
+     "address1": "3413 EAST TURNEY AVENUE",
+     "city": "PHOENIX",
+     "state": "AZ",
+     "postalCode": "85018"
+    }
+   },
+   "subscriberTraceNumbers": [
+    {
+     "traceTypeCode": "1",
+     "traceType": "Current Transaction Trace Numbers",
+     "referenceIdentification": "01KXXSE0RBCBPWGSJXCRCQY2QE",
+     "originatingCompanyIdentifier": "3117151744"
+    }
+   ],
+   "payer": {
+    "entityIdentifier": "Payer",
+    "entityType": "Non-Person Entity",
+    "name": "UNITEDHEALTHCARE DENTAL",
+    "payorIdentification": "52133"
+   },
+   "planStatus": [
+    {
+     "statusCode": "1",
+     "status": "Active Coverage",
+     "planDetails": "HMOPOS-AARP MEDICARE ADVANTAGE EXTRAS FROM UHC AZ-",
+     "serviceTypeCodes": [
+      "30"
+     ]
+    },
+    {
+     "statusCode": "1",
+     "status": "Active Coverage",
+     "serviceTypeCodes": [
+      "98"
+     ]
+    },
+    {
+     "statusCode": "1",
+     "status": "Active Coverage",
+     "serviceTypeCodes": [
+      "48"
+     ]
+    },
+    {
+     "statusCode": "1",
+     "status": "Active Coverage",
+     "serviceTypeCodes": [
+      "50"
+     ]
+    },
+    {
+     "statusCode": "1",
+     "status": "Active Coverage",
+     "serviceTypeCodes": [
+      "33"
+     ]
+    },
+    {
+     "statusCode": "1",
+     "status": "Active Coverage",
+     "serviceTypeCodes": [
+      "96",
+      "1"
+     ]
+    },
+    {
+     "statusCode": "1",
+     "status": "Active Coverage",
+     "serviceTypeCodes": [
+      "47",
+      "50"
+     ]
+    },
+    {
+     "statusCode": "1",
+     "status": "Active Coverage",
+     "serviceTypeCodes": [
+      "MH"
+     ]
+    },
+    {
+     "statusCode": "1",
+     "status": "Active Coverage",
+     "serviceTypeCodes": [
+      "86",
+      "UC"
+     ]
+    },
+    {
+     "statusCode": "1",
+     "status": "Active Coverage",
+     "serviceTypeCodes": [
+      "PT"
+     ]
+    },
+    {
+     "statusCode": "1",
+     "status": "Active Coverage",
+     "planDetails": "SPECTERA VISION PLAN",
+     "serviceTypeCodes": [
+      "30"
+     ]
+    },
+    {
+     "statusCode": "1",
+     "status": "Active Coverage",
+     "serviceTypeCodes": [
+      "AL"
+     ]
+    }
+   ],
+   "benefitsInformation": [
+    {
+     "code": "R",
+     "name": "Other or Additional Payor",
+     "benefitsAdditionalInformation": {
+      "hicNumber": "6JQ6G48XA61"
+     }
+    },
+    {
+     "code": "1",
+     "name": "Active Coverage",
+     "serviceTypeCodes": [
+      "30"
+     ],
+     "serviceTypes": [
+      "Health Benefit Plan Coverage"
+     ],
+     "insuranceTypeCode": "PS",
+     "insuranceType": "Point of Service (POS)",
+     "planCoverage": "HMOPOS-AARP MEDICARE ADVANTAGE EXTRAS FROM UHC AZ-",
+     "authOrCertIndicator": "Y",
+     "benefitsAdditionalInformation": {
+      "policyNumber": "00327",
+      "planNetworkIdNumber": "H0609-046-000"
+     },
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "benefitsRelatedEntity": {
+      "entityIdentifier": "Primary Payer",
+      "entityType": "Non-Person Entity",
+      "entityName": "UNITEDHEALTHCARE",
+      "entityIdentification": "PI",
+      "entityIdentificationValue": "LIFE1",
+      "address": {
+       "address1": "PO BOX 30539",
+       "city": "SALT LAKE CITY",
+       "state": "UT",
+       "postalCode": "84130"
+      },
+      "contactInformation": {
+       "contacts": [
+        {
+         "communicationMode": "Uniform Resource Locator (URL)",
+         "communicationNumber": "WWW.UHCPROVIDER.COM"
+        }
+       ]
+      }
+     },
+     "benefitsRelatedEntities": [
+      {
+       "entityIdentifier": "Primary Payer",
+       "entityType": "Non-Person Entity",
+       "entityName": "UNITEDHEALTHCARE",
+       "entityIdentification": "PI",
+       "entityIdentificationValue": "LIFE1",
+       "address": {
+        "address1": "PO BOX 30539",
+        "city": "SALT LAKE CITY",
+        "state": "UT",
+        "postalCode": "84130"
+       },
+       "contactInformation": {
+        "contacts": [
+         {
+          "communicationMode": "Uniform Resource Locator (URL)",
+          "communicationNumber": "WWW.UHCPROVIDER.COM"
+         }
+        ]
+       }
+      },
+      {
+       "entityIdentifier": "Utilization Management Organization",
+       "entityType": "Non-Person Entity",
+       "entityName": "OPTUM HEALTH NETWORKS AZ",
+       "contactInformation": {
+        "contacts": [
+         {
+          "communicationMode": "Telephone",
+          "communicationNumber": "8773702845"
+         }
+        ]
+       }
+      }
+     ],
+     "additionalInformation": [
+      {
+       "description": "PCP TO SUBMIT A SPECIALIST REFERRAL"
+      },
+      {
+       "description": "A PRIOR AUTHORIZATION OR NOTIFICATION INQUIRY REQUEST MAY BE SUBMITTED"
+      },
+      {
+       "description": "ACCESS TO PASSPORT BENEFIT"
+      }
+     ]
+    },
+    {
+     "code": "G",
+     "name": "Out of Pocket (Stop Loss)",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "30"
+     ],
+     "serviceTypes": [
+      "Health Benefit Plan Coverage"
+     ],
+     "insuranceTypeCode": "PS",
+     "insuranceType": "Point of Service (POS)",
+     "timeQualifierCode": "23",
+     "timeQualifier": "Calendar Year",
+     "benefitAmount": "4200",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     }
+    },
+    {
+     "code": "G",
+     "name": "Out of Pocket (Stop Loss)",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "30"
+     ],
+     "serviceTypes": [
+      "Health Benefit Plan Coverage"
+     ],
+     "insuranceTypeCode": "PS",
+     "insuranceType": "Point of Service (POS)",
+     "timeQualifierCode": "29",
+     "timeQualifier": "Remaining",
+     "benefitAmount": "3292.72",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     }
+    },
+    {
+     "code": "G",
+     "name": "Out of Pocket (Stop Loss)",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "30"
+     ],
+     "serviceTypes": [
+      "Health Benefit Plan Coverage"
+     ],
+     "insuranceTypeCode": "PS",
+     "insuranceType": "Point of Service (POS)",
+     "timeQualifierCode": "24",
+     "timeQualifier": "Year to Date",
+     "benefitAmount": "907.28",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     }
+    },
+    {
+     "code": "L",
+     "name": "Primary Care Provider",
+     "benefitsRelatedEntity": {
+      "entityIdentifier": "Primary Care Provider",
+      "entityType": "Person",
+      "entityName": "SULLIVAN",
+      "entityFirstname": "SHAWN",
+      "entityIdentification": "XX",
+      "entityIdentificationValue": "1972544450",
+      "address": {
+       "address1": "3295 N DRINKWATER BLVD STE 5",
+       "city": "SCOTTSDALE",
+       "state": "AZ",
+       "postalCode": "85251"
+      },
+      "contactInformation": {
+       "contacts": [
+        {
+         "communicationMode": "Telephone",
+         "communicationNumber": "4809490298"
+        },
+        {
+         "communicationMode": "Facsimile",
+         "communicationNumber": "0000000000"
+        }
+       ]
+      },
+      "providerInformation": {
+       "providerCode": "PC",
+       "referenceIdentification": "207Q00000X"
+      }
+     },
+     "benefitsRelatedEntities": [
+      {
+       "entityIdentifier": "Primary Care Provider",
+       "entityType": "Person",
+       "entityName": "SULLIVAN",
+       "entityFirstname": "SHAWN",
+       "entityIdentification": "XX",
+       "entityIdentificationValue": "1972544450",
+       "address": {
+        "address1": "3295 N DRINKWATER BLVD STE 5",
+        "city": "SCOTTSDALE",
+        "state": "AZ",
+        "postalCode": "85251"
+       },
+       "contactInformation": {
+        "contacts": [
+         {
+          "communicationMode": "Telephone",
+          "communicationNumber": "4809490298"
+         },
+         {
+          "communicationMode": "Facsimile",
+          "communicationNumber": "0000000000"
+         }
+        ]
+       },
+       "providerInformation": {
+        "providerCode": "PC",
+        "referenceIdentification": "207Q00000X"
+       }
+      }
+     ]
+    },
+    {
+     "code": "1",
+     "name": "Active Coverage",
+     "serviceTypeCodes": [
+      "98"
+     ],
+     "serviceTypes": [
+      "Professional (Physician) Visit - Office"
+     ],
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "OFFICE VISIT PCP"
+      }
+     ]
+    },
+    {
+     "code": "1",
+     "name": "Active Coverage",
+     "serviceTypeCodes": [
+      "48"
+     ],
+     "serviceTypes": [
+      "Hospital - Inpatient"
+     ],
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "INPATIENT HOSPITAL"
+      }
+     ]
+    },
+    {
+     "code": "1",
+     "name": "Active Coverage",
+     "serviceTypeCodes": [
+      "50"
+     ],
+     "serviceTypes": [
+      "Hospital - Outpatient"
+     ],
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "OUTPATIENT SURGERY"
+      }
+     ]
+    },
+    {
+     "code": "1",
+     "name": "Active Coverage",
+     "serviceTypeCodes": [
+      "33"
+     ],
+     "serviceTypes": [
+      "Chiropractic"
+     ],
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "CHIROPRACTIC"
+      }
+     ]
+    },
+    {
+     "code": "1",
+     "name": "Active Coverage",
+     "serviceTypeCodes": [
+      "96",
+      "1"
+     ],
+     "serviceTypes": [
+      "Professional (Physician)",
+      "Medical Care"
+     ],
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "OFFICE VISIT SPECIALIST"
+      }
+     ]
+    },
+    {
+     "code": "1",
+     "name": "Active Coverage",
+     "serviceTypeCodes": [
+      "47",
+      "50"
+     ],
+     "serviceTypes": [
+      "Hospital",
+      "Hospital - Outpatient"
+     ],
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "OUTPATIENT HOSPITAL"
+      }
+     ]
+    },
+    {
+     "code": "1",
+     "name": "Active Coverage",
+     "serviceTypeCodes": [
+      "MH"
+     ],
+     "serviceTypes": [
+      "Mental Health"
+     ],
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "MENTAL HEALTH INDIVIDUAL VISIT"
+      }
+     ]
+    },
+    {
+     "code": "1",
+     "name": "Active Coverage",
+     "serviceTypeCodes": [
+      "86",
+      "UC"
+     ],
+     "serviceTypes": [
+      "Emergency Services",
+      "Urgent Care"
+     ],
+     "inPlanNetworkIndicatorCode": "W",
+     "inPlanNetworkIndicator": "Not Applicable",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     }
+    },
+    {
+     "code": "1",
+     "name": "Active Coverage",
+     "serviceTypeCodes": [
+      "PT"
+     ],
+     "serviceTypes": [
+      "Physical Therapy"
+     ],
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "PHYSICAL THERAPY"
+      }
+     ]
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "48"
+     ],
+     "serviceTypes": [
+      "Hospital - Inpatient"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitPercent": "0",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "benefitsServiceDelivery": [
+      {
+       "timePeriodQualifierCode": "31",
+       "timePeriodQualifier": "Not Exceeded",
+       "numOfPeriods": "7"
+      }
+     ],
+     "additionalInformation": [
+      {
+       "description": "INPATIENT HOSPITAL"
+      }
+     ]
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "48"
+     ],
+     "serviceTypes": [
+      "Hospital - Inpatient"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitPercent": "0",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "benefitsServiceDelivery": [
+      {
+       "timePeriodQualifierCode": "29",
+       "timePeriodQualifier": "Remaining"
+      }
+     ],
+     "additionalInformation": [
+      {
+       "description": "INPATIENT HOSPITAL"
+      }
+     ]
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "33"
+     ],
+     "serviceTypes": [
+      "Chiropractic"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitPercent": "0",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "CHIROPRACTIC"
+      }
+     ]
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "9"
+     ],
+     "serviceTypes": [
+      "Other Medical"
+     ],
+     "timeQualifierCode": "27",
+     "timeQualifier": "Visit",
+     "benefitPercent": "0",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "VIRTUAL VISITS/TELEMEDICINE"
+      }
+     ]
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "86",
+      "UC"
+     ],
+     "serviceTypes": [
+      "Emergency Services",
+      "Urgent Care"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitPercent": "0",
+     "inPlanNetworkIndicatorCode": "W",
+     "inPlanNetworkIndicator": "Not Applicable",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     }
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "96"
+     ],
+     "serviceTypes": [
+      "Professional (Physician)"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitPercent": "0",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "OFFICE VISIT SPECIALIST"
+      }
+     ]
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "50"
+     ],
+     "serviceTypes": [
+      "Hospital - Outpatient"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitPercent": "0",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "OUTPATIENT SURGERY"
+      }
+     ]
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "PT"
+     ],
+     "serviceTypes": [
+      "Physical Therapy"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitPercent": "0",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "PHYSICAL THERAPY"
+      }
+     ]
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "50"
+     ],
+     "serviceTypes": [
+      "Hospital - Outpatient"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitPercent": "0",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "OUTPATIENT HOSPITAL"
+      }
+     ]
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "98"
+     ],
+     "serviceTypes": [
+      "Professional (Physician) Visit - Office"
+     ],
+     "timeQualifierCode": "27",
+     "timeQualifier": "Visit",
+     "benefitPercent": "0",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "OFFICE VISIT PCP"
+      }
+     ]
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "48"
+     ],
+     "serviceTypes": [
+      "Hospital - Inpatient"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitAmount": "295",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "benefitsServiceDelivery": [
+      {
+       "timePeriodQualifierCode": "31",
+       "timePeriodQualifier": "Not Exceeded",
+       "numOfPeriods": "7"
+      }
+     ],
+     "additionalInformation": [
+      {
+       "description": "INPATIENT HOSPITAL"
+      }
+     ]
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "48"
+     ],
+     "serviceTypes": [
+      "Hospital - Inpatient"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitAmount": "0",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "benefitsServiceDelivery": [
+      {
+       "timePeriodQualifierCode": "29",
+       "timePeriodQualifier": "Remaining"
+      }
+     ],
+     "additionalInformation": [
+      {
+       "description": "INPATIENT HOSPITAL"
+      }
+     ]
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "86"
+     ],
+     "serviceTypes": [
+      "Emergency Services"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitAmount": "150",
+     "inPlanNetworkIndicatorCode": "W",
+     "inPlanNetworkIndicator": "Not Applicable",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     }
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "PT"
+     ],
+     "serviceTypes": [
+      "Physical Therapy"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitAmount": "20",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "PHYSICAL THERAPY"
+      }
+     ]
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "98"
+     ],
+     "serviceTypes": [
+      "Professional (Physician) Visit - Office"
+     ],
+     "timeQualifierCode": "27",
+     "timeQualifier": "Visit",
+     "benefitAmount": "0",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "OFFICE VISIT PCP"
+      }
+     ]
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "33"
+     ],
+     "serviceTypes": [
+      "Chiropractic"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitAmount": "10",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "CHIROPRACTIC"
+      }
+     ]
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "50"
+     ],
+     "serviceTypes": [
+      "Hospital - Outpatient"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitAmount": "295",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "OUTPATIENT SURGERY"
+      }
+     ]
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "96"
+     ],
+     "serviceTypes": [
+      "Professional (Physician)"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitAmount": "45",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "OFFICE VISIT SPECIALIST"
+      }
+     ]
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "9"
+     ],
+     "serviceTypes": [
+      "Other Medical"
+     ],
+     "timeQualifierCode": "27",
+     "timeQualifier": "Visit",
+     "benefitAmount": "0",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "VIRTUAL VISITS/TELEMEDICINE"
+      }
+     ]
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "UC"
+     ],
+     "serviceTypes": [
+      "Urgent Care"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitAmount": "65",
+     "inPlanNetworkIndicatorCode": "W",
+     "inPlanNetworkIndicator": "Not Applicable",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     }
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "50"
+     ],
+     "serviceTypes": [
+      "Hospital - Outpatient"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitAmount": "295",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsDateInformation": {
+      "planBegin": "20260101"
+     },
+     "additionalInformation": [
+      {
+       "description": "OUTPATIENT HOSPITAL"
+      }
+     ]
+    },
+    {
+     "code": "R",
+     "name": "Other or Additional Payor",
+     "serviceTypeCodes": [
+      "88"
+     ],
+     "serviceTypes": [
+      "Pharmacy"
+     ],
+     "benefitsDateInformation": {
+      "coordinationOfBenefits": "20101011-99991231"
+     },
+     "benefitsRelatedEntity": {
+      "entityIdentifier": "Payer",
+      "entityType": "Non-Person Entity",
+      "entityName": "SCF ARIZONA"
+     },
+     "benefitsRelatedEntities": [
+      {
+       "entityIdentifier": "Payer",
+       "entityType": "Non-Person Entity",
+       "entityName": "SCF ARIZONA"
+      }
+     ]
+    },
+    {
+     "code": "1",
+     "name": "Active Coverage",
+     "serviceTypeCodes": [
+      "30"
+     ],
+     "serviceTypes": [
+      "Health Benefit Plan Coverage"
+     ],
+     "planCoverage": "SPECTERA VISION PLAN",
+     "benefitsDateInformation": {
+      "plan": "20260101-20261231"
+     },
+     "benefitsRelatedEntity": {
+      "entityIdentifier": "Payer",
+      "entityType": "Non-Person Entity",
+      "entityName": "UNITEDHEALTHCARE",
+      "entityIdentification": "PI",
+      "entityIdentificationValue": "87726",
+      "address": {
+       "address1": "PO BOX 30978",
+       "city": "SALT LAKE CITY",
+       "state": "UT",
+       "postalCode": "841300978"
+      }
+     },
+     "benefitsRelatedEntities": [
+      {
+       "entityIdentifier": "Payer",
+       "entityType": "Non-Person Entity",
+       "entityName": "UNITEDHEALTHCARE",
+       "entityIdentification": "PI",
+       "entityIdentificationValue": "87726",
+       "address": {
+        "address1": "PO BOX 30978",
+        "city": "SALT LAKE CITY",
+        "state": "UT",
+        "postalCode": "841300978"
+       }
+      }
+     ]
+    },
+    {
+     "code": "C",
+     "name": "Deductible",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "30"
+     ],
+     "serviceTypes": [
+      "Health Benefit Plan Coverage"
+     ],
+     "timeQualifierCode": "23",
+     "timeQualifier": "Calendar Year",
+     "benefitAmount": "0",
+     "inPlanNetworkIndicatorCode": "W",
+     "inPlanNetworkIndicator": "Not Applicable",
+     "benefitsDateInformation": {
+      "plan": "20260101-20261231"
+     }
+    },
+    {
+     "code": "C",
+     "name": "Deductible",
+     "coverageLevelCode": "FAM",
+     "coverageLevel": "Family",
+     "serviceTypeCodes": [
+      "30"
+     ],
+     "serviceTypes": [
+      "Health Benefit Plan Coverage"
+     ],
+     "timeQualifierCode": "23",
+     "timeQualifier": "Calendar Year",
+     "benefitAmount": "0",
+     "inPlanNetworkIndicatorCode": "W",
+     "inPlanNetworkIndicator": "Not Applicable",
+     "benefitsDateInformation": {
+      "plan": "20260101-20261231"
+     }
+    },
+    {
+     "code": "G",
+     "name": "Out of Pocket (Stop Loss)",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "30"
+     ],
+     "serviceTypes": [
+      "Health Benefit Plan Coverage"
+     ],
+     "timeQualifierCode": "23",
+     "timeQualifier": "Calendar Year",
+     "benefitAmount": "0",
+     "inPlanNetworkIndicatorCode": "W",
+     "inPlanNetworkIndicator": "Not Applicable",
+     "benefitsDateInformation": {
+      "plan": "20260101-20261231"
+     }
+    },
+    {
+     "code": "G",
+     "name": "Out of Pocket (Stop Loss)",
+     "coverageLevelCode": "FAM",
+     "coverageLevel": "Family",
+     "serviceTypeCodes": [
+      "30"
+     ],
+     "serviceTypes": [
+      "Health Benefit Plan Coverage"
+     ],
+     "timeQualifierCode": "23",
+     "timeQualifier": "Calendar Year",
+     "benefitAmount": "0",
+     "inPlanNetworkIndicatorCode": "W",
+     "inPlanNetworkIndicator": "Not Applicable",
+     "benefitsDateInformation": {
+      "plan": "20260101-20261231"
+     }
+    },
+    {
+     "code": "1",
+     "name": "Active Coverage",
+     "serviceTypeCodes": [
+      "AL"
+     ],
+     "serviceTypes": [
+      "Vision (Optometry)"
+     ],
+     "benefitsDateInformation": {
+      "plan": "20260101-20261231"
+     }
+    },
+    {
+     "code": "U",
+     "name": "Contact Following Entity for Eligibility or Benefit Information",
+     "serviceTypeCodes": [
+      "88"
+     ],
+     "serviceTypes": [
+      "Pharmacy"
+     ],
+     "benefitsRelatedEntity": {
+      "entityIdentifier": "Vendor",
+      "entityType": "Non-Person Entity",
+      "entityName": "OPTUMRX",
+      "contactInformation": {
+       "contacts": [
+        {
+         "communicationMode": "Uniform Resource Locator (URL)",
+         "communicationNumber": "PROFESSIONALS.OPTUMRX.COM"
+        }
+       ]
+      }
+     },
+     "benefitsRelatedEntities": [
+      {
+       "entityIdentifier": "Vendor",
+       "entityType": "Non-Person Entity",
+       "entityName": "OPTUMRX",
+       "contactInformation": {
+        "contacts": [
+         {
+          "communicationMode": "Uniform Resource Locator (URL)",
+          "communicationNumber": "PROFESSIONALS.OPTUMRX.COM"
+         }
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "code": "U",
+     "name": "Contact Following Entity for Eligibility or Benefit Information",
+     "serviceTypeCodes": [
+      "35"
+     ],
+     "serviceTypes": [
+      "Dental Care"
+     ],
+     "benefitsRelatedEntity": {
+      "entityIdentifier": "Vendor",
+      "entityType": "Non-Person Entity",
+      "entityName": "UNITEDHEALTHCARE DENTAL",
+      "contactInformation": {
+       "contacts": [
+        {
+         "communicationMode": "Uniform Resource Locator (URL)",
+         "communicationNumber": "WWW.DBP.COM"
+        }
+       ]
+      }
+     },
+     "benefitsRelatedEntities": [
+      {
+       "entityIdentifier": "Vendor",
+       "entityType": "Non-Person Entity",
+       "entityName": "UNITEDHEALTHCARE DENTAL",
+       "contactInformation": {
+        "contacts": [
+         {
+          "communicationMode": "Uniform Resource Locator (URL)",
+          "communicationNumber": "WWW.DBP.COM"
+         }
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "code": "X",
+     "name": "Health Care Facility",
+     "benefitsRelatedEntity": {
+      "entityIdentifier": "Provider",
+      "entityType": "Non-Person Entity",
+      "entityName": "GHASEM DARIAN",
+      "entityIdentification": "XX",
+      "entityIdentificationValue": "1942363775"
+     },
+     "benefitsRelatedEntities": [
+      {
+       "entityIdentifier": "Provider",
+       "entityType": "Non-Person Entity",
+       "entityName": "GHASEM DARIAN",
+       "entityIdentification": "XX",
+       "entityIdentificationValue": "1942363775"
+      }
+     ]
+    }
+   ],
+   "errors": [],
+   "x12": "ISA*00*          *00*          *ZZ*STEDI          *01*117151744      *260719*1815*^*00501*823774144*0*P*`~GS*HB*STEDI*117151744*20260719*1315*823774144*X*005010X279A1~ST*271*823774144*005010X279A1~BHT*0022*11*01KXXSE0QY5ET8NEXD0A1XX376*20260719*141523~HL*1**20*1~NM1*PR*2*UNITEDHEALTHCARE DENTAL*****PI*52133~HL*2*1*21*1~NM1*1P*2*GHASEM DARIAN*****XX*1942363775~HL*3*2*22*0~TRN*1*01KXXSE0RBCBPWGSJXCRCQY2QE*3117151744~NM1*IL*1*JOHNSON*JOHN*M***MI*902014476~N3*3413 EAST TURNEY AVENUE~N4*PHOENIX*AZ*85018~DMG*D8*19380213*M~EB*R~REF*F6*6JQ6G48XA61~EB*1**30*PS*HMOPOS-AARP MEDICARE ADVANTAGE EXTRAS FROM UHC AZ-******Y~REF*1L*00327~REF*N6*H0609-046-000~DTP*346*D8*20260101~MSG*PCP TO SUBMIT A SPECIALIST REFERRAL~MSG*A PRIOR AUTHORIZATION OR NOTIFICATION INQUIRY REQUEST MAY BE SUBMITTED~MSG*ACCESS TO PASSPORT BENEFIT~LS*2120~NM1*PRP*2*UNITEDHEALTHCARE*****PI*LIFE1~N3*PO BOX 30539~N4*SALT LAKE CITY*UT*84130~PER*IC**UR*WWW.UHCPROVIDER.COM~NM1*X3*2*OPTUM HEALTH NETWORKS AZ~PER*IC**TE*8773702845~LE*2120~EB*G*IND*30*PS**23*4200*****Y~DTP*346*D8*20260101~EB*G*IND*30*PS**29*3292.72*****Y~DTP*346*D8*20260101~EB*G*IND*30*PS**24*907.28*****Y~DTP*346*D8*20260101~EB*L~LS*2120~NM1*P3*1*SULLIVAN*SHAWN****XX*1972544450~N3*3295 N DRINKWATER BLVD STE 5~N4*SCOTTSDALE*AZ*85251~PER*IC**TE*4809490298*FX*0000000000~PRV*PC*PXC*207Q00000X~LE*2120~EB*1**98*********Y~DTP*346*D8*20260101~MSG*OFFICE VISIT PCP~EB*1**48*********Y~DTP*346*D8*20260101~MSG*INPATIENT HOSPITAL~EB*1**50*********Y~DTP*346*D8*20260101~MSG*OUTPATIENT SURGERY~EB*1**33*********Y~DTP*346*D8*20260101~MSG*CHIROPRACTIC~EB*1**96^1*********Y~DTP*346*D8*20260101~MSG*OFFICE VISIT SPECIALIST~EB*1**47^50*********Y~DTP*346*D8*20260101~MSG*OUTPATIENT HOSPITAL~EB*1**MH*********Y~DTP*346*D8*20260101~MSG*MENTAL HEALTH INDIVIDUAL VISIT~EB*1**86^UC*********W~DTP*346*D8*20260101~EB*1**PT*********Y~DTP*346*D8*20260101~MSG*PHYSICAL THERAPY~EB*A*IND*48***7**0****Y~HSD*****31*7~DTP*346*D8*20260101~MSG*INPATIENT HOSPITAL~EB*A*IND*48***7**0****Y~HSD*****29~DTP*346*D8*20260101~MSG*INPATIENT HOSPITAL~EB*A*IND*33***7**0****Y~DTP*346*D8*20260101~MSG*CHIROPRACTIC~EB*A*IND*9***27**0****Y~DTP*346*D8*20260101~MSG*VIRTUAL VISITS/TELEMEDICINE~EB*A*IND*86^UC***7**0****W~DTP*346*D8*20260101~EB*A*IND*96***7**0****Y~DTP*346*D8*20260101~MSG*OFFICE VISIT SPECIALIST~EB*A*IND*50***7**0****Y~DTP*346*D8*20260101~MSG*OUTPATIENT SURGERY~EB*A*IND*PT***7**0****Y~DTP*346*D8*20260101~MSG*PHYSICAL THERAPY~EB*A*IND*50***7**0****Y~DTP*346*D8*20260101~MSG*OUTPATIENT HOSPITAL~EB*A*IND*98***27**0****Y~DTP*346*D8*20260101~MSG*OFFICE VISIT PCP~EB*B*IND*48***7*295*****Y~HSD*****31*7~DTP*346*D8*20260101~MSG*INPATIENT HOSPITAL~EB*B*IND*48***7*0*****Y~HSD*****29~DTP*346*D8*20260101~MSG*INPATIENT HOSPITAL~EB*B*IND*86***7*150*****W~DTP*346*D8*20260101~EB*B*IND*PT***7*20*****Y~DTP*346*D8*20260101~MSG*PHYSICAL THERAPY~EB*B*IND*98***27*0*****Y~DTP*346*D8*20260101~MSG*OFFICE VISIT PCP~EB*B*IND*33***7*10*****Y~DTP*346*D8*20260101~MSG*CHIROPRACTIC~EB*B*IND*50***7*295*****Y~DTP*346*D8*20260101~MSG*OUTPATIENT SURGERY~EB*B*IND*96***7*45*****Y~DTP*346*D8*20260101~MSG*OFFICE VISIT SPECIALIST~EB*B*IND*9***27*0*****Y~DTP*346*D8*20260101~MSG*VIRTUAL VISITS/TELEMEDICINE~EB*B*IND*UC***7*65*****W~DTP*346*D8*20260101~EB*B*IND*50***7*295*****Y~DTP*346*D8*20260101~MSG*OUTPATIENT HOSPITAL~EB*R**88~DTP*290*RD8*20101011-99991231~LS*2120~NM1*PR*2*SCF ARIZONA~LE*2120~EB*1**30**SPECTERA VISION PLAN~DTP*291*RD8*20260101-20261231~LS*2120~NM1*PR*2*UNITEDHEALTHCARE*****PI*87726~N3*PO BOX 30978~N4*SALT LAKE CITY*UT*841300978~LE*2120~EB*C*IND*30***23*0*****W~DTP*291*RD8*20260101-20261231~EB*C*FAM*30***23*0*****W~DTP*291*RD8*20260101-20261231~EB*G*IND*30***23*0*****W~DTP*291*RD8*20260101-20261231~EB*G*FAM*30***23*0*****W~DTP*291*RD8*20260101-20261231~EB*1**AL~DTP*291*RD8*20260101-20261231~EB*U**88~LS*2120~NM1*VN*2*OPTUMRX~PER*IC**UR*PROFESSIONALS.OPTUMRX.COM~LE*2120~EB*U**35~LS*2120~NM1*VN*2*UNITEDHEALTHCARE DENTAL~PER*IC**UR*WWW.DBP.COM~LE*2120~EB*X~LS*2120~NM1*1P*2*GHASEM DARIAN*****XX*1942363775~LE*2120~SE*170*823774144~GE*1*823774144~IEA*1*823774144~",
+   "eligibilitySearchId": "019f7b97-02fe-73e0-95fd-8cb80f93faae",
+   "id": "ec_019f7b97-02fd-74e0-a12f-02f6618d32f4"
+  }
+ }
+}

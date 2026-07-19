@@ -1,0 +1,681 @@
+{
+ "codes": [
+  "D2391",
+  "D2740",
+  "D2950",
+  "D6104",
+  "D7140"
+ ],
+ "response": {
+  "meta": {
+   "senderId": "STEDI",
+   "submitterId": "117151744",
+   "applicationMode": "production",
+   "traceId": "01KXXS75SPETQ3MJVZB479GZZ3",
+   "outboundTraceId": "01KXXS75SPETQ3MJVZB479GZZ3"
+  },
+  "controlNumber": "998962757",
+  "reassociationKey": "998962757",
+  "tradingPartnerServiceId": "60054",
+  "provider": {
+   "providerName": "Darian",
+   "providerFirstName": "Ghasem",
+   "middleName": "K.",
+   "entityIdentifier": "Provider",
+   "entityType": "Person",
+   "npi": "1942363775"
+  },
+  "subscriber": {
+   "memberId": "102256326100",
+   "firstName": "CARL",
+   "lastName": "THOMPSON",
+   "middleName": "R",
+   "gender": "M",
+   "entityIdentifier": "Insured or Subscriber",
+   "entityType": "Person",
+   "dateOfBirth": "19510718",
+   "groupNumber": "000003-AZ",
+   "planNumber": "000003-AZ000028",
+   "groupDescription": "MA Individual - Arizona",
+   "address": {
+    "address1": "808 E MISSOURI AVE",
+    "address2": "UNIT 220",
+    "city": "Phoenix",
+    "state": "AZ",
+    "postalCode": "85014"
+   }
+  },
+  "subscriberTraceNumbers": [
+   {
+    "traceTypeCode": "1",
+    "traceType": "Current Transaction Trace Numbers",
+    "referenceIdentification": "01KXXS75TASZAWD0GWEMARM4EV",
+    "originatingCompanyIdentifier": "3117151744"
+   }
+  ],
+  "payer": {
+   "entityIdentifier": "Payer",
+   "entityType": "Non-Person Entity",
+   "name": "AETNA INC",
+   "payorIdentification": "953402799"
+  },
+  "planInformation": {
+   "planNumber": "000003-AZ000028",
+   "groupNumber": "000003-AZ",
+   "groupDescription": "MA Individual - Arizona"
+  },
+  "planDateInformation": {
+   "planBegin": "20260101",
+   "eligibilityBegin": "20260101",
+   "service": "20260719"
+  },
+  "planStatus": [
+   {
+    "statusCode": "1",
+    "status": "Active Coverage",
+    "planDetails": "Aetna Medicare Eagle (PPO)",
+    "serviceTypeCodes": [
+     "30"
+    ]
+   }
+  ],
+  "benefitsInformation": [
+   {
+    "code": "W",
+    "name": "Other Source of Data",
+    "benefitsRelatedEntity": {
+     "entityIdentifier": "Payer",
+     "entityType": "Non-Person Entity",
+     "entityName": "Aetna Medicare",
+     "address": {
+      "address1": "PO Box 981106",
+      "city": "El Paso",
+      "state": "TX",
+      "postalCode": "79998"
+     }
+    },
+    "benefitsRelatedEntities": [
+     {
+      "entityIdentifier": "Payer",
+      "entityType": "Non-Person Entity",
+      "entityName": "Aetna Medicare",
+      "address": {
+       "address1": "PO Box 981106",
+       "city": "El Paso",
+       "state": "TX",
+       "postalCode": "79998"
+      }
+     }
+    ]
+   },
+   {
+    "code": "1",
+    "name": "Active Coverage",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "30"
+    ],
+    "serviceTypes": [
+     "Health Benefit Plan Coverage"
+    ],
+    "insuranceTypeCode": "PR",
+    "insuranceType": "Preferred Provider Organization (PPO)",
+    "planCoverage": "Aetna Medicare Eagle (PPO)",
+    "additionalInformation": [
+     {
+      "description": "Medicare"
+     }
+    ]
+   },
+   {
+    "code": "C",
+    "name": "Deductible",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "30"
+    ],
+    "serviceTypes": [
+     "Health Benefit Plan Coverage"
+    ],
+    "timeQualifierCode": "23",
+    "timeQualifier": "Calendar Year",
+    "benefitAmount": "0",
+    "inPlanNetworkIndicatorCode": "W",
+    "inPlanNetworkIndicator": "Not Applicable"
+   },
+   {
+    "code": "C",
+    "name": "Deductible",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "30"
+    ],
+    "serviceTypes": [
+     "Health Benefit Plan Coverage"
+    ],
+    "timeQualifierCode": "29",
+    "timeQualifier": "Remaining",
+    "benefitAmount": "0",
+    "inPlanNetworkIndicatorCode": "W",
+    "inPlanNetworkIndicator": "Not Applicable"
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "30"
+    ],
+    "serviceTypes": [
+     "Health Benefit Plan Coverage"
+    ],
+    "timeQualifierCode": "23",
+    "timeQualifier": "Calendar Year",
+    "benefitAmount": "3000",
+    "inPlanNetworkIndicatorCode": "W",
+    "inPlanNetworkIndicator": "Not Applicable",
+    "additionalInformation": [
+     {
+      "description": "Annual Maximum"
+     }
+    ]
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "30"
+    ],
+    "serviceTypes": [
+     "Health Benefit Plan Coverage"
+    ],
+    "timeQualifierCode": "29",
+    "timeQualifier": "Remaining",
+    "benefitAmount": "3000",
+    "inPlanNetworkIndicatorCode": "W",
+    "inPlanNetworkIndicator": "Not Applicable",
+    "additionalInformation": [
+     {
+      "description": "Annual Maximum"
+     }
+    ]
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "serviceTypeCodes": [
+     "30"
+    ],
+    "serviceTypes": [
+     "Health Benefit Plan Coverage"
+    ],
+    "additionalInformation": [
+     {
+      "description": "ALTERNATE BENEFITS MAY APPLY"
+     }
+    ]
+   },
+   {
+    "code": "D",
+    "name": "Benefit Description",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "30"
+    ],
+    "serviceTypes": [
+     "Health Benefit Plan Coverage"
+    ],
+    "additionalInformation": [
+     {
+      "description": "Standard Dental Network,Careington Medicare - Dental,Connection Dental Network"
+     }
+    ]
+   },
+   {
+    "code": "A",
+    "name": "Co-Insurance",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "benefitPercent": "0.2",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "compositeMedicalProcedureIdentifier": {
+     "productOrServiceIDQualifierCode": "AD",
+     "productOrServiceIDQualifier": "American Dental Association Codes",
+     "procedureCode": "D2391"
+    }
+   },
+   {
+    "code": "A",
+    "name": "Co-Insurance",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "benefitPercent": "0.2",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "compositeMedicalProcedureIdentifier": {
+     "productOrServiceIDQualifierCode": "AD",
+     "productOrServiceIDQualifier": "American Dental Association Codes",
+     "procedureCode": "D7140"
+    }
+   },
+   {
+    "code": "A",
+    "name": "Co-Insurance",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "benefitPercent": "0.5",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "compositeMedicalProcedureIdentifier": {
+     "productOrServiceIDQualifierCode": "AD",
+     "productOrServiceIDQualifier": "American Dental Association Codes",
+     "procedureCode": "D2740"
+    }
+   },
+   {
+    "code": "A",
+    "name": "Co-Insurance",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "benefitPercent": "0.5",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "compositeMedicalProcedureIdentifier": {
+     "productOrServiceIDQualifierCode": "AD",
+     "productOrServiceIDQualifier": "American Dental Association Codes",
+     "procedureCode": "D2950"
+    }
+   },
+   {
+    "code": "B",
+    "name": "Co-Payment",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "benefitAmount": "0",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "compositeMedicalProcedureIdentifier": {
+     "productOrServiceIDQualifierCode": "AD",
+     "productOrServiceIDQualifier": "American Dental Association Codes",
+     "procedureCode": "D2391"
+    }
+   },
+   {
+    "code": "B",
+    "name": "Co-Payment",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "benefitAmount": "0",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "compositeMedicalProcedureIdentifier": {
+     "productOrServiceIDQualifierCode": "AD",
+     "productOrServiceIDQualifier": "American Dental Association Codes",
+     "procedureCode": "D2740"
+    }
+   },
+   {
+    "code": "B",
+    "name": "Co-Payment",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "benefitAmount": "0",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "compositeMedicalProcedureIdentifier": {
+     "productOrServiceIDQualifierCode": "AD",
+     "productOrServiceIDQualifier": "American Dental Association Codes",
+     "procedureCode": "D2950"
+    }
+   },
+   {
+    "code": "B",
+    "name": "Co-Payment",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "benefitAmount": "0",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "compositeMedicalProcedureIdentifier": {
+     "productOrServiceIDQualifierCode": "AD",
+     "productOrServiceIDQualifier": "American Dental Association Codes",
+     "procedureCode": "D7140"
+    }
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "inPlanNetworkIndicatorCode": "W",
+    "inPlanNetworkIndicator": "Not Applicable",
+    "compositeMedicalProcedureIdentifier": {
+     "productOrServiceIDQualifierCode": "AD",
+     "productOrServiceIDQualifier": "American Dental Association Codes",
+     "procedureCode": "D2391"
+    },
+    "benefitsServiceDelivery": [
+     {
+      "quantityQualifierCode": "FL",
+      "quantityQualifier": "Units",
+      "quantity": "2",
+      "timePeriodQualifierCode": "23",
+      "timePeriodQualifier": "Calendar Year",
+      "numOfPeriods": "1"
+     }
+    ],
+    "additionalInformation": [
+     {
+      "description": "per Tooth"
+     }
+    ]
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "inPlanNetworkIndicatorCode": "W",
+    "inPlanNetworkIndicator": "Not Applicable",
+    "compositeMedicalProcedureIdentifier": {
+     "productOrServiceIDQualifierCode": "AD",
+     "productOrServiceIDQualifier": "American Dental Association Codes",
+     "procedureCode": "D2391"
+    },
+    "benefitsServiceDelivery": [
+     {
+      "quantityQualifierCode": "FL",
+      "quantityQualifier": "Units",
+      "quantity": "2",
+      "timePeriodQualifierCode": "29",
+      "timePeriodQualifier": "Remaining"
+     }
+    ]
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "inPlanNetworkIndicatorCode": "W",
+    "inPlanNetworkIndicator": "Not Applicable",
+    "compositeMedicalProcedureIdentifier": {
+     "productOrServiceIDQualifierCode": "AD",
+     "productOrServiceIDQualifier": "American Dental Association Codes",
+     "procedureCode": "D2740"
+    },
+    "benefitsServiceDelivery": [
+     {
+      "quantityQualifierCode": "FL",
+      "quantityQualifier": "Units",
+      "quantity": "1",
+      "timePeriodQualifierCode": "23",
+      "timePeriodQualifier": "Calendar Year",
+      "numOfPeriods": "5"
+     }
+    ],
+    "additionalInformation": [
+     {
+      "description": "per Tooth"
+     }
+    ]
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "inPlanNetworkIndicatorCode": "W",
+    "inPlanNetworkIndicator": "Not Applicable",
+    "compositeMedicalProcedureIdentifier": {
+     "productOrServiceIDQualifierCode": "AD",
+     "productOrServiceIDQualifier": "American Dental Association Codes",
+     "procedureCode": "D2950"
+    },
+    "benefitsServiceDelivery": [
+     {
+      "quantityQualifierCode": "FL",
+      "quantityQualifier": "Units",
+      "quantity": "1",
+      "timePeriodQualifierCode": "23",
+      "timePeriodQualifier": "Calendar Year",
+      "numOfPeriods": "5"
+     }
+    ],
+    "additionalInformation": [
+     {
+      "description": "per Tooth"
+     }
+    ]
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "inPlanNetworkIndicatorCode": "W",
+    "inPlanNetworkIndicator": "Not Applicable",
+    "compositeMedicalProcedureIdentifier": {
+     "productOrServiceIDQualifierCode": "AD",
+     "productOrServiceIDQualifier": "American Dental Association Codes",
+     "procedureCode": "D2740"
+    },
+    "benefitsServiceDelivery": [
+     {
+      "quantityQualifierCode": "FL",
+      "quantityQualifier": "Units",
+      "quantity": "1",
+      "timePeriodQualifierCode": "29",
+      "timePeriodQualifier": "Remaining"
+     }
+    ]
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "inPlanNetworkIndicatorCode": "W",
+    "inPlanNetworkIndicator": "Not Applicable",
+    "compositeMedicalProcedureIdentifier": {
+     "productOrServiceIDQualifierCode": "AD",
+     "productOrServiceIDQualifier": "American Dental Association Codes",
+     "procedureCode": "D2950"
+    },
+    "benefitsServiceDelivery": [
+     {
+      "quantityQualifierCode": "FL",
+      "quantityQualifier": "Units",
+      "quantity": "1",
+      "timePeriodQualifierCode": "29",
+      "timePeriodQualifier": "Remaining"
+     }
+    ]
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "inPlanNetworkIndicatorCode": "W",
+    "inPlanNetworkIndicator": "Not Applicable",
+    "compositeMedicalProcedureIdentifier": {
+     "productOrServiceIDQualifierCode": "AD",
+     "productOrServiceIDQualifier": "American Dental Association Codes",
+     "procedureCode": "D7140"
+    },
+    "benefitsServiceDelivery": [
+     {
+      "quantityQualifierCode": "FL",
+      "quantityQualifier": "Units",
+      "quantity": "1",
+      "timePeriodQualifierCode": "32",
+      "timePeriodQualifier": "Lifetime"
+     }
+    ],
+    "additionalInformation": [
+     {
+      "description": "per Tooth"
+     }
+    ]
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "inPlanNetworkIndicatorCode": "W",
+    "inPlanNetworkIndicator": "Not Applicable",
+    "compositeMedicalProcedureIdentifier": {
+     "productOrServiceIDQualifierCode": "AD",
+     "productOrServiceIDQualifier": "American Dental Association Codes",
+     "procedureCode": "D7140"
+    },
+    "benefitsServiceDelivery": [
+     {
+      "quantityQualifierCode": "FL",
+      "quantityQualifier": "Units",
+      "quantity": "1",
+      "timePeriodQualifierCode": "29",
+      "timePeriodQualifier": "Remaining"
+     }
+    ]
+   },
+   {
+    "code": "A",
+    "name": "Co-Insurance",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "benefitPercent": "0.5",
+    "inPlanNetworkIndicatorCode": "N",
+    "inPlanNetworkIndicator": "No",
+    "compositeMedicalProcedureIdentifier": {
+     "productOrServiceIDQualifierCode": "AD",
+     "productOrServiceIDQualifier": "American Dental Association Codes",
+     "procedureCode": "D2391"
+    }
+   },
+   {
+    "code": "A",
+    "name": "Co-Insurance",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "benefitPercent": "0.5",
+    "inPlanNetworkIndicatorCode": "N",
+    "inPlanNetworkIndicator": "No",
+    "compositeMedicalProcedureIdentifier": {
+     "productOrServiceIDQualifierCode": "AD",
+     "productOrServiceIDQualifier": "American Dental Association Codes",
+     "procedureCode": "D7140"
+    }
+   },
+   {
+    "code": "A",
+    "name": "Co-Insurance",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "benefitPercent": "0.7",
+    "inPlanNetworkIndicatorCode": "N",
+    "inPlanNetworkIndicator": "No",
+    "compositeMedicalProcedureIdentifier": {
+     "productOrServiceIDQualifierCode": "AD",
+     "productOrServiceIDQualifier": "American Dental Association Codes",
+     "procedureCode": "D2740"
+    }
+   },
+   {
+    "code": "A",
+    "name": "Co-Insurance",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "benefitPercent": "0.7",
+    "inPlanNetworkIndicatorCode": "N",
+    "inPlanNetworkIndicator": "No",
+    "compositeMedicalProcedureIdentifier": {
+     "productOrServiceIDQualifierCode": "AD",
+     "productOrServiceIDQualifier": "American Dental Association Codes",
+     "procedureCode": "D2950"
+    }
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "inPlanNetworkIndicatorCode": "W",
+    "inPlanNetworkIndicator": "Not Applicable",
+    "compositeMedicalProcedureIdentifier": {
+     "productOrServiceIDQualifierCode": "AD",
+     "productOrServiceIDQualifier": "American Dental Association Codes",
+     "procedureCode": "D2391"
+    },
+    "additionalInformation": [
+     {
+      "description": "Shares Frequencies with D2140,D2150,D2160,D2161,D2330,D2331,D2332,D2335,D2390,D2392,D2393,D2394"
+     }
+    ]
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "inPlanNetworkIndicatorCode": "W",
+    "inPlanNetworkIndicator": "Not Applicable",
+    "compositeMedicalProcedureIdentifier": {
+     "productOrServiceIDQualifierCode": "AD",
+     "productOrServiceIDQualifier": "American Dental Association Codes",
+     "procedureCode": "D2740"
+    },
+    "additionalInformation": [
+     {
+      "description": "Shares Frequencies with D2750,D2751,D2752,D2753,D2780,D2781,D2782,D2783,D2790,D2791,D2792"
+     }
+    ]
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "inPlanNetworkIndicatorCode": "W",
+    "inPlanNetworkIndicator": "Not Applicable",
+    "compositeMedicalProcedureIdentifier": {
+     "productOrServiceIDQualifierCode": "AD",
+     "productOrServiceIDQualifier": "American Dental Association Codes",
+     "procedureCode": "D2950"
+    },
+    "additionalInformation": [
+     {
+      "description": "Shares Frequencies with D2952,D2953,D2954,D2957"
+     }
+    ]
+   },
+   {
+    "code": "I",
+    "name": "Non-Covered",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "inPlanNetworkIndicatorCode": "W",
+    "inPlanNetworkIndicator": "Not Applicable",
+    "compositeMedicalProcedureIdentifier": {
+     "productOrServiceIDQualifierCode": "AD",
+     "productOrServiceIDQualifier": "American Dental Association Codes",
+     "procedureCode": "D6104"
+    }
+   }
+  ],
+  "errors": [],
+  "x12": "ISA*00*          *00*          *ZZ*STEDI          *01*117151744      *260719*1411*^*00501*998962757*0*P*`~GS*HB*STEDI*117151744*20260719*141140*1*X*005010X279A1~ST*271*1001*005010X279A1~BHT*0022*11*01KXXS75SPETQ3MJVZB479GZZ3*20260719*14114026~HL*1**20*1~NM1*PR*2*AETNA INC*****PI*953402799~HL*2*1*21*1~NM1*1P*1*Darian*Ghasem*K.***XX*1942363775~HL*3*2*22*0~TRN*1*01KXXS75TASZAWD0GWEMARM4EV*3117151744~NM1*IL*1*THOMPSON*CARL*R***MI*102256326100~REF*18*000003-AZ000028~REF*6P*000003-AZ*MA Individual - Arizona~N3*808 E MISSOURI AVE*UNIT 220~N4*Phoenix*AZ*85014~DMG*D8*19510718*M~DTP*346*D8*20260101~DTP*472*D8*20260719~DTP*356*D8*20260101~EB*W~LS*2120~NM1*PR*2*Aetna Medicare~N3*PO Box 981106~N4*El Paso*TX*79998~LE*2120~EB*1*IND*30*PR*Aetna Medicare Eagle (PPO)~MSG*Medicare~EB*C*IND*30***23*0*****W~EB*C*IND*30***29*0*****W~EB*F*IND*30***23*3000*****W~MSG*Annual Maximum~EB*F*IND*30***29*3000*****W~MSG*Annual Maximum~EB*F**30~MSG*ALTERNATE BENEFITS MAY APPLY~EB*D*IND*30~MSG*Standard Dental Network,Careington Medicare - Dental,Connection Dental Network~EB*A*IND******.2****Y*AD`D2391~EB*A*IND******.2****Y*AD`D7140~EB*A*IND******.5****Y*AD`D2740~EB*A*IND******.5****Y*AD`D2950~EB*B*IND*****0*****Y*AD`D2391~EB*B*IND*****0*****Y*AD`D2740~EB*B*IND*****0*****Y*AD`D2950~EB*B*IND*****0*****Y*AD`D7140~EB*F*IND**********W*AD`D2391~HSD*FL*2***23*1~MSG*per Tooth~EB*F*IND**********W*AD`D2391~HSD*FL*2***29~EB*F*IND**********W*AD`D2740~HSD*FL*1***23*5~MSG*per Tooth~EB*F*IND**********W*AD`D2950~HSD*FL*1***23*5~MSG*per Tooth~EB*F*IND**********W*AD`D2740~HSD*FL*1***29~EB*F*IND**********W*AD`D2950~HSD*FL*1***29~EB*F*IND**********W*AD`D7140~HSD*FL*1***32~MSG*per Tooth~EB*F*IND**********W*AD`D7140~HSD*FL*1***29~EB*A*IND******.5****N*AD`D2391~EB*A*IND******.5****N*AD`D7140~EB*A*IND******.7****N*AD`D2740~EB*A*IND******.7****N*AD`D2950~EB*F*IND**********W*AD`D2391~MSG*Shares Frequencies with D2140,D2150,D2160,D2161,D2330,D2331,D2332,D2335,D2390,D2392,D2393,D2394~EB*F*IND**********W*AD`D2740~MSG*Shares Frequencies with D2750,D2751,D2752,D2753,D2780,D2781,D2782,D2783,D2790,D2791,D2792~EB*F*IND**********W*AD`D2950~MSG*Shares Frequencies with D2952,D2953,D2954,D2957~EB*I*IND**********W*AD`D6104~SE*75*1001~GE*1*1~IEA*1*998962757~",
+  "eligibilitySearchId": "019f7b93-9736-7ff2-9fe8-b3c61ce701d0",
+  "id": "ec_019f7b93-9736-7ff2-9fe8-b3b91e91dc91"
+ }
+}

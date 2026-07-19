@@ -1,0 +1,213 @@
+{
+ "codes": [
+  "D7210"
+ ],
+ "response": {
+  "meta": {
+   "senderId": "STEDI",
+   "submitterId": "117151744",
+   "applicationMode": "production",
+   "traceId": "01KXXS7X65D5X1ANR3MSA8N5FR",
+   "outboundTraceId": "01KXXS7X65D5X1ANR3MSA8N5FR"
+  },
+  "controlNumber": "823760914",
+  "reassociationKey": "823760914",
+  "tradingPartnerServiceId": "62308",
+  "provider": {
+   "providerName": "Ghasem Darian",
+   "entityIdentifier": "Provider",
+   "entityType": "Non-Person Entity",
+   "npi": "1942363775"
+  },
+  "subscriber": {
+   "memberId": "U4160935501",
+   "firstName": "FELIPE",
+   "lastName": "LEYVA",
+   "middleName": "A",
+   "gender": "M",
+   "entityIdentifier": "Insured or Subscriber",
+   "entityType": "Person",
+   "dateOfBirth": "19410208",
+   "groupNumber": "2501434",
+   "planNetworkIdNumber": "CD005",
+   "groupDescription": "BRAVO HEALTH PENNSYLVANIA CDH MEDICARE",
+   "planNetworkDescription": "CIGNA FOR SENIORS",
+   "address": {
+    "address1": "4527 N 8TH ST # 1",
+    "city": "PHOENIX",
+    "state": "AZ",
+    "postalCode": "850143833"
+   }
+  },
+  "subscriberTraceNumbers": [
+   {
+    "traceTypeCode": "1",
+    "traceType": "Current Transaction Trace Numbers",
+    "referenceIdentification": "01KXXS7X6DS8BQN7F63D1C54GA",
+    "originatingCompanyIdentifier": "3117151744"
+   }
+  ],
+  "payer": {
+   "entityIdentifier": "Payer",
+   "entityType": "Non-Person Entity",
+   "name": "Cigna Dental Health, Inc.",
+   "payorIdentification": "CIGNA",
+   "contactInformation": {
+    "contacts": [
+     {
+      "communicationMode": "Telephone",
+      "communicationNumber": "8002446224"
+     },
+     {
+      "communicationMode": "Uniform Resource Locator (URL)",
+      "communicationNumber": "cignaforhcp.cigna.com"
+     }
+    ]
+   }
+  },
+  "planInformation": {
+   "groupNumber": "2501434",
+   "groupDescription": "BRAVO HEALTH PENNSYLVANIA CDH MEDICARE",
+   "planNetworkIdNumber": "CD005",
+   "planNetworkIdDescription": "CIGNA FOR SENIORS",
+   "priorIdNumber": "U41609355"
+  },
+  "planDateInformation": {
+   "planBegin": "20260101",
+   "planEnd": "20261231",
+   "eligibilityBegin": "20230101"
+  },
+  "planStatus": [
+   {
+    "statusCode": "1",
+    "status": "Active Coverage",
+    "planDetails": "Dental HMO"
+   },
+   {
+    "statusCode": "1",
+    "status": "Active Coverage"
+   }
+  ],
+  "benefitsInformation": [
+   {
+    "code": "I",
+    "name": "Non-Covered",
+    "authOrCertIndicator": "N",
+    "inPlanNetworkIndicatorCode": "N",
+    "inPlanNetworkIndicator": "No"
+   },
+   {
+    "code": "1",
+    "name": "Active Coverage",
+    "insuranceTypeCode": "HM",
+    "insuranceType": "Health Maintenance Organization (HMO)",
+    "planCoverage": "Dental HMO",
+    "timeQualifierCode": "23",
+    "timeQualifier": "Calendar Year",
+    "authOrCertIndicator": "N"
+   },
+   {
+    "code": "1",
+    "name": "Active Coverage",
+    "authOrCertIndicator": "N",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes"
+   },
+   {
+    "code": "B",
+    "name": "Co-Payment",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "timeQualifierCode": "27",
+    "timeQualifier": "Visit",
+    "benefitAmount": "0",
+    "authOrCertIndicator": "N",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "compositeMedicalProcedureIdentifier": {
+     "productOrServiceIDQualifierCode": "AD",
+     "productOrServiceIDQualifier": "American Dental Association Codes",
+     "procedureCode": "D7210"
+    }
+   },
+   {
+    "code": "B",
+    "name": "Co-Payment",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "35"
+    ],
+    "serviceTypes": [
+     "Dental Care"
+    ],
+    "timeQualifierCode": "27",
+    "timeQualifier": "Visit",
+    "benefitAmount": "0",
+    "inPlanNetworkIndicatorCode": "W",
+    "inPlanNetworkIndicator": "Not Applicable",
+    "additionalInformation": [
+     {
+      "description": "Patient charge schedule M2709"
+     }
+    ]
+   },
+   {
+    "code": "L",
+    "name": "Primary Care Provider",
+    "serviceTypeCodes": [
+     "35"
+    ],
+    "serviceTypes": [
+     "Dental Care"
+    ],
+    "benefitsRelatedEntity": {
+     "entityIdentifier": "Primary Care Provider",
+     "entityType": "Non-Person Entity",
+     "entityName": "TARAN GREEP DDS",
+     "address": {
+      "address1": "9515 W CAMELBACK RD",
+      "address2": "STE 128",
+      "city": "PHOENIX",
+      "state": "AZ",
+      "postalCode": "850371355"
+     },
+     "contactInformation": {
+      "contacts": [
+       {
+        "communicationMode": "Telephone",
+        "communicationNumber": "6238488500"
+       }
+      ]
+     }
+    },
+    "benefitsRelatedEntities": [
+     {
+      "entityIdentifier": "Primary Care Provider",
+      "entityType": "Non-Person Entity",
+      "entityName": "TARAN GREEP DDS",
+      "address": {
+       "address1": "9515 W CAMELBACK RD",
+       "address2": "STE 128",
+       "city": "PHOENIX",
+       "state": "AZ",
+       "postalCode": "850371355"
+      },
+      "contactInformation": {
+       "contacts": [
+        {
+         "communicationMode": "Telephone",
+         "communicationNumber": "6238488500"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "errors": [],
+  "x12": "ISA*00*          *00*          *ZZ*STEDI          *01*117151744      *260719*1812*^*00501*823760914*0*P*`~GS*HB*STEDI*117151744*20260719*1312*823760914*X*005010X279A1~ST*271*823760914*005010X279A1~BHT*0022*11*01KXXS7X65D5X1ANR3MSA8N5FR*20260719*181203~HL*1**20*1~NM1*PR*2*Cigna Dental Health, Inc.*****PI*CIGNA~PER*IC**TE*8002446224*UR*cignaforhcp.cigna.com~HL*2*1*21*1~NM1*1P*2*Ghasem Darian*****XX*1942363775~HL*3*2*22*0~TRN*1*01KXXS7X6DS8BQN7F63D1C54GA*3117151744~NM1*IL*1*LEYVA*FELIPE*A***MI*U4160935501~REF*6P*2501434*BRAVO HEALTH PENNSYLVANIA CDH MEDICARE~REF*Q4*U41609355~REF*N6*CD005*CIGNA FOR SENIORS~N3*4527 N 8TH ST # 1~N4*PHOENIX*AZ*850143833~DMG*D8*19410208*M~INS*Y*18*001*25~DTP*346*D8*20260101~DTP*347*D8*20261231~DTP*356*D8*20230101~EB*I**********N*N~EB*1***HM*Dental HMO*23*****N~EB*1**********N*Y~EB*B*IND****27*0****N*Y*AD`D7210~EB*B*IND*35***27*0~MSG*Patient charge schedule M2709~EB*L**35~LS*2120~NM1*P3*2*TARAN GREEP DDS~N3*9515 W CAMELBACK RD*STE 128~N4*PHOENIX*AZ*850371355~PER*IC**TE*6238488500~LE*2120~SE*34*823760914~GE*1*823760914~IEA*1*823760914~",
+  "eligibilitySearchId": "019f7b93-f4c4-7573-a5f2-6c3143852153",
+  "id": "ec_019f7b93-f4c3-78a0-99ab-15d9cd7be893"
+ }
+}

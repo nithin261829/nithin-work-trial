@@ -1,0 +1,385 @@
+{
+ "codes": [
+  "D6010",
+  "D6057",
+  "D9635",
+  "D9636"
+ ],
+ "response": {
+  "meta": {
+   "senderId": "STEDI",
+   "submitterId": "117151744",
+   "applicationMode": "production",
+   "traceId": "01KXXS7C9F9ZXV6PHB9G18S96J",
+   "outboundTraceId": "01KXXS7C9F9ZXV6PHB9G18S96J"
+  },
+  "controlNumber": "823759708",
+  "reassociationKey": "823759708",
+  "tradingPartnerServiceId": "62308",
+  "provider": {
+   "providerName": "Ghasem Darian",
+   "entityIdentifier": "Provider",
+   "entityType": "Non-Person Entity",
+   "npi": "1942363775"
+  },
+  "subscriber": {
+   "memberId": "U7047082301",
+   "firstName": "MARISA",
+   "lastName": "DELMONTE",
+   "middleName": "E",
+   "gender": "F",
+   "entityIdentifier": "Insured or Subscriber",
+   "entityType": "Person",
+   "dateOfBirth": "19590318",
+   "groupNumber": "3173544",
+   "groupDescription": "UNITED AIRLINES, INC.",
+   "address": {
+    "address1": "5900 CANTERBURY DR UNIT A30",
+    "address2": "3",
+    "city": "CULVER CITY",
+    "state": "CA",
+    "postalCode": "902306758"
+   }
+  },
+  "subscriberTraceNumbers": [
+   {
+    "traceTypeCode": "1",
+    "traceType": "Current Transaction Trace Numbers",
+    "referenceIdentification": "01KXXS7C9T10PTP6R3DB3Y7MK9",
+    "originatingCompanyIdentifier": "3117151744"
+   }
+  ],
+  "payer": {
+   "entityIdentifier": "Payer",
+   "entityType": "Non-Person Entity",
+   "name": "CGLIC",
+   "payorIdentification": "CIGNA",
+   "contactInformation": {
+    "contacts": [
+     {
+      "communicationMode": "Telephone",
+      "communicationNumber": "8002446224"
+     },
+     {
+      "communicationMode": "Uniform Resource Locator (URL)",
+      "communicationNumber": "cignaforhcp.cigna.com"
+     }
+    ]
+   }
+  },
+  "planInformation": {
+   "groupNumber": "3173544",
+   "groupDescription": "UNITED AIRLINES, INC.",
+   "priorIdNumber": "U70470823"
+  },
+  "planDateInformation": {
+   "eligibilityBegin": "20190101"
+  },
+  "errors": [],
+  "x12": "ISA*00*          *00*          *ZZ*STEDI          *01*117151744      *260719*1811*^*00501*823759708*0*P*`~GS*HB*STEDI*117151744*20260719*1311*823759708*X*005010X279A1~ST*271*823759708*005010X279A1~BHT*0022*11*01KXXS7C9F9ZXV6PHB9G18S96J*20260719*181146~HL*1**20*1~NM1*PR*2*CGLIC*****PI*CIGNA~PER*IC**TE*8002446224*UR*cignaforhcp.cigna.com~HL*2*1*21*1~NM1*1P*2*Ghasem Darian*****XX*1942363775~HL*3*2*22*0~TRN*1*01KXXS7C9T10PTP6R3DB3Y7MK9*3117151744~NM1*IL*1*DELMONTE*MARISA*E***MI*U7047082301~REF*6P*3173544*UNITED AIRLINES, INC.~REF*Q4*U70470823~N3*5900 CANTERBURY DR UNIT A30*3~N4*CULVER CITY*CA*902306758~DMG*D8*19590318*F~INS*Y*18*001*25~DTP*356*D8*20190101~SE*18*823759708~GE*1*823759708~IEA*1*823759708~",
+  "eligibilitySearchId": "019f7b93-b12e-7930-a4ff-9c7647ef3163",
+  "id": "ec_019f7b93-b12d-7f30-a748-66dbd3806fd8"
+ },
+ "singles": {
+  "D6010": {
+   "meta": {
+    "senderId": "STEDI",
+    "submitterId": "117151744",
+    "applicationMode": "production",
+    "traceId": "01KXXSCVR87JV21E0C8T9VN3Y2",
+    "outboundTraceId": "01KXXSCVR87JV21E0C8T9VN3Y2"
+   },
+   "controlNumber": "823771229",
+   "reassociationKey": "823771229",
+   "tradingPartnerServiceId": "62308",
+   "provider": {
+    "providerName": "Ghasem Darian",
+    "entityIdentifier": "Provider",
+    "entityType": "Non-Person Entity",
+    "npi": "1942363775"
+   },
+   "subscriber": {
+    "memberId": "U7047082301",
+    "firstName": "MARISA",
+    "lastName": "DELMONTE",
+    "middleName": "E",
+    "gender": "F",
+    "entityIdentifier": "Insured or Subscriber",
+    "entityType": "Person",
+    "dateOfBirth": "19590318",
+    "groupNumber": "3173544",
+    "groupDescription": "UNITED AIRLINES, INC.",
+    "address": {
+     "address1": "5900 CANTERBURY DR UNIT A30",
+     "address2": "3",
+     "city": "CULVER CITY",
+     "state": "CA",
+     "postalCode": "902306758"
+    }
+   },
+   "subscriberTraceNumbers": [
+    {
+     "traceTypeCode": "1",
+     "traceType": "Current Transaction Trace Numbers",
+     "referenceIdentification": "01KXXSCVRHG61Z8SH50275GCYJ",
+     "originatingCompanyIdentifier": "3117151744"
+    }
+   ],
+   "payer": {
+    "entityIdentifier": "Payer",
+    "entityType": "Non-Person Entity",
+    "name": "CGLIC",
+    "payorIdentification": "CIGNA",
+    "contactInformation": {
+     "contacts": [
+      {
+       "communicationMode": "Telephone",
+       "communicationNumber": "8002446224"
+      },
+      {
+       "communicationMode": "Uniform Resource Locator (URL)",
+       "communicationNumber": "cignaforhcp.cigna.com"
+      }
+     ]
+    }
+   },
+   "planInformation": {
+    "groupNumber": "3173544",
+    "groupDescription": "UNITED AIRLINES, INC.",
+    "priorIdNumber": "U70470823"
+   },
+   "planDateInformation": {
+    "eligibilityBegin": "20190101"
+   },
+   "errors": [],
+   "x12": "ISA*00*          *00*          *ZZ*STEDI          *01*117151744      *260719*1814*^*00501*823771229*0*P*`~GS*HB*STEDI*117151744*20260719*1314*823771229*X*005010X279A1~ST*271*823771229*005010X279A1~BHT*0022*11*01KXXSCVR87JV21E0C8T9VN3Y2*20260719*181445~HL*1**20*1~NM1*PR*2*CGLIC*****PI*CIGNA~PER*IC**TE*8002446224*UR*cignaforhcp.cigna.com~HL*2*1*21*1~NM1*1P*2*Ghasem Darian*****XX*1942363775~HL*3*2*22*0~TRN*1*01KXXSCVRHG61Z8SH50275GCYJ*3117151744~NM1*IL*1*DELMONTE*MARISA*E***MI*U7047082301~REF*6P*3173544*UNITED AIRLINES, INC.~REF*Q4*U70470823~N3*5900 CANTERBURY DR UNIT A30*3~N4*CULVER CITY*CA*902306758~DMG*D8*19590318*F~INS*Y*18*001*25~DTP*356*D8*20190101~SE*18*823771229~GE*1*823771229~IEA*1*823771229~",
+   "eligibilitySearchId": "019f7b96-6f08-7c83-9c34-df88c163d195",
+   "id": "ec_019f7b96-6f07-7f61-82e6-4c39eb864f01"
+  },
+  "D6057": {
+   "meta": {
+    "senderId": "STEDI",
+    "submitterId": "117151744",
+    "applicationMode": "production",
+    "traceId": "01KXXSCYDH08KBP5EB3ZE92GZ4",
+    "outboundTraceId": "01KXXSCYDH08KBP5EB3ZE92GZ4"
+   },
+   "controlNumber": "823771413",
+   "reassociationKey": "823771413",
+   "tradingPartnerServiceId": "62308",
+   "provider": {
+    "providerName": "Ghasem Darian",
+    "entityIdentifier": "Provider",
+    "entityType": "Non-Person Entity",
+    "npi": "1942363775"
+   },
+   "subscriber": {
+    "memberId": "U7047082301",
+    "firstName": "MARISA",
+    "lastName": "DELMONTE",
+    "middleName": "E",
+    "gender": "F",
+    "entityIdentifier": "Insured or Subscriber",
+    "entityType": "Person",
+    "dateOfBirth": "19590318",
+    "groupNumber": "3173544",
+    "groupDescription": "UNITED AIRLINES, INC.",
+    "address": {
+     "address1": "5900 CANTERBURY DR UNIT A30",
+     "address2": "3",
+     "city": "CULVER CITY",
+     "state": "CA",
+     "postalCode": "902306758"
+    }
+   },
+   "subscriberTraceNumbers": [
+    {
+     "traceTypeCode": "1",
+     "traceType": "Current Transaction Trace Numbers",
+     "referenceIdentification": "01KXXSCYDRFT7CBC8PFSAHF6HB",
+     "originatingCompanyIdentifier": "3117151744"
+    }
+   ],
+   "payer": {
+    "entityIdentifier": "Payer",
+    "entityType": "Non-Person Entity",
+    "name": "CGLIC",
+    "payorIdentification": "CIGNA",
+    "contactInformation": {
+     "contacts": [
+      {
+       "communicationMode": "Telephone",
+       "communicationNumber": "8002446224"
+      },
+      {
+       "communicationMode": "Uniform Resource Locator (URL)",
+       "communicationNumber": "cignaforhcp.cigna.com"
+      }
+     ]
+    }
+   },
+   "planInformation": {
+    "groupNumber": "3173544",
+    "groupDescription": "UNITED AIRLINES, INC.",
+    "priorIdNumber": "U70470823"
+   },
+   "planDateInformation": {
+    "eligibilityBegin": "20190101"
+   },
+   "errors": [],
+   "x12": "ISA*00*          *00*          *ZZ*STEDI          *01*117151744      *260719*1814*^*00501*823771413*0*P*`~GS*HB*STEDI*117151744*20260719*1314*823771413*X*005010X279A1~ST*271*823771413*005010X279A1~BHT*0022*11*01KXXSCYDH08KBP5EB3ZE92GZ4*20260719*181448~HL*1**20*1~NM1*PR*2*CGLIC*****PI*CIGNA~PER*IC**TE*8002446224*UR*cignaforhcp.cigna.com~HL*2*1*21*1~NM1*1P*2*Ghasem Darian*****XX*1942363775~HL*3*2*22*0~TRN*1*01KXXSCYDRFT7CBC8PFSAHF6HB*3117151744~NM1*IL*1*DELMONTE*MARISA*E***MI*U7047082301~REF*6P*3173544*UNITED AIRLINES, INC.~REF*Q4*U70470823~N3*5900 CANTERBURY DR UNIT A30*3~N4*CULVER CITY*CA*902306758~DMG*D8*19590318*F~INS*Y*18*001*25~DTP*356*D8*20190101~SE*18*823771413~GE*1*823771413~IEA*1*823771413~",
+   "eligibilitySearchId": "019f7b96-79b1-7572-aa17-f5f1264ed01b",
+   "id": "ec_019f7b96-79b1-7572-aa17-f5e40986882b"
+  },
+  "D9635": {
+   "meta": {
+    "senderId": "STEDI",
+    "submitterId": "117151744",
+    "applicationMode": "production",
+    "traceId": "01KXXSD0K5W2DEZDP3BFNE5J70",
+    "outboundTraceId": "01KXXSD0K5W2DEZDP3BFNE5J70"
+   },
+   "controlNumber": "823771579",
+   "reassociationKey": "823771579",
+   "tradingPartnerServiceId": "62308",
+   "provider": {
+    "providerName": "Ghasem Darian",
+    "entityIdentifier": "Provider",
+    "entityType": "Non-Person Entity",
+    "npi": "1942363775"
+   },
+   "subscriber": {
+    "memberId": "U7047082301",
+    "firstName": "MARISA",
+    "lastName": "DELMONTE",
+    "middleName": "E",
+    "gender": "F",
+    "entityIdentifier": "Insured or Subscriber",
+    "entityType": "Person",
+    "dateOfBirth": "19590318",
+    "groupNumber": "3173544",
+    "groupDescription": "UNITED AIRLINES, INC.",
+    "address": {
+     "address1": "5900 CANTERBURY DR UNIT A30",
+     "address2": "3",
+     "city": "CULVER CITY",
+     "state": "CA",
+     "postalCode": "902306758"
+    }
+   },
+   "subscriberTraceNumbers": [
+    {
+     "traceTypeCode": "1",
+     "traceType": "Current Transaction Trace Numbers",
+     "referenceIdentification": "01KXXSD0KEE1JFTVJTCC0ERFJ8",
+     "originatingCompanyIdentifier": "3117151744"
+    }
+   ],
+   "payer": {
+    "entityIdentifier": "Payer",
+    "entityType": "Non-Person Entity",
+    "name": "CGLIC",
+    "payorIdentification": "CIGNA",
+    "contactInformation": {
+     "contacts": [
+      {
+       "communicationMode": "Telephone",
+       "communicationNumber": "8002446224"
+      },
+      {
+       "communicationMode": "Uniform Resource Locator (URL)",
+       "communicationNumber": "cignaforhcp.cigna.com"
+      }
+     ]
+    }
+   },
+   "planInformation": {
+    "groupNumber": "3173544",
+    "groupDescription": "UNITED AIRLINES, INC.",
+    "priorIdNumber": "U70470823"
+   },
+   "planDateInformation": {
+    "eligibilityBegin": "20190101"
+   },
+   "errors": [],
+   "x12": "ISA*00*          *00*          *ZZ*STEDI          *01*117151744      *260719*1814*^*00501*823771579*0*P*`~GS*HB*STEDI*117151744*20260719*1314*823771579*X*005010X279A1~ST*271*823771579*005010X279A1~BHT*0022*11*01KXXSD0K5W2DEZDP3BFNE5J70*20260719*181451~HL*1**20*1~NM1*PR*2*CGLIC*****PI*CIGNA~PER*IC**TE*8002446224*UR*cignaforhcp.cigna.com~HL*2*1*21*1~NM1*1P*2*Ghasem Darian*****XX*1942363775~HL*3*2*22*0~TRN*1*01KXXSD0KEE1JFTVJTCC0ERFJ8*3117151744~NM1*IL*1*DELMONTE*MARISA*E***MI*U7047082301~REF*6P*3173544*UNITED AIRLINES, INC.~REF*Q4*U70470823~N3*5900 CANTERBURY DR UNIT A30*3~N4*CULVER CITY*CA*902306758~DMG*D8*19590318*F~INS*Y*18*001*25~DTP*356*D8*20190101~SE*18*823771579~GE*1*823771579~IEA*1*823771579~",
+   "eligibilitySearchId": "019f7b96-8264-7721-822c-6193ac66f94b",
+   "id": "ec_019f7b96-8264-7721-822c-6189c38a4af9"
+  },
+  "D9636": {
+   "meta": {
+    "senderId": "STEDI",
+    "submitterId": "117151744",
+    "applicationMode": "production",
+    "traceId": "01KXXSD3HTS8DRXGCEVPZE8RAD",
+    "outboundTraceId": "01KXXSD3HTS8DRXGCEVPZE8RAD"
+   },
+   "controlNumber": "823771771",
+   "reassociationKey": "823771771",
+   "tradingPartnerServiceId": "62308",
+   "provider": {
+    "providerName": "Ghasem Darian",
+    "entityIdentifier": "Provider",
+    "entityType": "Non-Person Entity",
+    "npi": "1942363775"
+   },
+   "subscriber": {
+    "memberId": "U7047082301",
+    "firstName": "MARISA",
+    "lastName": "DELMONTE",
+    "middleName": "E",
+    "gender": "F",
+    "entityIdentifier": "Insured or Subscriber",
+    "entityType": "Person",
+    "dateOfBirth": "19590318",
+    "groupNumber": "3173544",
+    "groupDescription": "UNITED AIRLINES, INC.",
+    "address": {
+     "address1": "5900 CANTERBURY DR UNIT A30",
+     "address2": "3",
+     "city": "CULVER CITY",
+     "state": "CA",
+     "postalCode": "902306758"
+    }
+   },
+   "subscriberTraceNumbers": [
+    {
+     "traceTypeCode": "1",
+     "traceType": "Current Transaction Trace Numbers",
+     "referenceIdentification": "01KXXSD3J0HBM45DRGMH59FCM4",
+     "originatingCompanyIdentifier": "3117151744"
+    }
+   ],
+   "payer": {
+    "entityIdentifier": "Payer",
+    "entityType": "Non-Person Entity",
+    "name": "CGLIC",
+    "payorIdentification": "CIGNA",
+    "contactInformation": {
+     "contacts": [
+      {
+       "communicationMode": "Telephone",
+       "communicationNumber": "8002446224"
+      },
+      {
+       "communicationMode": "Uniform Resource Locator (URL)",
+       "communicationNumber": "cignaforhcp.cigna.com"
+      }
+     ]
+    }
+   },
+   "planInformation": {
+    "groupNumber": "3173544",
+    "groupDescription": "UNITED AIRLINES, INC.",
+    "priorIdNumber": "U70470823"
+   },
+   "planDateInformation": {
+    "eligibilityBegin": "20190101"
+   },
+   "errors": [],
+   "x12": "ISA*00*          *00*          *ZZ*STEDI          *01*117151744      *260719*1814*^*00501*823771771*0*P*`~GS*HB*STEDI*117151744*20260719*1314*823771771*X*005010X279A1~ST*271*823771771*005010X279A1~BHT*0022*11*01KXXSD3HTS8DRXGCEVPZE8RAD*20260719*181453~HL*1**20*1~NM1*PR*2*CGLIC*****PI*CIGNA~PER*IC**TE*8002446224*UR*cignaforhcp.cigna.com~HL*2*1*21*1~NM1*1P*2*Ghasem Darian*****XX*1942363775~HL*3*2*22*0~TRN*1*01KXXSD3J0HBM45DRGMH59FCM4*3117151744~NM1*IL*1*DELMONTE*MARISA*E***MI*U7047082301~REF*6P*3173544*UNITED AIRLINES, INC.~REF*Q4*U70470823~N3*5900 CANTERBURY DR UNIT A30*3~N4*CULVER CITY*CA*902306758~DMG*D8*19590318*F~INS*Y*18*001*25~DTP*356*D8*20190101~SE*18*823771771~GE*1*823771771~IEA*1*823771771~",
+   "eligibilitySearchId": "019f7b96-8e3a-7ef2-a98b-f3fc0d8220c0",
+   "id": "ec_019f7b96-8e39-7991-911e-81e7a436f332"
+  }
+ }
+}

@@ -1,0 +1,345 @@
+{
+ "codes": [
+  "D4921",
+  "D7140"
+ ],
+ "response": {
+  "meta": {
+   "senderId": "STEDI",
+   "submitterId": "117151744",
+   "applicationMode": "production",
+   "traceId": "01KXXS82M4PX8SEY7CFVKAFED7",
+   "outboundTraceId": "01KXXS82M4PX8SEY7CFVKAFED7"
+  },
+  "controlNumber": "823761289",
+  "reassociationKey": "823761289",
+  "tradingPartnerServiceId": "62308",
+  "provider": {
+   "providerName": "Ghasem Darian",
+   "entityIdentifier": "Provider",
+   "entityType": "Non-Person Entity",
+   "npi": "1942363775"
+  },
+  "subscriber": {
+   "memberId": "U1216892701",
+   "firstName": "RACHEL",
+   "lastName": "INIGUEZ",
+   "gender": "F",
+   "entityIdentifier": "Insured or Subscriber",
+   "entityType": "Person",
+   "dateOfBirth": "19570106",
+   "groupNumber": "2464882",
+   "groupDescription": "CITY OF PHOENIX",
+   "address": {
+    "address1": "2227 N 24TH PL APT 3",
+    "city": "PHOENIX",
+    "state": "AZ",
+    "postalCode": "850082787"
+   }
+  },
+  "subscriberTraceNumbers": [
+   {
+    "traceTypeCode": "1",
+    "traceType": "Current Transaction Trace Numbers",
+    "referenceIdentification": "01KXXS82MZB52ZB0THF0T7Z7C5",
+    "originatingCompanyIdentifier": "3117151744"
+   }
+  ],
+  "payer": {
+   "entityIdentifier": "Payer",
+   "entityType": "Non-Person Entity",
+   "name": "CIGNA Dental Health, Inc.",
+   "payorIdentification": "CIGNA",
+   "contactInformation": {
+    "contacts": [
+     {
+      "communicationMode": "Telephone",
+      "communicationNumber": "8002446224"
+     },
+     {
+      "communicationMode": "Uniform Resource Locator (URL)",
+      "communicationNumber": "cignaforhcp.cigna.com"
+     }
+    ]
+   }
+  },
+  "planInformation": {
+   "groupNumber": "2464882",
+   "groupDescription": "CITY OF PHOENIX",
+   "priorIdNumber": "U12168927"
+  },
+  "planDateInformation": {
+   "eligibilityBegin": "20050801"
+  },
+  "errors": [],
+  "x12": "ISA*00*          *00*          *ZZ*STEDI          *01*117151744      *260719*1812*^*00501*823761289*0*P*`~GS*HB*STEDI*117151744*20260719*1312*823761289*X*005010X279A1~ST*271*823761289*005010X279A1~BHT*0022*11*01KXXS82M4PX8SEY7CFVKAFED7*20260719*181208~HL*1**20*1~NM1*PR*2*CIGNA Dental Health, Inc.*****PI*CIGNA~PER*IC**TE*8002446224*UR*cignaforhcp.cigna.com~HL*2*1*21*1~NM1*1P*2*Ghasem Darian*****XX*1942363775~HL*3*2*22*0~TRN*1*01KXXS82MZB52ZB0THF0T7Z7C5*3117151744~NM1*IL*1*INIGUEZ*RACHEL****MI*U1216892701~REF*6P*2464882*CITY OF PHOENIX~REF*Q4*U12168927~N3*2227 N 24TH PL APT 3~N4*PHOENIX*AZ*850082787~DMG*D8*19570106*F~INS*Y*18*001*25~DTP*356*D8*20050801~SE*18*823761289~GE*1*823761289~IEA*1*823761289~",
+  "eligibilitySearchId": "019f7b94-0a84-7e32-a3ac-add52a201faa",
+  "id": "ec_019f7b94-0a83-7682-8914-4a58ac0b6c9a"
+ },
+ "singles": {
+  "D4921": {
+   "meta": {
+    "senderId": "STEDI",
+    "submitterId": "117151744",
+    "applicationMode": "production",
+    "traceId": "01KXXSE3M6F795JSX6K08M9VHA",
+    "outboundTraceId": "01KXXSE3M6F795JSX6K08M9VHA"
+   },
+   "controlNumber": "823774409",
+   "reassociationKey": "823774409",
+   "tradingPartnerServiceId": "62308",
+   "provider": {
+    "providerName": "Ghasem Darian",
+    "entityIdentifier": "Provider",
+    "entityType": "Non-Person Entity",
+    "npi": "1942363775"
+   },
+   "subscriber": {
+    "memberId": "U1216892701",
+    "firstName": "RACHEL",
+    "lastName": "INIGUEZ",
+    "gender": "F",
+    "entityIdentifier": "Insured or Subscriber",
+    "entityType": "Person",
+    "dateOfBirth": "19570106",
+    "groupNumber": "2464882",
+    "groupDescription": "CITY OF PHOENIX",
+    "address": {
+     "address1": "2227 N 24TH PL APT 3",
+     "city": "PHOENIX",
+     "state": "AZ",
+     "postalCode": "850082787"
+    }
+   },
+   "subscriberTraceNumbers": [
+    {
+     "traceTypeCode": "1",
+     "traceType": "Current Transaction Trace Numbers",
+     "referenceIdentification": "01KXXSE3MJQRJ0YTHFSPTQ2P45",
+     "originatingCompanyIdentifier": "3117151744"
+    }
+   ],
+   "payer": {
+    "entityIdentifier": "Payer",
+    "entityType": "Non-Person Entity",
+    "name": "CIGNA Dental Health, Inc.",
+    "payorIdentification": "CIGNA",
+    "contactInformation": {
+     "contacts": [
+      {
+       "communicationMode": "Telephone",
+       "communicationNumber": "8002446224"
+      },
+      {
+       "communicationMode": "Uniform Resource Locator (URL)",
+       "communicationNumber": "cignaforhcp.cigna.com"
+      }
+     ]
+    }
+   },
+   "planInformation": {
+    "groupNumber": "2464882",
+    "groupDescription": "CITY OF PHOENIX",
+    "priorIdNumber": "U12168927"
+   },
+   "planDateInformation": {
+    "eligibilityBegin": "20050801"
+   },
+   "errors": [],
+   "x12": "ISA*00*          *00*          *ZZ*STEDI          *01*117151744      *260719*1815*^*00501*823774409*0*P*`~GS*HB*STEDI*117151744*20260719*1315*823774409*X*005010X279A1~ST*271*823774409*005010X279A1~BHT*0022*11*01KXXSE3M6F795JSX6K08M9VHA*20260719*181526~HL*1**20*1~NM1*PR*2*CIGNA Dental Health, Inc.*****PI*CIGNA~PER*IC**TE*8002446224*UR*cignaforhcp.cigna.com~HL*2*1*21*1~NM1*1P*2*Ghasem Darian*****XX*1942363775~HL*3*2*22*0~TRN*1*01KXXSE3MJQRJ0YTHFSPTQ2P45*3117151744~NM1*IL*1*INIGUEZ*RACHEL****MI*U1216892701~REF*6P*2464882*CITY OF PHOENIX~REF*Q4*U12168927~N3*2227 N 24TH PL APT 3~N4*PHOENIX*AZ*850082787~DMG*D8*19570106*F~INS*Y*18*001*25~DTP*356*D8*20050801~SE*18*823774409~GE*1*823774409~IEA*1*823774409~",
+   "eligibilitySearchId": "019f7b97-0e85-7e93-a160-f7cea60b7b9e",
+   "id": "ec_019f7b97-0e84-7722-9808-2adcccd763e8"
+  },
+  "D7140": {
+   "meta": {
+    "senderId": "STEDI",
+    "submitterId": "117151744",
+    "applicationMode": "production",
+    "traceId": "01KXXSE66YSKKB8Q42PR777FES",
+    "outboundTraceId": "01KXXSE66YSKKB8Q42PR777FES"
+   },
+   "controlNumber": "823774704",
+   "reassociationKey": "823774704",
+   "tradingPartnerServiceId": "62308",
+   "provider": {
+    "providerName": "Ghasem Darian",
+    "entityIdentifier": "Provider",
+    "entityType": "Non-Person Entity",
+    "npi": "1942363775"
+   },
+   "subscriber": {
+    "memberId": "U1216892701",
+    "firstName": "RACHEL",
+    "lastName": "INIGUEZ",
+    "gender": "F",
+    "entityIdentifier": "Insured or Subscriber",
+    "entityType": "Person",
+    "dateOfBirth": "19570106",
+    "groupNumber": "2464882",
+    "planNetworkIdNumber": "D0002",
+    "groupDescription": "CITY OF PHOENIX",
+    "planNetworkDescription": "ACCESS PLUS NETWORK",
+    "address": {
+     "address1": "2227 N 24TH PL APT 3",
+     "city": "PHOENIX",
+     "state": "AZ",
+     "postalCode": "850082787"
+    }
+   },
+   "subscriberTraceNumbers": [
+    {
+     "traceTypeCode": "1",
+     "traceType": "Current Transaction Trace Numbers",
+     "referenceIdentification": "01KXXSE686KRKJPTGTBD0CFA6Q",
+     "originatingCompanyIdentifier": "3117151744"
+    }
+   ],
+   "payer": {
+    "entityIdentifier": "Payer",
+    "entityType": "Non-Person Entity",
+    "name": "Cigna Dental Health, Inc.",
+    "payorIdentification": "CIGNA",
+    "contactInformation": {
+     "contacts": [
+      {
+       "communicationMode": "Telephone",
+       "communicationNumber": "8002446224"
+      },
+      {
+       "communicationMode": "Uniform Resource Locator (URL)",
+       "communicationNumber": "cignaforhcp.cigna.com"
+      }
+     ]
+    }
+   },
+   "planInformation": {
+    "groupNumber": "2464882",
+    "groupDescription": "CITY OF PHOENIX",
+    "planNetworkIdNumber": "D0002",
+    "planNetworkIdDescription": "ACCESS PLUS NETWORK",
+    "priorIdNumber": "U12168927"
+   },
+   "planDateInformation": {
+    "planBegin": "20260101",
+    "planEnd": "20271231",
+    "eligibilityBegin": "20050801"
+   },
+   "planStatus": [
+    {
+     "statusCode": "1",
+     "status": "Active Coverage",
+     "planDetails": "Dental HMO"
+    },
+    {
+     "statusCode": "1",
+     "status": "Active Coverage"
+    }
+   ],
+   "benefitsInformation": [
+    {
+     "code": "I",
+     "name": "Non-Covered",
+     "authOrCertIndicator": "N",
+     "inPlanNetworkIndicatorCode": "N",
+     "inPlanNetworkIndicator": "No"
+    },
+    {
+     "code": "1",
+     "name": "Active Coverage",
+     "insuranceTypeCode": "HM",
+     "insuranceType": "Health Maintenance Organization (HMO)",
+     "planCoverage": "Dental HMO",
+     "timeQualifierCode": "25",
+     "timeQualifier": "Contract",
+     "authOrCertIndicator": "N"
+    },
+    {
+     "code": "1",
+     "name": "Active Coverage",
+     "authOrCertIndicator": "N",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes"
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "timeQualifierCode": "27",
+     "timeQualifier": "Visit",
+     "benefitAmount": "10",
+     "authOrCertIndicator": "N",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "compositeMedicalProcedureIdentifier": {
+      "productOrServiceIDQualifierCode": "AD",
+      "productOrServiceIDQualifier": "American Dental Association Codes",
+      "procedureCode": "D7140"
+     }
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "35"
+     ],
+     "serviceTypes": [
+      "Dental Care"
+     ],
+     "timeQualifierCode": "27",
+     "timeQualifier": "Visit",
+     "benefitAmount": "0",
+     "inPlanNetworkIndicatorCode": "W",
+     "inPlanNetworkIndicator": "Not Applicable",
+     "additionalInformation": [
+      {
+       "description": "Patient charge schedule B1-06"
+      }
+     ]
+    },
+    {
+     "code": "L",
+     "name": "Primary Care Provider",
+     "serviceTypeCodes": [
+      "35"
+     ],
+     "serviceTypes": [
+      "Dental Care"
+     ],
+     "benefitsRelatedEntity": {
+      "entityIdentifier": "Primary Care Provider",
+      "entityType": "Non-Person Entity",
+      "entityName": "WINNING SMILES",
+      "address": {
+       "address1": "5555 N 7TH ST",
+       "address2": "STE 142",
+       "city": "PHOENIX",
+       "state": "AZ",
+       "postalCode": "85014"
+      }
+     },
+     "benefitsRelatedEntities": [
+      {
+       "entityIdentifier": "Primary Care Provider",
+       "entityType": "Non-Person Entity",
+       "entityName": "WINNING SMILES",
+       "address": {
+        "address1": "5555 N 7TH ST",
+        "address2": "STE 142",
+        "city": "PHOENIX",
+        "state": "AZ",
+        "postalCode": "85014"
+       }
+      }
+     ]
+    }
+   ],
+   "errors": [],
+   "x12": "ISA*00*          *00*          *ZZ*STEDI          *01*117151744      *260719*1815*^*00501*823774704*0*P*`~GS*HB*STEDI*117151744*20260719*1315*823774704*X*005010X279A1~ST*271*823774704*005010X279A1~BHT*0022*11*01KXXSE66YSKKB8Q42PR777FES*20260719*181529~HL*1**20*1~NM1*PR*2*Cigna Dental Health, Inc.*****PI*CIGNA~PER*IC**TE*8002446224*UR*cignaforhcp.cigna.com~HL*2*1*21*1~NM1*1P*2*Ghasem Darian*****XX*1942363775~HL*3*2*22*0~TRN*1*01KXXSE686KRKJPTGTBD0CFA6Q*3117151744~NM1*IL*1*INIGUEZ*RACHEL****MI*U1216892701~REF*6P*2464882*CITY OF PHOENIX~REF*Q4*U12168927~REF*N6*D0002*ACCESS PLUS NETWORK~N3*2227 N 24TH PL APT 3~N4*PHOENIX*AZ*850082787~DMG*D8*19570106*F~INS*Y*18*001*25~DTP*346*D8*20260101~DTP*347*D8*20271231~DTP*356*D8*20050801~EB*I**********N*N~EB*1***HM*Dental HMO*25*****N~EB*1**********N*Y~EB*B*IND****27*10****N*Y*AD`D7140~EB*B*IND*35***27*0~MSG*Patient charge schedule B1-06~EB*L**35~LS*2120~NM1*P3*2*WINNING SMILES~N3*5555 N 7TH ST*STE 142~N4*PHOENIX*AZ*85014~LE*2120~SE*33*823774704~GE*1*823774704~IEA*1*823774704~",
+   "eligibilitySearchId": "019f7b97-18de-73f2-807d-0d110107bb54",
+   "id": "ec_019f7b97-18dd-7843-a4a3-7290f56d3688"
+  }
+ }
+}

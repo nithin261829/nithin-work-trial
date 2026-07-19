@@ -1,0 +1,3317 @@
+{
+ "codes": [
+  "D2740",
+  "D2950"
+ ],
+ "response": {
+  "meta": {
+   "senderId": "STEDI",
+   "submitterId": "117151744",
+   "applicationMode": "production",
+   "traceId": "01KXXS7QBZP38CYEP0B7X7C3ST",
+   "outboundTraceId": "01KXXS7QBZP38CYEP0B7X7C3ST"
+  },
+  "controlNumber": "761766452",
+  "reassociationKey": "761766452",
+  "tradingPartnerServiceId": "86027",
+  "provider": {
+   "providerName": "GHASEM DARIAN",
+   "entityIdentifier": "Provider",
+   "entityType": "Non-Person Entity",
+   "npi": "1942363775",
+   "providerCode": "PE",
+   "referenceIdentification": "PXC"
+  },
+  "subscriber": {
+   "memberId": "8004158180",
+   "firstName": "LORENA",
+   "lastName": "QUINONES",
+   "gender": "U",
+   "entityIdentifier": "Insured or Subscriber",
+   "entityType": "Person",
+   "dateOfBirth": "19880413",
+   "groupNumber": "77777",
+   "groupDescription": "STATE OF ARIZONA",
+   "address": {
+    "address1": "SUPPRESSED BY PLAN",
+    "city": "UNKNOWN",
+    "state": "MI",
+    "postalCode": "48864"
+   }
+  },
+  "subscriberTraceNumbers": [
+   {
+    "traceTypeCode": "1",
+    "traceType": "Current Transaction Trace Numbers",
+    "referenceIdentification": "01KXXS7QCJ3ZF6YVCY1MAYYT7C",
+    "originatingCompanyIdentifier": "3117151744"
+   },
+   {
+    "traceTypeCode": "1",
+    "traceType": "Current Transaction Trace Numbers",
+    "referenceIdentification": "178629600754",
+    "originatingCompanyIdentifier": "9MEDDATACO"
+   }
+  ],
+  "payer": {
+   "entityIdentifier": "Payer",
+   "entityType": "Non-Person Entity",
+   "name": "DELTA DENTAL OF ARIZONA",
+   "payorIdentification": "11200"
+  },
+  "planInformation": {
+   "groupNumber": "77777",
+   "groupDescription": "STATE OF ARIZONA"
+  },
+  "planDateInformation": {
+   "plan": "20260101-20261231",
+   "latestVisitOrConsultation": "20260406",
+   "eligibilityBegin": "20230101"
+  },
+  "planStatus": [
+   {
+    "statusCode": "1",
+    "status": "Active Coverage",
+    "planDetails": "DELTA DENTAL PPO PLUS PREMIER",
+    "serviceTypeCodes": [
+     "35"
+    ]
+   }
+  ],
+  "benefitsInformation": [
+   {
+    "code": "1",
+    "name": "Active Coverage",
+    "coverageLevelCode": "FAM",
+    "coverageLevel": "Family",
+    "serviceTypeCodes": [
+     "35"
+    ],
+    "serviceTypes": [
+     "Dental Care"
+    ],
+    "insuranceTypeCode": "GP",
+    "insuranceType": "Group Policy",
+    "planCoverage": "DELTA DENTAL PPO PLUS PREMIER"
+   },
+   {
+    "code": "C",
+    "name": "Deductible",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "35"
+    ],
+    "serviceTypes": [
+     "Dental Care"
+    ],
+    "timeQualifierCode": "23",
+    "timeQualifier": "Calendar Year",
+    "benefitAmount": "50.00",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsAdditionalInformation": {
+     "planNetworkIdNumber": "20"
+    }
+   },
+   {
+    "code": "C",
+    "name": "Deductible",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "35"
+    ],
+    "serviceTypes": [
+     "Dental Care"
+    ],
+    "timeQualifierCode": "29",
+    "timeQualifier": "Remaining",
+    "benefitAmount": "50.00",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsAdditionalInformation": {
+     "planNetworkIdNumber": "20"
+    }
+   },
+   {
+    "code": "C",
+    "name": "Deductible",
+    "coverageLevelCode": "FAM",
+    "coverageLevel": "Family",
+    "serviceTypeCodes": [
+     "35"
+    ],
+    "serviceTypes": [
+     "Dental Care"
+    ],
+    "timeQualifierCode": "23",
+    "timeQualifier": "Calendar Year",
+    "benefitAmount": "150.00",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsAdditionalInformation": {
+     "planNetworkIdNumber": "20"
+    }
+   },
+   {
+    "code": "C",
+    "name": "Deductible",
+    "coverageLevelCode": "FAM",
+    "coverageLevel": "Family",
+    "serviceTypeCodes": [
+     "35"
+    ],
+    "serviceTypes": [
+     "Dental Care"
+    ],
+    "timeQualifierCode": "29",
+    "timeQualifier": "Remaining",
+    "benefitAmount": "150.00",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsAdditionalInformation": {
+     "planNetworkIdNumber": "20"
+    }
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "35"
+    ],
+    "serviceTypes": [
+     "Dental Care"
+    ],
+    "timeQualifierCode": "23",
+    "timeQualifier": "Calendar Year",
+    "benefitAmount": "2000.00",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsAdditionalInformation": {
+     "planNetworkIdNumber": "20"
+    }
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "35"
+    ],
+    "serviceTypes": [
+     "Dental Care"
+    ],
+    "timeQualifierCode": "29",
+    "timeQualifier": "Remaining",
+    "benefitAmount": "2000.00",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsAdditionalInformation": {
+     "planNetworkIdNumber": "20"
+    }
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "coverageLevelCode": "FAM",
+    "coverageLevel": "Family",
+    "serviceTypeCodes": [
+     "35"
+    ],
+    "serviceTypes": [
+     "Dental Care"
+    ],
+    "timeQualifierCode": "23",
+    "timeQualifier": "Calendar Year",
+    "benefitAmount": "0.00",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsAdditionalInformation": {
+     "planNetworkIdNumber": "20"
+    }
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "coverageLevelCode": "FAM",
+    "coverageLevel": "Family",
+    "serviceTypeCodes": [
+     "35"
+    ],
+    "serviceTypes": [
+     "Dental Care"
+    ],
+    "timeQualifierCode": "29",
+    "timeQualifier": "Remaining",
+    "benefitAmount": "0.00",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsAdditionalInformation": {
+     "planNetworkIdNumber": "20"
+    }
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "38"
+    ],
+    "serviceTypes": [
+     "Orthodontics"
+    ],
+    "timeQualifierCode": "32",
+    "timeQualifier": "Lifetime",
+    "benefitAmount": "1500.00",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsAdditionalInformation": {
+     "planNetworkIdNumber": "20"
+    }
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "38"
+    ],
+    "serviceTypes": [
+     "Orthodontics"
+    ],
+    "timeQualifierCode": "33",
+    "timeQualifier": "Lifetime Remaining",
+    "benefitAmount": "1500.00",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsAdditionalInformation": {
+     "planNetworkIdNumber": "20"
+    }
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "coverageLevelCode": "FAM",
+    "coverageLevel": "Family",
+    "serviceTypeCodes": [
+     "38"
+    ],
+    "serviceTypes": [
+     "Orthodontics"
+    ],
+    "timeQualifierCode": "32",
+    "timeQualifier": "Lifetime",
+    "benefitAmount": "0.00",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsAdditionalInformation": {
+     "planNetworkIdNumber": "20"
+    }
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "coverageLevelCode": "FAM",
+    "coverageLevel": "Family",
+    "serviceTypeCodes": [
+     "38"
+    ],
+    "serviceTypes": [
+     "Orthodontics"
+    ],
+    "timeQualifierCode": "33",
+    "timeQualifier": "Lifetime Remaining",
+    "benefitAmount": "0.00",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsAdditionalInformation": {
+     "planNetworkIdNumber": "20"
+    }
+   },
+   {
+    "code": "C",
+    "name": "Deductible",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "35"
+    ],
+    "serviceTypes": [
+     "Dental Care"
+    ],
+    "timeQualifierCode": "23",
+    "timeQualifier": "Calendar Year",
+    "benefitAmount": "50.00",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsAdditionalInformation": {
+     "planNetworkIdNumber": "01"
+    }
+   },
+   {
+    "code": "C",
+    "name": "Deductible",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "35"
+    ],
+    "serviceTypes": [
+     "Dental Care"
+    ],
+    "timeQualifierCode": "29",
+    "timeQualifier": "Remaining",
+    "benefitAmount": "50.00",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsAdditionalInformation": {
+     "planNetworkIdNumber": "01"
+    }
+   },
+   {
+    "code": "C",
+    "name": "Deductible",
+    "coverageLevelCode": "FAM",
+    "coverageLevel": "Family",
+    "serviceTypeCodes": [
+     "35"
+    ],
+    "serviceTypes": [
+     "Dental Care"
+    ],
+    "timeQualifierCode": "23",
+    "timeQualifier": "Calendar Year",
+    "benefitAmount": "150.00",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsAdditionalInformation": {
+     "planNetworkIdNumber": "01"
+    }
+   },
+   {
+    "code": "C",
+    "name": "Deductible",
+    "coverageLevelCode": "FAM",
+    "coverageLevel": "Family",
+    "serviceTypeCodes": [
+     "35"
+    ],
+    "serviceTypes": [
+     "Dental Care"
+    ],
+    "timeQualifierCode": "29",
+    "timeQualifier": "Remaining",
+    "benefitAmount": "150.00",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsAdditionalInformation": {
+     "planNetworkIdNumber": "01"
+    }
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "35"
+    ],
+    "serviceTypes": [
+     "Dental Care"
+    ],
+    "timeQualifierCode": "23",
+    "timeQualifier": "Calendar Year",
+    "benefitAmount": "2000.00",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsAdditionalInformation": {
+     "planNetworkIdNumber": "01"
+    }
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "35"
+    ],
+    "serviceTypes": [
+     "Dental Care"
+    ],
+    "timeQualifierCode": "29",
+    "timeQualifier": "Remaining",
+    "benefitAmount": "2000.00",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsAdditionalInformation": {
+     "planNetworkIdNumber": "01"
+    }
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "coverageLevelCode": "FAM",
+    "coverageLevel": "Family",
+    "serviceTypeCodes": [
+     "35"
+    ],
+    "serviceTypes": [
+     "Dental Care"
+    ],
+    "timeQualifierCode": "23",
+    "timeQualifier": "Calendar Year",
+    "benefitAmount": "0.00",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsAdditionalInformation": {
+     "planNetworkIdNumber": "01"
+    }
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "coverageLevelCode": "FAM",
+    "coverageLevel": "Family",
+    "serviceTypeCodes": [
+     "35"
+    ],
+    "serviceTypes": [
+     "Dental Care"
+    ],
+    "timeQualifierCode": "29",
+    "timeQualifier": "Remaining",
+    "benefitAmount": "0.00",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsAdditionalInformation": {
+     "planNetworkIdNumber": "01"
+    }
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "38"
+    ],
+    "serviceTypes": [
+     "Orthodontics"
+    ],
+    "timeQualifierCode": "32",
+    "timeQualifier": "Lifetime",
+    "benefitAmount": "1500.00",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsAdditionalInformation": {
+     "planNetworkIdNumber": "01"
+    }
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "38"
+    ],
+    "serviceTypes": [
+     "Orthodontics"
+    ],
+    "timeQualifierCode": "33",
+    "timeQualifier": "Lifetime Remaining",
+    "benefitAmount": "1500.00",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsAdditionalInformation": {
+     "planNetworkIdNumber": "01"
+    }
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "coverageLevelCode": "FAM",
+    "coverageLevel": "Family",
+    "serviceTypeCodes": [
+     "38"
+    ],
+    "serviceTypes": [
+     "Orthodontics"
+    ],
+    "timeQualifierCode": "32",
+    "timeQualifier": "Lifetime",
+    "benefitAmount": "0.00",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsAdditionalInformation": {
+     "planNetworkIdNumber": "01"
+    }
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "coverageLevelCode": "FAM",
+    "coverageLevel": "Family",
+    "serviceTypeCodes": [
+     "38"
+    ],
+    "serviceTypes": [
+     "Orthodontics"
+    ],
+    "timeQualifierCode": "33",
+    "timeQualifier": "Lifetime Remaining",
+    "benefitAmount": "0.00",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsAdditionalInformation": {
+     "planNetworkIdNumber": "01"
+    }
+   },
+   {
+    "code": "C",
+    "name": "Deductible",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "35"
+    ],
+    "serviceTypes": [
+     "Dental Care"
+    ],
+    "timeQualifierCode": "23",
+    "timeQualifier": "Calendar Year",
+    "benefitAmount": "50.00",
+    "inPlanNetworkIndicatorCode": "N",
+    "inPlanNetworkIndicator": "No"
+   },
+   {
+    "code": "C",
+    "name": "Deductible",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "35"
+    ],
+    "serviceTypes": [
+     "Dental Care"
+    ],
+    "timeQualifierCode": "29",
+    "timeQualifier": "Remaining",
+    "benefitAmount": "50.00",
+    "inPlanNetworkIndicatorCode": "N",
+    "inPlanNetworkIndicator": "No"
+   },
+   {
+    "code": "C",
+    "name": "Deductible",
+    "coverageLevelCode": "FAM",
+    "coverageLevel": "Family",
+    "serviceTypeCodes": [
+     "35"
+    ],
+    "serviceTypes": [
+     "Dental Care"
+    ],
+    "timeQualifierCode": "23",
+    "timeQualifier": "Calendar Year",
+    "benefitAmount": "150.00",
+    "inPlanNetworkIndicatorCode": "N",
+    "inPlanNetworkIndicator": "No"
+   },
+   {
+    "code": "C",
+    "name": "Deductible",
+    "coverageLevelCode": "FAM",
+    "coverageLevel": "Family",
+    "serviceTypeCodes": [
+     "35"
+    ],
+    "serviceTypes": [
+     "Dental Care"
+    ],
+    "timeQualifierCode": "29",
+    "timeQualifier": "Remaining",
+    "benefitAmount": "150.00",
+    "inPlanNetworkIndicatorCode": "N",
+    "inPlanNetworkIndicator": "No"
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "35"
+    ],
+    "serviceTypes": [
+     "Dental Care"
+    ],
+    "timeQualifierCode": "23",
+    "timeQualifier": "Calendar Year",
+    "benefitAmount": "2000.00",
+    "inPlanNetworkIndicatorCode": "N",
+    "inPlanNetworkIndicator": "No"
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "35"
+    ],
+    "serviceTypes": [
+     "Dental Care"
+    ],
+    "timeQualifierCode": "29",
+    "timeQualifier": "Remaining",
+    "benefitAmount": "2000.00",
+    "inPlanNetworkIndicatorCode": "N",
+    "inPlanNetworkIndicator": "No"
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "coverageLevelCode": "FAM",
+    "coverageLevel": "Family",
+    "serviceTypeCodes": [
+     "35"
+    ],
+    "serviceTypes": [
+     "Dental Care"
+    ],
+    "timeQualifierCode": "23",
+    "timeQualifier": "Calendar Year",
+    "benefitAmount": "0.00",
+    "inPlanNetworkIndicatorCode": "N",
+    "inPlanNetworkIndicator": "No"
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "coverageLevelCode": "FAM",
+    "coverageLevel": "Family",
+    "serviceTypeCodes": [
+     "35"
+    ],
+    "serviceTypes": [
+     "Dental Care"
+    ],
+    "timeQualifierCode": "29",
+    "timeQualifier": "Remaining",
+    "benefitAmount": "0.00",
+    "inPlanNetworkIndicatorCode": "N",
+    "inPlanNetworkIndicator": "No"
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "38"
+    ],
+    "serviceTypes": [
+     "Orthodontics"
+    ],
+    "timeQualifierCode": "32",
+    "timeQualifier": "Lifetime",
+    "benefitAmount": "1500.00",
+    "inPlanNetworkIndicatorCode": "N",
+    "inPlanNetworkIndicator": "No"
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "38"
+    ],
+    "serviceTypes": [
+     "Orthodontics"
+    ],
+    "timeQualifierCode": "33",
+    "timeQualifier": "Lifetime Remaining",
+    "benefitAmount": "1500.00",
+    "inPlanNetworkIndicatorCode": "N",
+    "inPlanNetworkIndicator": "No"
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "coverageLevelCode": "FAM",
+    "coverageLevel": "Family",
+    "serviceTypeCodes": [
+     "38"
+    ],
+    "serviceTypes": [
+     "Orthodontics"
+    ],
+    "timeQualifierCode": "32",
+    "timeQualifier": "Lifetime",
+    "benefitAmount": "0.00",
+    "inPlanNetworkIndicatorCode": "N",
+    "inPlanNetworkIndicator": "No"
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "coverageLevelCode": "FAM",
+    "coverageLevel": "Family",
+    "serviceTypeCodes": [
+     "38"
+    ],
+    "serviceTypes": [
+     "Orthodontics"
+    ],
+    "timeQualifierCode": "33",
+    "timeQualifier": "Lifetime Remaining",
+    "benefitAmount": "0.00",
+    "inPlanNetworkIndicatorCode": "N",
+    "inPlanNetworkIndicator": "No"
+   },
+   {
+    "code": "A",
+    "name": "Co-Insurance",
+    "serviceTypeCodes": [
+     "36"
+    ],
+    "serviceTypes": [
+     "Dental Crowns"
+    ],
+    "benefitPercent": "0.50",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsAdditionalInformation": {
+     "planNetworkIdNumber": "20"
+    }
+   },
+   {
+    "code": "A",
+    "name": "Co-Insurance",
+    "serviceTypeCodes": [
+     "25"
+    ],
+    "serviceTypes": [
+     "Restorative"
+    ],
+    "benefitPercent": "0.20",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsAdditionalInformation": {
+     "planNetworkIdNumber": "20"
+    }
+   },
+   {
+    "code": "D",
+    "name": "Benefit Description",
+    "serviceTypeCodes": [
+     "25"
+    ],
+    "serviceTypes": [
+     "Restorative"
+    ],
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsAdditionalInformation": {
+     "planNetworkIdNumber": "20"
+    },
+    "additionalInformation": [
+     {
+      "description": "Deductible applies"
+     }
+    ]
+   },
+   {
+    "code": "D",
+    "name": "Benefit Description",
+    "serviceTypeCodes": [
+     "36"
+    ],
+    "serviceTypes": [
+     "Dental Crowns"
+    ],
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsAdditionalInformation": {
+     "planNetworkIdNumber": "20"
+    },
+    "additionalInformation": [
+     {
+      "description": "Deductible applies"
+     }
+    ]
+   },
+   {
+    "code": "A",
+    "name": "Co-Insurance",
+    "serviceTypeCodes": [
+     "36"
+    ],
+    "serviceTypes": [
+     "Dental Crowns"
+    ],
+    "benefitPercent": "0.50",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsAdditionalInformation": {
+     "planNetworkIdNumber": "01"
+    }
+   },
+   {
+    "code": "A",
+    "name": "Co-Insurance",
+    "serviceTypeCodes": [
+     "25"
+    ],
+    "serviceTypes": [
+     "Restorative"
+    ],
+    "benefitPercent": "0.20",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsAdditionalInformation": {
+     "planNetworkIdNumber": "01"
+    }
+   },
+   {
+    "code": "D",
+    "name": "Benefit Description",
+    "serviceTypeCodes": [
+     "25"
+    ],
+    "serviceTypes": [
+     "Restorative"
+    ],
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsAdditionalInformation": {
+     "planNetworkIdNumber": "01"
+    },
+    "additionalInformation": [
+     {
+      "description": "Deductible applies"
+     }
+    ]
+   },
+   {
+    "code": "D",
+    "name": "Benefit Description",
+    "serviceTypeCodes": [
+     "36"
+    ],
+    "serviceTypes": [
+     "Dental Crowns"
+    ],
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsAdditionalInformation": {
+     "planNetworkIdNumber": "01"
+    },
+    "additionalInformation": [
+     {
+      "description": "Deductible applies"
+     }
+    ]
+   },
+   {
+    "code": "A",
+    "name": "Co-Insurance",
+    "serviceTypeCodes": [
+     "36"
+    ],
+    "serviceTypes": [
+     "Dental Crowns"
+    ],
+    "benefitPercent": "0.50",
+    "inPlanNetworkIndicatorCode": "N",
+    "inPlanNetworkIndicator": "No"
+   },
+   {
+    "code": "A",
+    "name": "Co-Insurance",
+    "serviceTypeCodes": [
+     "25"
+    ],
+    "serviceTypes": [
+     "Restorative"
+    ],
+    "benefitPercent": "0.20",
+    "inPlanNetworkIndicatorCode": "N",
+    "inPlanNetworkIndicator": "No"
+   },
+   {
+    "code": "D",
+    "name": "Benefit Description",
+    "serviceTypeCodes": [
+     "25"
+    ],
+    "serviceTypes": [
+     "Restorative"
+    ],
+    "inPlanNetworkIndicatorCode": "N",
+    "inPlanNetworkIndicator": "No",
+    "additionalInformation": [
+     {
+      "description": "Deductible applies"
+     }
+    ]
+   },
+   {
+    "code": "D",
+    "name": "Benefit Description",
+    "serviceTypeCodes": [
+     "36"
+    ],
+    "serviceTypes": [
+     "Dental Crowns"
+    ],
+    "inPlanNetworkIndicatorCode": "N",
+    "inPlanNetworkIndicator": "No",
+    "additionalInformation": [
+     {
+      "description": "Deductible applies"
+     }
+    ]
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "compositeMedicalProcedureIdentifier": {
+     "productOrServiceIDQualifierCode": "AD",
+     "productOrServiceIDQualifier": "American Dental Association Codes",
+     "procedureCode": "D0120"
+    },
+    "benefitsAdditionalInformation": {
+     "planNetworkIdNumber": "20"
+    },
+    "benefitsDateInformation": {
+     "service": "20260719"
+    }
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "compositeMedicalProcedureIdentifier": {
+     "productOrServiceIDQualifierCode": "AD",
+     "productOrServiceIDQualifier": "American Dental Association Codes",
+     "procedureCode": "D1110"
+    },
+    "benefitsAdditionalInformation": {
+     "planNetworkIdNumber": "20"
+    },
+    "benefitsDateInformation": {
+     "service": "20260719"
+    }
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "compositeMedicalProcedureIdentifier": {
+     "productOrServiceIDQualifierCode": "AD",
+     "productOrServiceIDQualifier": "American Dental Association Codes",
+     "procedureCode": "D1120"
+    },
+    "benefitsAdditionalInformation": {
+     "planNetworkIdNumber": "20"
+    },
+    "benefitsDateInformation": {
+     "service": "20260719"
+    }
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "compositeMedicalProcedureIdentifier": {
+     "productOrServiceIDQualifierCode": "AD",
+     "productOrServiceIDQualifier": "American Dental Association Codes",
+     "procedureCode": "D4910"
+    },
+    "benefitsAdditionalInformation": {
+     "planNetworkIdNumber": "20"
+    },
+    "benefitsDateInformation": {
+     "service": "20260719"
+    }
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "compositeMedicalProcedureIdentifier": {
+     "productOrServiceIDQualifierCode": "AD",
+     "productOrServiceIDQualifier": "American Dental Association Codes",
+     "procedureCode": "D0272"
+    },
+    "benefitsAdditionalInformation": {
+     "planNetworkIdNumber": "20"
+    },
+    "benefitsDateInformation": {
+     "latestVisitOrConsultation": "20260406"
+    }
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "compositeMedicalProcedureIdentifier": {
+     "productOrServiceIDQualifierCode": "AD",
+     "productOrServiceIDQualifier": "American Dental Association Codes",
+     "procedureCode": "D0210"
+    },
+    "benefitsAdditionalInformation": {
+     "planNetworkIdNumber": "20"
+    },
+    "benefitsDateInformation": {
+     "service": "20260719"
+    }
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "serviceTypeCodes": [
+     "35"
+    ],
+    "serviceTypes": [
+     "Dental Care"
+    ],
+    "additionalInformation": [
+     {
+      "description": "CONDITION=PAID ON SEAT DATE."
+     }
+    ]
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "serviceTypeCodes": [
+     "38"
+    ],
+    "serviceTypes": [
+     "Orthodontics"
+    ],
+    "quantityQualifierCode": "S8",
+    "quantityQualifier": "Age, Low Value",
+    "benefitQuantity": "8"
+   }
+  ],
+  "errors": [],
+  "x12": "ISA*00*          *00*          *ZZ*STEDI          *01*117151744      *260719*1311*^*00501*761766452*0*P*`~GS*HB*STEDI*117151744*20260719*131157*1*X*005010X279A1~ST*271*0001*005010X279A1~BHT*0022*11*01KXXS7QBZP38CYEP0B7X7C3ST*20260719*131157~HL*1**20*1~NM1*PR*2*DELTA DENTAL OF ARIZONA*****PI*11200~HL*2*1*21*1~NM1*1P*2*GHASEM DARIAN*****XX*1942363775~PRV*PE*PXC*1223G0001X~HL*3*2*22*0~TRN*1*01KXXS7QCJ3ZF6YVCY1MAYYT7C*3117151744~TRN*1*178629600754*9MEDDATACO~NM1*IL*1*QUINONES*LORENA****MI*8004158180~REF*6P*77777*STATE OF ARIZONA~N3*SUPPRESSED BY PLAN~N4*UNKNOWN*MI*48864~DMG*D8*19880413*U~DTP*356*D8*20230101~DTP*291*RD8*20260101-20261231~EB*1*FAM*35*GP*DELTA DENTAL PPO PLUS PREMIER~EB*C*IND*35***23*50.00*****Y~REF*N6*20~EB*C*IND*35***29*50.00*****Y~REF*N6*20~EB*C*FAM*35***23*150.00*****Y~REF*N6*20~EB*C*FAM*35***29*150.00*****Y~REF*N6*20~EB*F*IND*35***23*2000.00*****Y~REF*N6*20~EB*F*IND*35***29*2000.00*****Y~REF*N6*20~EB*F*FAM*35***23*.00*****Y~REF*N6*20~EB*F*FAM*35***29*.00*****Y~REF*N6*20~EB*F*IND*38***32*1500.00*****Y~REF*N6*20~EB*F*IND*38***33*1500.00*****Y~REF*N6*20~EB*F*FAM*38***32*.00*****Y~REF*N6*20~EB*F*FAM*38***33*.00*****Y~REF*N6*20~EB*C*IND*35***23*50.00*****Y~REF*N6*01~EB*C*IND*35***29*50.00*****Y~REF*N6*01~EB*C*FAM*35***23*150.00*****Y~REF*N6*01~EB*C*FAM*35***29*150.00*****Y~REF*N6*01~EB*F*IND*35***23*2000.00*****Y~REF*N6*01~EB*F*IND*35***29*2000.00*****Y~REF*N6*01~EB*F*FAM*35***23*.00*****Y~REF*N6*01~EB*F*FAM*35***29*.00*****Y~REF*N6*01~EB*F*IND*38***32*1500.00*****Y~REF*N6*01~EB*F*IND*38***33*1500.00*****Y~REF*N6*01~EB*F*FAM*38***32*.00*****Y~REF*N6*01~EB*F*FAM*38***33*.00*****Y~REF*N6*01~EB*C*IND*35***23*50.00*****N~EB*C*IND*35***29*50.00*****N~EB*C*FAM*35***23*150.00*****N~EB*C*FAM*35***29*150.00*****N~EB*F*IND*35***23*2000.00*****N~EB*F*IND*35***29*2000.00*****N~EB*F*FAM*35***23*.00*****N~EB*F*FAM*35***29*.00*****N~EB*F*IND*38***32*1500.00*****N~EB*F*IND*38***33*1500.00*****N~EB*F*FAM*38***32*.00*****N~EB*F*FAM*38***33*.00*****N~EB*A**36*****.50****Y~REF*N6*20~EB*A**25*****.20****Y~REF*N6*20~EB*D**25*********Y~REF*N6*20~MSG*Deductible applies~EB*D**36*********Y~REF*N6*20~MSG*Deductible applies~EB*A**36*****.50****Y~REF*N6*01~EB*A**25*****.20****Y~REF*N6*01~EB*D**25*********Y~REF*N6*01~MSG*Deductible applies~EB*D**36*********Y~REF*N6*01~MSG*Deductible applies~EB*A**36*****.50****N~EB*A**25*****.20****N~EB*D**25*********N~MSG*Deductible applies~EB*D**36*********N~MSG*Deductible applies~EB*F************AD`D0120~REF*N6*20~DTP*472*D8*20260719~EB*F************AD`D1110~REF*N6*20~DTP*472*D8*20260719~EB*F************AD`D1120~REF*N6*20~DTP*472*D8*20260719~EB*F************AD`D4910~REF*N6*20~DTP*472*D8*20260719~EB*F************AD`D0272~REF*N6*20~DTP*304*D8*20260406~EB*F************AD`D0210~REF*N6*20~DTP*472*D8*20260719~EB*F**35~MSG*CONDITION=PAID ON SEAT DATE.~EB*F**38******S8*8~SE*126*0001~GE*1*1~IEA*1*761766452~",
+  "eligibilitySearchId": "019f7b93-dd7e-7e91-8c98-baae6e970d15",
+  "id": "ec_019f7b93-dd7c-7a50-be5c-e0db649d148a"
+ },
+ "singles": {
+  "D2740": {
+   "meta": {
+    "senderId": "STEDI",
+    "submitterId": "117151744",
+    "applicationMode": "production",
+    "traceId": "01KXXSDE456AYHYK2M8QCB8P9Z",
+    "outboundTraceId": "01KXXSDE456AYHYK2M8QCB8P9Z"
+   },
+   "controlNumber": "761737245",
+   "reassociationKey": "761737245",
+   "tradingPartnerServiceId": "86027",
+   "provider": {
+    "providerName": "GHASEM DARIAN",
+    "entityIdentifier": "Provider",
+    "entityType": "Non-Person Entity",
+    "npi": "1942363775",
+    "providerCode": "PE",
+    "referenceIdentification": "PXC"
+   },
+   "subscriber": {
+    "memberId": "8004158180",
+    "firstName": "LORENA",
+    "lastName": "QUINONES",
+    "gender": "U",
+    "entityIdentifier": "Insured or Subscriber",
+    "entityType": "Person",
+    "dateOfBirth": "19880413",
+    "groupNumber": "77777",
+    "groupDescription": "STATE OF ARIZONA",
+    "address": {
+     "address1": "SUPPRESSED BY PLAN",
+     "city": "UNKNOWN",
+     "state": "MI",
+     "postalCode": "48864"
+    }
+   },
+   "subscriberTraceNumbers": [
+    {
+     "traceTypeCode": "1",
+     "traceType": "Current Transaction Trace Numbers",
+     "referenceIdentification": "01KXXSDE4P7HFCEJVZYCN9Q0FM",
+     "originatingCompanyIdentifier": "3117151744"
+    },
+    {
+     "traceTypeCode": "1",
+     "traceType": "Current Transaction Trace Numbers",
+     "referenceIdentification": "178629647176",
+     "originatingCompanyIdentifier": "9MEDDATACO"
+    }
+   ],
+   "payer": {
+    "entityIdentifier": "Payer",
+    "entityType": "Non-Person Entity",
+    "name": "DELTA DENTAL OF ARIZONA",
+    "payorIdentification": "11200"
+   },
+   "planInformation": {
+    "groupNumber": "77777",
+    "groupDescription": "STATE OF ARIZONA"
+   },
+   "planDateInformation": {
+    "plan": "20260101-20261231",
+    "latestVisitOrConsultation": "20260406",
+    "eligibilityBegin": "20230101"
+   },
+   "planStatus": [
+    {
+     "statusCode": "1",
+     "status": "Active Coverage",
+     "planDetails": "DELTA DENTAL PPO PLUS PREMIER",
+     "serviceTypeCodes": [
+      "35"
+     ]
+    }
+   ],
+   "benefitsInformation": [
+    {
+     "code": "1",
+     "name": "Active Coverage",
+     "coverageLevelCode": "FAM",
+     "coverageLevel": "Family",
+     "serviceTypeCodes": [
+      "35"
+     ],
+     "serviceTypes": [
+      "Dental Care"
+     ],
+     "insuranceTypeCode": "GP",
+     "insuranceType": "Group Policy",
+     "planCoverage": "DELTA DENTAL PPO PLUS PREMIER"
+    },
+    {
+     "code": "C",
+     "name": "Deductible",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "35"
+     ],
+     "serviceTypes": [
+      "Dental Care"
+     ],
+     "timeQualifierCode": "23",
+     "timeQualifier": "Calendar Year",
+     "benefitAmount": "50.00",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "20"
+     }
+    },
+    {
+     "code": "C",
+     "name": "Deductible",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "35"
+     ],
+     "serviceTypes": [
+      "Dental Care"
+     ],
+     "timeQualifierCode": "29",
+     "timeQualifier": "Remaining",
+     "benefitAmount": "50.00",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "20"
+     }
+    },
+    {
+     "code": "C",
+     "name": "Deductible",
+     "coverageLevelCode": "FAM",
+     "coverageLevel": "Family",
+     "serviceTypeCodes": [
+      "35"
+     ],
+     "serviceTypes": [
+      "Dental Care"
+     ],
+     "timeQualifierCode": "23",
+     "timeQualifier": "Calendar Year",
+     "benefitAmount": "150.00",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "20"
+     }
+    },
+    {
+     "code": "C",
+     "name": "Deductible",
+     "coverageLevelCode": "FAM",
+     "coverageLevel": "Family",
+     "serviceTypeCodes": [
+      "35"
+     ],
+     "serviceTypes": [
+      "Dental Care"
+     ],
+     "timeQualifierCode": "29",
+     "timeQualifier": "Remaining",
+     "benefitAmount": "150.00",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "20"
+     }
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "35"
+     ],
+     "serviceTypes": [
+      "Dental Care"
+     ],
+     "timeQualifierCode": "23",
+     "timeQualifier": "Calendar Year",
+     "benefitAmount": "2000.00",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "20"
+     }
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "35"
+     ],
+     "serviceTypes": [
+      "Dental Care"
+     ],
+     "timeQualifierCode": "29",
+     "timeQualifier": "Remaining",
+     "benefitAmount": "2000.00",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "20"
+     }
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "coverageLevelCode": "FAM",
+     "coverageLevel": "Family",
+     "serviceTypeCodes": [
+      "35"
+     ],
+     "serviceTypes": [
+      "Dental Care"
+     ],
+     "timeQualifierCode": "23",
+     "timeQualifier": "Calendar Year",
+     "benefitAmount": "0.00",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "20"
+     }
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "coverageLevelCode": "FAM",
+     "coverageLevel": "Family",
+     "serviceTypeCodes": [
+      "35"
+     ],
+     "serviceTypes": [
+      "Dental Care"
+     ],
+     "timeQualifierCode": "29",
+     "timeQualifier": "Remaining",
+     "benefitAmount": "0.00",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "20"
+     }
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "38"
+     ],
+     "serviceTypes": [
+      "Orthodontics"
+     ],
+     "timeQualifierCode": "32",
+     "timeQualifier": "Lifetime",
+     "benefitAmount": "1500.00",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "20"
+     }
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "38"
+     ],
+     "serviceTypes": [
+      "Orthodontics"
+     ],
+     "timeQualifierCode": "33",
+     "timeQualifier": "Lifetime Remaining",
+     "benefitAmount": "1500.00",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "20"
+     }
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "coverageLevelCode": "FAM",
+     "coverageLevel": "Family",
+     "serviceTypeCodes": [
+      "38"
+     ],
+     "serviceTypes": [
+      "Orthodontics"
+     ],
+     "timeQualifierCode": "32",
+     "timeQualifier": "Lifetime",
+     "benefitAmount": "0.00",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "20"
+     }
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "coverageLevelCode": "FAM",
+     "coverageLevel": "Family",
+     "serviceTypeCodes": [
+      "38"
+     ],
+     "serviceTypes": [
+      "Orthodontics"
+     ],
+     "timeQualifierCode": "33",
+     "timeQualifier": "Lifetime Remaining",
+     "benefitAmount": "0.00",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "20"
+     }
+    },
+    {
+     "code": "C",
+     "name": "Deductible",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "35"
+     ],
+     "serviceTypes": [
+      "Dental Care"
+     ],
+     "timeQualifierCode": "23",
+     "timeQualifier": "Calendar Year",
+     "benefitAmount": "50.00",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "01"
+     }
+    },
+    {
+     "code": "C",
+     "name": "Deductible",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "35"
+     ],
+     "serviceTypes": [
+      "Dental Care"
+     ],
+     "timeQualifierCode": "29",
+     "timeQualifier": "Remaining",
+     "benefitAmount": "50.00",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "01"
+     }
+    },
+    {
+     "code": "C",
+     "name": "Deductible",
+     "coverageLevelCode": "FAM",
+     "coverageLevel": "Family",
+     "serviceTypeCodes": [
+      "35"
+     ],
+     "serviceTypes": [
+      "Dental Care"
+     ],
+     "timeQualifierCode": "23",
+     "timeQualifier": "Calendar Year",
+     "benefitAmount": "150.00",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "01"
+     }
+    },
+    {
+     "code": "C",
+     "name": "Deductible",
+     "coverageLevelCode": "FAM",
+     "coverageLevel": "Family",
+     "serviceTypeCodes": [
+      "35"
+     ],
+     "serviceTypes": [
+      "Dental Care"
+     ],
+     "timeQualifierCode": "29",
+     "timeQualifier": "Remaining",
+     "benefitAmount": "150.00",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "01"
+     }
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "35"
+     ],
+     "serviceTypes": [
+      "Dental Care"
+     ],
+     "timeQualifierCode": "23",
+     "timeQualifier": "Calendar Year",
+     "benefitAmount": "2000.00",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "01"
+     }
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "35"
+     ],
+     "serviceTypes": [
+      "Dental Care"
+     ],
+     "timeQualifierCode": "29",
+     "timeQualifier": "Remaining",
+     "benefitAmount": "2000.00",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "01"
+     }
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "coverageLevelCode": "FAM",
+     "coverageLevel": "Family",
+     "serviceTypeCodes": [
+      "35"
+     ],
+     "serviceTypes": [
+      "Dental Care"
+     ],
+     "timeQualifierCode": "23",
+     "timeQualifier": "Calendar Year",
+     "benefitAmount": "0.00",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "01"
+     }
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "coverageLevelCode": "FAM",
+     "coverageLevel": "Family",
+     "serviceTypeCodes": [
+      "35"
+     ],
+     "serviceTypes": [
+      "Dental Care"
+     ],
+     "timeQualifierCode": "29",
+     "timeQualifier": "Remaining",
+     "benefitAmount": "0.00",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "01"
+     }
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "38"
+     ],
+     "serviceTypes": [
+      "Orthodontics"
+     ],
+     "timeQualifierCode": "32",
+     "timeQualifier": "Lifetime",
+     "benefitAmount": "1500.00",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "01"
+     }
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "38"
+     ],
+     "serviceTypes": [
+      "Orthodontics"
+     ],
+     "timeQualifierCode": "33",
+     "timeQualifier": "Lifetime Remaining",
+     "benefitAmount": "1500.00",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "01"
+     }
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "coverageLevelCode": "FAM",
+     "coverageLevel": "Family",
+     "serviceTypeCodes": [
+      "38"
+     ],
+     "serviceTypes": [
+      "Orthodontics"
+     ],
+     "timeQualifierCode": "32",
+     "timeQualifier": "Lifetime",
+     "benefitAmount": "0.00",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "01"
+     }
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "coverageLevelCode": "FAM",
+     "coverageLevel": "Family",
+     "serviceTypeCodes": [
+      "38"
+     ],
+     "serviceTypes": [
+      "Orthodontics"
+     ],
+     "timeQualifierCode": "33",
+     "timeQualifier": "Lifetime Remaining",
+     "benefitAmount": "0.00",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "01"
+     }
+    },
+    {
+     "code": "C",
+     "name": "Deductible",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "35"
+     ],
+     "serviceTypes": [
+      "Dental Care"
+     ],
+     "timeQualifierCode": "23",
+     "timeQualifier": "Calendar Year",
+     "benefitAmount": "50.00",
+     "inPlanNetworkIndicatorCode": "N",
+     "inPlanNetworkIndicator": "No"
+    },
+    {
+     "code": "C",
+     "name": "Deductible",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "35"
+     ],
+     "serviceTypes": [
+      "Dental Care"
+     ],
+     "timeQualifierCode": "29",
+     "timeQualifier": "Remaining",
+     "benefitAmount": "50.00",
+     "inPlanNetworkIndicatorCode": "N",
+     "inPlanNetworkIndicator": "No"
+    },
+    {
+     "code": "C",
+     "name": "Deductible",
+     "coverageLevelCode": "FAM",
+     "coverageLevel": "Family",
+     "serviceTypeCodes": [
+      "35"
+     ],
+     "serviceTypes": [
+      "Dental Care"
+     ],
+     "timeQualifierCode": "23",
+     "timeQualifier": "Calendar Year",
+     "benefitAmount": "150.00",
+     "inPlanNetworkIndicatorCode": "N",
+     "inPlanNetworkIndicator": "No"
+    },
+    {
+     "code": "C",
+     "name": "Deductible",
+     "coverageLevelCode": "FAM",
+     "coverageLevel": "Family",
+     "serviceTypeCodes": [
+      "35"
+     ],
+     "serviceTypes": [
+      "Dental Care"
+     ],
+     "timeQualifierCode": "29",
+     "timeQualifier": "Remaining",
+     "benefitAmount": "150.00",
+     "inPlanNetworkIndicatorCode": "N",
+     "inPlanNetworkIndicator": "No"
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "35"
+     ],
+     "serviceTypes": [
+      "Dental Care"
+     ],
+     "timeQualifierCode": "23",
+     "timeQualifier": "Calendar Year",
+     "benefitAmount": "2000.00",
+     "inPlanNetworkIndicatorCode": "N",
+     "inPlanNetworkIndicator": "No"
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "35"
+     ],
+     "serviceTypes": [
+      "Dental Care"
+     ],
+     "timeQualifierCode": "29",
+     "timeQualifier": "Remaining",
+     "benefitAmount": "2000.00",
+     "inPlanNetworkIndicatorCode": "N",
+     "inPlanNetworkIndicator": "No"
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "coverageLevelCode": "FAM",
+     "coverageLevel": "Family",
+     "serviceTypeCodes": [
+      "35"
+     ],
+     "serviceTypes": [
+      "Dental Care"
+     ],
+     "timeQualifierCode": "23",
+     "timeQualifier": "Calendar Year",
+     "benefitAmount": "0.00",
+     "inPlanNetworkIndicatorCode": "N",
+     "inPlanNetworkIndicator": "No"
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "coverageLevelCode": "FAM",
+     "coverageLevel": "Family",
+     "serviceTypeCodes": [
+      "35"
+     ],
+     "serviceTypes": [
+      "Dental Care"
+     ],
+     "timeQualifierCode": "29",
+     "timeQualifier": "Remaining",
+     "benefitAmount": "0.00",
+     "inPlanNetworkIndicatorCode": "N",
+     "inPlanNetworkIndicator": "No"
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "38"
+     ],
+     "serviceTypes": [
+      "Orthodontics"
+     ],
+     "timeQualifierCode": "32",
+     "timeQualifier": "Lifetime",
+     "benefitAmount": "1500.00",
+     "inPlanNetworkIndicatorCode": "N",
+     "inPlanNetworkIndicator": "No"
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "38"
+     ],
+     "serviceTypes": [
+      "Orthodontics"
+     ],
+     "timeQualifierCode": "33",
+     "timeQualifier": "Lifetime Remaining",
+     "benefitAmount": "1500.00",
+     "inPlanNetworkIndicatorCode": "N",
+     "inPlanNetworkIndicator": "No"
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "coverageLevelCode": "FAM",
+     "coverageLevel": "Family",
+     "serviceTypeCodes": [
+      "38"
+     ],
+     "serviceTypes": [
+      "Orthodontics"
+     ],
+     "timeQualifierCode": "32",
+     "timeQualifier": "Lifetime",
+     "benefitAmount": "0.00",
+     "inPlanNetworkIndicatorCode": "N",
+     "inPlanNetworkIndicator": "No"
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "coverageLevelCode": "FAM",
+     "coverageLevel": "Family",
+     "serviceTypeCodes": [
+      "38"
+     ],
+     "serviceTypes": [
+      "Orthodontics"
+     ],
+     "timeQualifierCode": "33",
+     "timeQualifier": "Lifetime Remaining",
+     "benefitAmount": "0.00",
+     "inPlanNetworkIndicatorCode": "N",
+     "inPlanNetworkIndicator": "No"
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "serviceTypeCodes": [
+      "36"
+     ],
+     "serviceTypes": [
+      "Dental Crowns"
+     ],
+     "benefitPercent": "0.50",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "20"
+     }
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "serviceTypeCodes": [
+      "25"
+     ],
+     "serviceTypes": [
+      "Restorative"
+     ],
+     "benefitPercent": "0.20",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "20"
+     }
+    },
+    {
+     "code": "D",
+     "name": "Benefit Description",
+     "serviceTypeCodes": [
+      "25"
+     ],
+     "serviceTypes": [
+      "Restorative"
+     ],
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "20"
+     },
+     "additionalInformation": [
+      {
+       "description": "Deductible applies"
+      }
+     ]
+    },
+    {
+     "code": "D",
+     "name": "Benefit Description",
+     "serviceTypeCodes": [
+      "36"
+     ],
+     "serviceTypes": [
+      "Dental Crowns"
+     ],
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "20"
+     },
+     "additionalInformation": [
+      {
+       "description": "Deductible applies"
+      }
+     ]
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "serviceTypeCodes": [
+      "36"
+     ],
+     "serviceTypes": [
+      "Dental Crowns"
+     ],
+     "benefitPercent": "0.50",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "01"
+     }
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "serviceTypeCodes": [
+      "25"
+     ],
+     "serviceTypes": [
+      "Restorative"
+     ],
+     "benefitPercent": "0.20",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "01"
+     }
+    },
+    {
+     "code": "D",
+     "name": "Benefit Description",
+     "serviceTypeCodes": [
+      "25"
+     ],
+     "serviceTypes": [
+      "Restorative"
+     ],
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "01"
+     },
+     "additionalInformation": [
+      {
+       "description": "Deductible applies"
+      }
+     ]
+    },
+    {
+     "code": "D",
+     "name": "Benefit Description",
+     "serviceTypeCodes": [
+      "36"
+     ],
+     "serviceTypes": [
+      "Dental Crowns"
+     ],
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "01"
+     },
+     "additionalInformation": [
+      {
+       "description": "Deductible applies"
+      }
+     ]
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "serviceTypeCodes": [
+      "36"
+     ],
+     "serviceTypes": [
+      "Dental Crowns"
+     ],
+     "benefitPercent": "0.50",
+     "inPlanNetworkIndicatorCode": "N",
+     "inPlanNetworkIndicator": "No"
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "serviceTypeCodes": [
+      "25"
+     ],
+     "serviceTypes": [
+      "Restorative"
+     ],
+     "benefitPercent": "0.20",
+     "inPlanNetworkIndicatorCode": "N",
+     "inPlanNetworkIndicator": "No"
+    },
+    {
+     "code": "D",
+     "name": "Benefit Description",
+     "serviceTypeCodes": [
+      "25"
+     ],
+     "serviceTypes": [
+      "Restorative"
+     ],
+     "inPlanNetworkIndicatorCode": "N",
+     "inPlanNetworkIndicator": "No",
+     "additionalInformation": [
+      {
+       "description": "Deductible applies"
+      }
+     ]
+    },
+    {
+     "code": "D",
+     "name": "Benefit Description",
+     "serviceTypeCodes": [
+      "36"
+     ],
+     "serviceTypes": [
+      "Dental Crowns"
+     ],
+     "inPlanNetworkIndicatorCode": "N",
+     "inPlanNetworkIndicator": "No",
+     "additionalInformation": [
+      {
+       "description": "Deductible applies"
+      }
+     ]
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "compositeMedicalProcedureIdentifier": {
+      "productOrServiceIDQualifierCode": "AD",
+      "productOrServiceIDQualifier": "American Dental Association Codes",
+      "procedureCode": "D0120"
+     },
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "20"
+     },
+     "benefitsDateInformation": {
+      "service": "20260719"
+     }
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "compositeMedicalProcedureIdentifier": {
+      "productOrServiceIDQualifierCode": "AD",
+      "productOrServiceIDQualifier": "American Dental Association Codes",
+      "procedureCode": "D1110"
+     },
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "20"
+     },
+     "benefitsDateInformation": {
+      "service": "20260719"
+     }
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "compositeMedicalProcedureIdentifier": {
+      "productOrServiceIDQualifierCode": "AD",
+      "productOrServiceIDQualifier": "American Dental Association Codes",
+      "procedureCode": "D1120"
+     },
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "20"
+     },
+     "benefitsDateInformation": {
+      "service": "20260719"
+     }
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "compositeMedicalProcedureIdentifier": {
+      "productOrServiceIDQualifierCode": "AD",
+      "productOrServiceIDQualifier": "American Dental Association Codes",
+      "procedureCode": "D4910"
+     },
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "20"
+     },
+     "benefitsDateInformation": {
+      "service": "20260719"
+     }
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "compositeMedicalProcedureIdentifier": {
+      "productOrServiceIDQualifierCode": "AD",
+      "productOrServiceIDQualifier": "American Dental Association Codes",
+      "procedureCode": "D0272"
+     },
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "20"
+     },
+     "benefitsDateInformation": {
+      "latestVisitOrConsultation": "20260406"
+     }
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "compositeMedicalProcedureIdentifier": {
+      "productOrServiceIDQualifierCode": "AD",
+      "productOrServiceIDQualifier": "American Dental Association Codes",
+      "procedureCode": "D0210"
+     },
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "20"
+     },
+     "benefitsDateInformation": {
+      "service": "20260719"
+     }
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "serviceTypeCodes": [
+      "35"
+     ],
+     "serviceTypes": [
+      "Dental Care"
+     ],
+     "additionalInformation": [
+      {
+       "description": "CONDITION=PAID ON SEAT DATE."
+      }
+     ]
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "serviceTypeCodes": [
+      "38"
+     ],
+     "serviceTypes": [
+      "Orthodontics"
+     ],
+     "quantityQualifierCode": "S8",
+     "quantityQualifier": "Age, Low Value",
+     "benefitQuantity": "8"
+    }
+   ],
+   "errors": [],
+   "x12": "ISA*00*          *00*          *ZZ*STEDI          *01*117151744      *260719*1315*^*00501*761737245*0*P*`~GS*HB*STEDI*117151744*20260719*131504*1*X*005010X279A1~ST*271*0001*005010X279A1~BHT*0022*11*01KXXSDE456AYHYK2M8QCB8P9Z*20260719*131504~HL*1**20*1~NM1*PR*2*DELTA DENTAL OF ARIZONA*****PI*11200~HL*2*1*21*1~NM1*1P*2*GHASEM DARIAN*****XX*1942363775~PRV*PE*PXC*1223G0001X~HL*3*2*22*0~TRN*1*01KXXSDE4P7HFCEJVZYCN9Q0FM*3117151744~TRN*1*178629647176*9MEDDATACO~NM1*IL*1*QUINONES*LORENA****MI*8004158180~REF*6P*77777*STATE OF ARIZONA~N3*SUPPRESSED BY PLAN~N4*UNKNOWN*MI*48864~DMG*D8*19880413*U~DTP*356*D8*20230101~DTP*291*RD8*20260101-20261231~EB*1*FAM*35*GP*DELTA DENTAL PPO PLUS PREMIER~EB*C*IND*35***23*50.00*****Y~REF*N6*20~EB*C*IND*35***29*50.00*****Y~REF*N6*20~EB*C*FAM*35***23*150.00*****Y~REF*N6*20~EB*C*FAM*35***29*150.00*****Y~REF*N6*20~EB*F*IND*35***23*2000.00*****Y~REF*N6*20~EB*F*IND*35***29*2000.00*****Y~REF*N6*20~EB*F*FAM*35***23*.00*****Y~REF*N6*20~EB*F*FAM*35***29*.00*****Y~REF*N6*20~EB*F*IND*38***32*1500.00*****Y~REF*N6*20~EB*F*IND*38***33*1500.00*****Y~REF*N6*20~EB*F*FAM*38***32*.00*****Y~REF*N6*20~EB*F*FAM*38***33*.00*****Y~REF*N6*20~EB*C*IND*35***23*50.00*****Y~REF*N6*01~EB*C*IND*35***29*50.00*****Y~REF*N6*01~EB*C*FAM*35***23*150.00*****Y~REF*N6*01~EB*C*FAM*35***29*150.00*****Y~REF*N6*01~EB*F*IND*35***23*2000.00*****Y~REF*N6*01~EB*F*IND*35***29*2000.00*****Y~REF*N6*01~EB*F*FAM*35***23*.00*****Y~REF*N6*01~EB*F*FAM*35***29*.00*****Y~REF*N6*01~EB*F*IND*38***32*1500.00*****Y~REF*N6*01~EB*F*IND*38***33*1500.00*****Y~REF*N6*01~EB*F*FAM*38***32*.00*****Y~REF*N6*01~EB*F*FAM*38***33*.00*****Y~REF*N6*01~EB*C*IND*35***23*50.00*****N~EB*C*IND*35***29*50.00*****N~EB*C*FAM*35***23*150.00*****N~EB*C*FAM*35***29*150.00*****N~EB*F*IND*35***23*2000.00*****N~EB*F*IND*35***29*2000.00*****N~EB*F*FAM*35***23*.00*****N~EB*F*FAM*35***29*.00*****N~EB*F*IND*38***32*1500.00*****N~EB*F*IND*38***33*1500.00*****N~EB*F*FAM*38***32*.00*****N~EB*F*FAM*38***33*.00*****N~EB*A**36*****.50****Y~REF*N6*20~EB*A**25*****.20****Y~REF*N6*20~EB*D**25*********Y~REF*N6*20~MSG*Deductible applies~EB*D**36*********Y~REF*N6*20~MSG*Deductible applies~EB*A**36*****.50****Y~REF*N6*01~EB*A**25*****.20****Y~REF*N6*01~EB*D**25*********Y~REF*N6*01~MSG*Deductible applies~EB*D**36*********Y~REF*N6*01~MSG*Deductible applies~EB*A**36*****.50****N~EB*A**25*****.20****N~EB*D**25*********N~MSG*Deductible applies~EB*D**36*********N~MSG*Deductible applies~EB*F************AD`D0120~REF*N6*20~DTP*472*D8*20260719~EB*F************AD`D1110~REF*N6*20~DTP*472*D8*20260719~EB*F************AD`D1120~REF*N6*20~DTP*472*D8*20260719~EB*F************AD`D4910~REF*N6*20~DTP*472*D8*20260719~EB*F************AD`D0272~REF*N6*20~DTP*304*D8*20260406~EB*F************AD`D0210~REF*N6*20~DTP*472*D8*20260719~EB*F**35~MSG*CONDITION=PAID ON SEAT DATE.~EB*F**38******S8*8~SE*126*0001~GE*1*1~IEA*1*761737245~",
+   "eligibilitySearchId": "019f7b96-b885-7eb2-ae01-ec214b40b631",
+   "id": "ec_019f7b96-b884-7982-b3fb-a17842555289"
+  },
+  "D2950": {
+   "meta": {
+    "senderId": "STEDI",
+    "submitterId": "117151744",
+    "applicationMode": "production",
+    "traceId": "01KXXSDGZ8687DP4Y5KWZ16PGP",
+    "outboundTraceId": "01KXXSDGZ8687DP4Y5KWZ16PGP"
+   },
+   "controlNumber": "761788284",
+   "reassociationKey": "761788284",
+   "tradingPartnerServiceId": "86027",
+   "provider": {
+    "providerName": "GHASEM DARIAN",
+    "entityIdentifier": "Provider",
+    "entityType": "Non-Person Entity",
+    "npi": "1942363775",
+    "providerCode": "PE",
+    "referenceIdentification": "PXC"
+   },
+   "subscriber": {
+    "memberId": "8004158180",
+    "firstName": "LORENA",
+    "lastName": "QUINONES",
+    "gender": "U",
+    "entityIdentifier": "Insured or Subscriber",
+    "entityType": "Person",
+    "dateOfBirth": "19880413",
+    "groupNumber": "77777",
+    "groupDescription": "STATE OF ARIZONA",
+    "address": {
+     "address1": "SUPPRESSED BY PLAN",
+     "city": "UNKNOWN",
+     "state": "MI",
+     "postalCode": "48864"
+    }
+   },
+   "subscriberTraceNumbers": [
+    {
+     "traceTypeCode": "1",
+     "traceType": "Current Transaction Trace Numbers",
+     "referenceIdentification": "01KXXSDGZTA8TG4S499G538G6V",
+     "originatingCompanyIdentifier": "3117151744"
+    },
+    {
+     "traceTypeCode": "1",
+     "traceType": "Current Transaction Trace Numbers",
+     "referenceIdentification": "178629798426",
+     "originatingCompanyIdentifier": "9MEDDATACO"
+    }
+   ],
+   "payer": {
+    "entityIdentifier": "Payer",
+    "entityType": "Non-Person Entity",
+    "name": "DELTA DENTAL OF ARIZONA",
+    "payorIdentification": "11200"
+   },
+   "planInformation": {
+    "groupNumber": "77777",
+    "groupDescription": "STATE OF ARIZONA"
+   },
+   "planDateInformation": {
+    "plan": "20260101-20261231",
+    "latestVisitOrConsultation": "20260406",
+    "eligibilityBegin": "20230101"
+   },
+   "planStatus": [
+    {
+     "statusCode": "1",
+     "status": "Active Coverage",
+     "planDetails": "DELTA DENTAL PPO PLUS PREMIER",
+     "serviceTypeCodes": [
+      "35"
+     ]
+    }
+   ],
+   "benefitsInformation": [
+    {
+     "code": "1",
+     "name": "Active Coverage",
+     "coverageLevelCode": "FAM",
+     "coverageLevel": "Family",
+     "serviceTypeCodes": [
+      "35"
+     ],
+     "serviceTypes": [
+      "Dental Care"
+     ],
+     "insuranceTypeCode": "GP",
+     "insuranceType": "Group Policy",
+     "planCoverage": "DELTA DENTAL PPO PLUS PREMIER"
+    },
+    {
+     "code": "C",
+     "name": "Deductible",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "35"
+     ],
+     "serviceTypes": [
+      "Dental Care"
+     ],
+     "timeQualifierCode": "23",
+     "timeQualifier": "Calendar Year",
+     "benefitAmount": "50.00",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "20"
+     }
+    },
+    {
+     "code": "C",
+     "name": "Deductible",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "35"
+     ],
+     "serviceTypes": [
+      "Dental Care"
+     ],
+     "timeQualifierCode": "29",
+     "timeQualifier": "Remaining",
+     "benefitAmount": "50.00",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "20"
+     }
+    },
+    {
+     "code": "C",
+     "name": "Deductible",
+     "coverageLevelCode": "FAM",
+     "coverageLevel": "Family",
+     "serviceTypeCodes": [
+      "35"
+     ],
+     "serviceTypes": [
+      "Dental Care"
+     ],
+     "timeQualifierCode": "23",
+     "timeQualifier": "Calendar Year",
+     "benefitAmount": "150.00",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "20"
+     }
+    },
+    {
+     "code": "C",
+     "name": "Deductible",
+     "coverageLevelCode": "FAM",
+     "coverageLevel": "Family",
+     "serviceTypeCodes": [
+      "35"
+     ],
+     "serviceTypes": [
+      "Dental Care"
+     ],
+     "timeQualifierCode": "29",
+     "timeQualifier": "Remaining",
+     "benefitAmount": "150.00",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "20"
+     }
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "35"
+     ],
+     "serviceTypes": [
+      "Dental Care"
+     ],
+     "timeQualifierCode": "23",
+     "timeQualifier": "Calendar Year",
+     "benefitAmount": "2000.00",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "20"
+     }
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "35"
+     ],
+     "serviceTypes": [
+      "Dental Care"
+     ],
+     "timeQualifierCode": "29",
+     "timeQualifier": "Remaining",
+     "benefitAmount": "2000.00",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "20"
+     }
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "coverageLevelCode": "FAM",
+     "coverageLevel": "Family",
+     "serviceTypeCodes": [
+      "35"
+     ],
+     "serviceTypes": [
+      "Dental Care"
+     ],
+     "timeQualifierCode": "23",
+     "timeQualifier": "Calendar Year",
+     "benefitAmount": "0.00",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "20"
+     }
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "coverageLevelCode": "FAM",
+     "coverageLevel": "Family",
+     "serviceTypeCodes": [
+      "35"
+     ],
+     "serviceTypes": [
+      "Dental Care"
+     ],
+     "timeQualifierCode": "29",
+     "timeQualifier": "Remaining",
+     "benefitAmount": "0.00",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "20"
+     }
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "38"
+     ],
+     "serviceTypes": [
+      "Orthodontics"
+     ],
+     "timeQualifierCode": "32",
+     "timeQualifier": "Lifetime",
+     "benefitAmount": "1500.00",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "20"
+     }
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "38"
+     ],
+     "serviceTypes": [
+      "Orthodontics"
+     ],
+     "timeQualifierCode": "33",
+     "timeQualifier": "Lifetime Remaining",
+     "benefitAmount": "1500.00",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "20"
+     }
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "coverageLevelCode": "FAM",
+     "coverageLevel": "Family",
+     "serviceTypeCodes": [
+      "38"
+     ],
+     "serviceTypes": [
+      "Orthodontics"
+     ],
+     "timeQualifierCode": "32",
+     "timeQualifier": "Lifetime",
+     "benefitAmount": "0.00",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "20"
+     }
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "coverageLevelCode": "FAM",
+     "coverageLevel": "Family",
+     "serviceTypeCodes": [
+      "38"
+     ],
+     "serviceTypes": [
+      "Orthodontics"
+     ],
+     "timeQualifierCode": "33",
+     "timeQualifier": "Lifetime Remaining",
+     "benefitAmount": "0.00",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "20"
+     }
+    },
+    {
+     "code": "C",
+     "name": "Deductible",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "35"
+     ],
+     "serviceTypes": [
+      "Dental Care"
+     ],
+     "timeQualifierCode": "23",
+     "timeQualifier": "Calendar Year",
+     "benefitAmount": "50.00",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "01"
+     }
+    },
+    {
+     "code": "C",
+     "name": "Deductible",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "35"
+     ],
+     "serviceTypes": [
+      "Dental Care"
+     ],
+     "timeQualifierCode": "29",
+     "timeQualifier": "Remaining",
+     "benefitAmount": "50.00",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "01"
+     }
+    },
+    {
+     "code": "C",
+     "name": "Deductible",
+     "coverageLevelCode": "FAM",
+     "coverageLevel": "Family",
+     "serviceTypeCodes": [
+      "35"
+     ],
+     "serviceTypes": [
+      "Dental Care"
+     ],
+     "timeQualifierCode": "23",
+     "timeQualifier": "Calendar Year",
+     "benefitAmount": "150.00",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "01"
+     }
+    },
+    {
+     "code": "C",
+     "name": "Deductible",
+     "coverageLevelCode": "FAM",
+     "coverageLevel": "Family",
+     "serviceTypeCodes": [
+      "35"
+     ],
+     "serviceTypes": [
+      "Dental Care"
+     ],
+     "timeQualifierCode": "29",
+     "timeQualifier": "Remaining",
+     "benefitAmount": "150.00",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "01"
+     }
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "35"
+     ],
+     "serviceTypes": [
+      "Dental Care"
+     ],
+     "timeQualifierCode": "23",
+     "timeQualifier": "Calendar Year",
+     "benefitAmount": "2000.00",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "01"
+     }
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "35"
+     ],
+     "serviceTypes": [
+      "Dental Care"
+     ],
+     "timeQualifierCode": "29",
+     "timeQualifier": "Remaining",
+     "benefitAmount": "2000.00",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "01"
+     }
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "coverageLevelCode": "FAM",
+     "coverageLevel": "Family",
+     "serviceTypeCodes": [
+      "35"
+     ],
+     "serviceTypes": [
+      "Dental Care"
+     ],
+     "timeQualifierCode": "23",
+     "timeQualifier": "Calendar Year",
+     "benefitAmount": "0.00",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "01"
+     }
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "coverageLevelCode": "FAM",
+     "coverageLevel": "Family",
+     "serviceTypeCodes": [
+      "35"
+     ],
+     "serviceTypes": [
+      "Dental Care"
+     ],
+     "timeQualifierCode": "29",
+     "timeQualifier": "Remaining",
+     "benefitAmount": "0.00",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "01"
+     }
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "38"
+     ],
+     "serviceTypes": [
+      "Orthodontics"
+     ],
+     "timeQualifierCode": "32",
+     "timeQualifier": "Lifetime",
+     "benefitAmount": "1500.00",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "01"
+     }
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "38"
+     ],
+     "serviceTypes": [
+      "Orthodontics"
+     ],
+     "timeQualifierCode": "33",
+     "timeQualifier": "Lifetime Remaining",
+     "benefitAmount": "1500.00",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "01"
+     }
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "coverageLevelCode": "FAM",
+     "coverageLevel": "Family",
+     "serviceTypeCodes": [
+      "38"
+     ],
+     "serviceTypes": [
+      "Orthodontics"
+     ],
+     "timeQualifierCode": "32",
+     "timeQualifier": "Lifetime",
+     "benefitAmount": "0.00",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "01"
+     }
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "coverageLevelCode": "FAM",
+     "coverageLevel": "Family",
+     "serviceTypeCodes": [
+      "38"
+     ],
+     "serviceTypes": [
+      "Orthodontics"
+     ],
+     "timeQualifierCode": "33",
+     "timeQualifier": "Lifetime Remaining",
+     "benefitAmount": "0.00",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "01"
+     }
+    },
+    {
+     "code": "C",
+     "name": "Deductible",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "35"
+     ],
+     "serviceTypes": [
+      "Dental Care"
+     ],
+     "timeQualifierCode": "23",
+     "timeQualifier": "Calendar Year",
+     "benefitAmount": "50.00",
+     "inPlanNetworkIndicatorCode": "N",
+     "inPlanNetworkIndicator": "No"
+    },
+    {
+     "code": "C",
+     "name": "Deductible",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "35"
+     ],
+     "serviceTypes": [
+      "Dental Care"
+     ],
+     "timeQualifierCode": "29",
+     "timeQualifier": "Remaining",
+     "benefitAmount": "50.00",
+     "inPlanNetworkIndicatorCode": "N",
+     "inPlanNetworkIndicator": "No"
+    },
+    {
+     "code": "C",
+     "name": "Deductible",
+     "coverageLevelCode": "FAM",
+     "coverageLevel": "Family",
+     "serviceTypeCodes": [
+      "35"
+     ],
+     "serviceTypes": [
+      "Dental Care"
+     ],
+     "timeQualifierCode": "23",
+     "timeQualifier": "Calendar Year",
+     "benefitAmount": "150.00",
+     "inPlanNetworkIndicatorCode": "N",
+     "inPlanNetworkIndicator": "No"
+    },
+    {
+     "code": "C",
+     "name": "Deductible",
+     "coverageLevelCode": "FAM",
+     "coverageLevel": "Family",
+     "serviceTypeCodes": [
+      "35"
+     ],
+     "serviceTypes": [
+      "Dental Care"
+     ],
+     "timeQualifierCode": "29",
+     "timeQualifier": "Remaining",
+     "benefitAmount": "150.00",
+     "inPlanNetworkIndicatorCode": "N",
+     "inPlanNetworkIndicator": "No"
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "35"
+     ],
+     "serviceTypes": [
+      "Dental Care"
+     ],
+     "timeQualifierCode": "23",
+     "timeQualifier": "Calendar Year",
+     "benefitAmount": "2000.00",
+     "inPlanNetworkIndicatorCode": "N",
+     "inPlanNetworkIndicator": "No"
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "35"
+     ],
+     "serviceTypes": [
+      "Dental Care"
+     ],
+     "timeQualifierCode": "29",
+     "timeQualifier": "Remaining",
+     "benefitAmount": "2000.00",
+     "inPlanNetworkIndicatorCode": "N",
+     "inPlanNetworkIndicator": "No"
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "coverageLevelCode": "FAM",
+     "coverageLevel": "Family",
+     "serviceTypeCodes": [
+      "35"
+     ],
+     "serviceTypes": [
+      "Dental Care"
+     ],
+     "timeQualifierCode": "23",
+     "timeQualifier": "Calendar Year",
+     "benefitAmount": "0.00",
+     "inPlanNetworkIndicatorCode": "N",
+     "inPlanNetworkIndicator": "No"
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "coverageLevelCode": "FAM",
+     "coverageLevel": "Family",
+     "serviceTypeCodes": [
+      "35"
+     ],
+     "serviceTypes": [
+      "Dental Care"
+     ],
+     "timeQualifierCode": "29",
+     "timeQualifier": "Remaining",
+     "benefitAmount": "0.00",
+     "inPlanNetworkIndicatorCode": "N",
+     "inPlanNetworkIndicator": "No"
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "38"
+     ],
+     "serviceTypes": [
+      "Orthodontics"
+     ],
+     "timeQualifierCode": "32",
+     "timeQualifier": "Lifetime",
+     "benefitAmount": "1500.00",
+     "inPlanNetworkIndicatorCode": "N",
+     "inPlanNetworkIndicator": "No"
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "38"
+     ],
+     "serviceTypes": [
+      "Orthodontics"
+     ],
+     "timeQualifierCode": "33",
+     "timeQualifier": "Lifetime Remaining",
+     "benefitAmount": "1500.00",
+     "inPlanNetworkIndicatorCode": "N",
+     "inPlanNetworkIndicator": "No"
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "coverageLevelCode": "FAM",
+     "coverageLevel": "Family",
+     "serviceTypeCodes": [
+      "38"
+     ],
+     "serviceTypes": [
+      "Orthodontics"
+     ],
+     "timeQualifierCode": "32",
+     "timeQualifier": "Lifetime",
+     "benefitAmount": "0.00",
+     "inPlanNetworkIndicatorCode": "N",
+     "inPlanNetworkIndicator": "No"
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "coverageLevelCode": "FAM",
+     "coverageLevel": "Family",
+     "serviceTypeCodes": [
+      "38"
+     ],
+     "serviceTypes": [
+      "Orthodontics"
+     ],
+     "timeQualifierCode": "33",
+     "timeQualifier": "Lifetime Remaining",
+     "benefitAmount": "0.00",
+     "inPlanNetworkIndicatorCode": "N",
+     "inPlanNetworkIndicator": "No"
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "serviceTypeCodes": [
+      "36"
+     ],
+     "serviceTypes": [
+      "Dental Crowns"
+     ],
+     "benefitPercent": "0.50",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "20"
+     }
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "serviceTypeCodes": [
+      "25"
+     ],
+     "serviceTypes": [
+      "Restorative"
+     ],
+     "benefitPercent": "0.20",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "20"
+     }
+    },
+    {
+     "code": "D",
+     "name": "Benefit Description",
+     "serviceTypeCodes": [
+      "25"
+     ],
+     "serviceTypes": [
+      "Restorative"
+     ],
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "20"
+     },
+     "additionalInformation": [
+      {
+       "description": "Deductible applies"
+      }
+     ]
+    },
+    {
+     "code": "D",
+     "name": "Benefit Description",
+     "serviceTypeCodes": [
+      "36"
+     ],
+     "serviceTypes": [
+      "Dental Crowns"
+     ],
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "20"
+     },
+     "additionalInformation": [
+      {
+       "description": "Deductible applies"
+      }
+     ]
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "serviceTypeCodes": [
+      "36"
+     ],
+     "serviceTypes": [
+      "Dental Crowns"
+     ],
+     "benefitPercent": "0.50",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "01"
+     }
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "serviceTypeCodes": [
+      "25"
+     ],
+     "serviceTypes": [
+      "Restorative"
+     ],
+     "benefitPercent": "0.20",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "01"
+     }
+    },
+    {
+     "code": "D",
+     "name": "Benefit Description",
+     "serviceTypeCodes": [
+      "25"
+     ],
+     "serviceTypes": [
+      "Restorative"
+     ],
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "01"
+     },
+     "additionalInformation": [
+      {
+       "description": "Deductible applies"
+      }
+     ]
+    },
+    {
+     "code": "D",
+     "name": "Benefit Description",
+     "serviceTypeCodes": [
+      "36"
+     ],
+     "serviceTypes": [
+      "Dental Crowns"
+     ],
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "01"
+     },
+     "additionalInformation": [
+      {
+       "description": "Deductible applies"
+      }
+     ]
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "serviceTypeCodes": [
+      "36"
+     ],
+     "serviceTypes": [
+      "Dental Crowns"
+     ],
+     "benefitPercent": "0.50",
+     "inPlanNetworkIndicatorCode": "N",
+     "inPlanNetworkIndicator": "No"
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "serviceTypeCodes": [
+      "25"
+     ],
+     "serviceTypes": [
+      "Restorative"
+     ],
+     "benefitPercent": "0.20",
+     "inPlanNetworkIndicatorCode": "N",
+     "inPlanNetworkIndicator": "No"
+    },
+    {
+     "code": "D",
+     "name": "Benefit Description",
+     "serviceTypeCodes": [
+      "25"
+     ],
+     "serviceTypes": [
+      "Restorative"
+     ],
+     "inPlanNetworkIndicatorCode": "N",
+     "inPlanNetworkIndicator": "No",
+     "additionalInformation": [
+      {
+       "description": "Deductible applies"
+      }
+     ]
+    },
+    {
+     "code": "D",
+     "name": "Benefit Description",
+     "serviceTypeCodes": [
+      "36"
+     ],
+     "serviceTypes": [
+      "Dental Crowns"
+     ],
+     "inPlanNetworkIndicatorCode": "N",
+     "inPlanNetworkIndicator": "No",
+     "additionalInformation": [
+      {
+       "description": "Deductible applies"
+      }
+     ]
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "compositeMedicalProcedureIdentifier": {
+      "productOrServiceIDQualifierCode": "AD",
+      "productOrServiceIDQualifier": "American Dental Association Codes",
+      "procedureCode": "D0120"
+     },
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "20"
+     },
+     "benefitsDateInformation": {
+      "service": "20260719"
+     }
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "compositeMedicalProcedureIdentifier": {
+      "productOrServiceIDQualifierCode": "AD",
+      "productOrServiceIDQualifier": "American Dental Association Codes",
+      "procedureCode": "D1110"
+     },
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "20"
+     },
+     "benefitsDateInformation": {
+      "service": "20260719"
+     }
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "compositeMedicalProcedureIdentifier": {
+      "productOrServiceIDQualifierCode": "AD",
+      "productOrServiceIDQualifier": "American Dental Association Codes",
+      "procedureCode": "D1120"
+     },
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "20"
+     },
+     "benefitsDateInformation": {
+      "service": "20260719"
+     }
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "compositeMedicalProcedureIdentifier": {
+      "productOrServiceIDQualifierCode": "AD",
+      "productOrServiceIDQualifier": "American Dental Association Codes",
+      "procedureCode": "D4910"
+     },
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "20"
+     },
+     "benefitsDateInformation": {
+      "service": "20260719"
+     }
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "compositeMedicalProcedureIdentifier": {
+      "productOrServiceIDQualifierCode": "AD",
+      "productOrServiceIDQualifier": "American Dental Association Codes",
+      "procedureCode": "D0272"
+     },
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "20"
+     },
+     "benefitsDateInformation": {
+      "latestVisitOrConsultation": "20260406"
+     }
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "compositeMedicalProcedureIdentifier": {
+      "productOrServiceIDQualifierCode": "AD",
+      "productOrServiceIDQualifier": "American Dental Association Codes",
+      "procedureCode": "D0210"
+     },
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "20"
+     },
+     "benefitsDateInformation": {
+      "service": "20260719"
+     }
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "serviceTypeCodes": [
+      "35"
+     ],
+     "serviceTypes": [
+      "Dental Care"
+     ],
+     "additionalInformation": [
+      {
+       "description": "CONDITION=PAID ON SEAT DATE."
+      }
+     ]
+    },
+    {
+     "code": "F",
+     "name": "Limitations",
+     "serviceTypeCodes": [
+      "38"
+     ],
+     "serviceTypes": [
+      "Orthodontics"
+     ],
+     "quantityQualifierCode": "S8",
+     "quantityQualifier": "Age, Low Value",
+     "benefitQuantity": "8"
+    }
+   ],
+   "errors": [],
+   "x12": "ISA*00*          *00*          *ZZ*STEDI          *01*117151744      *260719*1315*^*00501*761788284*0*P*`~GS*HB*STEDI*117151744*20260719*131507*1*X*005010X279A1~ST*271*0001*005010X279A1~BHT*0022*11*01KXXSDGZ8687DP4Y5KWZ16PGP*20260719*131507~HL*1**20*1~NM1*PR*2*DELTA DENTAL OF ARIZONA*****PI*11200~HL*2*1*21*1~NM1*1P*2*GHASEM DARIAN*****XX*1942363775~PRV*PE*PXC*1223G0001X~HL*3*2*22*0~TRN*1*01KXXSDGZTA8TG4S499G538G6V*3117151744~TRN*1*178629798426*9MEDDATACO~NM1*IL*1*QUINONES*LORENA****MI*8004158180~REF*6P*77777*STATE OF ARIZONA~N3*SUPPRESSED BY PLAN~N4*UNKNOWN*MI*48864~DMG*D8*19880413*U~DTP*356*D8*20230101~DTP*291*RD8*20260101-20261231~EB*1*FAM*35*GP*DELTA DENTAL PPO PLUS PREMIER~EB*C*IND*35***23*50.00*****Y~REF*N6*20~EB*C*IND*35***29*50.00*****Y~REF*N6*20~EB*C*FAM*35***23*150.00*****Y~REF*N6*20~EB*C*FAM*35***29*150.00*****Y~REF*N6*20~EB*F*IND*35***23*2000.00*****Y~REF*N6*20~EB*F*IND*35***29*2000.00*****Y~REF*N6*20~EB*F*FAM*35***23*.00*****Y~REF*N6*20~EB*F*FAM*35***29*.00*****Y~REF*N6*20~EB*F*IND*38***32*1500.00*****Y~REF*N6*20~EB*F*IND*38***33*1500.00*****Y~REF*N6*20~EB*F*FAM*38***32*.00*****Y~REF*N6*20~EB*F*FAM*38***33*.00*****Y~REF*N6*20~EB*C*IND*35***23*50.00*****Y~REF*N6*01~EB*C*IND*35***29*50.00*****Y~REF*N6*01~EB*C*FAM*35***23*150.00*****Y~REF*N6*01~EB*C*FAM*35***29*150.00*****Y~REF*N6*01~EB*F*IND*35***23*2000.00*****Y~REF*N6*01~EB*F*IND*35***29*2000.00*****Y~REF*N6*01~EB*F*FAM*35***23*.00*****Y~REF*N6*01~EB*F*FAM*35***29*.00*****Y~REF*N6*01~EB*F*IND*38***32*1500.00*****Y~REF*N6*01~EB*F*IND*38***33*1500.00*****Y~REF*N6*01~EB*F*FAM*38***32*.00*****Y~REF*N6*01~EB*F*FAM*38***33*.00*****Y~REF*N6*01~EB*C*IND*35***23*50.00*****N~EB*C*IND*35***29*50.00*****N~EB*C*FAM*35***23*150.00*****N~EB*C*FAM*35***29*150.00*****N~EB*F*IND*35***23*2000.00*****N~EB*F*IND*35***29*2000.00*****N~EB*F*FAM*35***23*.00*****N~EB*F*FAM*35***29*.00*****N~EB*F*IND*38***32*1500.00*****N~EB*F*IND*38***33*1500.00*****N~EB*F*FAM*38***32*.00*****N~EB*F*FAM*38***33*.00*****N~EB*A**36*****.50****Y~REF*N6*20~EB*A**25*****.20****Y~REF*N6*20~EB*D**25*********Y~REF*N6*20~MSG*Deductible applies~EB*D**36*********Y~REF*N6*20~MSG*Deductible applies~EB*A**36*****.50****Y~REF*N6*01~EB*A**25*****.20****Y~REF*N6*01~EB*D**25*********Y~REF*N6*01~MSG*Deductible applies~EB*D**36*********Y~REF*N6*01~MSG*Deductible applies~EB*A**36*****.50****N~EB*A**25*****.20****N~EB*D**25*********N~MSG*Deductible applies~EB*D**36*********N~MSG*Deductible applies~EB*F************AD`D0120~REF*N6*20~DTP*472*D8*20260719~EB*F************AD`D1110~REF*N6*20~DTP*472*D8*20260719~EB*F************AD`D1120~REF*N6*20~DTP*472*D8*20260719~EB*F************AD`D4910~REF*N6*20~DTP*472*D8*20260719~EB*F************AD`D0272~REF*N6*20~DTP*304*D8*20260406~EB*F************AD`D0210~REF*N6*20~DTP*472*D8*20260719~EB*F**35~MSG*CONDITION=PAID ON SEAT DATE.~EB*F**38******S8*8~SE*126*0001~GE*1*1~IEA*1*761788284~",
+   "eligibilitySearchId": "019f7b96-c3e8-7e41-ab22-0c267ce7f222",
+   "id": "ec_019f7b96-c3e7-7922-b12f-d823b709c60f"
+  }
+ }
+}

@@ -1,0 +1,209 @@
+{
+ "codes": [
+  "D2394"
+ ],
+ "response": {
+  "meta": {
+   "senderId": "STEDI",
+   "submitterId": "117151744",
+   "applicationMode": "production",
+   "traceId": "01KXXS7T7P5W3QQZATPE58P3WX",
+   "outboundTraceId": "01KXXS7T7P5W3QQZATPE58P3WX"
+  },
+  "controlNumber": "761797654",
+  "reassociationKey": "761797654",
+  "tradingPartnerServiceId": "77777",
+  "provider": {
+   "providerName": "GHASEM DARIAN",
+   "providerFirstName": "DR.",
+   "entityIdentifier": "Provider",
+   "entityType": "Person",
+   "npi": "1942363775",
+   "providerCode": "PE",
+   "referenceIdentification": "PXC"
+  },
+  "subscriber": {
+   "memberId": "122173794101",
+   "firstName": "RYAN",
+   "lastName": "SCOTT",
+   "gender": "U",
+   "entityIdentifier": "Insured or Subscriber",
+   "entityType": "Person",
+   "dateOfBirth": "19930416",
+   "aaaErrors": [
+    {
+     "field": "AAA",
+     "code": "15",
+     "description": "Required application data missing",
+     "followupAction": "Please Correct and Resubmit",
+     "location": "Loop 2100C",
+     "possibleResolutions": "- The payer likely needs more information about the subscriber to complete the eligibility check. We recommend providing the subscriber's `memberId`, `dateOfBirth`, `firstName`, and `lastName`. Given this information, all payers must return benefits details as long as they can find a unique match for the member within their system. Visit [patient information](https://www.stedi.com/docs/healthcare/send-eligibility-checks#patient-information) to learn more.\n\u2022 Try including the `provider.taxId`, typically their EIN or SSN."
+    },
+    {
+     "field": "AAA",
+     "code": "15",
+     "description": "Required application data missing",
+     "followupAction": "Resubmission Allowed",
+     "location": "Loop 2110C",
+     "possibleResolutions": "- The payer likely needs more information about the subscriber to complete the eligibility check. We recommend providing the subscriber's `memberId`, `dateOfBirth`, `firstName`, and `lastName`. Given this information, all payers must return benefits details as long as they can find a unique match for the member within their system. Visit [patient information](https://www.stedi.com/docs/healthcare/send-eligibility-checks#patient-information) to learn more.\n\u2022 Try including the `provider.taxId`, typically their EIN or SSN."
+    }
+   ]
+  },
+  "subscriberTraceNumbers": [
+   {
+    "traceTypeCode": "1",
+    "traceType": "Current Transaction Trace Numbers",
+    "referenceIdentification": "01KXXS7T8A39V57PY82NE5Y1C9",
+    "originatingCompanyIdentifier": "3117151744"
+   },
+   {
+    "traceTypeCode": "1",
+    "traceType": "Current Transaction Trace Numbers",
+    "referenceIdentification": "178631063061",
+    "originatingCompanyIdentifier": "9MEDDATACO"
+   }
+  ],
+  "payer": {
+   "entityIdentifier": "Payer",
+   "entityType": "Non-Person Entity",
+   "name": "DELTA DENTAL OF CALIFORNIA",
+   "payorIdentification": "10705"
+  },
+  "planStatus": [],
+  "benefitsInformation": [
+   {
+    "code": "V",
+    "name": "Cannot Process",
+    "additionalInformation": [
+     {
+      "description": "EXCEPTION=THE MEMBER IS COVERED HOWEVER, THE SPECIFIC PROCEDURE CODES REQUESTED ARE NOT A COVERED BENEFIT OF THIS PLAN. FOR A FULL SUMMARY OF BENEFITS OR ADDITIONAL CODE SPECIFIC INQUIRIES, PLEASE SUBMIT A NEW INQUIRY."
+     }
+    ]
+   }
+  ],
+  "errors": [
+   {
+    "field": "AAA",
+    "code": "15",
+    "description": "Required application data missing",
+    "followupAction": "Please Correct and Resubmit",
+    "location": "Loop 2100C",
+    "possibleResolutions": "- The payer likely needs more information about the subscriber to complete the eligibility check. We recommend providing the subscriber's `memberId`, `dateOfBirth`, `firstName`, and `lastName`. Given this information, all payers must return benefits details as long as they can find a unique match for the member within their system. Visit [patient information](https://www.stedi.com/docs/healthcare/send-eligibility-checks#patient-information) to learn more.\n\u2022 Try including the `provider.taxId`, typically their EIN or SSN."
+   },
+   {
+    "field": "AAA",
+    "code": "15",
+    "description": "Required application data missing",
+    "followupAction": "Resubmission Allowed",
+    "location": "Loop 2110C",
+    "possibleResolutions": "- The payer likely needs more information about the subscriber to complete the eligibility check. We recommend providing the subscriber's `memberId`, `dateOfBirth`, `firstName`, and `lastName`. Given this information, all payers must return benefits details as long as they can find a unique match for the member within their system. Visit [patient information](https://www.stedi.com/docs/healthcare/send-eligibility-checks#patient-information) to learn more.\n\u2022 Try including the `provider.taxId`, typically their EIN or SSN."
+   }
+  ],
+  "x12": "ISA*00*          *00*          *ZZ*STEDI          *01*117151744      *260719*1312*^*00501*761797654*0*P*`~GS*HB*STEDI*117151744*20260719*131200*1*X*005010X279A1~ST*271*0001*005010X279A1~BHT*0022*11*01KXXS7T7P5W3QQZATPE58P3WX*20260719*131200~HL*1**20*1~NM1*PR*2*DELTA DENTAL OF CALIFORNIA*****PI*10705~HL*2*1*21*1~NM1*1P*1*GHASEM DARIAN*DR.****XX*1942363775~REF*TJ*999912345~PRV*PE*PXC*1223G0001X~HL*3*2*22*0~TRN*1*01KXXS7T8A39V57PY82NE5Y1C9*3117151744~TRN*1*178631063061*9MEDDATACO~NM1*IL*1*SCOTT*RYAN****MI*122173794101~AAA*N**15*C~DMG*D8*19930416*U~EB*V~AAA*Y**15*R~MSG*EXCEPTION=THE MEMBER IS COVERED HOWEVER, THE SPECIFIC PROCEDURE CODES REQUESTED ARE NOT A COVERED BENEFIT OF THIS PLAN. FOR A FULL SUMMARY OF BENEFITS OR ADDITIONAL CODE SPECIFIC INQUIRIES, PLEASE SUBMIT A NEW INQUIRY.~SE*18*0001~GE*1*1~IEA*1*761797654~",
+  "eligibilitySearchId": "019f7b93-e8f6-7153-b43c-168eb3fe06ae",
+  "id": "ec_019f7b93-e8eb-73c0-859f-6a8193edab37"
+ },
+ "singles": {
+  "D2394": {
+   "meta": {
+    "senderId": "STEDI",
+    "submitterId": "117151744",
+    "applicationMode": "production",
+    "traceId": "01KXXSDKRA6NFJ302J31Y8EFT7",
+    "outboundTraceId": "01KXXSDKRA6NFJ302J31Y8EFT7"
+   },
+   "controlNumber": "761788286",
+   "reassociationKey": "761788286",
+   "tradingPartnerServiceId": "77777",
+   "provider": {
+    "providerName": "GHASEM DARIAN",
+    "providerFirstName": "DR.",
+    "entityIdentifier": "Provider",
+    "entityType": "Person",
+    "npi": "1942363775",
+    "providerCode": "PE",
+    "referenceIdentification": "PXC"
+   },
+   "subscriber": {
+    "memberId": "122173794101",
+    "firstName": "RYAN",
+    "lastName": "SCOTT",
+    "gender": "U",
+    "entityIdentifier": "Insured or Subscriber",
+    "entityType": "Person",
+    "dateOfBirth": "19930416",
+    "aaaErrors": [
+     {
+      "field": "AAA",
+      "code": "15",
+      "description": "Required application data missing",
+      "followupAction": "Please Correct and Resubmit",
+      "location": "Loop 2100C",
+      "possibleResolutions": "- The payer likely needs more information about the subscriber to complete the eligibility check. We recommend providing the subscriber's `memberId`, `dateOfBirth`, `firstName`, and `lastName`. Given this information, all payers must return benefits details as long as they can find a unique match for the member within their system. Visit [patient information](https://www.stedi.com/docs/healthcare/send-eligibility-checks#patient-information) to learn more.\n\u2022 Try including the `provider.taxId`, typically their EIN or SSN."
+     },
+     {
+      "field": "AAA",
+      "code": "15",
+      "description": "Required application data missing",
+      "followupAction": "Resubmission Allowed",
+      "location": "Loop 2110C",
+      "possibleResolutions": "- The payer likely needs more information about the subscriber to complete the eligibility check. We recommend providing the subscriber's `memberId`, `dateOfBirth`, `firstName`, and `lastName`. Given this information, all payers must return benefits details as long as they can find a unique match for the member within their system. Visit [patient information](https://www.stedi.com/docs/healthcare/send-eligibility-checks#patient-information) to learn more.\n\u2022 Try including the `provider.taxId`, typically their EIN or SSN."
+     }
+    ]
+   },
+   "subscriberTraceNumbers": [
+    {
+     "traceTypeCode": "1",
+     "traceType": "Current Transaction Trace Numbers",
+     "referenceIdentification": "01KXXSDKRV6A052S4WR1P7SSSF",
+     "originatingCompanyIdentifier": "3117151744"
+    },
+    {
+     "traceTypeCode": "1",
+     "traceType": "Current Transaction Trace Numbers",
+     "referenceIdentification": "178629756584",
+     "originatingCompanyIdentifier": "9MEDDATACO"
+    }
+   ],
+   "payer": {
+    "entityIdentifier": "Payer",
+    "entityType": "Non-Person Entity",
+    "name": "DELTA DENTAL OF CALIFORNIA",
+    "payorIdentification": "10705"
+   },
+   "planStatus": [],
+   "benefitsInformation": [
+    {
+     "code": "V",
+     "name": "Cannot Process",
+     "additionalInformation": [
+      {
+       "description": "EXCEPTION=THE MEMBER IS COVERED HOWEVER, THE SPECIFIC PROCEDURE CODES REQUESTED ARE NOT A COVERED BENEFIT OF THIS PLAN. FOR A FULL SUMMARY OF BENEFITS OR ADDITIONAL CODE SPECIFIC INQUIRIES, PLEASE SUBMIT A NEW INQUIRY."
+      }
+     ]
+    }
+   ],
+   "errors": [
+    {
+     "field": "AAA",
+     "code": "15",
+     "description": "Required application data missing",
+     "followupAction": "Please Correct and Resubmit",
+     "location": "Loop 2100C",
+     "possibleResolutions": "- The payer likely needs more information about the subscriber to complete the eligibility check. We recommend providing the subscriber's `memberId`, `dateOfBirth`, `firstName`, and `lastName`. Given this information, all payers must return benefits details as long as they can find a unique match for the member within their system. Visit [patient information](https://www.stedi.com/docs/healthcare/send-eligibility-checks#patient-information) to learn more.\n\u2022 Try including the `provider.taxId`, typically their EIN or SSN."
+    },
+    {
+     "field": "AAA",
+     "code": "15",
+     "description": "Required application data missing",
+     "followupAction": "Resubmission Allowed",
+     "location": "Loop 2110C",
+     "possibleResolutions": "- The payer likely needs more information about the subscriber to complete the eligibility check. We recommend providing the subscriber's `memberId`, `dateOfBirth`, `firstName`, and `lastName`. Given this information, all payers must return benefits details as long as they can find a unique match for the member within their system. Visit [patient information](https://www.stedi.com/docs/healthcare/send-eligibility-checks#patient-information) to learn more.\n\u2022 Try including the `provider.taxId`, typically their EIN or SSN."
+    }
+   ],
+   "x12": "ISA*00*          *00*          *ZZ*STEDI          *01*117151744      *260719*1315*^*00501*761788286*0*P*`~GS*HB*STEDI*117151744*20260719*131511*1*X*005010X279A1~ST*271*0001*005010X279A1~BHT*0022*11*01KXXSDKRA6NFJ302J31Y8EFT7*20260719*131511~HL*1**20*1~NM1*PR*2*DELTA DENTAL OF CALIFORNIA*****PI*10705~HL*2*1*21*1~NM1*1P*1*GHASEM DARIAN*DR.****XX*1942363775~REF*TJ*999912345~PRV*PE*PXC*1223G0001X~HL*3*2*22*0~TRN*1*01KXXSDKRV6A052S4WR1P7SSSF*3117151744~TRN*1*178629756584*9MEDDATACO~NM1*IL*1*SCOTT*RYAN****MI*122173794101~AAA*N**15*C~DMG*D8*19930416*U~EB*V~AAA*Y**15*R~MSG*EXCEPTION=THE MEMBER IS COVERED HOWEVER, THE SPECIFIC PROCEDURE CODES REQUESTED ARE NOT A COVERED BENEFIT OF THIS PLAN. FOR A FULL SUMMARY OF BENEFITS OR ADDITIONAL CODE SPECIFIC INQUIRIES, PLEASE SUBMIT A NEW INQUIRY.~SE*18*0001~GE*1*1~IEA*1*761788286~",
+   "eligibilitySearchId": "019f7b96-cf09-77c2-b105-5b72282d66f3",
+   "id": "ec_019f7b96-cf09-77c2-b105-5b67ac1e6e14"
+  }
+ }
+}

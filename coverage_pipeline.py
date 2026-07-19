@@ -142,6 +142,85 @@ class StediAgent:
             {"Authorization": "Key " + self.api_key, "Content-Type": "application/json"})
         return json.load(urllib.request.urlopen(req, timeout=90))
 
+    def probe_codes(self, patient, cdts):
+        """Procedure-level eligibility inquiry: ask the payer about specific CDT
+        codes via encounter.medicalProcedures - ONE request for all of them.
+        Some payers (Aetna) only reveal code-specific exclusions this way.
+        Returns {cdt: percode_entry} for every code the payer answered."""
+        cdts = sorted(cdts)
+        cache = os.path.join(
+            CACHE_DIR, "probe_" + re.sub(r"\W+", "_", patient["name"]) + ".json")
+        wrapper = None
+        if self.cache_is_fresh(cache):
+            wrapper = json.load(open(cache))
+            if not set(cdts) <= set(wrapper.get("codes", [])):
+                wrapper = None  # cache doesn't cover all needed codes
+
+        ins = patient["insurance"][0]
+        member_id = re.sub(r"\s+\d+$", "", ins["member_id"]).replace("-00", "").strip()
+        parts = patient["name"].split()
+        base = {
+            "tradingPartnerServiceId": ins["payer_id"],
+            "provider": {"organizationName": self.org_name, "npi": self.npi},
+            "subscriber": {
+                "firstName": parts[0], "lastName": " ".join(parts[1:]),
+                "dateOfBirth": patient["dob"].replace("-", ""), "memberId": member_id,
+            },
+        }
+
+        if wrapper is None:
+            body = dict(base, encounter={"medicalProcedures": [
+                {"productOrServiceIDQualifier": "AD", "procedureCode": c} for c in cdts]})
+            try:
+                resp = self._post(body)
+            except Exception:
+                return {}
+            wrapper = {"codes": cdts, "response": resp, "singles": {}}
+            json.dump(wrapper, open(cache, "w"), indent=1)
+            time.sleep(0.4)
+        wrapper.setdefault("singles", {})
+
+        def extract(resp, wanted):
+            found = {}
+            for b in resp.get("benefitsInformation", []):
+                if b.get("inPlanNetworkIndicatorCode") == "N":
+                    continue
+                cmpi = (b.get("compositeMedicalProcedureIdentifier") or {}).get("procedureCode")
+                if cmpi not in wanted:
+                    continue  # only trust rows the payer tied to a probed code
+                code = b.get("code")
+                entry = found.setdefault(cmpi, {})
+                if code in ("I", "E"):
+                    entry.clear(); entry["noncovered"] = True
+                elif code == "A" and b.get("benefitPercent") is not None and "noncovered" not in entry:
+                    entry["coins"] = float(b["benefitPercent"])
+                elif code == "B" and b.get("benefitAmount") not in (None, "") and not entry:
+                    entry["copay"] = float(b["benefitAmount"])
+                if b.get("authOrCertIndicator") == "Y":
+                    entry["prior_auth"] = True
+            return found
+
+        out = extract(wrapper["response"], set(cdts))
+        # some payers ignore multi-procedure requests - retry those codes singly
+        missing = [c for c in cdts if c not in out]
+        dirty = False
+        for c in missing:
+            if c in wrapper["singles"]:
+                resp = wrapper["singles"][c]
+            else:
+                body = dict(base, encounter={"productOrServiceIDQualifier": "AD", "procedureCode": c})
+                try:
+                    resp = self._post(body)
+                except Exception:
+                    continue
+                wrapper["singles"][c] = resp
+                dirty = True
+                time.sleep(0.4)
+            out.update(extract(resp, {c}))
+        if dirty:
+            json.dump(wrapper, open(cache, "w"), indent=1)
+        return out
+
     @staticmethod
     def cache_is_fresh(path):
         """A cached 271 is usable only if it exists, is younger than CACHE_TTL_DAYS,
@@ -220,12 +299,15 @@ class StediAgent:
             #  2. free text: CDT codes in additionalInformation (Cigna DHMO, Humana)
             cmpi_code = (b.get("compositeMedicalProcedureIdentifier") or {}).get("procedureCode")
             if cmpi_code:
+                entry = percode.setdefault(cmpi_code, {})
                 if code == "A" and pct is not None:
-                    percode.setdefault(cmpi_code, {})["coins"] = float(pct)
+                    entry["coins"] = float(pct)
                 elif code == "B" and amt not in (None, ""):
-                    percode.setdefault(cmpi_code, {})["copay"] = float(amt)
+                    entry["copay"] = float(amt)
                 elif code in ("I", "E"):
-                    percode.setdefault(cmpi_code, {})["noncovered"] = True
+                    entry["noncovered"] = True
+                if b.get("authOrCertIndicator") == "Y":
+                    entry["prior_auth"] = True
                 continue
             txt = " ".join(a.get("description", "") for a in (b.get("additionalInformation") or []))
             cdt_codes = re.findall(r"\bD\d{4}\b", txt)
@@ -442,6 +524,7 @@ def estimate_patient(patient, benefits, fallback, no_coverage=False):
             "tooth": proc["tooth"], "fee": f"{fee:.2f}",
             "insurance_pays_est": f"{ins_pay:.2f}", "patient_oop_est": f"{pat_amt:.2f}",
             "basis": basis, "confidence": conf,
+            "prior_auth_required": "Y" if percode.get(code, {}).get("prior_auth") else "",
         })
     return ins_total, oop_total, detail, notes
 
@@ -475,6 +558,20 @@ def main():
                 covstat, source, benefits = "ACTIVE (verified via Stedi)", "stedi_live", parsed
                 if parsed["percode"]:
                     source += " (per-procedure schedule)"
+                # category-level answers can hide code-specific exclusions, so ask
+                # the payer directly about every pending CDT code it did not price
+                # (batched: one extra request per patient via medicalProcedures)
+                unpriced = sorted({x["code"] for x in p["pending"]
+                                   if re.fullmatch(r"D\d{4}", x["code"])
+                                   and x["code"] not in parsed["percode"]})
+                if unpriced:
+                    for cdt, got in stedi.probe_codes(p, unpriced).items():
+                        parsed["percode"][cdt] = got
+                        what = ("NON-COVERED" if got.get("noncovered")
+                                else f"coins {got.get('coins')}" if "coins" in got
+                                else f"copay ${got.get('copay')}")
+                        pa = " [prior auth required]" if got.get("prior_auth") else ""
+                        print(f"    probe {cdt}: {what}{pa}")
                 # some payers (UHC) omit the annual max from the 271, but plan names
                 # like "UHC 1000" or "UHC 5000-100-50-50" carry it; DHMO plans have
                 # no max at all, so only infer when the plan uses coinsurance

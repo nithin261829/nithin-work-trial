@@ -1,0 +1,566 @@
+{
+ "codes": [
+  "D2740",
+  "D2954",
+  "D9944"
+ ],
+ "response": {
+  "meta": {
+   "senderId": "STEDI",
+   "submitterId": "117151744",
+   "applicationMode": "production",
+   "traceId": "01KXXS798P48DMPJQYTSHDKR0S",
+   "outboundTraceId": "01KXXS798P48DMPJQYTSHDKR0S"
+  },
+  "controlNumber": "998930821",
+  "reassociationKey": "998930821",
+  "tradingPartnerServiceId": "60054",
+  "provider": {
+   "providerName": "Darian",
+   "providerFirstName": "Ghasem",
+   "middleName": "K.",
+   "entityIdentifier": "Provider",
+   "entityType": "Person",
+   "npi": "1942363775"
+  },
+  "subscriber": {
+   "memberId": "W273801084",
+   "firstName": "SUZY",
+   "lastName": "EL-KHATIB",
+   "gender": "F",
+   "entityIdentifier": "Insured or Subscriber",
+   "entityType": "Person",
+   "dateOfBirth": "19670727",
+   "groupNumber": "013835903300010",
+   "planNumber": "0138359",
+   "groupDescription": "ARIZONA CENTER FOR HEMATOLOGY AND O",
+   "address": {
+    "address1": "7444 W BANFF LN",
+    "city": "PEORIA",
+    "state": "AZ",
+    "postalCode": "85381"
+   }
+  },
+  "subscriberTraceNumbers": [
+   {
+    "traceTypeCode": "1",
+    "traceType": "Current Transaction Trace Numbers",
+    "referenceIdentification": "01KXXS799NMMBZVFQJZRJWFRCW",
+    "originatingCompanyIdentifier": "3117151744"
+   }
+  ],
+  "payer": {
+   "entityIdentifier": "Payer",
+   "entityType": "Non-Person Entity",
+   "name": "AETNA INC",
+   "payorIdentification": "953402799"
+  },
+  "planInformation": {
+   "planNumber": "0138359",
+   "groupNumber": "013835903300010",
+   "groupDescription": "ARIZONA CENTER FOR HEMATOLOGY AND O",
+   "idCardSerialNumber": "273801084"
+  },
+  "planDateInformation": {
+   "planBegin": "20251101",
+   "eligibilityBegin": "20230809",
+   "service": "20260719"
+  },
+  "planStatus": [
+   {
+    "statusCode": "1",
+    "status": "Active Coverage",
+    "planDetails": "PPO Dental 2000",
+    "serviceTypeCodes": [
+     "30"
+    ]
+   }
+  ],
+  "benefitsInformation": [
+   {
+    "code": "W",
+    "name": "Other Source of Data",
+    "benefitsRelatedEntity": {
+     "entityIdentifier": "Payer",
+     "entityType": "Non-Person Entity",
+     "entityName": "Aetna Dental",
+     "address": {
+      "address1": "PO Box 14094",
+      "city": "Lexington",
+      "state": "KY",
+      "postalCode": "40512"
+     }
+    },
+    "benefitsRelatedEntities": [
+     {
+      "entityIdentifier": "Payer",
+      "entityType": "Non-Person Entity",
+      "entityName": "Aetna Dental",
+      "address": {
+       "address1": "PO Box 14094",
+       "city": "Lexington",
+       "state": "KY",
+       "postalCode": "40512"
+      }
+     }
+    ]
+   },
+   {
+    "code": "1",
+    "name": "Active Coverage",
+    "coverageLevelCode": "EMP",
+    "coverageLevel": "Employee Only",
+    "serviceTypeCodes": [
+     "30"
+    ],
+    "serviceTypes": [
+     "Health Benefit Plan Coverage"
+    ],
+    "insuranceTypeCode": "PR",
+    "insuranceType": "Preferred Provider Organization (PPO)",
+    "planCoverage": "PPO Dental 2000"
+   },
+   {
+    "code": "C",
+    "name": "Deductible",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "30"
+    ],
+    "serviceTypes": [
+     "Health Benefit Plan Coverage"
+    ],
+    "timeQualifierCode": "23",
+    "timeQualifier": "Calendar Year",
+    "benefitAmount": "50",
+    "inPlanNetworkIndicatorCode": "W",
+    "inPlanNetworkIndicator": "Not Applicable",
+    "additionalInformation": [
+     {
+      "description": "Dental"
+     }
+    ]
+   },
+   {
+    "code": "C",
+    "name": "Deductible",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "30"
+    ],
+    "serviceTypes": [
+     "Health Benefit Plan Coverage"
+    ],
+    "timeQualifierCode": "29",
+    "timeQualifier": "Remaining",
+    "benefitAmount": "50",
+    "inPlanNetworkIndicatorCode": "W",
+    "inPlanNetworkIndicator": "Not Applicable",
+    "additionalInformation": [
+     {
+      "description": "Dental"
+     }
+    ]
+   },
+   {
+    "code": "A",
+    "name": "Co-Insurance",
+    "coverageLevelCode": "EMP",
+    "coverageLevel": "Employee Only",
+    "serviceTypeCodes": [
+     "30"
+    ],
+    "serviceTypes": [
+     "Health Benefit Plan Coverage"
+    ],
+    "benefitPercent": "0",
+    "inPlanNetworkIndicatorCode": "W",
+    "inPlanNetworkIndicator": "Not Applicable",
+    "additionalInformation": [
+     {
+      "description": "Preventative"
+     }
+    ]
+   },
+   {
+    "code": "A",
+    "name": "Co-Insurance",
+    "coverageLevelCode": "EMP",
+    "coverageLevel": "Employee Only",
+    "serviceTypeCodes": [
+     "30"
+    ],
+    "serviceTypes": [
+     "Health Benefit Plan Coverage"
+    ],
+    "benefitPercent": "0.2",
+    "inPlanNetworkIndicatorCode": "W",
+    "inPlanNetworkIndicator": "Not Applicable",
+    "additionalInformation": [
+     {
+      "description": "Basic"
+     }
+    ]
+   },
+   {
+    "code": "A",
+    "name": "Co-Insurance",
+    "coverageLevelCode": "EMP",
+    "coverageLevel": "Employee Only",
+    "serviceTypeCodes": [
+     "30"
+    ],
+    "serviceTypes": [
+     "Health Benefit Plan Coverage"
+    ],
+    "benefitPercent": "0.5",
+    "inPlanNetworkIndicatorCode": "W",
+    "inPlanNetworkIndicator": "Not Applicable",
+    "additionalInformation": [
+     {
+      "description": "Major,Ortho"
+     }
+    ]
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "30"
+    ],
+    "serviceTypes": [
+     "Health Benefit Plan Coverage"
+    ],
+    "timeQualifierCode": "23",
+    "timeQualifier": "Calendar Year",
+    "benefitAmount": "1500",
+    "inPlanNetworkIndicatorCode": "W",
+    "inPlanNetworkIndicator": "Not Applicable",
+    "additionalInformation": [
+     {
+      "description": "DENTAL"
+     }
+    ]
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "30"
+    ],
+    "serviceTypes": [
+     "Health Benefit Plan Coverage"
+    ],
+    "timeQualifierCode": "29",
+    "timeQualifier": "Remaining",
+    "benefitAmount": "1402",
+    "inPlanNetworkIndicatorCode": "W",
+    "inPlanNetworkIndicator": "Not Applicable",
+    "additionalInformation": [
+     {
+      "description": "DENTAL"
+     }
+    ]
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "coverageLevelCode": "EMP",
+    "coverageLevel": "Employee Only",
+    "serviceTypeCodes": [
+     "30"
+    ],
+    "serviceTypes": [
+     "Health Benefit Plan Coverage"
+    ],
+    "additionalInformation": [
+     {
+      "description": "MISSING TOOTH CLAUSE APPLIES"
+     }
+    ]
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "coverageLevelCode": "EMP",
+    "coverageLevel": "Employee Only",
+    "serviceTypeCodes": [
+     "30"
+    ],
+    "serviceTypes": [
+     "Health Benefit Plan Coverage"
+    ],
+    "additionalInformation": [
+     {
+      "description": "COMMERCIAL,CHLD TO 26 OR 26 IF FT STUDENT"
+     }
+    ]
+   },
+   {
+    "code": "D",
+    "name": "Benefit Description",
+    "coverageLevelCode": "EMP",
+    "coverageLevel": "Employee Only",
+    "serviceTypeCodes": [
+     "30"
+    ],
+    "serviceTypes": [
+     "Health Benefit Plan Coverage"
+    ],
+    "additionalInformation": [
+     {
+      "description": "STANDARD DENTAL NETWORK,PPO II NETWORK,DENTAL EXTEND NETWORK"
+     }
+    ]
+   },
+   {
+    "code": "A",
+    "name": "Co-Insurance",
+    "coverageLevelCode": "EMP",
+    "coverageLevel": "Employee Only",
+    "benefitPercent": "0.5",
+    "inPlanNetworkIndicatorCode": "W",
+    "inPlanNetworkIndicator": "Not Applicable",
+    "compositeMedicalProcedureIdentifier": {
+     "productOrServiceIDQualifierCode": "AD",
+     "productOrServiceIDQualifier": "American Dental Association Codes",
+     "procedureCode": "D2740"
+    }
+   },
+   {
+    "code": "A",
+    "name": "Co-Insurance",
+    "coverageLevelCode": "EMP",
+    "coverageLevel": "Employee Only",
+    "benefitPercent": "0.5",
+    "inPlanNetworkIndicatorCode": "W",
+    "inPlanNetworkIndicator": "Not Applicable",
+    "compositeMedicalProcedureIdentifier": {
+     "productOrServiceIDQualifierCode": "AD",
+     "productOrServiceIDQualifier": "American Dental Association Codes",
+     "procedureCode": "D2954"
+    }
+   },
+   {
+    "code": "A",
+    "name": "Co-Insurance",
+    "coverageLevelCode": "EMP",
+    "coverageLevel": "Employee Only",
+    "benefitPercent": "0.5",
+    "inPlanNetworkIndicatorCode": "W",
+    "inPlanNetworkIndicator": "Not Applicable",
+    "compositeMedicalProcedureIdentifier": {
+     "productOrServiceIDQualifierCode": "AD",
+     "productOrServiceIDQualifier": "American Dental Association Codes",
+     "procedureCode": "D9944"
+    }
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "coverageLevelCode": "EMP",
+    "coverageLevel": "Employee Only",
+    "inPlanNetworkIndicatorCode": "W",
+    "inPlanNetworkIndicator": "Not Applicable",
+    "compositeMedicalProcedureIdentifier": {
+     "productOrServiceIDQualifierCode": "AD",
+     "productOrServiceIDQualifier": "American Dental Association Codes",
+     "procedureCode": "D2740"
+    },
+    "benefitsServiceDelivery": [
+     {
+      "quantityQualifierCode": "FL",
+      "quantityQualifier": "Units",
+      "quantity": "1",
+      "unitForMeasurementCode": "Months",
+      "sampleSelectionModulus": "60",
+      "unitForMeasurementQualifierCode": "MO",
+      "unitForMeasurementQualifier": "Months"
+     }
+    ],
+    "additionalInformation": [
+     {
+      "description": "TOOTH NUMBER 01 TO 32"
+     }
+    ]
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "coverageLevelCode": "EMP",
+    "coverageLevel": "Employee Only",
+    "inPlanNetworkIndicatorCode": "W",
+    "inPlanNetworkIndicator": "Not Applicable",
+    "compositeMedicalProcedureIdentifier": {
+     "productOrServiceIDQualifierCode": "AD",
+     "productOrServiceIDQualifier": "American Dental Association Codes",
+     "procedureCode": "D9944"
+    },
+    "benefitsServiceDelivery": [
+     {
+      "quantityQualifierCode": "FL",
+      "quantityQualifier": "Units",
+      "quantity": "1",
+      "unitForMeasurementCode": "Months",
+      "sampleSelectionModulus": "36",
+      "unitForMeasurementQualifierCode": "MO",
+      "unitForMeasurementQualifier": "Months"
+     }
+    ],
+    "additionalInformation": [
+     {
+      "description": "PER FULL MOUTH"
+     }
+    ]
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "coverageLevelCode": "EMP",
+    "coverageLevel": "Employee Only",
+    "quantityQualifierCode": "S7",
+    "quantityQualifier": "Age, High Value",
+    "benefitQuantity": "99",
+    "inPlanNetworkIndicatorCode": "W",
+    "inPlanNetworkIndicator": "Not Applicable",
+    "compositeMedicalProcedureIdentifier": {
+     "productOrServiceIDQualifierCode": "AD",
+     "productOrServiceIDQualifier": "American Dental Association Codes",
+     "procedureCode": "D2740"
+    }
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "coverageLevelCode": "EMP",
+    "coverageLevel": "Employee Only",
+    "quantityQualifierCode": "S7",
+    "quantityQualifier": "Age, High Value",
+    "benefitQuantity": "99",
+    "inPlanNetworkIndicatorCode": "W",
+    "inPlanNetworkIndicator": "Not Applicable",
+    "compositeMedicalProcedureIdentifier": {
+     "productOrServiceIDQualifierCode": "AD",
+     "productOrServiceIDQualifier": "American Dental Association Codes",
+     "procedureCode": "D2954"
+    }
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "coverageLevelCode": "EMP",
+    "coverageLevel": "Employee Only",
+    "quantityQualifierCode": "S7",
+    "quantityQualifier": "Age, High Value",
+    "benefitQuantity": "99",
+    "inPlanNetworkIndicatorCode": "W",
+    "inPlanNetworkIndicator": "Not Applicable",
+    "compositeMedicalProcedureIdentifier": {
+     "productOrServiceIDQualifierCode": "AD",
+     "productOrServiceIDQualifier": "American Dental Association Codes",
+     "procedureCode": "D9944"
+    }
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "coverageLevelCode": "EMP",
+    "coverageLevel": "Employee Only",
+    "inPlanNetworkIndicatorCode": "W",
+    "inPlanNetworkIndicator": "Not Applicable",
+    "compositeMedicalProcedureIdentifier": {
+     "productOrServiceIDQualifierCode": "AD",
+     "productOrServiceIDQualifier": "American Dental Association Codes",
+     "procedureCode": "D2740"
+    },
+    "additionalInformation": [
+     {
+      "description": "Shares frequency with D2961,D2962,D2975,D2510-D2794,ALTERNATE BENEFITS MAY APPLY"
+     }
+    ]
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "coverageLevelCode": "EMP",
+    "coverageLevel": "Employee Only",
+    "inPlanNetworkIndicatorCode": "W",
+    "inPlanNetworkIndicator": "Not Applicable",
+    "compositeMedicalProcedureIdentifier": {
+     "productOrServiceIDQualifierCode": "AD",
+     "productOrServiceIDQualifier": "American Dental Association Codes",
+     "procedureCode": "D9944"
+    },
+    "additionalInformation": [
+     {
+      "description": "Shares frequency with D9945,D9946"
+     }
+    ]
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "coverageLevelCode": "EMP",
+    "coverageLevel": "Employee Only",
+    "inPlanNetworkIndicatorCode": "N",
+    "inPlanNetworkIndicator": "No",
+    "compositeMedicalProcedureIdentifier": {
+     "productOrServiceIDQualifierCode": "AD",
+     "productOrServiceIDQualifier": "American Dental Association Codes",
+     "procedureCode": "D2740"
+    },
+    "additionalInformation": [
+     {
+      "description": "PAYMENT IS BASED ON THE PREFERRED GENERAL DENTIST'S NEGOTIATED FEES"
+     }
+    ]
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "coverageLevelCode": "EMP",
+    "coverageLevel": "Employee Only",
+    "inPlanNetworkIndicatorCode": "N",
+    "inPlanNetworkIndicator": "No",
+    "compositeMedicalProcedureIdentifier": {
+     "productOrServiceIDQualifierCode": "AD",
+     "productOrServiceIDQualifier": "American Dental Association Codes",
+     "procedureCode": "D2954"
+    },
+    "additionalInformation": [
+     {
+      "description": "PAYMENT IS BASED ON THE PREFERRED GENERAL DENTIST'S NEGOTIATED FEES"
+     }
+    ]
+   },
+   {
+    "code": "F",
+    "name": "Limitations",
+    "coverageLevelCode": "EMP",
+    "coverageLevel": "Employee Only",
+    "inPlanNetworkIndicatorCode": "N",
+    "inPlanNetworkIndicator": "No",
+    "compositeMedicalProcedureIdentifier": {
+     "productOrServiceIDQualifierCode": "AD",
+     "productOrServiceIDQualifier": "American Dental Association Codes",
+     "procedureCode": "D9944"
+    },
+    "additionalInformation": [
+     {
+      "description": "PAYMENT IS BASED ON THE PREFERRED GENERAL DENTIST'S NEGOTIATED FEES"
+     }
+    ]
+   }
+  ],
+  "errors": [],
+  "x12": "ISA*00*          *00*          *ZZ*STEDI          *01*117151744      *260719*1411*^*00501*998930821*0*P*`~GS*HB*STEDI*117151744*20260719*141143*1*X*005010X279A1~ST*271*1001*005010X279A1~BHT*0022*11*01KXXS798P48DMPJQYTSHDKR0S*20260719*14114341~HL*1**20*1~NM1*PR*2*AETNA INC*****PI*953402799~HL*2*1*21*1~NM1*1P*1*Darian*Ghasem*K.***XX*1942363775~HL*3*2*22*0~TRN*1*01KXXS799NMMBZVFQJZRJWFRCW*3117151744~NM1*IL*1*EL-KHATIB*SUZY****MI*W273801084~REF*18*0138359~REF*6P*013835903300010*ARIZONA CENTER FOR HEMATOLOGY AND O~REF*GH*273801084~N3*7444 W BANFF LN~N4*PEORIA*AZ*85381~DMG*D8*19670727*F~DTP*346*D8*20251101~DTP*472*D8*20260719~DTP*356*D8*20230809~EB*W~LS*2120~NM1*PR*2*Aetna Dental~N3*PO Box 14094~N4*Lexington*KY*40512~LE*2120~EB*1*EMP*30*PR*PPO Dental 2000~EB*C*IND*30***23*50*****W~MSG*Dental~EB*C*IND*30***29*50*****W~MSG*Dental~EB*A*EMP*30*****0****W~MSG*Preventative~EB*A*EMP*30*****.2****W~MSG*Basic~EB*A*EMP*30*****.5****W~MSG*Major,Ortho~EB*F*IND*30***23*1500*****W~MSG*DENTAL~EB*F*IND*30***29*1402*****W~MSG*DENTAL~EB*F*EMP*30~MSG*MISSING TOOTH CLAUSE APPLIES~EB*F*EMP*30~MSG*COMMERCIAL,CHLD TO 26 OR 26 IF FT STUDENT~EB*D*EMP*30~MSG*STANDARD DENTAL NETWORK,PPO II NETWORK,DENTAL EXTEND NETWORK~EB*A*EMP******.5****W*AD`D2740~EB*A*EMP******.5****W*AD`D2954~EB*A*EMP******.5****W*AD`D9944~EB*F*EMP**********W*AD`D2740~HSD*FL*1*MO*60~MSG*TOOTH NUMBER 01 TO 32~EB*F*EMP**********W*AD`D9944~HSD*FL*1*MO*36~MSG*PER FULL MOUTH~EB*F*EMP*******S7*99**W*AD`D2740~EB*F*EMP*******S7*99**W*AD`D2954~EB*F*EMP*******S7*99**W*AD`D9944~EB*F*EMP**********W*AD`D2740~MSG*Shares frequency with D2961,D2962,D2975,D2510-D2794,ALTERNATE BENEFITS MAY APPLY~EB*F*EMP**********W*AD`D9944~MSG*Shares frequency with D9945,D9946~EB*F*EMP**********N*AD`D2740~MSG*PAYMENT IS BASED ON THE PREFERRED GENERAL DENTIST'S NEGOTIATED FEES~EB*F*EMP**********N*AD`D2954~MSG*PAYMENT IS BASED ON THE PREFERRED GENERAL DENTIST'S NEGOTIATED FEES~EB*F*EMP**********N*AD`D9944~MSG*PAYMENT IS BASED ON THE PREFERRED GENERAL DENTIST'S NEGOTIATED FEES~SE*68*1001~GE*1*1~IEA*1*998930821~",
+  "eligibilitySearchId": "019f7b93-a515-71b0-8fc2-e74762daa894",
+  "id": "ec_019f7b93-a515-71b0-8fc2-e7327ed8896f"
+ }
+}

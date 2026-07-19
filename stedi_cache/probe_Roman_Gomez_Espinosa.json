@@ -1,0 +1,153 @@
+{
+ "codes": [
+  "D2000"
+ ],
+ "response": {
+  "meta": {
+   "senderId": "STEDI",
+   "submitterId": "117151744",
+   "applicationMode": "production",
+   "traceId": "01KXXS88EJBVM8AGN67TDN1RP1",
+   "outboundTraceId": "01KXXS88EJBVM8AGN67TDN1RP1"
+  },
+  "controlNumber": "823761681",
+  "reassociationKey": "823761681",
+  "tradingPartnerServiceId": "62308",
+  "provider": {
+   "providerName": "Ghasem Darian",
+   "entityIdentifier": "Provider",
+   "entityType": "Non-Person Entity",
+   "npi": "1942363775"
+  },
+  "subscriber": {
+   "memberId": "59H6A7L8201",
+   "firstName": "ROMAN",
+   "lastName": "GOMEZ ESPINOSA",
+   "gender": "M",
+   "entityIdentifier": "Insured or Subscriber",
+   "entityType": "Person",
+   "dateOfBirth": "19530729",
+   "groupNumber": "2501434",
+   "groupDescription": "BRAVO HEALTH PENNSYLVANIA CDH MEDICARE",
+   "address": {
+    "address1": "4232 N 10TH PL",
+    "city": "PHOENIX",
+    "state": "AZ",
+    "postalCode": "850144436"
+   }
+  },
+  "subscriberTraceNumbers": [
+   {
+    "traceTypeCode": "1",
+    "traceType": "Current Transaction Trace Numbers",
+    "referenceIdentification": "01KXXS88EYRF71J1F41GFKR2XM",
+    "originatingCompanyIdentifier": "3117151744"
+   }
+  ],
+  "payer": {
+   "entityIdentifier": "Payer",
+   "entityType": "Non-Person Entity",
+   "name": "CIGNA Dental Health, Inc.",
+   "payorIdentification": "CIGNA",
+   "contactInformation": {
+    "contacts": [
+     {
+      "communicationMode": "Telephone",
+      "communicationNumber": "8002446224"
+     },
+     {
+      "communicationMode": "Uniform Resource Locator (URL)",
+      "communicationNumber": "cignaforhcp.cigna.com"
+     }
+    ]
+   }
+  },
+  "planInformation": {
+   "groupNumber": "2501434",
+   "groupDescription": "BRAVO HEALTH PENNSYLVANIA CDH MEDICARE",
+   "priorIdNumber": "59H6A7L82"
+  },
+  "planDateInformation": {
+   "eligibilityBegin": "20260101"
+  },
+  "errors": [],
+  "x12": "ISA*00*          *00*          *ZZ*STEDI          *01*117151744      *260719*1812*^*00501*823761681*0*P*`~GS*HB*STEDI*117151744*20260719*1312*823761681*X*005010X279A1~ST*271*823761681*005010X279A1~BHT*0022*11*01KXXS88EJBVM8AGN67TDN1RP1*20260719*181214~HL*1**20*1~NM1*PR*2*CIGNA Dental Health, Inc.*****PI*CIGNA~PER*IC**TE*8002446224*UR*cignaforhcp.cigna.com~HL*2*1*21*1~NM1*1P*2*Ghasem Darian*****XX*1942363775~HL*3*2*22*0~TRN*1*01KXXS88EYRF71J1F41GFKR2XM*3117151744~NM1*IL*1*GOMEZ ESPINOSA*ROMAN****MI*59H6A7L8201~REF*6P*2501434*BRAVO HEALTH PENNSYLVANIA CDH MEDICARE~REF*Q4*59H6A7L82~N3*4232 N 10TH PL~N4*PHOENIX*AZ*850144436~DMG*D8*19530729*M~INS*Y*18*001*25~DTP*356*D8*20260101~SE*18*823761681~GE*1*823761681~IEA*1*823761681~",
+  "eligibilitySearchId": "019f7b94-21d2-7bb2-95a8-6bd47ea52b98",
+  "id": "ec_019f7b94-21d1-7b51-a760-a0d8fbc99c97"
+ },
+ "singles": {
+  "D2000": {
+   "meta": {
+    "senderId": "STEDI",
+    "submitterId": "117151744",
+    "applicationMode": "production",
+    "traceId": "01KXXSE8RYTR0YXGNE317R6Y34",
+    "outboundTraceId": "01KXXSE8RYTR0YXGNE317R6Y34"
+   },
+   "controlNumber": "823774931",
+   "reassociationKey": "823774931",
+   "tradingPartnerServiceId": "62308",
+   "provider": {
+    "providerName": "Ghasem Darian",
+    "entityIdentifier": "Provider",
+    "entityType": "Non-Person Entity",
+    "npi": "1942363775"
+   },
+   "subscriber": {
+    "memberId": "59H6A7L8201",
+    "firstName": "ROMAN",
+    "lastName": "GOMEZ ESPINOSA",
+    "gender": "M",
+    "entityIdentifier": "Insured or Subscriber",
+    "entityType": "Person",
+    "dateOfBirth": "19530729",
+    "groupNumber": "2501434",
+    "groupDescription": "BRAVO HEALTH PENNSYLVANIA CDH MEDICARE",
+    "address": {
+     "address1": "4232 N 10TH PL",
+     "city": "PHOENIX",
+     "state": "AZ",
+     "postalCode": "850144436"
+    }
+   },
+   "subscriberTraceNumbers": [
+    {
+     "traceTypeCode": "1",
+     "traceType": "Current Transaction Trace Numbers",
+     "referenceIdentification": "01KXXSE8SF9K23A98X29GQWYJG",
+     "originatingCompanyIdentifier": "3117151744"
+    }
+   ],
+   "payer": {
+    "entityIdentifier": "Payer",
+    "entityType": "Non-Person Entity",
+    "name": "CIGNA Dental Health, Inc.",
+    "payorIdentification": "CIGNA",
+    "contactInformation": {
+     "contacts": [
+      {
+       "communicationMode": "Telephone",
+       "communicationNumber": "8002446224"
+      },
+      {
+       "communicationMode": "Uniform Resource Locator (URL)",
+       "communicationNumber": "cignaforhcp.cigna.com"
+      }
+     ]
+    }
+   },
+   "planInformation": {
+    "groupNumber": "2501434",
+    "groupDescription": "BRAVO HEALTH PENNSYLVANIA CDH MEDICARE",
+    "priorIdNumber": "59H6A7L82"
+   },
+   "planDateInformation": {
+    "eligibilityBegin": "20260101"
+   },
+   "errors": [],
+   "x12": "ISA*00*          *00*          *ZZ*STEDI          *01*117151744      *260719*1815*^*00501*823774931*0*P*`~GS*HB*STEDI*117151744*20260719*1315*823774931*X*005010X279A1~ST*271*823774931*005010X279A1~BHT*0022*11*01KXXSE8RYTR0YXGNE317R6Y34*20260719*181531~HL*1**20*1~NM1*PR*2*CIGNA Dental Health, Inc.*****PI*CIGNA~PER*IC**TE*8002446224*UR*cignaforhcp.cigna.com~HL*2*1*21*1~NM1*1P*2*Ghasem Darian*****XX*1942363775~HL*3*2*22*0~TRN*1*01KXXSE8SF9K23A98X29GQWYJG*3117151744~NM1*IL*1*GOMEZ ESPINOSA*ROMAN****MI*59H6A7L8201~REF*6P*2501434*BRAVO HEALTH PENNSYLVANIA CDH MEDICARE~REF*Q4*59H6A7L82~N3*4232 N 10TH PL~N4*PHOENIX*AZ*850144436~DMG*D8*19530729*M~INS*Y*18*001*25~DTP*356*D8*20260101~SE*18*823774931~GE*1*823774931~IEA*1*823774931~",
+   "eligibilitySearchId": "019f7b97-231e-7d31-9548-07b9bb97c645",
+   "id": "ec_019f7b97-231d-7ad2-a94b-26b3462cba59"
+  }
+ }
+}

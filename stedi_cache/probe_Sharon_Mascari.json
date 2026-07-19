@@ -1,0 +1,2481 @@
+{
+ "codes": [
+  "D2740"
+ ],
+ "response": {
+  "meta": {
+   "senderId": "STEDI",
+   "submitterId": "117151744",
+   "applicationMode": "production",
+   "traceId": "01KXXS7MGDXNWRNXNZ2GMYSKQG",
+   "outboundTraceId": "01KXXS7MGDXNWRNXNZ2GMYSKQG"
+  },
+  "controlNumber": "823760244",
+  "reassociationKey": "823760244",
+  "tradingPartnerServiceId": "52133",
+  "provider": {
+   "providerName": "GHASEM DARIAN",
+   "entityIdentifier": "Provider",
+   "entityType": "Non-Person Entity",
+   "npi": "1942363775"
+  },
+  "subscriber": {
+   "memberId": "942466921",
+   "firstName": "SHARON",
+   "lastName": "MASCARI",
+   "middleName": "L",
+   "gender": "F",
+   "entityIdentifier": "Insured or Subscriber",
+   "entityType": "Person",
+   "dateOfBirth": "19440928",
+   "groupNumber": "74191",
+   "address": {
+    "address1": "6211 E THORNE LN",
+    "city": "PRESCOTT VALLEY",
+    "state": "AZ",
+    "postalCode": "86314"
+   }
+  },
+  "subscriberTraceNumbers": [
+   {
+    "traceTypeCode": "1",
+    "traceType": "Current Transaction Trace Numbers",
+    "referenceIdentification": "01KXXS7MGPXTRP5S68W0VFB4XD",
+    "originatingCompanyIdentifier": "3117151744"
+   }
+  ],
+  "payer": {
+   "entityIdentifier": "Payer",
+   "entityType": "Non-Person Entity",
+   "name": "UNITEDHEALTHCARE DENTAL",
+   "payorIdentification": "52133"
+  },
+  "planInformation": {
+   "groupNumber": "74191"
+  },
+  "planDateInformation": {
+   "planBegin": "20260101"
+  },
+  "planStatus": [
+   {
+    "statusCode": "1",
+    "status": "Active Coverage",
+    "planDetails": "LPPO-AARP MEDICARE ADVANTAGE FROM UHC AZ-0008 (PPO",
+    "serviceTypeCodes": [
+     "30"
+    ]
+   },
+   {
+    "statusCode": "1",
+    "status": "Active Coverage",
+    "serviceTypeCodes": [
+     "50"
+    ]
+   },
+   {
+    "statusCode": "1",
+    "status": "Active Coverage",
+    "serviceTypeCodes": [
+     "AL"
+    ]
+   },
+   {
+    "statusCode": "1",
+    "status": "Active Coverage",
+    "serviceTypeCodes": [
+     "96"
+    ]
+   },
+   {
+    "statusCode": "1",
+    "status": "Active Coverage",
+    "serviceTypeCodes": [
+     "50"
+    ]
+   },
+   {
+    "statusCode": "1",
+    "status": "Active Coverage",
+    "serviceTypeCodes": [
+     "1",
+     "33",
+     "47",
+     "48",
+     "86",
+     "98",
+     "MH",
+     "PT",
+     "UC"
+    ]
+   }
+  ],
+  "benefitsInformation": [
+   {
+    "code": "R",
+    "name": "Other or Additional Payor",
+    "benefitsAdditionalInformation": {
+     "hicNumber": "8T73PA2CY05"
+    }
+   },
+   {
+    "code": "1",
+    "name": "Active Coverage",
+    "serviceTypeCodes": [
+     "30"
+    ],
+    "serviceTypes": [
+     "Health Benefit Plan Coverage"
+    ],
+    "insuranceTypeCode": "PR",
+    "insuranceType": "Preferred Provider Organization (PPO)",
+    "planCoverage": "LPPO-AARP MEDICARE ADVANTAGE FROM UHC AZ-0008 (PPO",
+    "authOrCertIndicator": "Y",
+    "benefitsAdditionalInformation": {
+     "planNetworkIdNumber": "H2406-063-000"
+    },
+    "benefitsRelatedEntity": {
+     "entityIdentifier": "Primary Payer",
+     "entityType": "Non-Person Entity",
+     "entityName": "UNITEDHEALTHCARE",
+     "entityIdentification": "PI",
+     "entityIdentificationValue": "87726",
+     "address": {
+      "address1": "UNITEDHEALTHCARE",
+      "address2": "P.O. BOX 31362",
+      "city": "SALT LAKE CITY",
+      "state": "UT",
+      "postalCode": "841310362"
+     },
+     "contactInformation": {
+      "contacts": [
+       {
+        "communicationMode": "Uniform Resource Locator (URL)",
+        "communicationNumber": "WWW.UHCPROVIDER.COM"
+       }
+      ]
+     }
+    },
+    "benefitsRelatedEntities": [
+     {
+      "entityIdentifier": "Primary Payer",
+      "entityType": "Non-Person Entity",
+      "entityName": "UNITEDHEALTHCARE",
+      "entityIdentification": "PI",
+      "entityIdentificationValue": "87726",
+      "address": {
+       "address1": "UNITEDHEALTHCARE",
+       "address2": "P.O. BOX 31362",
+       "city": "SALT LAKE CITY",
+       "state": "UT",
+       "postalCode": "841310362"
+      },
+      "contactInformation": {
+       "contacts": [
+        {
+         "communicationMode": "Uniform Resource Locator (URL)",
+         "communicationNumber": "WWW.UHCPROVIDER.COM"
+        }
+       ]
+      }
+     }
+    ],
+    "additionalInformation": [
+     {
+      "description": "A PRIOR AUTHORIZATION OR NOTIFICATION INQUIRY REQUEST MAY BE SUBMITTED"
+     },
+     {
+      "description": "ACCESS TO MEDICARE NATIONAL NETWORK"
+     }
+    ]
+   },
+   {
+    "code": "G",
+    "name": "Out of Pocket (Stop Loss)",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "30"
+    ],
+    "serviceTypes": [
+     "Health Benefit Plan Coverage"
+    ],
+    "insuranceTypeCode": "PR",
+    "insuranceType": "Preferred Provider Organization (PPO)",
+    "timeQualifierCode": "23",
+    "timeQualifier": "Calendar Year",
+    "benefitAmount": "10100",
+    "inPlanNetworkIndicatorCode": "W",
+    "inPlanNetworkIndicator": "Not Applicable",
+    "additionalInformation": [
+     {
+      "description": "COMBINED"
+     }
+    ]
+   },
+   {
+    "code": "G",
+    "name": "Out of Pocket (Stop Loss)",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "30"
+    ],
+    "serviceTypes": [
+     "Health Benefit Plan Coverage"
+    ],
+    "insuranceTypeCode": "PR",
+    "insuranceType": "Preferred Provider Organization (PPO)",
+    "timeQualifierCode": "24",
+    "timeQualifier": "Year to Date",
+    "benefitAmount": "778.34",
+    "inPlanNetworkIndicatorCode": "W",
+    "inPlanNetworkIndicator": "Not Applicable",
+    "additionalInformation": [
+     {
+      "description": "COMBINED"
+     }
+    ]
+   },
+   {
+    "code": "G",
+    "name": "Out of Pocket (Stop Loss)",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "30"
+    ],
+    "serviceTypes": [
+     "Health Benefit Plan Coverage"
+    ],
+    "insuranceTypeCode": "PR",
+    "insuranceType": "Preferred Provider Organization (PPO)",
+    "timeQualifierCode": "29",
+    "timeQualifier": "Remaining",
+    "benefitAmount": "9321.66",
+    "inPlanNetworkIndicatorCode": "W",
+    "inPlanNetworkIndicator": "Not Applicable",
+    "additionalInformation": [
+     {
+      "description": "COMBINED"
+     }
+    ]
+   },
+   {
+    "code": "G",
+    "name": "Out of Pocket (Stop Loss)",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "30"
+    ],
+    "serviceTypes": [
+     "Health Benefit Plan Coverage"
+    ],
+    "insuranceTypeCode": "PR",
+    "insuranceType": "Preferred Provider Organization (PPO)",
+    "timeQualifierCode": "24",
+    "timeQualifier": "Year to Date",
+    "benefitAmount": "778.34",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes"
+   },
+   {
+    "code": "G",
+    "name": "Out of Pocket (Stop Loss)",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "30"
+    ],
+    "serviceTypes": [
+     "Health Benefit Plan Coverage"
+    ],
+    "insuranceTypeCode": "PR",
+    "insuranceType": "Preferred Provider Organization (PPO)",
+    "timeQualifierCode": "29",
+    "timeQualifier": "Remaining",
+    "benefitAmount": "5121.66",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes"
+   },
+   {
+    "code": "G",
+    "name": "Out of Pocket (Stop Loss)",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "30"
+    ],
+    "serviceTypes": [
+     "Health Benefit Plan Coverage"
+    ],
+    "insuranceTypeCode": "PR",
+    "insuranceType": "Preferred Provider Organization (PPO)",
+    "timeQualifierCode": "23",
+    "timeQualifier": "Calendar Year",
+    "benefitAmount": "5900",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes"
+   },
+   {
+    "code": "L",
+    "name": "Primary Care Provider",
+    "benefitsRelatedEntity": {
+     "entityIdentifier": "Primary Care Provider",
+     "entityType": "Person",
+     "entityName": "HECKEL HICKS",
+     "entityFirstname": "KATHLEEN",
+     "entityIdentification": "XX",
+     "entityIdentificationValue": "1780918037",
+     "address": {
+      "address1": "474 N HIGHWAY 89",
+      "city": "CHINO VALLEY",
+      "state": "AZ",
+      "postalCode": "86323"
+     },
+     "contactInformation": {
+      "contacts": [
+       {
+        "communicationMode": "Telephone",
+        "communicationNumber": "9286365680"
+       },
+       {
+        "communicationMode": "Facsimile",
+        "communicationNumber": "9286365853"
+       }
+      ]
+     },
+     "providerInformation": {
+      "providerCode": "PC",
+      "referenceIdentification": "363LF0000X"
+     }
+    },
+    "benefitsRelatedEntities": [
+     {
+      "entityIdentifier": "Primary Care Provider",
+      "entityType": "Person",
+      "entityName": "HECKEL HICKS",
+      "entityFirstname": "KATHLEEN",
+      "entityIdentification": "XX",
+      "entityIdentificationValue": "1780918037",
+      "address": {
+       "address1": "474 N HIGHWAY 89",
+       "city": "CHINO VALLEY",
+       "state": "AZ",
+       "postalCode": "86323"
+      },
+      "contactInformation": {
+       "contacts": [
+        {
+         "communicationMode": "Telephone",
+         "communicationNumber": "9286365680"
+        },
+        {
+         "communicationMode": "Facsimile",
+         "communicationNumber": "9286365853"
+        }
+       ]
+      },
+      "providerInformation": {
+       "providerCode": "PC",
+       "referenceIdentification": "363LF0000X"
+      }
+     }
+    ]
+   },
+   {
+    "code": "1",
+    "name": "Active Coverage",
+    "serviceTypeCodes": [
+     "50"
+    ],
+    "serviceTypes": [
+     "Hospital - Outpatient"
+    ],
+    "inPlanNetworkIndicatorCode": "W",
+    "inPlanNetworkIndicator": "Not Applicable",
+    "additionalInformation": [
+     {
+      "description": "OUTPATIENT SURGERY"
+     }
+    ]
+   },
+   {
+    "code": "1",
+    "name": "Active Coverage",
+    "serviceTypeCodes": [
+     "AL"
+    ],
+    "serviceTypes": [
+     "Vision (Optometry)"
+    ],
+    "inPlanNetworkIndicatorCode": "W",
+    "inPlanNetworkIndicator": "Not Applicable",
+    "additionalInformation": [
+     {
+      "description": "ROUTINE EYE EXAM"
+     }
+    ]
+   },
+   {
+    "code": "1",
+    "name": "Active Coverage",
+    "serviceTypeCodes": [
+     "96"
+    ],
+    "serviceTypes": [
+     "Professional (Physician)"
+    ],
+    "inPlanNetworkIndicatorCode": "W",
+    "inPlanNetworkIndicator": "Not Applicable",
+    "additionalInformation": [
+     {
+      "description": "OFFICE VISIT SPECIALIST"
+     }
+    ]
+   },
+   {
+    "code": "1",
+    "name": "Active Coverage",
+    "serviceTypeCodes": [
+     "50"
+    ],
+    "serviceTypes": [
+     "Hospital - Outpatient"
+    ],
+    "inPlanNetworkIndicatorCode": "W",
+    "inPlanNetworkIndicator": "Not Applicable",
+    "additionalInformation": [
+     {
+      "description": "OUTPATIENT HOSPITAL"
+     }
+    ]
+   },
+   {
+    "code": "1",
+    "name": "Active Coverage",
+    "serviceTypeCodes": [
+     "1",
+     "33",
+     "47",
+     "48",
+     "86",
+     "98",
+     "MH",
+     "PT",
+     "UC"
+    ],
+    "serviceTypes": [
+     "Medical Care",
+     "Chiropractic",
+     "Hospital",
+     "Hospital - Inpatient",
+     "Emergency Services",
+     "Professional (Physician) Visit - Office",
+     "Mental Health",
+     "Physical Therapy",
+     "Urgent Care"
+    ],
+    "inPlanNetworkIndicatorCode": "W",
+    "inPlanNetworkIndicator": "Not Applicable"
+   },
+   {
+    "code": "A",
+    "name": "Co-Insurance",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "48"
+    ],
+    "serviceTypes": [
+     "Hospital - Inpatient"
+    ],
+    "timeQualifierCode": "7",
+    "timeQualifier": "Day",
+    "benefitPercent": "0",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsServiceDelivery": [
+     {
+      "timePeriodQualifierCode": "29",
+      "timePeriodQualifier": "Remaining"
+     }
+    ]
+   },
+   {
+    "code": "A",
+    "name": "Co-Insurance",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "48"
+    ],
+    "serviceTypes": [
+     "Hospital - Inpatient"
+    ],
+    "timeQualifierCode": "7",
+    "timeQualifier": "Day",
+    "benefitPercent": "0",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsServiceDelivery": [
+     {
+      "timePeriodQualifierCode": "31",
+      "timePeriodQualifier": "Not Exceeded",
+      "numOfPeriods": "7"
+     }
+    ]
+   },
+   {
+    "code": "A",
+    "name": "Co-Insurance",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "9"
+    ],
+    "serviceTypes": [
+     "Other Medical"
+    ],
+    "timeQualifierCode": "27",
+    "timeQualifier": "Visit",
+    "benefitPercent": "0",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "additionalInformation": [
+     {
+      "description": "VIRTUAL VISITS/TELEMEDICINE"
+     }
+    ]
+   },
+   {
+    "code": "A",
+    "name": "Co-Insurance",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "33",
+     "86",
+     "PT",
+     "UC"
+    ],
+    "serviceTypes": [
+     "Chiropractic",
+     "Emergency Services",
+     "Physical Therapy",
+     "Urgent Care"
+    ],
+    "timeQualifierCode": "7",
+    "timeQualifier": "Day",
+    "benefitPercent": "0",
+    "inPlanNetworkIndicatorCode": "W",
+    "inPlanNetworkIndicator": "Not Applicable"
+   },
+   {
+    "code": "A",
+    "name": "Co-Insurance",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "50"
+    ],
+    "serviceTypes": [
+     "Hospital - Outpatient"
+    ],
+    "timeQualifierCode": "7",
+    "timeQualifier": "Day",
+    "benefitPercent": "0",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "additionalInformation": [
+     {
+      "description": "OUTPATIENT SURGERY"
+     }
+    ]
+   },
+   {
+    "code": "A",
+    "name": "Co-Insurance",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "98"
+    ],
+    "serviceTypes": [
+     "Professional (Physician) Visit - Office"
+    ],
+    "timeQualifierCode": "7",
+    "timeQualifier": "Day",
+    "benefitPercent": "0",
+    "inPlanNetworkIndicatorCode": "N",
+    "inPlanNetworkIndicator": "No"
+   },
+   {
+    "code": "A",
+    "name": "Co-Insurance",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "96"
+    ],
+    "serviceTypes": [
+     "Professional (Physician)"
+    ],
+    "timeQualifierCode": "7",
+    "timeQualifier": "Day",
+    "benefitPercent": "0",
+    "inPlanNetworkIndicatorCode": "W",
+    "inPlanNetworkIndicator": "Not Applicable",
+    "additionalInformation": [
+     {
+      "description": "OFFICE VISIT SPECIALIST"
+     }
+    ]
+   },
+   {
+    "code": "A",
+    "name": "Co-Insurance",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "9"
+    ],
+    "serviceTypes": [
+     "Other Medical"
+    ],
+    "timeQualifierCode": "7",
+    "timeQualifier": "Day",
+    "benefitPercent": "0",
+    "inPlanNetworkIndicatorCode": "N",
+    "inPlanNetworkIndicator": "No",
+    "additionalInformation": [
+     {
+      "description": "VIRTUAL VISITS/TELEMEDICINE"
+     }
+    ]
+   },
+   {
+    "code": "A",
+    "name": "Co-Insurance",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "50"
+    ],
+    "serviceTypes": [
+     "Hospital - Outpatient"
+    ],
+    "timeQualifierCode": "7",
+    "timeQualifier": "Day",
+    "benefitPercent": "0.4",
+    "inPlanNetworkIndicatorCode": "N",
+    "inPlanNetworkIndicator": "No",
+    "additionalInformation": [
+     {
+      "description": "OUTPATIENT HOSPITAL"
+     }
+    ]
+   },
+   {
+    "code": "A",
+    "name": "Co-Insurance",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "50"
+    ],
+    "serviceTypes": [
+     "Hospital - Outpatient"
+    ],
+    "timeQualifierCode": "7",
+    "timeQualifier": "Day",
+    "benefitPercent": "0.4",
+    "inPlanNetworkIndicatorCode": "N",
+    "inPlanNetworkIndicator": "No",
+    "additionalInformation": [
+     {
+      "description": "OUTPATIENT SURGERY"
+     }
+    ]
+   },
+   {
+    "code": "A",
+    "name": "Co-Insurance",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "48"
+    ],
+    "serviceTypes": [
+     "Hospital - Inpatient"
+    ],
+    "timeQualifierCode": "7",
+    "timeQualifier": "Day",
+    "benefitPercent": "0.4",
+    "inPlanNetworkIndicatorCode": "N",
+    "inPlanNetworkIndicator": "No"
+   },
+   {
+    "code": "A",
+    "name": "Co-Insurance",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "50"
+    ],
+    "serviceTypes": [
+     "Hospital - Outpatient"
+    ],
+    "timeQualifierCode": "7",
+    "timeQualifier": "Day",
+    "benefitPercent": "0",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "additionalInformation": [
+     {
+      "description": "OUTPATIENT HOSPITAL"
+     }
+    ]
+   },
+   {
+    "code": "A",
+    "name": "Co-Insurance",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "98"
+    ],
+    "serviceTypes": [
+     "Professional (Physician) Visit - Office"
+    ],
+    "timeQualifierCode": "27",
+    "timeQualifier": "Visit",
+    "benefitPercent": "0",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes"
+   },
+   {
+    "code": "B",
+    "name": "Co-Payment",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "48"
+    ],
+    "serviceTypes": [
+     "Hospital - Inpatient"
+    ],
+    "timeQualifierCode": "7",
+    "timeQualifier": "Day",
+    "benefitAmount": "395",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsServiceDelivery": [
+     {
+      "timePeriodQualifierCode": "31",
+      "timePeriodQualifier": "Not Exceeded",
+      "numOfPeriods": "7"
+     }
+    ]
+   },
+   {
+    "code": "B",
+    "name": "Co-Payment",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "48"
+    ],
+    "serviceTypes": [
+     "Hospital - Inpatient"
+    ],
+    "timeQualifierCode": "7",
+    "timeQualifier": "Day",
+    "benefitAmount": "0",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "benefitsServiceDelivery": [
+     {
+      "timePeriodQualifierCode": "29",
+      "timePeriodQualifier": "Remaining"
+     }
+    ]
+   },
+   {
+    "code": "B",
+    "name": "Co-Payment",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "33",
+     "PT"
+    ],
+    "serviceTypes": [
+     "Chiropractic",
+     "Physical Therapy"
+    ],
+    "timeQualifierCode": "7",
+    "timeQualifier": "Day",
+    "benefitAmount": "85",
+    "inPlanNetworkIndicatorCode": "N",
+    "inPlanNetworkIndicator": "No"
+   },
+   {
+    "code": "B",
+    "name": "Co-Payment",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "50"
+    ],
+    "serviceTypes": [
+     "Hospital - Outpatient"
+    ],
+    "timeQualifierCode": "7",
+    "timeQualifier": "Day",
+    "benefitAmount": "0",
+    "inPlanNetworkIndicatorCode": "N",
+    "inPlanNetworkIndicator": "No",
+    "additionalInformation": [
+     {
+      "description": "OUTPATIENT SURGERY"
+     }
+    ]
+   },
+   {
+    "code": "B",
+    "name": "Co-Payment",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "96"
+    ],
+    "serviceTypes": [
+     "Professional (Physician)"
+    ],
+    "timeQualifierCode": "7",
+    "timeQualifier": "Day",
+    "benefitAmount": "85",
+    "inPlanNetworkIndicatorCode": "N",
+    "inPlanNetworkIndicator": "No",
+    "additionalInformation": [
+     {
+      "description": "OFFICE VISIT SPECIALIST"
+     }
+    ]
+   },
+   {
+    "code": "B",
+    "name": "Co-Payment",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "PT"
+    ],
+    "serviceTypes": [
+     "Physical Therapy"
+    ],
+    "timeQualifierCode": "7",
+    "timeQualifier": "Day",
+    "benefitAmount": "45",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes"
+   },
+   {
+    "code": "B",
+    "name": "Co-Payment",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "98"
+    ],
+    "serviceTypes": [
+     "Professional (Physician) Visit - Office"
+    ],
+    "timeQualifierCode": "7",
+    "timeQualifier": "Day",
+    "benefitAmount": "35",
+    "inPlanNetworkIndicatorCode": "N",
+    "inPlanNetworkIndicator": "No"
+   },
+   {
+    "code": "B",
+    "name": "Co-Payment",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "98"
+    ],
+    "serviceTypes": [
+     "Professional (Physician) Visit - Office"
+    ],
+    "timeQualifierCode": "27",
+    "timeQualifier": "Visit",
+    "benefitAmount": "0",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes"
+   },
+   {
+    "code": "B",
+    "name": "Co-Payment",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "33"
+    ],
+    "serviceTypes": [
+     "Chiropractic"
+    ],
+    "timeQualifierCode": "7",
+    "timeQualifier": "Day",
+    "benefitAmount": "15",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes"
+   },
+   {
+    "code": "B",
+    "name": "Co-Payment",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "48"
+    ],
+    "serviceTypes": [
+     "Hospital - Inpatient"
+    ],
+    "timeQualifierCode": "7",
+    "timeQualifier": "Day",
+    "benefitAmount": "0",
+    "inPlanNetworkIndicatorCode": "N",
+    "inPlanNetworkIndicator": "No"
+   },
+   {
+    "code": "B",
+    "name": "Co-Payment",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "50"
+    ],
+    "serviceTypes": [
+     "Hospital - Outpatient"
+    ],
+    "timeQualifierCode": "7",
+    "timeQualifier": "Day",
+    "benefitAmount": "395",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "additionalInformation": [
+     {
+      "description": "OUTPATIENT HOSPITAL"
+     }
+    ]
+   },
+   {
+    "code": "B",
+    "name": "Co-Payment",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "9"
+    ],
+    "serviceTypes": [
+     "Other Medical"
+    ],
+    "timeQualifierCode": "7",
+    "timeQualifier": "Day",
+    "benefitAmount": "35",
+    "inPlanNetworkIndicatorCode": "N",
+    "inPlanNetworkIndicator": "No",
+    "additionalInformation": [
+     {
+      "description": "VIRTUAL VISITS/TELEMEDICINE"
+     }
+    ]
+   },
+   {
+    "code": "B",
+    "name": "Co-Payment",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "9"
+    ],
+    "serviceTypes": [
+     "Other Medical"
+    ],
+    "timeQualifierCode": "7",
+    "timeQualifier": "Day",
+    "benefitAmount": "40",
+    "inPlanNetworkIndicatorCode": "N",
+    "inPlanNetworkIndicator": "No",
+    "additionalInformation": [
+     {
+      "description": "VIRTUAL VISITS/TELEMEDICINE"
+     }
+    ]
+   },
+   {
+    "code": "B",
+    "name": "Co-Payment",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "50"
+    ],
+    "serviceTypes": [
+     "Hospital - Outpatient"
+    ],
+    "timeQualifierCode": "7",
+    "timeQualifier": "Day",
+    "benefitAmount": "395",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "additionalInformation": [
+     {
+      "description": "OUTPATIENT SURGERY"
+     }
+    ]
+   },
+   {
+    "code": "B",
+    "name": "Co-Payment",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "86"
+    ],
+    "serviceTypes": [
+     "Emergency Services"
+    ],
+    "timeQualifierCode": "7",
+    "timeQualifier": "Day",
+    "benefitAmount": "130",
+    "inPlanNetworkIndicatorCode": "W",
+    "inPlanNetworkIndicator": "Not Applicable"
+   },
+   {
+    "code": "B",
+    "name": "Co-Payment",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "96"
+    ],
+    "serviceTypes": [
+     "Professional (Physician)"
+    ],
+    "timeQualifierCode": "7",
+    "timeQualifier": "Day",
+    "benefitAmount": "45",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "additionalInformation": [
+     {
+      "description": "OFFICE VISIT SPECIALIST"
+     }
+    ]
+   },
+   {
+    "code": "B",
+    "name": "Co-Payment",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "9"
+    ],
+    "serviceTypes": [
+     "Other Medical"
+    ],
+    "timeQualifierCode": "27",
+    "timeQualifier": "Visit",
+    "benefitAmount": "0",
+    "inPlanNetworkIndicatorCode": "Y",
+    "inPlanNetworkIndicator": "Yes",
+    "additionalInformation": [
+     {
+      "description": "VIRTUAL VISITS/TELEMEDICINE"
+     }
+    ]
+   },
+   {
+    "code": "B",
+    "name": "Co-Payment",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "50"
+    ],
+    "serviceTypes": [
+     "Hospital - Outpatient"
+    ],
+    "timeQualifierCode": "7",
+    "timeQualifier": "Day",
+    "benefitAmount": "0",
+    "inPlanNetworkIndicatorCode": "N",
+    "inPlanNetworkIndicator": "No",
+    "additionalInformation": [
+     {
+      "description": "OUTPATIENT HOSPITAL"
+     }
+    ]
+   },
+   {
+    "code": "B",
+    "name": "Co-Payment",
+    "coverageLevelCode": "IND",
+    "coverageLevel": "Individual",
+    "serviceTypeCodes": [
+     "UC"
+    ],
+    "serviceTypes": [
+     "Urgent Care"
+    ],
+    "timeQualifierCode": "7",
+    "timeQualifier": "Day",
+    "benefitAmount": "50",
+    "inPlanNetworkIndicatorCode": "W",
+    "inPlanNetworkIndicator": "Not Applicable"
+   },
+   {
+    "code": "U",
+    "name": "Contact Following Entity for Eligibility or Benefit Information",
+    "serviceTypeCodes": [
+     "88"
+    ],
+    "serviceTypes": [
+     "Pharmacy"
+    ],
+    "benefitsRelatedEntity": {
+     "entityIdentifier": "Vendor",
+     "entityType": "Non-Person Entity",
+     "entityName": "OPTUMRX",
+     "contactInformation": {
+      "contacts": [
+       {
+        "communicationMode": "Uniform Resource Locator (URL)",
+        "communicationNumber": "PROFESSIONALS.OPTUMRX.COM"
+       }
+      ]
+     }
+    },
+    "benefitsRelatedEntities": [
+     {
+      "entityIdentifier": "Vendor",
+      "entityType": "Non-Person Entity",
+      "entityName": "OPTUMRX",
+      "contactInformation": {
+       "contacts": [
+        {
+         "communicationMode": "Uniform Resource Locator (URL)",
+         "communicationNumber": "PROFESSIONALS.OPTUMRX.COM"
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "code": "U",
+    "name": "Contact Following Entity for Eligibility or Benefit Information",
+    "serviceTypeCodes": [
+     "35"
+    ],
+    "serviceTypes": [
+     "Dental Care"
+    ],
+    "benefitsRelatedEntity": {
+     "entityIdentifier": "Vendor",
+     "entityType": "Non-Person Entity",
+     "entityName": "UNITEDHEALTHCARE DENTAL",
+     "contactInformation": {
+      "contacts": [
+       {
+        "communicationMode": "Uniform Resource Locator (URL)",
+        "communicationNumber": "WWW.DBP.COM"
+       }
+      ]
+     }
+    },
+    "benefitsRelatedEntities": [
+     {
+      "entityIdentifier": "Vendor",
+      "entityType": "Non-Person Entity",
+      "entityName": "UNITEDHEALTHCARE DENTAL",
+      "contactInformation": {
+       "contacts": [
+        {
+         "communicationMode": "Uniform Resource Locator (URL)",
+         "communicationNumber": "WWW.DBP.COM"
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "code": "X",
+    "name": "Health Care Facility",
+    "benefitsRelatedEntity": {
+     "entityIdentifier": "Provider",
+     "entityType": "Non-Person Entity",
+     "entityName": "GHASEM DARIAN",
+     "entityIdentification": "XX",
+     "entityIdentificationValue": "1942363775"
+    },
+    "benefitsRelatedEntities": [
+     {
+      "entityIdentifier": "Provider",
+      "entityType": "Non-Person Entity",
+      "entityName": "GHASEM DARIAN",
+      "entityIdentification": "XX",
+      "entityIdentificationValue": "1942363775"
+     }
+    ]
+   }
+  ],
+  "errors": [],
+  "x12": "ISA*00*          *00*          *ZZ*STEDI          *01*117151744      *260719*1811*^*00501*823760244*0*P*`~GS*HB*STEDI*117151744*20260719*1311*823760244*X*005010X279A1~ST*271*823760244*005010X279A1~BHT*0022*11*01KXXS7MGDXNWRNXNZ2GMYSKQG*20260719*141154~HL*1**20*1~NM1*PR*2*UNITEDHEALTHCARE DENTAL*****PI*52133~HL*2*1*21*1~NM1*1P*2*GHASEM DARIAN*****XX*1942363775~HL*3*2*22*0~TRN*1*01KXXS7MGPXTRP5S68W0VFB4XD*3117151744~NM1*IL*1*MASCARI*SHARON*L***MI*942466921~REF*6P*74191~N3*6211 E THORNE LN~N4*PRESCOTT VALLEY*AZ*86314~DMG*D8*19440928*F~DTP*346*D8*20260101~EB*R~REF*F6*8T73PA2CY05~EB*1**30*PR*LPPO-AARP MEDICARE ADVANTAGE FROM UHC AZ-0008 (PPO******Y~REF*N6*H2406-063-000~MSG*A PRIOR AUTHORIZATION OR NOTIFICATION INQUIRY REQUEST MAY BE SUBMITTED~MSG*ACCESS TO MEDICARE NATIONAL NETWORK~LS*2120~NM1*PRP*2*UNITEDHEALTHCARE*****PI*87726~N3*UNITEDHEALTHCARE*P.O. BOX 31362~N4*SALT LAKE CITY*UT*841310362~PER*IC**UR*WWW.UHCPROVIDER.COM~LE*2120~EB*G*IND*30*PR**23*10100*****W~MSG*COMBINED~EB*G*IND*30*PR**24*778.34*****W~MSG*COMBINED~EB*G*IND*30*PR**29*9321.66*****W~MSG*COMBINED~EB*G*IND*30*PR**24*778.34*****Y~EB*G*IND*30*PR**29*5121.66*****Y~EB*G*IND*30*PR**23*5900*****Y~EB*L~LS*2120~NM1*P3*1*HECKEL HICKS*KATHLEEN****XX*1780918037~N3*474 N HIGHWAY 89~N4*CHINO VALLEY*AZ*86323~PER*IC**TE*9286365680*FX*9286365853~PRV*PC*PXC*363LF0000X~LE*2120~EB*1**50*********W~MSG*OUTPATIENT SURGERY~EB*1**AL*********W~MSG*ROUTINE EYE EXAM~EB*1**96*********W~MSG*OFFICE VISIT SPECIALIST~EB*1**50*********W~MSG*OUTPATIENT HOSPITAL~EB*1**1^33^47^48^86^98^MH^PT^UC*********W~EB*A*IND*48***7**0****Y~HSD*****29~EB*A*IND*48***7**0****Y~HSD*****31*7~EB*A*IND*9***27**0****Y~MSG*VIRTUAL VISITS/TELEMEDICINE~EB*A*IND*33^86^PT^UC***7**0****W~EB*A*IND*50***7**0****Y~MSG*OUTPATIENT SURGERY~EB*A*IND*98***7**0****N~EB*A*IND*96***7**0****W~MSG*OFFICE VISIT SPECIALIST~EB*A*IND*9***7**0****N~MSG*VIRTUAL VISITS/TELEMEDICINE~EB*A*IND*50***7**.4****N~MSG*OUTPATIENT HOSPITAL~EB*A*IND*50***7**.4****N~MSG*OUTPATIENT SURGERY~EB*A*IND*48***7**.4****N~EB*A*IND*50***7**0****Y~MSG*OUTPATIENT HOSPITAL~EB*A*IND*98***27**0****Y~EB*B*IND*48***7*395*****Y~HSD*****31*7~EB*B*IND*48***7*0*****Y~HSD*****29~EB*B*IND*33^PT***7*85*****N~EB*B*IND*50***7*0*****N~MSG*OUTPATIENT SURGERY~EB*B*IND*96***7*85*****N~MSG*OFFICE VISIT SPECIALIST~EB*B*IND*PT***7*45*****Y~EB*B*IND*98***7*35*****N~EB*B*IND*98***27*0*****Y~EB*B*IND*33***7*15*****Y~EB*B*IND*48***7*0*****N~EB*B*IND*50***7*395*****Y~MSG*OUTPATIENT HOSPITAL~EB*B*IND*9***7*35*****N~MSG*VIRTUAL VISITS/TELEMEDICINE~EB*B*IND*9***7*40*****N~MSG*VIRTUAL VISITS/TELEMEDICINE~EB*B*IND*50***7*395*****Y~MSG*OUTPATIENT SURGERY~EB*B*IND*86***7*130*****W~EB*B*IND*96***7*45*****Y~MSG*OFFICE VISIT SPECIALIST~EB*B*IND*9***27*0*****Y~MSG*VIRTUAL VISITS/TELEMEDICINE~EB*B*IND*50***7*0*****N~MSG*OUTPATIENT HOSPITAL~EB*B*IND*UC***7*50*****W~EB*U**88~LS*2120~NM1*VN*2*OPTUMRX~PER*IC**UR*PROFESSIONALS.OPTUMRX.COM~LE*2120~EB*U**35~LS*2120~NM1*VN*2*UNITEDHEALTHCARE DENTAL~PER*IC**UR*WWW.DBP.COM~LE*2120~EB*X~LS*2120~NM1*1P*2*GHASEM DARIAN*****XX*1942363775~LE*2120~SE*119*823760244~GE*1*823760244~IEA*1*823760244~",
+  "eligibilitySearchId": "019f7b93-d20c-7850-b96a-b8921251f5d5",
+  "id": "ec_019f7b93-d20b-7b50-ab24-aa19bf809cb2"
+ },
+ "singles": {
+  "D2740": {
+   "meta": {
+    "senderId": "STEDI",
+    "submitterId": "117151744",
+    "applicationMode": "production",
+    "traceId": "01KXXSDB1K05GE4WMC9HDJQQ0T",
+    "outboundTraceId": "01KXXSDB1K05GE4WMC9HDJQQ0T"
+   },
+   "controlNumber": "823772268",
+   "reassociationKey": "823772268",
+   "tradingPartnerServiceId": "52133",
+   "provider": {
+    "providerName": "GHASEM DARIAN",
+    "entityIdentifier": "Provider",
+    "entityType": "Non-Person Entity",
+    "npi": "1942363775"
+   },
+   "subscriber": {
+    "memberId": "942466921",
+    "firstName": "SHARON",
+    "lastName": "MASCARI",
+    "middleName": "L",
+    "gender": "F",
+    "entityIdentifier": "Insured or Subscriber",
+    "entityType": "Person",
+    "dateOfBirth": "19440928",
+    "groupNumber": "74191",
+    "address": {
+     "address1": "6211 E THORNE LN",
+     "city": "PRESCOTT VALLEY",
+     "state": "AZ",
+     "postalCode": "86314"
+    }
+   },
+   "subscriberTraceNumbers": [
+    {
+     "traceTypeCode": "1",
+     "traceType": "Current Transaction Trace Numbers",
+     "referenceIdentification": "01KXXSDB25VYR7FK33WWC97E77",
+     "originatingCompanyIdentifier": "3117151744"
+    }
+   ],
+   "payer": {
+    "entityIdentifier": "Payer",
+    "entityType": "Non-Person Entity",
+    "name": "UNITEDHEALTHCARE DENTAL",
+    "payorIdentification": "52133"
+   },
+   "planInformation": {
+    "groupNumber": "74191"
+   },
+   "planDateInformation": {
+    "planBegin": "20260101"
+   },
+   "planStatus": [
+    {
+     "statusCode": "1",
+     "status": "Active Coverage",
+     "planDetails": "LPPO-AARP MEDICARE ADVANTAGE FROM UHC AZ-0008 (PPO",
+     "serviceTypeCodes": [
+      "30"
+     ]
+    },
+    {
+     "statusCode": "1",
+     "status": "Active Coverage",
+     "serviceTypeCodes": [
+      "50"
+     ]
+    },
+    {
+     "statusCode": "1",
+     "status": "Active Coverage",
+     "serviceTypeCodes": [
+      "AL"
+     ]
+    },
+    {
+     "statusCode": "1",
+     "status": "Active Coverage",
+     "serviceTypeCodes": [
+      "96"
+     ]
+    },
+    {
+     "statusCode": "1",
+     "status": "Active Coverage",
+     "serviceTypeCodes": [
+      "50"
+     ]
+    },
+    {
+     "statusCode": "1",
+     "status": "Active Coverage",
+     "serviceTypeCodes": [
+      "1",
+      "33",
+      "47",
+      "48",
+      "86",
+      "98",
+      "MH",
+      "PT",
+      "UC"
+     ]
+    }
+   ],
+   "benefitsInformation": [
+    {
+     "code": "R",
+     "name": "Other or Additional Payor",
+     "benefitsAdditionalInformation": {
+      "hicNumber": "8T73PA2CY05"
+     }
+    },
+    {
+     "code": "1",
+     "name": "Active Coverage",
+     "serviceTypeCodes": [
+      "30"
+     ],
+     "serviceTypes": [
+      "Health Benefit Plan Coverage"
+     ],
+     "insuranceTypeCode": "PR",
+     "insuranceType": "Preferred Provider Organization (PPO)",
+     "planCoverage": "LPPO-AARP MEDICARE ADVANTAGE FROM UHC AZ-0008 (PPO",
+     "authOrCertIndicator": "Y",
+     "benefitsAdditionalInformation": {
+      "planNetworkIdNumber": "H2406-063-000"
+     },
+     "benefitsRelatedEntity": {
+      "entityIdentifier": "Primary Payer",
+      "entityType": "Non-Person Entity",
+      "entityName": "UNITEDHEALTHCARE",
+      "entityIdentification": "PI",
+      "entityIdentificationValue": "87726",
+      "address": {
+       "address1": "UNITEDHEALTHCARE",
+       "address2": "P.O. BOX 31362",
+       "city": "SALT LAKE CITY",
+       "state": "UT",
+       "postalCode": "841310362"
+      },
+      "contactInformation": {
+       "contacts": [
+        {
+         "communicationMode": "Uniform Resource Locator (URL)",
+         "communicationNumber": "WWW.UHCPROVIDER.COM"
+        }
+       ]
+      }
+     },
+     "benefitsRelatedEntities": [
+      {
+       "entityIdentifier": "Primary Payer",
+       "entityType": "Non-Person Entity",
+       "entityName": "UNITEDHEALTHCARE",
+       "entityIdentification": "PI",
+       "entityIdentificationValue": "87726",
+       "address": {
+        "address1": "UNITEDHEALTHCARE",
+        "address2": "P.O. BOX 31362",
+        "city": "SALT LAKE CITY",
+        "state": "UT",
+        "postalCode": "841310362"
+       },
+       "contactInformation": {
+        "contacts": [
+         {
+          "communicationMode": "Uniform Resource Locator (URL)",
+          "communicationNumber": "WWW.UHCPROVIDER.COM"
+         }
+        ]
+       }
+      }
+     ],
+     "additionalInformation": [
+      {
+       "description": "A PRIOR AUTHORIZATION OR NOTIFICATION INQUIRY REQUEST MAY BE SUBMITTED"
+      },
+      {
+       "description": "ACCESS TO MEDICARE NATIONAL NETWORK"
+      }
+     ]
+    },
+    {
+     "code": "G",
+     "name": "Out of Pocket (Stop Loss)",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "30"
+     ],
+     "serviceTypes": [
+      "Health Benefit Plan Coverage"
+     ],
+     "insuranceTypeCode": "PR",
+     "insuranceType": "Preferred Provider Organization (PPO)",
+     "timeQualifierCode": "23",
+     "timeQualifier": "Calendar Year",
+     "benefitAmount": "10100",
+     "inPlanNetworkIndicatorCode": "W",
+     "inPlanNetworkIndicator": "Not Applicable",
+     "additionalInformation": [
+      {
+       "description": "COMBINED"
+      }
+     ]
+    },
+    {
+     "code": "G",
+     "name": "Out of Pocket (Stop Loss)",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "30"
+     ],
+     "serviceTypes": [
+      "Health Benefit Plan Coverage"
+     ],
+     "insuranceTypeCode": "PR",
+     "insuranceType": "Preferred Provider Organization (PPO)",
+     "timeQualifierCode": "24",
+     "timeQualifier": "Year to Date",
+     "benefitAmount": "778.34",
+     "inPlanNetworkIndicatorCode": "W",
+     "inPlanNetworkIndicator": "Not Applicable",
+     "additionalInformation": [
+      {
+       "description": "COMBINED"
+      }
+     ]
+    },
+    {
+     "code": "G",
+     "name": "Out of Pocket (Stop Loss)",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "30"
+     ],
+     "serviceTypes": [
+      "Health Benefit Plan Coverage"
+     ],
+     "insuranceTypeCode": "PR",
+     "insuranceType": "Preferred Provider Organization (PPO)",
+     "timeQualifierCode": "29",
+     "timeQualifier": "Remaining",
+     "benefitAmount": "9321.66",
+     "inPlanNetworkIndicatorCode": "W",
+     "inPlanNetworkIndicator": "Not Applicable",
+     "additionalInformation": [
+      {
+       "description": "COMBINED"
+      }
+     ]
+    },
+    {
+     "code": "G",
+     "name": "Out of Pocket (Stop Loss)",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "30"
+     ],
+     "serviceTypes": [
+      "Health Benefit Plan Coverage"
+     ],
+     "insuranceTypeCode": "PR",
+     "insuranceType": "Preferred Provider Organization (PPO)",
+     "timeQualifierCode": "24",
+     "timeQualifier": "Year to Date",
+     "benefitAmount": "778.34",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes"
+    },
+    {
+     "code": "G",
+     "name": "Out of Pocket (Stop Loss)",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "30"
+     ],
+     "serviceTypes": [
+      "Health Benefit Plan Coverage"
+     ],
+     "insuranceTypeCode": "PR",
+     "insuranceType": "Preferred Provider Organization (PPO)",
+     "timeQualifierCode": "29",
+     "timeQualifier": "Remaining",
+     "benefitAmount": "5121.66",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes"
+    },
+    {
+     "code": "G",
+     "name": "Out of Pocket (Stop Loss)",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "30"
+     ],
+     "serviceTypes": [
+      "Health Benefit Plan Coverage"
+     ],
+     "insuranceTypeCode": "PR",
+     "insuranceType": "Preferred Provider Organization (PPO)",
+     "timeQualifierCode": "23",
+     "timeQualifier": "Calendar Year",
+     "benefitAmount": "5900",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes"
+    },
+    {
+     "code": "L",
+     "name": "Primary Care Provider",
+     "benefitsRelatedEntity": {
+      "entityIdentifier": "Primary Care Provider",
+      "entityType": "Person",
+      "entityName": "HECKEL HICKS",
+      "entityFirstname": "KATHLEEN",
+      "entityIdentification": "XX",
+      "entityIdentificationValue": "1780918037",
+      "address": {
+       "address1": "474 N HIGHWAY 89",
+       "city": "CHINO VALLEY",
+       "state": "AZ",
+       "postalCode": "86323"
+      },
+      "contactInformation": {
+       "contacts": [
+        {
+         "communicationMode": "Telephone",
+         "communicationNumber": "9286365680"
+        },
+        {
+         "communicationMode": "Facsimile",
+         "communicationNumber": "9286365853"
+        }
+       ]
+      },
+      "providerInformation": {
+       "providerCode": "PC",
+       "referenceIdentification": "363LF0000X"
+      }
+     },
+     "benefitsRelatedEntities": [
+      {
+       "entityIdentifier": "Primary Care Provider",
+       "entityType": "Person",
+       "entityName": "HECKEL HICKS",
+       "entityFirstname": "KATHLEEN",
+       "entityIdentification": "XX",
+       "entityIdentificationValue": "1780918037",
+       "address": {
+        "address1": "474 N HIGHWAY 89",
+        "city": "CHINO VALLEY",
+        "state": "AZ",
+        "postalCode": "86323"
+       },
+       "contactInformation": {
+        "contacts": [
+         {
+          "communicationMode": "Telephone",
+          "communicationNumber": "9286365680"
+         },
+         {
+          "communicationMode": "Facsimile",
+          "communicationNumber": "9286365853"
+         }
+        ]
+       },
+       "providerInformation": {
+        "providerCode": "PC",
+        "referenceIdentification": "363LF0000X"
+       }
+      }
+     ]
+    },
+    {
+     "code": "1",
+     "name": "Active Coverage",
+     "serviceTypeCodes": [
+      "50"
+     ],
+     "serviceTypes": [
+      "Hospital - Outpatient"
+     ],
+     "inPlanNetworkIndicatorCode": "W",
+     "inPlanNetworkIndicator": "Not Applicable",
+     "additionalInformation": [
+      {
+       "description": "OUTPATIENT SURGERY"
+      }
+     ]
+    },
+    {
+     "code": "1",
+     "name": "Active Coverage",
+     "serviceTypeCodes": [
+      "AL"
+     ],
+     "serviceTypes": [
+      "Vision (Optometry)"
+     ],
+     "inPlanNetworkIndicatorCode": "W",
+     "inPlanNetworkIndicator": "Not Applicable",
+     "additionalInformation": [
+      {
+       "description": "ROUTINE EYE EXAM"
+      }
+     ]
+    },
+    {
+     "code": "1",
+     "name": "Active Coverage",
+     "serviceTypeCodes": [
+      "96"
+     ],
+     "serviceTypes": [
+      "Professional (Physician)"
+     ],
+     "inPlanNetworkIndicatorCode": "W",
+     "inPlanNetworkIndicator": "Not Applicable",
+     "additionalInformation": [
+      {
+       "description": "OFFICE VISIT SPECIALIST"
+      }
+     ]
+    },
+    {
+     "code": "1",
+     "name": "Active Coverage",
+     "serviceTypeCodes": [
+      "50"
+     ],
+     "serviceTypes": [
+      "Hospital - Outpatient"
+     ],
+     "inPlanNetworkIndicatorCode": "W",
+     "inPlanNetworkIndicator": "Not Applicable",
+     "additionalInformation": [
+      {
+       "description": "OUTPATIENT HOSPITAL"
+      }
+     ]
+    },
+    {
+     "code": "1",
+     "name": "Active Coverage",
+     "serviceTypeCodes": [
+      "1",
+      "33",
+      "47",
+      "48",
+      "86",
+      "98",
+      "MH",
+      "PT",
+      "UC"
+     ],
+     "serviceTypes": [
+      "Medical Care",
+      "Chiropractic",
+      "Hospital",
+      "Hospital - Inpatient",
+      "Emergency Services",
+      "Professional (Physician) Visit - Office",
+      "Mental Health",
+      "Physical Therapy",
+      "Urgent Care"
+     ],
+     "inPlanNetworkIndicatorCode": "W",
+     "inPlanNetworkIndicator": "Not Applicable"
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "48"
+     ],
+     "serviceTypes": [
+      "Hospital - Inpatient"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitPercent": "0",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsServiceDelivery": [
+      {
+       "timePeriodQualifierCode": "29",
+       "timePeriodQualifier": "Remaining"
+      }
+     ]
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "48"
+     ],
+     "serviceTypes": [
+      "Hospital - Inpatient"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitPercent": "0",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsServiceDelivery": [
+      {
+       "timePeriodQualifierCode": "31",
+       "timePeriodQualifier": "Not Exceeded",
+       "numOfPeriods": "7"
+      }
+     ]
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "9"
+     ],
+     "serviceTypes": [
+      "Other Medical"
+     ],
+     "timeQualifierCode": "27",
+     "timeQualifier": "Visit",
+     "benefitPercent": "0",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "additionalInformation": [
+      {
+       "description": "VIRTUAL VISITS/TELEMEDICINE"
+      }
+     ]
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "33",
+      "86",
+      "PT",
+      "UC"
+     ],
+     "serviceTypes": [
+      "Chiropractic",
+      "Emergency Services",
+      "Physical Therapy",
+      "Urgent Care"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitPercent": "0",
+     "inPlanNetworkIndicatorCode": "W",
+     "inPlanNetworkIndicator": "Not Applicable"
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "50"
+     ],
+     "serviceTypes": [
+      "Hospital - Outpatient"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitPercent": "0",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "additionalInformation": [
+      {
+       "description": "OUTPATIENT SURGERY"
+      }
+     ]
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "98"
+     ],
+     "serviceTypes": [
+      "Professional (Physician) Visit - Office"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitPercent": "0",
+     "inPlanNetworkIndicatorCode": "N",
+     "inPlanNetworkIndicator": "No"
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "96"
+     ],
+     "serviceTypes": [
+      "Professional (Physician)"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitPercent": "0",
+     "inPlanNetworkIndicatorCode": "W",
+     "inPlanNetworkIndicator": "Not Applicable",
+     "additionalInformation": [
+      {
+       "description": "OFFICE VISIT SPECIALIST"
+      }
+     ]
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "9"
+     ],
+     "serviceTypes": [
+      "Other Medical"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitPercent": "0",
+     "inPlanNetworkIndicatorCode": "N",
+     "inPlanNetworkIndicator": "No",
+     "additionalInformation": [
+      {
+       "description": "VIRTUAL VISITS/TELEMEDICINE"
+      }
+     ]
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "50"
+     ],
+     "serviceTypes": [
+      "Hospital - Outpatient"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitPercent": "0.4",
+     "inPlanNetworkIndicatorCode": "N",
+     "inPlanNetworkIndicator": "No",
+     "additionalInformation": [
+      {
+       "description": "OUTPATIENT HOSPITAL"
+      }
+     ]
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "50"
+     ],
+     "serviceTypes": [
+      "Hospital - Outpatient"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitPercent": "0.4",
+     "inPlanNetworkIndicatorCode": "N",
+     "inPlanNetworkIndicator": "No",
+     "additionalInformation": [
+      {
+       "description": "OUTPATIENT SURGERY"
+      }
+     ]
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "48"
+     ],
+     "serviceTypes": [
+      "Hospital - Inpatient"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitPercent": "0.4",
+     "inPlanNetworkIndicatorCode": "N",
+     "inPlanNetworkIndicator": "No"
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "50"
+     ],
+     "serviceTypes": [
+      "Hospital - Outpatient"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitPercent": "0",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "additionalInformation": [
+      {
+       "description": "OUTPATIENT HOSPITAL"
+      }
+     ]
+    },
+    {
+     "code": "A",
+     "name": "Co-Insurance",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "98"
+     ],
+     "serviceTypes": [
+      "Professional (Physician) Visit - Office"
+     ],
+     "timeQualifierCode": "27",
+     "timeQualifier": "Visit",
+     "benefitPercent": "0",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes"
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "48"
+     ],
+     "serviceTypes": [
+      "Hospital - Inpatient"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitAmount": "395",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsServiceDelivery": [
+      {
+       "timePeriodQualifierCode": "31",
+       "timePeriodQualifier": "Not Exceeded",
+       "numOfPeriods": "7"
+      }
+     ]
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "48"
+     ],
+     "serviceTypes": [
+      "Hospital - Inpatient"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitAmount": "0",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "benefitsServiceDelivery": [
+      {
+       "timePeriodQualifierCode": "29",
+       "timePeriodQualifier": "Remaining"
+      }
+     ]
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "33",
+      "PT"
+     ],
+     "serviceTypes": [
+      "Chiropractic",
+      "Physical Therapy"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitAmount": "85",
+     "inPlanNetworkIndicatorCode": "N",
+     "inPlanNetworkIndicator": "No"
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "50"
+     ],
+     "serviceTypes": [
+      "Hospital - Outpatient"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitAmount": "0",
+     "inPlanNetworkIndicatorCode": "N",
+     "inPlanNetworkIndicator": "No",
+     "additionalInformation": [
+      {
+       "description": "OUTPATIENT SURGERY"
+      }
+     ]
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "96"
+     ],
+     "serviceTypes": [
+      "Professional (Physician)"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitAmount": "85",
+     "inPlanNetworkIndicatorCode": "N",
+     "inPlanNetworkIndicator": "No",
+     "additionalInformation": [
+      {
+       "description": "OFFICE VISIT SPECIALIST"
+      }
+     ]
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "PT"
+     ],
+     "serviceTypes": [
+      "Physical Therapy"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitAmount": "45",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes"
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "98"
+     ],
+     "serviceTypes": [
+      "Professional (Physician) Visit - Office"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitAmount": "35",
+     "inPlanNetworkIndicatorCode": "N",
+     "inPlanNetworkIndicator": "No"
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "98"
+     ],
+     "serviceTypes": [
+      "Professional (Physician) Visit - Office"
+     ],
+     "timeQualifierCode": "27",
+     "timeQualifier": "Visit",
+     "benefitAmount": "0",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes"
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "33"
+     ],
+     "serviceTypes": [
+      "Chiropractic"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitAmount": "15",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes"
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "48"
+     ],
+     "serviceTypes": [
+      "Hospital - Inpatient"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitAmount": "0",
+     "inPlanNetworkIndicatorCode": "N",
+     "inPlanNetworkIndicator": "No"
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "50"
+     ],
+     "serviceTypes": [
+      "Hospital - Outpatient"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitAmount": "395",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "additionalInformation": [
+      {
+       "description": "OUTPATIENT HOSPITAL"
+      }
+     ]
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "9"
+     ],
+     "serviceTypes": [
+      "Other Medical"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitAmount": "35",
+     "inPlanNetworkIndicatorCode": "N",
+     "inPlanNetworkIndicator": "No",
+     "additionalInformation": [
+      {
+       "description": "VIRTUAL VISITS/TELEMEDICINE"
+      }
+     ]
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "9"
+     ],
+     "serviceTypes": [
+      "Other Medical"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitAmount": "40",
+     "inPlanNetworkIndicatorCode": "N",
+     "inPlanNetworkIndicator": "No",
+     "additionalInformation": [
+      {
+       "description": "VIRTUAL VISITS/TELEMEDICINE"
+      }
+     ]
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "50"
+     ],
+     "serviceTypes": [
+      "Hospital - Outpatient"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitAmount": "395",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "additionalInformation": [
+      {
+       "description": "OUTPATIENT SURGERY"
+      }
+     ]
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "86"
+     ],
+     "serviceTypes": [
+      "Emergency Services"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitAmount": "130",
+     "inPlanNetworkIndicatorCode": "W",
+     "inPlanNetworkIndicator": "Not Applicable"
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "96"
+     ],
+     "serviceTypes": [
+      "Professional (Physician)"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitAmount": "45",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "additionalInformation": [
+      {
+       "description": "OFFICE VISIT SPECIALIST"
+      }
+     ]
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "9"
+     ],
+     "serviceTypes": [
+      "Other Medical"
+     ],
+     "timeQualifierCode": "27",
+     "timeQualifier": "Visit",
+     "benefitAmount": "0",
+     "inPlanNetworkIndicatorCode": "Y",
+     "inPlanNetworkIndicator": "Yes",
+     "additionalInformation": [
+      {
+       "description": "VIRTUAL VISITS/TELEMEDICINE"
+      }
+     ]
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "50"
+     ],
+     "serviceTypes": [
+      "Hospital - Outpatient"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitAmount": "0",
+     "inPlanNetworkIndicatorCode": "N",
+     "inPlanNetworkIndicator": "No",
+     "additionalInformation": [
+      {
+       "description": "OUTPATIENT HOSPITAL"
+      }
+     ]
+    },
+    {
+     "code": "B",
+     "name": "Co-Payment",
+     "coverageLevelCode": "IND",
+     "coverageLevel": "Individual",
+     "serviceTypeCodes": [
+      "UC"
+     ],
+     "serviceTypes": [
+      "Urgent Care"
+     ],
+     "timeQualifierCode": "7",
+     "timeQualifier": "Day",
+     "benefitAmount": "50",
+     "inPlanNetworkIndicatorCode": "W",
+     "inPlanNetworkIndicator": "Not Applicable"
+    },
+    {
+     "code": "U",
+     "name": "Contact Following Entity for Eligibility or Benefit Information",
+     "serviceTypeCodes": [
+      "88"
+     ],
+     "serviceTypes": [
+      "Pharmacy"
+     ],
+     "benefitsRelatedEntity": {
+      "entityIdentifier": "Vendor",
+      "entityType": "Non-Person Entity",
+      "entityName": "OPTUMRX",
+      "contactInformation": {
+       "contacts": [
+        {
+         "communicationMode": "Uniform Resource Locator (URL)",
+         "communicationNumber": "PROFESSIONALS.OPTUMRX.COM"
+        }
+       ]
+      }
+     },
+     "benefitsRelatedEntities": [
+      {
+       "entityIdentifier": "Vendor",
+       "entityType": "Non-Person Entity",
+       "entityName": "OPTUMRX",
+       "contactInformation": {
+        "contacts": [
+         {
+          "communicationMode": "Uniform Resource Locator (URL)",
+          "communicationNumber": "PROFESSIONALS.OPTUMRX.COM"
+         }
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "code": "U",
+     "name": "Contact Following Entity for Eligibility or Benefit Information",
+     "serviceTypeCodes": [
+      "35"
+     ],
+     "serviceTypes": [
+      "Dental Care"
+     ],
+     "benefitsRelatedEntity": {
+      "entityIdentifier": "Vendor",
+      "entityType": "Non-Person Entity",
+      "entityName": "UNITEDHEALTHCARE DENTAL",
+      "contactInformation": {
+       "contacts": [
+        {
+         "communicationMode": "Uniform Resource Locator (URL)",
+         "communicationNumber": "WWW.DBP.COM"
+        }
+       ]
+      }
+     },
+     "benefitsRelatedEntities": [
+      {
+       "entityIdentifier": "Vendor",
+       "entityType": "Non-Person Entity",
+       "entityName": "UNITEDHEALTHCARE DENTAL",
+       "contactInformation": {
+        "contacts": [
+         {
+          "communicationMode": "Uniform Resource Locator (URL)",
+          "communicationNumber": "WWW.DBP.COM"
+         }
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "code": "X",
+     "name": "Health Care Facility",
+     "benefitsRelatedEntity": {
+      "entityIdentifier": "Provider",
+      "entityType": "Non-Person Entity",
+      "entityName": "GHASEM DARIAN",
+      "entityIdentification": "XX",
+      "entityIdentificationValue": "1942363775"
+     },
+     "benefitsRelatedEntities": [
+      {
+       "entityIdentifier": "Provider",
+       "entityType": "Non-Person Entity",
+       "entityName": "GHASEM DARIAN",
+       "entityIdentification": "XX",
+       "entityIdentificationValue": "1942363775"
+      }
+     ]
+    }
+   ],
+   "errors": [],
+   "x12": "ISA*00*          *00*          *ZZ*STEDI          *01*117151744      *260719*1814*^*00501*823772268*0*P*`~GS*HB*STEDI*117151744*20260719*1315*823772268*X*005010X279A1~ST*271*823772268*005010X279A1~BHT*0022*11*01KXXSDB1K05GE4WMC9HDJQQ0T*20260719*141501~HL*1**20*1~NM1*PR*2*UNITEDHEALTHCARE DENTAL*****PI*52133~HL*2*1*21*1~NM1*1P*2*GHASEM DARIAN*****XX*1942363775~HL*3*2*22*0~TRN*1*01KXXSDB25VYR7FK33WWC97E77*3117151744~NM1*IL*1*MASCARI*SHARON*L***MI*942466921~REF*6P*74191~N3*6211 E THORNE LN~N4*PRESCOTT VALLEY*AZ*86314~DMG*D8*19440928*F~DTP*346*D8*20260101~EB*R~REF*F6*8T73PA2CY05~EB*1**30*PR*LPPO-AARP MEDICARE ADVANTAGE FROM UHC AZ-0008 (PPO******Y~REF*N6*H2406-063-000~MSG*A PRIOR AUTHORIZATION OR NOTIFICATION INQUIRY REQUEST MAY BE SUBMITTED~MSG*ACCESS TO MEDICARE NATIONAL NETWORK~LS*2120~NM1*PRP*2*UNITEDHEALTHCARE*****PI*87726~N3*UNITEDHEALTHCARE*P.O. BOX 31362~N4*SALT LAKE CITY*UT*841310362~PER*IC**UR*WWW.UHCPROVIDER.COM~LE*2120~EB*G*IND*30*PR**23*10100*****W~MSG*COMBINED~EB*G*IND*30*PR**24*778.34*****W~MSG*COMBINED~EB*G*IND*30*PR**29*9321.66*****W~MSG*COMBINED~EB*G*IND*30*PR**24*778.34*****Y~EB*G*IND*30*PR**29*5121.66*****Y~EB*G*IND*30*PR**23*5900*****Y~EB*L~LS*2120~NM1*P3*1*HECKEL HICKS*KATHLEEN****XX*1780918037~N3*474 N HIGHWAY 89~N4*CHINO VALLEY*AZ*86323~PER*IC**TE*9286365680*FX*9286365853~PRV*PC*PXC*363LF0000X~LE*2120~EB*1**50*********W~MSG*OUTPATIENT SURGERY~EB*1**AL*********W~MSG*ROUTINE EYE EXAM~EB*1**96*********W~MSG*OFFICE VISIT SPECIALIST~EB*1**50*********W~MSG*OUTPATIENT HOSPITAL~EB*1**1^33^47^48^86^98^MH^PT^UC*********W~EB*A*IND*48***7**0****Y~HSD*****29~EB*A*IND*48***7**0****Y~HSD*****31*7~EB*A*IND*9***27**0****Y~MSG*VIRTUAL VISITS/TELEMEDICINE~EB*A*IND*33^86^PT^UC***7**0****W~EB*A*IND*50***7**0****Y~MSG*OUTPATIENT SURGERY~EB*A*IND*98***7**0****N~EB*A*IND*96***7**0****W~MSG*OFFICE VISIT SPECIALIST~EB*A*IND*9***7**0****N~MSG*VIRTUAL VISITS/TELEMEDICINE~EB*A*IND*50***7**.4****N~MSG*OUTPATIENT HOSPITAL~EB*A*IND*50***7**.4****N~MSG*OUTPATIENT SURGERY~EB*A*IND*48***7**.4****N~EB*A*IND*50***7**0****Y~MSG*OUTPATIENT HOSPITAL~EB*A*IND*98***27**0****Y~EB*B*IND*48***7*395*****Y~HSD*****31*7~EB*B*IND*48***7*0*****Y~HSD*****29~EB*B*IND*33^PT***7*85*****N~EB*B*IND*50***7*0*****N~MSG*OUTPATIENT SURGERY~EB*B*IND*96***7*85*****N~MSG*OFFICE VISIT SPECIALIST~EB*B*IND*PT***7*45*****Y~EB*B*IND*98***7*35*****N~EB*B*IND*98***27*0*****Y~EB*B*IND*33***7*15*****Y~EB*B*IND*48***7*0*****N~EB*B*IND*50***7*395*****Y~MSG*OUTPATIENT HOSPITAL~EB*B*IND*9***7*35*****N~MSG*VIRTUAL VISITS/TELEMEDICINE~EB*B*IND*9***7*40*****N~MSG*VIRTUAL VISITS/TELEMEDICINE~EB*B*IND*50***7*395*****Y~MSG*OUTPATIENT SURGERY~EB*B*IND*86***7*130*****W~EB*B*IND*96***7*45*****Y~MSG*OFFICE VISIT SPECIALIST~EB*B*IND*9***27*0*****Y~MSG*VIRTUAL VISITS/TELEMEDICINE~EB*B*IND*50***7*0*****N~MSG*OUTPATIENT HOSPITAL~EB*B*IND*UC***7*50*****W~EB*U**88~LS*2120~NM1*VN*2*OPTUMRX~PER*IC**UR*PROFESSIONALS.OPTUMRX.COM~LE*2120~EB*U**35~LS*2120~NM1*VN*2*UNITEDHEALTHCARE DENTAL~PER*IC**UR*WWW.DBP.COM~LE*2120~EB*X~LS*2120~NM1*1P*2*GHASEM DARIAN*****XX*1942363775~LE*2120~SE*119*823772268~GE*1*823772268~IEA*1*823772268~",
+   "eligibilitySearchId": "019f7b96-ac33-7c81-ba9e-ad375e7ed1ba",
+   "id": "ec_019f7b96-ac32-78c3-949c-b0145e5427db"
+  }
+ }
+}

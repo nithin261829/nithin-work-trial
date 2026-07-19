@@ -3,12 +3,12 @@ Carl Thompson,D6104,"Bone Graft, Implant Placement",5,279.00,0.00,279.00,payer l
 Carl Thompson,D6104,"Bone Graft, Implant Placement",4,279.00,0.00,279.00,payer lists this code as non-covered,per-code,,
 Carl Thompson,D7140,"Extract,erupted th/exposed rt",5,70.00,56.00,14.00,per-code coinsurance 20% patient share,per-code,,
 Carl Thompson,D7140,"Extract,erupted th/exposed rt",4,70.00,56.00,14.00,per-code coinsurance 20% patient share,per-code,,
-El-khatib Suzy,D2954,Prefab post/core in add to crn,19,160.00,80.00,80.00,per-code coinsurance 50% patient share,per-code,,Y
+El-khatib Suzy,D2954,Prefab post/core in add to crn,19,160.00,55.00,105.00,"per-code coinsurance 50% patient share, $50 deductible",per-code,,Y
 El-khatib Suzy,D2740,Crown - porcelain/ceramic,19,1003.00,501.50,501.50,per-code coinsurance 50% patient share,per-code,,Y
 El-khatib Suzy,D2954,Prefab post/core in add to crn,13,160.00,80.00,80.00,per-code coinsurance 50% patient share,per-code,,Y
 El-khatib Suzy,D2740,Crown - porcelain/ceramic,13,1003.00,501.50,501.50,per-code coinsurance 50% patient share,per-code,,Y
 El-khatib Suzy,D2954,Prefab post/core in add to crn,12,160.00,80.00,80.00,per-code coinsurance 50% patient share,per-code,,Y
-El-khatib Suzy,D2740,Crown - porcelain/ceramic,12,1003.00,159.00,844.00,per-code coinsurance 50% patient share (annual max reached),per-code,,Y
+El-khatib Suzy,D2740,Crown - porcelain/ceramic,12,1003.00,184.00,819.00,per-code coinsurance 50% patient share (annual max reached),per-code,,Y
 Robert Frieling,D2332,"Resin-three surfaces, anterior",27,125.00,125.00,0.00,per-code copay $0,per-code,,
 Robert Frieling,D2332,"Resin-three surfaces, anterior",26,125.00,125.00,0.00,per-code copay $0,per-code,,
 Robert Frieling,D2332,"Resin-three surfaces, anterior",25,125.00,125.00,0.00,per-code copay $0,per-code,,
@@ -19,7 +19,7 @@ Robert Frieling,D2332,"Resin-three surfaces, anterior",11,125.00,125.00,0.00,per
 Marisa Delmonte,D6057,Custom abutment-incl placement,18,752.00,0.00,752.00,no benefit info - assume full fee,conservative,,
 Marisa Delmonte,D6010,Surgical Placement of Implant,18,1819.00,0.00,1819.00,no benefit info - assume full fee,conservative,,
 Marisa Delmonte,D6057,Custom abutment-incl placement,30,752.00,0.00,752.00,no benefit info - assume full fee,conservative,,
-Marisa Delmonte,D6065,Implant supp porc/cer crown,30,802.00,401.00,401.00,per-code coinsurance 50% patient share,per-code,,
+Marisa Delmonte,D6065,Implant supp porc/cer crown,30,802.00,376.00,426.00,"per-code coinsurance 50% patient share, $50 deductible",per-code,,
 Kelly Carruthers,D2394,"Resin composite-4+s, posterior",3,179.00,0.00,179.00,per-code coinsurance 100% patient share,per-code,,
 Patricia Salinas,D3310,Endodontic therapy - anterior,2,0.00,0.00,0.00,no active coverage - full fee,certain,,
 Patricia Salinas,D2950,"Core buildup, include any pins",30,80.00,0.00,80.00,no active coverage - full fee,certain,,
@@ -68,5 +68,5 @@ Barbara Paul,D2950,"Core buildup, include any pins",8,166.00,166.00,0.00,per-cod
 Barbara Paul,D2740,Crown - porcelain/ceramic,8,843.00,843.00,0.00,per-code coinsurance 0% patient share,per-code,,
 Barbara Paul,D2950,"Core buildup, include any pins",9,161.00,161.00,0.00,per-code coinsurance 0% patient share,per-code,,
 Barbara Paul,D2740,Crown - porcelain/ceramic,9,843.00,843.00,0.00,per-code coinsurance 0% patient share,per-code,,
-Zvonko Nikolich,D2950,"Core buildup, include any pins",13,135.00,67.50,67.50,per-code coinsurance 50% patient share,per-code,,
+Zvonko Nikolich,D2950,"Core buildup, include any pins",13,135.00,42.50,92.50,"per-code coinsurance 50% patient share, $50 deductible",per-code,,
 Zvonko Nikolich,D2740,Crown - porcelain/ceramic,13,740.00,370.00,370.00,per-code coinsurance 50% patient share,per-code,,

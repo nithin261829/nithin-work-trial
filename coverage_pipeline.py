@@ -561,6 +561,20 @@ def estimate_patient(patient, benefits, fallback, no_coverage=False):
             return ded_by_stc[stc]
         return None  # unknown at category level -> use the shared plan deductible
 
+    def apply_coinsurance(fee, share, stc):
+        """Patient share for a coinsurance procedure, consuming the deductible for
+        this category. Returns (patient_amount, deductible_used)."""
+        nonlocal ded_left
+        cat_ded = category_deductible(stc)
+        pool = cat_ded if cat_ded is not None else ded_left
+        ded_use = min(pool, fee) if (share < 1 and pool > 0) else 0
+        covered = max(fee - ded_use, 0) * (1 - share)
+        if cat_ded is not None:
+            ded_by_stc[stc] = max(cat_ded - ded_use, 0)
+        else:
+            ded_left -= ded_use
+        return round(fee - covered, 2), ded_use
+
     for proc in patient["pending"]:
         fee, code = proc["fee"], proc["code"]
         stc = cdt_to_stc(code)
@@ -576,28 +590,16 @@ def estimate_patient(patient, benefits, fallback, no_coverage=False):
                 pat_amt = fee
                 basis = "payer lists this code as non-covered"
             elif "coins" in e:
-                pat_amt = round(fee * e["coins"], 2)
-                basis = f"per-code coinsurance {e['coins']:.0%} patient share"
+                pat_amt, ded_use = apply_coinsurance(fee, e["coins"], stc)
+                deducted = f", ${ded_use:.0f} deductible" if ded_use else ""
+                basis = f"per-code coinsurance {e['coins']:.0%} patient share{deducted}"
             else:
                 pat_amt = min(e["copay"], fee) if fee else e["copay"]
                 basis = f"per-code copay ${e['copay']:.0f}"
         elif coins:
             share = coins.get(stc, coins.get("35"))
             if share is not None:
-                # deductible: apply only for categories that actually charge one
-                cat_ded = category_deductible(stc)
-                pool = cat_ded if cat_ded is not None else ded_left
-                if share < 1 and pool > 0:
-                    ded_use = min(pool, fee)
-                else:
-                    ded_use = 0  # exempt category, or 100% patient share
-                covered = max(fee - ded_use, 0) * (1 - share)
-                pat_amt = round(fee - covered, 2)
-                # decrement whichever deductible pool we drew from
-                if cat_ded is not None:
-                    ded_by_stc[stc] = max(cat_ded - ded_use, 0)
-                else:
-                    ded_left -= ded_use
+                pat_amt, ded_use = apply_coinsurance(fee, share, stc)
                 deducted = f", ${ded_use:.0f} deductible" if ded_use else ""
                 basis = f"{STC_NAMES.get(stc, stc)} coinsurance {share:.0%} patient share{deducted}"
                 conf = "web-estimate" if fallback else "category"

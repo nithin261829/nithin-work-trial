@@ -327,6 +327,8 @@ class StediAgent:
         # basic/major). Lets us apply the deductible only where it actually bites.
         ded_by_stc = {}
         alt_benefit_stcs = set()  # categories flagged "ALTERNATE BENEFITS MAY APPLY"
+        secondary_payers = []     # code R = Other/Additional Payor (secondary coverage)
+        freq_limits = {}          # CDT code -> {"quantity": n, "months": window}
         active = inactive = False
 
         for b in resp.get("benefitsInformation", []):
@@ -341,6 +343,36 @@ class StediAgent:
 
             if code == "1": active = True
             if code == "6": inactive = True
+
+            # code R = a second payer on this member (secondary insurance / COB)
+            if code == "R":
+                for ent in ([b.get("benefitsRelatedEntity")] + (b.get("benefitsRelatedEntities") or [])):
+                    nm = (ent or {}).get("entityName")
+                    if nm and nm not in secondary_payers:
+                        secondary_payers.append(nm)
+
+            # frequency limitations: "F" rows carry a quantity + a time window, in
+            # two shapes - benefitQuantity (+ timeQualifier), or benefitsServiceDelivery
+            fcode = (b.get("compositeMedicalProcedureIdentifier") or {}).get("procedureCode")
+            if code == "F" and fcode:
+                qty = months = None
+                if b.get("benefitQuantity"):
+                    try:
+                        qty = int(float(b["benefitQuantity"]))
+                    except ValueError:
+                        qty = None
+                    tq = (b.get("timeQualifier") or "").lower()
+                    months = 12 if ("year" in tq or "calendar" in tq) else 12
+                for sd in (b.get("benefitsServiceDelivery") or []):
+                    try:
+                        qty = int(float(sd.get("quantity", qty or 1)))
+                        n = int(float(sd.get("numOfPeriods", 1)))
+                    except (ValueError, TypeError):
+                        continue
+                    unit = (sd.get("timePeriodQualifier") or "").lower()
+                    months = n * (12 if "year" in unit else 1 if "month" in unit else 12)
+                if qty and months and (fcode not in freq_limits or months > freq_limits[fcode]["months"]):
+                    freq_limits[fcode] = {"quantity": qty, "months": months}
 
             # alternate-benefit (downgrade) disclaimer - the payer reserves the
             # right to pay a premium procedure at a cheaper alternative's rate
@@ -418,6 +450,8 @@ class StediAgent:
             "deductible": ded_rem if ded_rem is not None else ded_cal,
             "deductible_by_stc": ded_by_stc,
             "alt_benefit_stcs": alt_benefit_stcs,
+            "secondary_payers": secondary_payers,
+            "freq_limits": freq_limits,
             "annual_max": max_cal,
             # trust a Remaining value (even $0 = exhausted) only when it is positive
             # or the plan reported a positive annual max; bare $0s are placeholders
@@ -528,16 +562,48 @@ def estimate_patient(patient, benefits, fallback, no_coverage=False):
     detail, notes = [], []
     ins_total = oop_total = 0.0
 
-    ded_by_stc, alt_stcs = {}, set()
+    ded_by_stc, alt_stcs, freq_limits = {}, set(), {}
     if benefits:
         coins = benefits["coins"] or None
         percode = benefits["percode"]
         ded_left = benefits["deductible"] or 0
         ded_by_stc = dict(benefits.get("deductible_by_stc") or {})
         alt_stcs = set(benefits.get("alt_benefit_stcs") or set())
+        freq_limits = benefits.get("freq_limits") or {}
         max_left = benefits["annual_max_remaining"]
+        # secondary insurance (code R) - a second payer may cover part of the
+        # patient's share; we estimate against the primary only, so real OOP is lower
+        for sp in benefits.get("secondary_payers") or []:
+            notes.append(f"has SECONDARY coverage ({sp}) - estimate is primary-only; "
+                         "actual out-of-pocket is likely LOWER after coordination of benefits")
     else:
         coins, percode, ded_left, max_left = None, {}, 0, 0
+
+    # frequency cross-check: how many times has each code been completed within its
+    # limit window (ending today)? If the quota is used up, a repeat likely isn't covered.
+    from datetime import date
+    TODAY = date(2026, 7, 19)
+    completed = patient.get("completed", [])
+
+    def frequency_exhausted(code, tooth):
+        lim = freq_limits.get(code)
+        if not lim:
+            return False
+        cutoff_ordinal = TODAY.toordinal() - int(lim["months"] * 30.44)
+        used = 0
+        for c in completed:
+            if c["code"] != code:
+                continue
+            # per-tooth procedures (crowns/buildups/fillings) count only the same tooth
+            if tooth and c.get("tooth") and c["tooth"] != tooth:
+                continue
+            ds = (c.get("date") or "")[:10]
+            try:
+                if date.fromisoformat(ds).toordinal() >= cutoff_ordinal:
+                    used += 1
+            except ValueError:
+                continue
+        return used >= lim["quantity"]
     if fallback:
         coins, ded_left, max_left = fallback[0], fallback[1], fallback[2]
         percode = {}
@@ -579,9 +645,16 @@ def estimate_patient(patient, benefits, fallback, no_coverage=False):
         fee, code = proc["fee"], proc["code"]
         stc = cdt_to_stc(code)
         pat_amt, basis, conf = None, "", ""
-        alt_flag = ""
+        alt_flag = freq_flag = ""
 
-        if stc is None:
+        # frequency limit already used up this window -> payer denies, patient owes full
+        if frequency_exhausted(code, proc.get("tooth")):
+            lim = freq_limits[code]
+            pat_amt = fee
+            basis = f"frequency limit reached ({lim['quantity']} per {lim['months']}mo) - not covered"
+            conf = "per-code"
+            freq_flag = "Y"
+        elif stc is None:
             pat_amt, basis, conf = fee, "house/lab code - not billable to insurance", "certain"
         elif code in percode:
             conf = "per-code"
@@ -634,6 +707,7 @@ def estimate_patient(patient, benefits, fallback, no_coverage=False):
             "basis": basis, "confidence": conf,
             "prior_auth_required": "Y" if percode.get(code, {}).get("prior_auth") else "",
             "alt_benefit_downgrade_risk": alt_flag,
+            "frequency_limit_reached": freq_flag,
         })
     return ins_total, oop_total, detail, notes
 

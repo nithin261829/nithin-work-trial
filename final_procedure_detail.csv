@@ -5,16 +5,16 @@ Carl Thompson,D7140,"Extract,erupted th/exposed rt",5,70.00,56.00,14.00,per-code
 Carl Thompson,D7140,"Extract,erupted th/exposed rt",4,70.00,56.00,14.00,per-code coinsurance 20% patient share,per-code,,,,Y
 Carl Thompson,1111,Send case back to lab,,0.00,0.00,0.00,house/lab code - not billable to insurance,certain,,,,
 Carl Thompson,D2391,"Resin composite-1s, posterior",14,92.00,43.20,48.80,per-code coinsurance 20% patient share; LEAT downgrade to D2140 (allowed $54) +$30,estimate-downgrade,,Y,,
-Carl Thompson,D2950,"Core buildup, include any pins",11,145.00,72.50,72.50,per-code coinsurance 50% patient share,per-code,,,,Y
+Carl Thompson,D2950,"Core buildup, include any pins",11,145.00,72.50,72.50,per-code coinsurance 50% patient share,per-code,,Y,,Y
 Carl Thompson,D2740,Crown - porcelain/ceramic,11,1003.00,261.50,741.50,per-code coinsurance 50% patient share; LEAT downgrade to D2790 (allowed $523) +$240,estimate-downgrade,,Y,,Y
-Carl Thompson,D2950,"Core buildup, include any pins",10,145.00,72.50,72.50,per-code coinsurance 50% patient share,per-code,,,,Y
+Carl Thompson,D2950,"Core buildup, include any pins",10,145.00,72.50,72.50,per-code coinsurance 50% patient share,per-code,,Y,,Y
 Carl Thompson,D2740,Crown - porcelain/ceramic,10,1003.00,261.50,741.50,per-code coinsurance 50% patient share; LEAT downgrade to D2790 (allowed $523) +$240,estimate-downgrade,,Y,,Y
 El-khatib Suzy,D9944,"Occlusal guard- hard, full arch",,373.00,161.50,211.50,"per-code coinsurance 50% patient share, $50 deductible",per-code,,,,
-El-khatib Suzy,D2954,Prefab post/core in add to crn,19,160.00,80.00,80.00,per-code coinsurance 50% patient share,per-code,,,,
+El-khatib Suzy,D2954,Prefab post/core in add to crn,19,160.00,80.00,80.00,per-code coinsurance 50% patient share,per-code,,Y,,
 El-khatib Suzy,D2740,Crown - porcelain/ceramic,19,1003.00,372.50,630.50,per-code coinsurance 50% patient share; LEAT downgrade to D2790 (allowed $745) +$129,estimate-downgrade,,Y,,
-El-khatib Suzy,D2954,Prefab post/core in add to crn,13,160.00,80.00,80.00,per-code coinsurance 50% patient share,per-code,,,,
+El-khatib Suzy,D2954,Prefab post/core in add to crn,13,160.00,80.00,80.00,per-code coinsurance 50% patient share,per-code,,Y,,
 El-khatib Suzy,D2740,Crown - porcelain/ceramic,13,1003.00,372.50,630.50,per-code coinsurance 50% patient share; LEAT downgrade to D2790 (allowed $745) +$129,estimate-downgrade,,Y,,
-El-khatib Suzy,D2954,Prefab post/core in add to crn,12,160.00,80.00,80.00,per-code coinsurance 50% patient share,per-code,,,,
+El-khatib Suzy,D2954,Prefab post/core in add to crn,12,160.00,80.00,80.00,per-code coinsurance 50% patient share,per-code,,Y,,
 El-khatib Suzy,D2740,Crown - porcelain/ceramic,12,1003.00,255.50,747.50,per-code coinsurance 50% patient share; LEAT downgrade to D2790 (allowed $745) +$129 (annual max reached),estimate-downgrade,,Y,,
 Robert Frieling,D2332,"Resin-three surfaces, anterior",27,125.00,125.00,0.00,per-code copay $0,per-code,,,,
 Robert Frieling,D2332,"Resin-three surfaces, anterior",26,125.00,125.00,0.00,per-code copay $0,per-code,,,,
@@ -113,8 +113,8 @@ Rachel Iniguez,D4921,Gingival Irrigation - Per Quad,,25.00,0.00,25.00,no benefit
 Rachel Iniguez,D4921,Gingival Irrigation - Per Quad,,25.00,0.00,25.00,no benefit info - assume full fee,conservative,,,,
 Charles Ellis,D0230,Intraoral-periapical each add'l,,6.00,6.00,0.00,per-code coinsurance 0% patient share,per-code,,,,
 Charles Ellis,D0220,Intraoral Periapical Images,,12.00,12.00,0.00,per-code coinsurance 0% patient share,per-code,,,,
-Charles Ellis,D5120,Complete denture - mandibular,,878.00,439.00,439.00,per-code coinsurance 50% patient share,per-code,,,,Y
-Charles Ellis,D5110,Complete denture - maxillary,,878.00,439.00,439.00,per-code coinsurance 50% patient share,per-code,,,,Y
+Charles Ellis,D5120,Complete denture - mandibular,,878.00,439.00,439.00,per-code coinsurance 50% patient share,per-code,,Y,,Y
+Charles Ellis,D5110,Complete denture - maxillary,,878.00,439.00,439.00,per-code coinsurance 50% patient share,per-code,,Y,,Y
 Roman Gomez Espinosa,D2000,Crown Lab Fee,20,450.00,0.00,450.00,no benefit info - assume full fee,conservative,,,,
 Roman Gomez Espinosa,D2000,Crown Lab Fee,2,450.00,0.00,450.00,no benefit info - assume full fee,conservative,,,,
 Roman Gomez Espinosa,D5214,Mand partl-cast metal w/resin,,650.00,200.00,450.00,per-code copay $450,per-code,,,,Y

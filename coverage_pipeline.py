@@ -792,12 +792,14 @@ def estimate_patient(patient, benefits, fallback, no_coverage=False, fee_schedul
         # cheaper alternative's allowed amount in the patient's carrier fee schedule,
         # SIZE it: insurance pays coinsurance on the alternative's allowance, patient
         # pays the rest (their coinsurance share + the full material difference).
-        downgradeable = code in DOWNGRADE_MAP
-        if ((plan_wide_alt or stc in alt_stcs) and downgradeable
+        # flag broadly (any covered crown/onlay/prostho or posterior composite under an
+        # alternate-benefit plan); SIZE only when we have the alternative's allowance
+        flaggable = code in {"D2391", "D2392", "D2393", "D2394"} or stc in ("36", "39")
+        if ((plan_wide_alt or stc in alt_stcs) and flaggable
                 and applied_share is not None and pat_amt is not None and pat_amt < fee):
             alt_flag = "Y"
             alt_code = DOWNGRADE_MAP.get(code)
-            alt_allowed = fee_schedule.get(alt_code)
+            alt_allowed = fee_schedule.get(alt_code) if alt_code else None
             if alt_allowed and alt_allowed < fee:
                 new_ins = round(alt_allowed * (1 - applied_share), 2)
                 new_pat = round(fee - new_ins, 2)
@@ -933,6 +935,14 @@ def main():
             "pending_total_fee": f"{pending_total:.2f}",
             "est_insurance_pays": f"{ins_pays:.2f}",
             "est_patient_out_of_pocket": f"{oop:.2f}",
+            # scannable flag columns (details live in notes / procedure_detail.csv)
+            "has_secondary_coverage": "Y" if (benefits and benefits.get("secondary_payers")) else "",
+            "waiting_period_risk": "Y" if any(d.get("waiting_period_risk") == "Y" for d in detail) else "",
+            "downgrade_risk": ("sized" if any(d.get("confidence") == "estimate-downgrade" for d in detail)
+                               else "flag" if any(d.get("alt_benefit_downgrade_risk") == "Y" for d in detail)
+                               else ""),
+            "frequency_denial": "Y" if any(d.get("frequency_limit_reached") == "Y" for d in detail) else "",
+            "prior_auth_needed": "Y" if any(d.get("prior_auth_required") == "Y" for d in detail) else "",
             "notes": "; ".join(notes),
         })
 

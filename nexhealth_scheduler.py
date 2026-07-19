@@ -54,20 +54,17 @@ STATE_PATH = os.path.join(CACHE_DIR, "state.json")
 START_DATE = os.environ.get("SCHEDULE_START_DATE", "2026-07-20")  # first day to offer
 SEARCH_DAYS = 10
 
-# category -> (appointment type name, minutes, must_start_before_3pm)
+# category -> (appointment type name, minutes, must_start_before_cutoff)
 # None means the practice does not perform this treatment.
-RULES = {
-    "implant": None,                                # we don't do them here
-    "bridge": ("Bridge Work", 120, True),
-    "crown": ("Crown", 90, True),
-    "root_canal": ("Root Canal (120 min)", 120, True),
-    "veneer": ("Veneer", 90, True),
-    "extraction": ("Extraction (60 min)", 60, False),
-    "filling": ("Filling (60 min)", 60, False),
-    "denture": ("Denture/Partial Visit", 30, False),  # exam/post-op/impressions
-    "sealant": ("Sealant/Space Maintainer", 30, False),
-    "consultation": ("Consultation", 30, False),
-}
+# Loaded from scheduling_rules.yaml - the single source of truth shared with
+# the web assistant.
+import yaml
+
+_rules_doc = yaml.safe_load(open(os.path.join(DATA_DIR, "scheduling_rules.yaml")))
+_cutoff_cats = set(_rules_doc["afternoon_cutoff"]["applies_to"])
+RULES = {cat: None for cat in _rules_doc["not_offered"]}
+RULES.update({cat: (a["type_name"], a["minutes"], cat in _cutoff_cats)
+              for cat, a in _rules_doc["appointments"].items()})
 # patients.csv stores names as they appear in the PMS; these are surname-first
 NAME_ORDER_FIX = {"El-khatib Suzy": ("Suzy", "El-khatib"),
                   "Gonzales Jesse": ("Jesse", "Gonzales")}

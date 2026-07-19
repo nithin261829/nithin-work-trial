@@ -1,0 +1,34 @@
+* { box-sizing: border-box; margin: 0; }
+body { font-family: -apple-system, 'Segoe UI', Roboto, sans-serif; background: #f4f6f8; color: #1a2733; }
+
+.app { display: grid; grid-template-columns: 300px 1fr; height: 100vh; }
+
+.sidebar { background: #10304a; color: #eaf2f8; padding: 18px; overflow-y: auto; }
+.sidebar h1 { font-size: 17px; margin-bottom: 14px; }
+.sidebar h2 { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; opacity: .7; margin: 16px 0 8px; }
+.rules ul { list-style: none; font-size: 12.5px; line-height: 1.9; }
+.rules li::before { content: '• '; opacity: .6; }
+
+.patients { display: flex; flex-direction: column; gap: 6px; }
+.patient { display: flex; align-items: center; gap: 8px; width: 100%; border: 0; border-radius: 8px;
+  padding: 8px 10px; background: #1b4265; color: #eaf2f8; cursor: pointer; font-size: 12.5px; text-align: left; }
+.patient:hover { background: #245380; }
+.pname { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.pill { font-size: 10px; padding: 2px 7px; border-radius: 99px; background: #2e6da4; }
+.pill.warn { background: #a4562e; }
+.oop { font-variant-numeric: tabular-nums; font-size: 11.5px; opacity: .85; }
+
+.chat { display: flex; flex-direction: column; height: 100vh; }
+.messages { flex: 1; overflow-y: auto; padding: 26px 8%; display: flex; flex-direction: column; gap: 12px; }
+.msg { max-width: 72ch; padding: 12px 16px; border-radius: 14px; line-height: 1.55; font-size: 14.5px; white-space: pre-wrap; }
+.msg.user { align-self: flex-end; background: #10304a; color: #fff; border-bottom-right-radius: 4px; }
+.msg.assistant { align-self: flex-start; background: #fff; box-shadow: 0 1px 3px rgba(16,48,74,.12); border-bottom-left-radius: 4px; }
+.msg.typing { opacity: .5; }
+
+.composer { display: flex; gap: 10px; padding: 16px 8% 22px; background: linear-gradient(transparent, #f4f6f8 40%); }
+.composer input { flex: 1; padding: 13px 16px; border: 1px solid #cdd8e0; border-radius: 12px; font-size: 14.5px; outline: none; background: #fff; }
+.composer input:focus { border-color: #2e6da4; }
+.composer button { padding: 0 22px; border: 0; border-radius: 12px; background: #10304a; color: #fff; font-size: 14.5px; cursor: pointer; }
+.composer button:disabled { opacity: .45; cursor: default; }
+
+@media (max-width: 760px) { .app { grid-template-columns: 1fr; } .sidebar { display: none; } }

@@ -445,6 +445,15 @@ def main():
                 covstat, source, benefits = "ACTIVE (verified via Stedi)", "stedi_live", parsed
                 if parsed["percode"]:
                     source += " (per-procedure schedule)"
+                # some payers (UHC) omit the annual max from the 271, but plan names
+                # like "UHC 1000" or "UHC 5000-100-50-50" carry it; DHMO plans have
+                # no max at all, so only infer when the plan uses coinsurance
+                if parsed["annual_max_remaining"] is None and parsed["coins"]:
+                    m = re.search(r"\b([1-9]\d{3})\b", ins["carrier"])
+                    if m:
+                        parsed["annual_max_remaining"] = float(m.group(1))
+                        notes.append(f"annual max ${m.group(1)} inferred from plan name "
+                                     "(payer did not report it; assumes none used this year)")
             else:
                 # payer refused (e.g. Aetna without enrolled NPI) -> OpenAI web fallback
                 errs = "; ".join(e.get("description", "")[:60] for e in resp.get("errors", []))

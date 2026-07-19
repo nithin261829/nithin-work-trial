@@ -14,13 +14,56 @@ export default function App() {
   const [busy, setBusy] = useState(false)
   const [patients, setPatients] = useState([])
   const [rules, setRules] = useState(null)
+  const [token, setToken] = useState(() => sessionStorage.getItem('staffToken') || '')
+  const [needAuth, setNeedAuth] = useState(null) // null=unknown, true/false
+  const [pw, setPw] = useState('')
+  const [loginErr, setLoginErr] = useState('')
   const sessionId = useRef(`web-${Math.random().toString(36).slice(2)}`)
   const bottom = useRef(null)
 
+  const authed = needAuth === false || (needAuth === true && token)
+
+  function authHeaders() {
+    return token ? { Authorization: `Bearer ${token}` } : {}
+  }
+
   useEffect(() => {
-    fetch(`${API}/api/patients`).then(r => r.json()).then(setPatients).catch(() => {})
-    fetch(`${API}/api/rules`).then(r => r.json()).then(setRules).catch(() => {})
+    fetch(`${API}/api/auth_required`)
+      .then(r => r.json())
+      .then(d => setNeedAuth(d.required))
+      .catch(() => setNeedAuth(false))
   }, [])
+
+  useEffect(() => {
+    if (!authed) return
+    fetch(`${API}/api/patients`, { headers: authHeaders() })
+      .then(r => (r.ok ? r.json() : []))
+      .then(setPatients)
+      .catch(() => {})
+    fetch(`${API}/api/rules`).then(r => r.json()).then(setRules).catch(() => {})
+  }, [authed, token])
+
+  async function login(e) {
+    e.preventDefault()
+    setLoginErr('')
+    try {
+      const r = await fetch(`${API}/api/login`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ password: pw }),
+      })
+      if (!r.ok) {
+        setLoginErr('Incorrect password')
+        return
+      }
+      const { token: t } = await r.json()
+      sessionStorage.setItem('staffToken', t)
+      setToken(t)
+      setPw('')
+    } catch {
+      setLoginErr('Login failed — is the backend running?')
+    }
+  }
 
   useEffect(() => {
     bottom.current?.scrollIntoView({ behavior: 'smooth' })
@@ -35,9 +78,14 @@ export default function App() {
     try {
       const r = await fetch(`${API}/api/chat`, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json', ...authHeaders() },
         body: JSON.stringify({ session_id: sessionId.current, message }),
       })
+      if (r.status === 401) {
+        sessionStorage.removeItem('staffToken')
+        setToken('')
+        return
+      }
       const data = await r.json()
       setMessages(m => [
         ...m,
@@ -61,6 +109,31 @@ export default function App() {
       `Book the ${slot.label} slot (category ${slot.category}, start_time ${slot.start}, provider_id ${slot.provider_id}${
         slot.operatory_id ? `, operatory_id ${slot.operatory_id}` : ''
       }). Yes, that time is confirmed.`,
+    )
+  }
+
+  if (needAuth === null) return <div className="loading">Loading…</div>
+
+  if (needAuth && !token) {
+    return (
+      <div className="login-screen">
+        <form className="login-card" onSubmit={login}>
+          <h1>🦷 Green River Dental</h1>
+          <p>Staff scheduling assistant</p>
+          <input
+            type="password"
+            placeholder="Staff password"
+            value={pw}
+            onChange={e => setPw(e.target.value)}
+            autoFocus
+          />
+          <button type="submit">Sign in</button>
+          {loginErr && <div className="login-err">{loginErr}</div>}
+          <div className="login-note">
+            This tool shows protected patient information and is for authorized staff only.
+          </div>
+        </form>
+      </div>
     )
   }
 

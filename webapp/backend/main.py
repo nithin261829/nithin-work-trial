@@ -46,6 +46,48 @@ OPENAI_MODEL = os.environ.get("OPENAI_MODEL", "gpt-4o")
 app = FastAPI(title="Green River Dental scheduling assistant")
 app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])
 
+# Staff auth gate. This is a front-desk tool that shows PHI (patient names,
+# balances), so every data endpoint requires a staff token. Set STAFF_PASSWORD;
+# staff POST it to /api/login and send the returned token as Bearer on each call.
+import hashlib
+import hmac
+import secrets
+from fastapi import Depends, Header, HTTPException
+
+STAFF_PASSWORD = os.environ.get("STAFF_PASSWORD", "")
+_SERVER_SECRET = os.environ.get("SESSION_SECRET") or secrets.token_hex(16)
+_SESSION_TOKENS: set[str] = set()
+
+
+def _issue_token() -> str:
+    tok = secrets.token_urlsafe(24)
+    _SESSION_TOKENS.add(hashlib.sha256(tok.encode()).hexdigest())
+    return tok
+
+
+def require_staff(authorization: str = Header(default="")):
+    if not STAFF_PASSWORD:
+        return  # auth disabled only when no password configured (local dev)
+    tok = authorization.removeprefix("Bearer ").strip()
+    if hashlib.sha256(tok.encode()).hexdigest() not in _SESSION_TOKENS:
+        raise HTTPException(status_code=401, detail="staff login required")
+
+
+class LoginIn(BaseModel):
+    password: str
+
+
+@app.post("/api/login")
+def login(inp: LoginIn):
+    if not STAFF_PASSWORD or not hmac.compare_digest(inp.password, STAFF_PASSWORD):
+        raise HTTPException(status_code=401, detail="incorrect password")
+    return {"token": _issue_token()}
+
+
+@app.get("/api/auth_required")
+def auth_required():
+    return {"required": bool(STAFF_PASSWORD)}
+
 
 # ----------------------------------------------------------------------------- data
 def _read(name):
@@ -489,7 +531,7 @@ class ChatIn(BaseModel):
 
 
 @app.post("/api/chat")
-def chat(inp: ChatIn):
+def chat(inp: ChatIn, _=Depends(require_staff)):
     from openai import OpenAI
     client = OpenAI()
     history = SESSIONS.setdefault(inp.session_id, [{"role": "system", "content": SYSTEM_PROMPT}])
@@ -520,7 +562,7 @@ def chat(inp: ChatIn):
 
 
 @app.get("/api/patients")
-def patients():
+def patients(_=Depends(require_staff)):
     return [{"name": k,
              "category": r["treatment_category"],
              "coverage": r["coverage_status"],

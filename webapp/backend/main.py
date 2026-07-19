@@ -235,6 +235,7 @@ def chat(inp: ChatIn, s: dict = Depends(session)):
                     "insurance_pays": result.get("insurance_pays_estimate"),
                     "patient_oop": result.get("patient_out_of_pocket_estimate"),
                     "lines": result.get("per_procedure"),
+                    "downgrade_exposure_if_applied": result.get("downgrade_exposure_if_applied"),
                     "flags": {k: result.get(k) for k in
                               ("has_secondary_coverage", "waiting_period_risk",
                                "downgrade_risk", "frequency_denial") if result.get(k)},

@@ -197,10 +197,17 @@ export default function App() {
                     </tr>
                   </tfoot>
                 </table>
+                {+m.breakdown.downgrade_exposure_if_applied > 0 && (
+                  <div className="bk-exposure">
+                    Could owe an extra <strong>${(+m.breakdown.downgrade_exposure_if_applied).toFixed(0)}</strong> if
+                    the plan applies its alternate-benefit downgrade (base-metal allowance) — not confirmed by
+                    eligibility; a pre-determination would settle it.
+                  </div>
+                )}
                 {Object.keys(m.breakdown.flags || {}).length > 0 && (
                   <div className="bk-flags">
                     ⚠ {Object.entries(m.breakdown.flags).map(([k, v]) =>
-                      k === 'downgrade_risk' ? `downgrade (${v})` : k.replace(/_/g, ' ')).join(' · ')}
+                      k === 'downgrade_risk' ? 'possible downgrade' : k.replace(/_/g, ' ')).join(' · ')}
                   </div>
                 )}
                 <div className="bk-note">Estimate from live insurance verification — not a guarantee.</div>

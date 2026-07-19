@@ -46,6 +46,9 @@ def coverage_for(key):
         "has_secondary_coverage": r.get("has_secondary_coverage", ""),
         "waiting_period_risk": r.get("waiting_period_risk", ""),
         "downgrade_risk": r.get("downgrade_risk", ""),
+        # additional cost IF the alternate-benefit downgrade is applied (not
+        # confirmed by eligibility - a labeled scenario, NOT in the OOP above)
+        "downgrade_exposure_if_applied": r.get("downgrade_exposure_if_applied", ""),
         "frequency_denial": r.get("frequency_denial", ""),
         # full procedure-by-procedure breakdown
         "per_procedure": [

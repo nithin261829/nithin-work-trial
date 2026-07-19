@@ -221,6 +221,43 @@ class StediAgent:
             json.dump(wrapper, open(cache, "w"), indent=1)
         return out
 
+    def discover_insurance(self, patient):
+        """Insurance Discovery: given only demographics, ask Stedi to locate
+        coverage the practice doesn't have on file. Used for patients with no
+        insurance or terminated coverage. Returns a human-readable note or None."""
+        cache = os.path.join(
+            CACHE_DIR, "discovery_" + re.sub(r"\W+", "_", patient["name"]) + ".json")
+        if self.cache_is_fresh(cache):
+            resp = json.load(open(cache))
+        else:
+            parts = patient["name"].split()
+            body = {
+                "provider": {"npi": self.npi, "organizationName": self.org_name},
+                "subscriber": {"firstName": parts[0], "lastName": " ".join(parts[1:]),
+                               "dateOfBirth": patient["dob"].replace("-", "")},
+            }
+            url = "https://healthcare.us.stedi.com/2024-04-01/insurance-discovery/check/v1"
+            req = urllib.request.Request(url, json.dumps(body).encode(),
+                                         {"Authorization": "Key " + self.api_key,
+                                          "Content-Type": "application/json"})
+            try:
+                resp = json.load(urllib.request.urlopen(req, timeout=120))
+            except Exception:
+                return None
+            json.dump(resp, open(cache, "w"), indent=1)
+            time.sleep(0.4)
+
+        if not resp.get("coveragesFound"):
+            return "insurance discovery found no coverage"
+        findings = []
+        for item in resp.get("items", []):
+            payer = (item.get("payer") or {}).get("name", "unknown payer")
+            member = (item.get("subscriber") or {}).get("memberId", "?")
+            codes = {b.get("code") for b in item.get("benefitsInformation", [])}
+            state = "ACTIVE" if "1" in codes and "6" not in codes else "INACTIVE"
+            findings.append(f"{state} {payer} policy (member {member})")
+        return "insurance discovery: " + "; ".join(findings) + " - confirm with patient"
+
     @staticmethod
     def cache_is_fresh(path):
         """A cached 271 is usable only if it exists, is younger than CACHE_TTL_DAYS,
@@ -547,6 +584,9 @@ def main():
         if not ins:
             covstat, source = "NO INSURANCE", "none"
             notes.append("uninsured - full fee; consider in-house discount plan")
+            found = stedi.discover_insurance(p)
+            if found:
+                notes.append(found)
         else:
             print(f"checking {p['name']} ({ins['carrier']}) ...")
             resp = stedi.check(p)
@@ -554,6 +594,9 @@ def main():
             if parsed["inactive"]:
                 covstat, source = "INACTIVE (terminated per Stedi 271)", "stedi_live"
                 notes.append("coverage inactive - full fee unless new insurance obtained")
+                found = stedi.discover_insurance(p)
+                if found:
+                    notes.append(found)
             elif parsed["active"] and (parsed["coins"] or parsed["percode"] or parsed["copays"]):
                 covstat, source, benefits = "ACTIVE (verified via Stedi)", "stedi_live", parsed
                 if parsed["percode"]:

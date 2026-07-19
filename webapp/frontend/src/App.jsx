@@ -92,7 +92,13 @@ export default function App() {
       const data = await r.json()
       setMessages(m => [
         ...m,
-        { role: 'assistant', content: data.reply || '…', slots: data.slots || [], booked: data.booked || null },
+        {
+          role: 'assistant',
+          content: data.reply || '…',
+          slots: data.slots || [],
+          booked: data.booked || null,
+          breakdown: data.breakdown || null,
+        },
       ])
     } catch {
       setMessages(m => [...m, { role: 'assistant', content: 'Connection problem — please try again.' }])
@@ -151,6 +157,55 @@ export default function App() {
         {messages.map((m, i) => (
           <div key={i} className={`bubble-group ${m.role}`}>
             <div className={`msg ${m.role}`}>{m.content}</div>
+            {m.breakdown && (
+              <div className="breakdown">
+                <div className="bk-head">
+                  {m.breakdown.carrier} · deductible left ${m.breakdown.deductible_remaining || '0'} · annual
+                  max left ${m.breakdown.annual_max_remaining}
+                </div>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Procedure</th>
+                      <th>Tooth</th>
+                      <th className="num">Fee</th>
+                      <th className="num">Insurance</th>
+                      <th className="num">You pay</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {m.breakdown.lines.map((l, j) => (
+                      <tr key={j}>
+                        <td>
+                          {l.code} <span className="desc">{l.description}</span>
+                          {l.downgrade === 'Y' && <span className="tag">downgrade</span>}
+                          {l.frequency_limit_reached === 'Y' && <span className="tag warn">freq limit</span>}
+                        </td>
+                        <td>{l.tooth || '—'}</td>
+                        <td className="num">${(+l.fee).toFixed(0)}</td>
+                        <td className="num">${(+l.insurance_pays).toFixed(0)}</td>
+                        <td className="num strong">${(+l.patient_pays).toFixed(0)}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td colSpan={2}>Total</td>
+                      <td className="num">${(+m.breakdown.total_fee).toFixed(0)}</td>
+                      <td className="num">${(+m.breakdown.insurance_pays).toFixed(0)}</td>
+                      <td className="num strong">${(+m.breakdown.patient_oop).toFixed(0)}</td>
+                    </tr>
+                  </tfoot>
+                </table>
+                {Object.keys(m.breakdown.flags || {}).length > 0 && (
+                  <div className="bk-flags">
+                    ⚠ {Object.entries(m.breakdown.flags).map(([k, v]) =>
+                      k === 'downgrade_risk' ? `downgrade (${v})` : k.replace(/_/g, ' ')).join(' · ')}
+                  </div>
+                )}
+                <div className="bk-note">Estimate from live insurance verification — not a guarantee.</div>
+              </div>
+            )}
             {m.slots?.length > 0 && (
               <div className="slots">
                 {m.slots.map(s => (

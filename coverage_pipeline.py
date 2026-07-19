@@ -77,6 +77,46 @@ def cdt_to_stc(code):
     return "28"                # D9xxx adjunctive
 
 
+# Least Expensive Alternative Treatment (LEAT) downgrade map: a premium procedure
+# the plan may reimburse at a cheaper alternative's allowance.
+DOWNGRADE_MAP = {
+    # porcelain / high-noble crowns -> base-metal crown allowance
+    "D2740": "D2790", "D2750": "D2790", "D2751": "D2790", "D2752": "D2790",
+    "D2783": "D2790", "D2712": "D2790",
+    # posterior composite (white) fillings -> amalgam (silver) allowance
+    "D2391": "D2140", "D2392": "D2150", "D2393": "D2160", "D2394": "D2161",
+}
+
+
+def load_fee_schedules():
+    """Return (schedules, names): schedules[sched_id][cdt_code] = allowed amount.
+    Each carrier's fee_amount in 06_fee_schedules IS its contracted allowed amount."""
+    schedules = defaultdict(dict)
+    names = {}
+    for s in csv.DictReader(open(os.path.join(DATA_DIR, "06_fee_schedules/fee_schedules.csv"))):
+        names[s["fee_schedule_id"]] = s["description"]
+    for i in csv.DictReader(open(os.path.join(DATA_DIR, "06_fee_schedules/fee_schedule_items.csv"))):
+        amt = i["fee_amount"]
+        if amt and amt not in ("0", "0.00"):
+            schedules[i["fee_schedule_id"]][i["procedure_code"]] = float(amt)
+    return schedules, names
+
+
+def detect_fee_schedule(procs, schedules, names):
+    """Identify a patient's carrier fee schedule by matching their billed procedure
+    fees against each schedule's allowed amounts (the billed fee == the allowed
+    amount for the patient's own plan). The office UCR schedule is excluded."""
+    best, best_score = None, 0
+    for sid, fees in schedules.items():
+        if names.get(sid, "").upper().startswith("UCR"):
+            continue
+        score = sum(1 for p in procs
+                    if p.get("fee") and fees.get(p["code"]) == round(p["fee"], 2))
+        if score > best_score:
+            best, best_score = sid, score
+    return (best, best_score) if best_score >= 2 else (None, best_score)
+
+
 # ----------------------------------------------------------------------------- data loading
 def load_dataset():
     """Read the practice CSVs into one list of per-patient dicts."""
@@ -322,7 +362,19 @@ class StediAgent:
         """Extract usable benefit terms from a 271 response."""
         coins, copays, percode = {}, {}, {}
         ded_cal = ded_rem = max_cal = max_rem = None
+        # per-category deductible: stc -> remaining $ (payers report $0 for the
+        # categories they waive - preventive/diagnostic - and the real amount for
+        # basic/major). Lets us apply the deductible only where it actually bites.
+        ded_by_stc = {}
+        alt_benefit_stcs = set()  # categories flagged "ALTERNATE BENEFITS MAY APPLY"
+        secondary_payers = []     # code R = Other/Additional Payor (secondary coverage)
+        freq_limits = {}          # CDT code -> {"quantity": n, "months": window}
         active = inactive = False
+
+        # plan/eligibility dates (top-level planDateInformation)
+        pdi = resp.get("planDateInformation") or {}
+        eligibility_begin = pdi.get("eligibilityBegin") or pdi.get("planBegin")
+        latest_visit = pdi.get("latestVisitOrConsultation")
 
         for b in resp.get("benefitsInformation", []):
             if b.get("inPlanNetworkIndicatorCode") == "N":
@@ -336,6 +388,65 @@ class StediAgent:
 
             if code == "1": active = True
             if code == "6": inactive = True
+
+            # code R = a second payer on this member (secondary insurance / COB)
+            if code == "R":
+                for ent in ([b.get("benefitsRelatedEntity")] + (b.get("benefitsRelatedEntities") or [])):
+                    nm = (ent or {}).get("entityName")
+                    if nm and nm not in secondary_payers:
+                        secondary_payers.append(nm)
+
+            # frequency limitations: "F" rows carry a quantity + a time window in two
+            # shapes (benefitQuantity+timeQualifier, or benefitsServiceDelivery), and
+            # the affected CDT codes arrive three ways: the EB13 composite field
+            # (UHC/Delta), or CDT codes in the additionalInformation text (Cigna).
+            if code == "F":
+                qty = months = None
+                if b.get("benefitQuantity"):
+                    try:
+                        qty = int(float(b["benefitQuantity"]))
+                    except ValueError:
+                        qty = None
+                    months = 12  # benefitQuantity is per the timeQualifier window (calendar year)
+                for sd in (b.get("benefitsServiceDelivery") or []):
+                    try:
+                        qty = int(float(sd.get("quantity", qty or 1)))
+                    except (ValueError, TypeError):
+                        continue
+                    # the real window is sampleSelectionModulus + unitForMeasurement
+                    # (e.g. 5 Years); numOfPeriods+timePeriodQualifier is often just a
+                    # "Remaining" marker, so only fall back to it when no modulus exists
+                    mod = sd.get("sampleSelectionModulus")
+                    unit = (sd.get("unitForMeasurementQualifier") or sd.get("unitForMeasurement") or "").lower()
+                    if mod:
+                        try:
+                            n = int(float(mod))
+                        except (ValueError, TypeError):
+                            n = 1
+                    else:
+                        try:
+                            n = int(float(sd.get("numOfPeriods", 1)))
+                        except (ValueError, TypeError):
+                            n = 1
+                        unit = (sd.get("timePeriodQualifier") or "").lower()
+                    months = n * (12 if "year" in unit else 1 if "month" in unit else 12)
+                if qty and months:
+                    fcodes = set()
+                    cm = (b.get("compositeMedicalProcedureIdentifier") or {}).get("procedureCode")
+                    if cm:
+                        fcodes.add(cm)
+                    ftxt = " ".join(a.get("description", "") for a in (b.get("additionalInformation") or []))
+                    fcodes.update(re.findall(r"\bD\d{4}\b", ftxt))
+                    for fc in fcodes:
+                        if fc not in freq_limits or months > freq_limits[fc]["months"]:
+                            freq_limits[fc] = {"quantity": qty, "months": months}
+
+            # alternate-benefit (downgrade) disclaimer - the payer reserves the
+            # right to pay a premium procedure at a cheaper alternative's rate
+            _txt_all = " ".join(a.get("description", "") for a in (b.get("additionalInformation") or []))
+            if "alternate benefit" in _txt_all.lower():
+                for s in stcs:
+                    alt_benefit_stcs.add(s)
 
             # per-CDT-code benefits arrive two ways:
             #  1. structured: EB13 compositeMedicalProcedureIdentifier (Delta, UHC)
@@ -372,12 +483,21 @@ class StediAgent:
                 for s in stcs:
                     copays.setdefault(s, []).append(float(amt))
             if code == "C" and amt not in (None, "") and lvl in ("IND", ""):
+                a = float(amt)
+                # plan-level deductible (stc 30/35) - what we report as "the" number
                 if any(s in ("35", "30", "") for s in stcs):
-                    a = float(amt)
                     if tq == "Remaining":
                         ded_rem = a if ded_rem is None else min(ded_rem, a)
                     elif tq == "Calendar Year":
                         ded_cal = a if ded_cal is None else max(ded_cal, a)
+                # per-category deductible - remaining preferred over calendar-year
+                if tq in ("Remaining", "Calendar Year", ""):
+                    for s in stcs:
+                        if s in ("", "30"):
+                            continue
+                        prev = ded_by_stc.get(s)
+                        if prev is None or tq == "Remaining":
+                            ded_by_stc[s] = a
             if code == "F" and amt not in (None, "") and lvl in ("IND", ""):
                 if any(s in ("35", "30") for s in stcs):
                     a = float(amt)
@@ -395,6 +515,12 @@ class StediAgent:
             "copays": {s: min(v) for s, v in copays.items()},
             "percode": percode,
             "deductible": ded_rem if ded_rem is not None else ded_cal,
+            "deductible_by_stc": ded_by_stc,
+            "alt_benefit_stcs": alt_benefit_stcs,
+            "secondary_payers": secondary_payers,
+            "freq_limits": freq_limits,
+            "eligibility_begin": eligibility_begin,   # YYYYMMDD
+            "latest_visit": latest_visit,             # YYYYMMDD, payer's own last-visit record
             "annual_max": max_cal,
             # trust a Remaining value (even $0 = exhausted) only when it is positive
             # or the plan reported a positive annual max; bare $0s are placeholders
@@ -491,7 +617,7 @@ class WebAgent:
 
 
 # ----------------------------------------------------------------------------- calculator
-def estimate_patient(patient, benefits, fallback, no_coverage=False):
+def estimate_patient(patient, benefits, fallback, no_coverage=False, fee_schedule=None):
     """Compute (insurance_pays, patient_oop, detail_rows, notes) for one patient.
 
     Each detail row carries a confidence level:
@@ -501,17 +627,84 @@ def estimate_patient(patient, benefits, fallback, no_coverage=False):
       web-estimate     - carrier-typical rates from the web fallback agent
       conservative     - payer reported nothing for this code/category; full
                          fee assumed so the patient is never under-quoted
+
+    fee_schedule: {cdt_code: allowed_amount} for this patient's carrier, used to
+    SIZE alternate-benefit (LEAT) downgrades - the plan pays coinsurance on the
+    cheaper alternative's allowance, and the patient pays the rest.
     """
     detail, notes = [], []
     ins_total = oop_total = 0.0
+    fee_schedule = fee_schedule or {}
 
+    ded_by_stc, alt_stcs, freq_limits = {}, set(), {}
     if benefits:
         coins = benefits["coins"] or None
         percode = benefits["percode"]
         ded_left = benefits["deductible"] or 0
+        ded_by_stc = dict(benefits.get("deductible_by_stc") or {})
+        alt_stcs = set(benefits.get("alt_benefit_stcs") or set())
+        freq_limits = benefits.get("freq_limits") or {}
         max_left = benefits["annual_max_remaining"]
+        # secondary insurance (code R) - a second payer may cover part of the
+        # patient's share; we estimate against the primary only, so real OOP is lower
+        for sp in benefits.get("secondary_payers") or []:
+            notes.append(f"has SECONDARY coverage ({sp}) - estimate is primary-only; "
+                         "actual out-of-pocket is likely LOWER after coordination of benefits")
     else:
         coins, percode, ded_left, max_left = None, {}, 0, 0
+
+    from datetime import date
+    TODAY = date(2026, 7, 19)
+
+    def _ymd(s):
+        try:
+            return date(int(s[:4]), int(s[4:6]), int(s[6:8]))
+        except (TypeError, ValueError):
+            return None
+
+    # waiting-period risk: a recent eligibility start means major work (crowns,
+    # bridges, dentures, implants) may sit inside a 6-12 month waiting period and
+    # not be covered yet. eligibilityBegin == Jan 1 is ambiguous (renewal vs new),
+    # so we FLAG for verification rather than deny.
+    major_wait_risk = False
+    if benefits:
+        eb = _ymd(benefits.get("eligibility_begin"))
+        if eb and (TODAY.toordinal() - eb.toordinal()) < 365:
+            major_wait_risk = True
+            months_in = round((TODAY.toordinal() - eb.toordinal()) / 30.44)
+            notes.append(f"coverage began {eb.isoformat()} (~{months_in} mo ago) - VERIFY no "
+                         "waiting period on major work; if new enrollee, major treatment "
+                         "may not be covered yet and OOP would be full fee")
+
+    # frequency cross-check: how many times has each code been used within its limit
+    # window (ending today)? Counts our completed-procedure history AND the payer's
+    # own latest-visit date (latestVisitOrConsultation) - the payer's record is
+    # authoritative for whole-mouth services (exams, cleanings, x-rays).
+    completed = patient.get("completed", [])
+    payer_last_visit = _ymd(benefits.get("latest_visit")) if benefits else None
+    WHOLE_MOUTH = {"23", "41"}  # diagnostic / preventive - one latest-visit date applies
+
+    def frequency_exhausted(code, tooth):
+        lim = freq_limits.get(code)
+        if not lim:
+            return False
+        cutoff = TODAY.toordinal() - int(lim["months"] * 30.44)
+        dates = []
+        for c in completed:
+            if c["code"] != code:
+                continue
+            if tooth and c.get("tooth") and c["tooth"] != tooth:
+                continue  # per-tooth procedures count only the same tooth
+            cd = _ymd((c.get("date") or "").replace("-", "")[:8])
+            if cd and cd.toordinal() >= cutoff:
+                dates.append(cd.toordinal())
+        # the payer's authoritative last-visit date adds one use for whole-mouth
+        # services (exams/x-rays), unless we already counted a visit that day
+        if (payer_last_visit and cdt_to_stc(code) in WHOLE_MOUTH
+                and payer_last_visit.toordinal() >= cutoff
+                and payer_last_visit.toordinal() not in dates):
+            dates.append(payer_last_visit.toordinal())
+        return len(dates) >= lim["quantity"]
     if fallback:
         coins, ded_left, max_left = fallback[0], fallback[1], fallback[2]
         percode = {}
@@ -519,12 +712,51 @@ def estimate_patient(patient, benefits, fallback, no_coverage=False):
         max_left = float("inf")
         notes.append("annual max not reported by payer - uncapped estimate")
 
+    # a plan-wide alternate-benefit disclaimer (attached to stc 30/35) flags every
+    # elective-material procedure; note it once so staff send a pre-determination
+    plan_wide_alt = bool(alt_stcs & {"30", "35", ""})
+    if alt_stcs:
+        notes.append("plan reports ALTERNATE BENEFITS MAY APPLY - insurance may pay premium "
+                     "materials (crowns, composites) at a cheaper alternative's rate; "
+                     "confirm with a pre-determination")
+
+    def category_deductible(stc):
+        """Remaining deductible that applies to this category. Prefer the payer's
+        per-category figure; fall back to the plan-level number for categories the
+        payer didn't itemize. $0 means the category is exempt (e.g. preventive)."""
+        if stc in ded_by_stc:
+            return ded_by_stc[stc]
+        return None  # unknown at category level -> use the shared plan deductible
+
+    def apply_coinsurance(fee, share, stc):
+        """Patient share for a coinsurance procedure, consuming the deductible for
+        this category. Returns (patient_amount, deductible_used)."""
+        nonlocal ded_left
+        cat_ded = category_deductible(stc)
+        pool = cat_ded if cat_ded is not None else ded_left
+        ded_use = min(pool, fee) if (share < 1 and pool > 0) else 0
+        covered = max(fee - ded_use, 0) * (1 - share)
+        if cat_ded is not None:
+            ded_by_stc[stc] = max(cat_ded - ded_use, 0)
+        else:
+            ded_left -= ded_use
+        return round(fee - covered, 2), ded_use
+
     for proc in patient["pending"]:
         fee, code = proc["fee"], proc["code"]
         stc = cdt_to_stc(code)
         pat_amt, basis, conf = None, "", ""
+        alt_flag = freq_flag = ""
+        applied_share = None  # patient coinsurance share, when priced by coinsurance
 
-        if stc is None:
+        # frequency limit already used up this window -> payer denies, patient owes full
+        if frequency_exhausted(code, proc.get("tooth")):
+            lim = freq_limits[code]
+            pat_amt = fee
+            basis = f"frequency limit reached ({lim['quantity']} per {lim['months']}mo) - not covered"
+            conf = "per-code"
+            freq_flag = "Y"
+        elif stc is None:
             pat_amt, basis, conf = fee, "house/lab code - not billable to insurance", "certain"
         elif code in percode:
             conf = "per-code"
@@ -533,19 +765,20 @@ def estimate_patient(patient, benefits, fallback, no_coverage=False):
                 pat_amt = fee
                 basis = "payer lists this code as non-covered"
             elif "coins" in e:
-                pat_amt = round(fee * e["coins"], 2)
-                basis = f"per-code coinsurance {e['coins']:.0%} patient share"
+                pat_amt, ded_use = apply_coinsurance(fee, e["coins"], stc)
+                applied_share = e["coins"]
+                deducted = f", ${ded_use:.0f} deductible" if ded_use else ""
+                basis = f"per-code coinsurance {e['coins']:.0%} patient share{deducted}"
             else:
                 pat_amt = min(e["copay"], fee) if fee else e["copay"]
                 basis = f"per-code copay ${e['copay']:.0f}"
         elif coins:
             share = coins.get(stc, coins.get("35"))
             if share is not None:
-                ded_use = min(ded_left, fee) if share < 1 else 0
-                covered = max(fee - ded_use, 0) * (1 - share)
-                pat_amt = round(fee - covered, 2)
-                ded_left -= ded_use
-                basis = f"{STC_NAMES.get(stc, stc)} coinsurance {share:.0%} patient share"
+                pat_amt, ded_use = apply_coinsurance(fee, share, stc)
+                applied_share = share
+                deducted = f", ${ded_use:.0f} deductible" if ded_use else ""
+                basis = f"{STC_NAMES.get(stc, stc)} coinsurance {share:.0%} patient share{deducted}"
                 conf = "web-estimate" if fallback else "category"
 
         if pat_amt is None:
@@ -553,6 +786,33 @@ def estimate_patient(patient, benefits, fallback, no_coverage=False):
                 pat_amt, basis, conf = fee, "no active coverage - full fee", "certain"
             else:
                 pat_amt, basis, conf = fee, "no benefit info - assume full fee", "conservative"
+
+        # alternate-benefit (LEAT) downgrade: crowns and posterior composites are the
+        # classic targets. When the plan flags alternate benefits AND we have the
+        # cheaper alternative's allowed amount in the patient's carrier fee schedule,
+        # SIZE it: insurance pays coinsurance on the alternative's allowance, patient
+        # pays the rest (their coinsurance share + the full material difference).
+        # flag broadly (any covered crown/onlay/prostho or posterior composite under an
+        # alternate-benefit plan); SIZE only when we have the alternative's allowance
+        flaggable = code in {"D2391", "D2392", "D2393", "D2394"} or stc in ("36", "39")
+        if ((plan_wide_alt or stc in alt_stcs) and flaggable
+                and applied_share is not None and pat_amt is not None and pat_amt < fee):
+            alt_flag = "Y"
+            alt_code = DOWNGRADE_MAP.get(code)
+            alt_allowed = fee_schedule.get(alt_code) if alt_code else None
+            if alt_allowed and alt_allowed < fee:
+                new_ins = round(alt_allowed * (1 - applied_share), 2)
+                new_pat = round(fee - new_ins, 2)
+                if new_pat > pat_amt:
+                    extra = new_pat - pat_amt
+                    pat_amt = new_pat
+                    basis += (f"; LEAT downgrade to {alt_code} (allowed ${alt_allowed:.0f}) "
+                              f"+${extra:.0f}")
+                    conf = "estimate-downgrade"
+
+        # waiting-period exposure on major work (crowns/prostho/oral surgery)
+        wait_flag = "Y" if (major_wait_risk and stc in ("36", "39", "40")
+                            and pat_amt is not None and pat_amt < fee) else ""
 
         ins_pay = max(fee - pat_amt, 0)
         if ins_pay > max_left:  # annual maximum cap
@@ -569,6 +829,9 @@ def estimate_patient(patient, benefits, fallback, no_coverage=False):
             "insurance_pays_est": f"{ins_pay:.2f}", "patient_oop_est": f"{pat_amt:.2f}",
             "basis": basis, "confidence": conf,
             "prior_auth_required": "Y" if percode.get(code, {}).get("prior_auth") else "",
+            "alt_benefit_downgrade_risk": alt_flag,
+            "frequency_limit_reached": freq_flag,
+            "waiting_period_risk": wait_flag,
         })
     return ins_total, oop_total, detail, notes
 
@@ -581,12 +844,16 @@ def main():
     stedi = StediAgent(STEDI_API_KEY, PROVIDER_NPI, PROVIDER_NAME)
     web = WebAgent(OPENAI_API_KEY, OPENAI_MODEL)
     patients = load_dataset()
+    fee_schedules, sched_names = load_fee_schedules()
     rows, all_detail = [], []
 
     for p in patients:
         ins = p["insurance"][0] if p["insurance"] else None
         benefits = fallback = None
         notes = []
+        # detect this patient's carrier fee schedule (to size LEAT downgrades)
+        sid, score = detect_fee_schedule(p["completed"] + p["pending"], fee_schedules, sched_names)
+        pat_schedule = fee_schedules.get(sid, {})
 
         if not ins:
             covstat, source = "NO INSURANCE", "none"
@@ -640,7 +907,11 @@ def main():
                 fallback = (shares, ded, amax)
 
         no_cov = not ins or covstat.startswith("INACTIVE")
-        ins_pays, oop, detail, calc_notes = estimate_patient(p, benefits, fallback, no_coverage=no_cov)
+        ins_pays, oop, detail, calc_notes = estimate_patient(
+            p, benefits, fallback, no_coverage=no_cov, fee_schedule=pat_schedule)
+        if sid and any(d.get("alt_benefit_downgrade_risk") == "Y" for d in detail):
+            notes.append(f"downgrades sized against carrier fee schedule "
+                         f"'{sched_names.get(sid, sid)}' (match score {score})")
         notes += calc_notes
         all_detail += detail
 
@@ -664,6 +935,14 @@ def main():
             "pending_total_fee": f"{pending_total:.2f}",
             "est_insurance_pays": f"{ins_pays:.2f}",
             "est_patient_out_of_pocket": f"{oop:.2f}",
+            # scannable flag columns (details live in notes / procedure_detail.csv)
+            "has_secondary_coverage": "Y" if (benefits and benefits.get("secondary_payers")) else "",
+            "waiting_period_risk": "Y" if any(d.get("waiting_period_risk") == "Y" for d in detail) else "",
+            "downgrade_risk": ("sized" if any(d.get("confidence") == "estimate-downgrade" for d in detail)
+                               else "flag" if any(d.get("alt_benefit_downgrade_risk") == "Y" for d in detail)
+                               else ""),
+            "frequency_denial": "Y" if any(d.get("frequency_limit_reached") == "Y" for d in detail) else "",
+            "prior_auth_needed": "Y" if any(d.get("prior_auth_required") == "Y" for d in detail) else "",
             "notes": "; ".join(notes),
         })
 

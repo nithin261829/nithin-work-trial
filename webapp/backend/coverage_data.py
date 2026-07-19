@@ -42,10 +42,22 @@ def coverage_for(key):
         "target_treatment_fee": r["pending_total_fee"],
         "insurance_pays_estimate": r["est_insurance_pays"],
         "patient_out_of_pocket_estimate": r["est_patient_out_of_pocket"],
+        # patient-level coverage flags (surfaced so the assistant can caveat)
+        "has_secondary_coverage": r.get("has_secondary_coverage", ""),
+        "waiting_period_risk": r.get("waiting_period_risk", ""),
+        "downgrade_risk": r.get("downgrade_risk", ""),
+        "frequency_denial": r.get("frequency_denial", ""),
+        # full procedure-by-procedure breakdown
         "per_procedure": [
             {"code": d["procedure_code"], "description": d["description"],
-             "fee": d["fee"], "patient_pays": d["patient_oop_est"],
-             "basis": d["basis"], "confidence": d["confidence"]}
+             "tooth": d.get("tooth", ""),
+             "fee": d["fee"],
+             "insurance_pays": d["insurance_pays_est"],
+             "patient_pays": d["patient_oop_est"],
+             "basis": d["basis"], "confidence": d["confidence"],
+             "downgrade": d.get("alt_benefit_downgrade_risk", ""),
+             "frequency_limit_reached": d.get("frequency_limit_reached", ""),
+             "waiting_period_risk": d.get("waiting_period_risk", "")}
             for d in DETAIL.get(key, [])],
         "notes": r["notes"],
     }

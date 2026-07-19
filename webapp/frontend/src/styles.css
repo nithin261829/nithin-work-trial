@@ -56,3 +56,17 @@ body { font-family: -apple-system, 'Segoe UI', Roboto, sans-serif; background: #
 .composer input:focus { border-color: #2e6da4; }
 .composer button { padding: 0 22px; border: 0; border-radius: 12px; background: #10304a; color: #fff; font-size: 14.5px; cursor: pointer; }
 .composer button:disabled { opacity: .45; cursor: default; }
+
+.breakdown { background: #fff; border: 1px solid #dce4ea; border-radius: 12px; padding: 12px 14px; max-width: 88%; font-size: 13px; }
+.bk-head { color: #5a6b78; font-size: 11.5px; margin-bottom: 8px; }
+.breakdown table { width: 100%; border-collapse: collapse; }
+.breakdown th { text-align: left; font-size: 10.5px; text-transform: uppercase; letter-spacing: .04em; color: #93a3b0; padding: 4px 6px; border-bottom: 1px solid #eef2f6; }
+.breakdown td { padding: 6px 6px; border-bottom: 1px solid #f4f6f8; vertical-align: top; }
+.breakdown .num { text-align: right; font-variant-numeric: tabular-nums; }
+.breakdown .strong { font-weight: 700; color: #10304a; }
+.breakdown .desc { color: #7a8894; font-size: 11.5px; }
+.breakdown tfoot td { border-top: 2px solid #dce4ea; border-bottom: 0; font-weight: 600; padding-top: 8px; }
+.breakdown .tag { display: inline-block; margin-left: 6px; font-size: 9.5px; background: #eaf0f5; color: #4a6b85; border-radius: 6px; padding: 1px 6px; }
+.breakdown .tag.warn { background: #fbe9e7; color: #b0402a; }
+.bk-flags { margin-top: 8px; font-size: 11.5px; color: #b0402a; }
+.bk-note { margin-top: 6px; font-size: 10.5px; color: #a0adb8; }

@@ -202,14 +202,15 @@ def chat(inp: ChatIn, s: dict = Depends(session)):
     if not history:
         history.append({"role": "system", "content": system_prompt(name)})
     history.append({"role": "user", "content": inp.message})
-    slots_for_ui, booked_for_ui = [], None
+    slots_for_ui, booked_for_ui, breakdown_for_ui = [], None, None
     for _ in range(8):
         resp = client.chat.completions.create(model=OPENAI_MODEL, messages=history, tools=tool_schemas)
         msg = resp.choices[0].message
         history.append({"role": "assistant", "content": msg.content,
                         "tool_calls": [tc.model_dump() for tc in (msg.tool_calls or [])] or None})
         if not msg.tool_calls:
-            return {"reply": msg.content, "slots": slots_for_ui, "booked": booked_for_ui}
+            return {"reply": msg.content, "slots": slots_for_ui,
+                    "booked": booked_for_ui, "breakdown": breakdown_for_ui}
         for tc in msg.tool_calls:
             try:
                 result = tool_fns[tc.function.name](**json.loads(tc.function.arguments))
@@ -219,9 +220,24 @@ def chat(inp: ChatIn, s: dict = Depends(session)):
                 slots_for_ui = result.get("slots", [])
             if tc.function.name == "book_appointment" and isinstance(result, dict) and result.get("booked"):
                 booked_for_ui, slots_for_ui = result, []
+            # surface the procedure-by-procedure breakdown to the UI
+            if tc.function.name == "my_coverage" and isinstance(result, dict) and result.get("per_procedure"):
+                breakdown_for_ui = {
+                    "carrier": result.get("carrier"),
+                    "coverage_status": result.get("coverage_status"),
+                    "deductible_remaining": result.get("deductible_remaining"),
+                    "annual_max_remaining": result.get("annual_max_remaining"),
+                    "total_fee": result.get("target_treatment_fee"),
+                    "insurance_pays": result.get("insurance_pays_estimate"),
+                    "patient_oop": result.get("patient_out_of_pocket_estimate"),
+                    "lines": result.get("per_procedure"),
+                    "flags": {k: result.get(k) for k in
+                              ("has_secondary_coverage", "waiting_period_risk",
+                               "downgrade_risk", "frequency_denial") if result.get(k)},
+                }
             history.append({"role": "tool", "tool_call_id": tc.id, "content": json.dumps(result)})
     return {"reply": "Sorry - I couldn't finish that. Please try again.",
-            "slots": slots_for_ui, "booked": booked_for_ui}
+            "slots": slots_for_ui, "booked": booked_for_ui, "breakdown": breakdown_for_ui}
 
 
 @app.get("/api/rules")

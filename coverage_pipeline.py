@@ -138,9 +138,28 @@ def load_dataset():
             "fee": float(fee) if fee else 0.0,
             "date": p["date"] or raw.get("procedure_time", "")[:10],
             "tooth": raw.get("tooth_number", ""),
+            "treatment_plans": tuple(raw.get("treatment_plans") or []),
         }
         key = "completed" if p["state"] == "COMPLETED" else "pending"
         procs_by_patient[p["patient_id"]][key].append(entry)
+
+    # drop stale re-quotes: the SAME code+tooth+treatment-plan planned on DIFFERENT
+    # dates is one procedure re-priced over time (e.g. a denture quoted in 2024 and
+    # again in 2026) - keep only the most recent. Same-date repeats are legitimate
+    # multi-unit work (perio scaling billed per quadrant) and are kept.
+    for pid, d in procs_by_patient.items():
+        groups = defaultdict(list)
+        for e in d["pending"]:
+            groups[(e["code"], e["tooth"], e["treatment_plans"])].append(e)
+        kept = []
+        for members in groups.values():
+            dates = {m["date"] for m in members}
+            if len(members) > 1 and len(dates) > 1:
+                newest = max(dates)
+                kept.extend(m for m in members if m["date"] == newest)  # drop older re-quotes
+            else:
+                kept.extend(members)
+        d["pending"] = kept
 
     ins_by_patient = defaultdict(list)
     for i in insurance:

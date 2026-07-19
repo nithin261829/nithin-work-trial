@@ -214,8 +214,19 @@ class StediAgent:
             if code == "1": active = True
             if code == "6": inactive = True
 
-            # per-CDT-code schedules (Humana coinsurance, Cigna DHMO copays) live in
-            # the additionalInformation description text
+            # per-CDT-code benefits arrive two ways:
+            #  1. structured: EB13 compositeMedicalProcedureIdentifier (Delta, UHC)
+            #     including code "I" = Non-Covered (payer pays nothing for that CDT)
+            #  2. free text: CDT codes in additionalInformation (Cigna DHMO, Humana)
+            cmpi_code = (b.get("compositeMedicalProcedureIdentifier") or {}).get("procedureCode")
+            if cmpi_code:
+                if code == "A" and pct is not None:
+                    percode.setdefault(cmpi_code, {})["coins"] = float(pct)
+                elif code == "B" and amt not in (None, ""):
+                    percode.setdefault(cmpi_code, {})["copay"] = float(amt)
+                elif code in ("I", "E"):
+                    percode.setdefault(cmpi_code, {})["noncovered"] = True
+                continue
             txt = " ".join(a.get("description", "") for a in (b.get("additionalInformation") or []))
             cdt_codes = re.findall(r"\bD\d{4}\b", txt)
             for c in cdt_codes:
@@ -223,6 +234,8 @@ class StediAgent:
                     percode.setdefault(c, {})["coins"] = float(pct)
                 if code == "B" and amt not in (None, ""):
                     percode.setdefault(c, {})["copay"] = float(amt)
+                if code in ("I", "E"):
+                    percode.setdefault(c, {})["noncovered"] = True
             if cdt_codes:
                 continue  # already captured at per-code granularity
 
@@ -380,7 +393,10 @@ def estimate_patient(patient, benefits, fallback):
             pat_amt, basis = fee, "house/lab code - not billable to insurance"
         elif code in percode:
             e = percode[code]
-            if "coins" in e:
+            if e.get("noncovered"):
+                pat_amt = fee
+                basis = "payer lists this code as non-covered"
+            elif "coins" in e:
                 pat_amt = round(fee * e["coins"], 2)
                 basis = f"per-code coinsurance {e['coins']:.0%} patient share"
             else:

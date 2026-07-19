@@ -29,7 +29,7 @@ Marisa Delmonte,D9636,"Whitening Tray, Lower",,0.00,0.00,0.00,no benefit info - 
 Marisa Delmonte,D9635,"Whitening Tray, Upper",,249.00,0.00,249.00,no benefit info - assume full fee
 Marisa Delmonte,D6057,Custom abutment-incl placement,30,752.00,0.00,752.00,no benefit info - assume full fee
 Marisa Delmonte,D6065,Implant supp porc/cer crown,30,802.00,401.00,401.00,per-code coinsurance 50% patient share
-Kelly Carruthers,D2394,"Resin composite-4+s, posterior",3,179.00,103.20,75.80,restorative(basic) coinsurance 20% patient share
+Kelly Carruthers,D2394,"Resin composite-4+s, posterior",3,179.00,0.00,179.00,per-code coinsurance 100% patient share
 Kelly Carruthers,D8210,Removable appliance therapy,,770.00,0.00,770.00,orthodontics coinsurance 100% patient share
 Kelly Carruthers,ESSIX,ESSIX RETAINER,,250.00,0.00,250.00,house/lab code - not billable to insurance
 Kelly Carruthers,ESSIX,ESSIX RETAINER,,250.00,0.00,250.00,house/lab code - not billable to insurance
@@ -51,15 +51,15 @@ Gonzales Jesse,D4921,Gingival Irrigation - Per Quad,,25.00,12.50,12.50,periodont
 Gonzales Jesse,D4921,Gingival Irrigation - Per Quad,,25.00,12.50,12.50,periodontics coinsurance 50% patient share
 Gonzales Jesse,D4921,Gingival Irrigation - Per Quad,,25.00,12.50,12.50,periodontics coinsurance 50% patient share
 Gonzales Jesse,D4921,Gingival Irrigation - Per Quad,,25.00,12.50,12.50,periodontics coinsurance 50% patient share
-Gonzales Jesse,D4341,Perio scale/root pln-4+per quad,,156.00,78.00,78.00,periodontics coinsurance 50% patient share
-Gonzales Jesse,D4341,Perio scale/root pln-4+per quad,,156.00,78.00,78.00,periodontics coinsurance 50% patient share
-Gonzales Jesse,D4341,Perio scale/root pln-4+per quad,,156.00,78.00,78.00,periodontics coinsurance 50% patient share
-Gonzales Jesse,D4341,Perio scale/root pln-4+per quad,,156.00,78.00,78.00,periodontics coinsurance 50% patient share
+Gonzales Jesse,D4341,Perio scale/root pln-4+per quad,,156.00,78.00,78.00,per-code coinsurance 50% patient share
+Gonzales Jesse,D4341,Perio scale/root pln-4+per quad,,156.00,78.00,78.00,per-code coinsurance 50% patient share
+Gonzales Jesse,D4341,Perio scale/root pln-4+per quad,,156.00,78.00,78.00,per-code coinsurance 50% patient share
+Gonzales Jesse,D4341,Perio scale/root pln-4+per quad,,156.00,78.00,78.00,per-code coinsurance 50% patient share
 Gonzales Jesse,D2740,Crown - porcelain/ceramic,4,803.00,401.50,401.50,crowns(major) coinsurance 50% patient share
-Gonzales Jesse,D2950,"Core buildup, include any pins",4,161.00,80.50,80.50,crowns(major) coinsurance 50% patient share
-Gonzales Jesse,D2950,"Core buildup, include any pins",30,161.00,80.50,80.50,crowns(major) coinsurance 50% patient share
+Gonzales Jesse,D2950,"Core buildup, include any pins",4,161.00,80.50,80.50,per-code coinsurance 50% patient share
+Gonzales Jesse,D2950,"Core buildup, include any pins",30,161.00,80.50,80.50,per-code coinsurance 50% patient share
 Gonzales Jesse,D2740,Crown - porcelain/ceramic,30,803.00,401.50,401.50,crowns(major) coinsurance 50% patient share
-Sharon Mascari,D2950,"Core buildup, include any pins",3,111.00,55.50,55.50,crowns(major) coinsurance 50% patient share
+Sharon Mascari,D2950,"Core buildup, include any pins",3,111.00,55.50,55.50,per-code coinsurance 50% patient share
 Sharon Mascari,D2740,Crown - porcelain/ceramic,3,803.00,401.50,401.50,crowns(major) coinsurance 50% patient share
 Lorena Quinones,D2950,"Core buildup, include any pins",30,134.00,42.00,92.00,crowns(major) coinsurance 50% patient share
 Lorena Quinones,D2740,Crown - porcelain/ceramic,30,802.00,401.00,401.00,crowns(major) coinsurance 50% patient share

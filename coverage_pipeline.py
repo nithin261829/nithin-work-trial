@@ -77,6 +77,46 @@ def cdt_to_stc(code):
     return "28"                # D9xxx adjunctive
 
 
+# Least Expensive Alternative Treatment (LEAT) downgrade map: a premium procedure
+# the plan may reimburse at a cheaper alternative's allowance.
+DOWNGRADE_MAP = {
+    # porcelain / high-noble crowns -> base-metal crown allowance
+    "D2740": "D2790", "D2750": "D2790", "D2751": "D2790", "D2752": "D2790",
+    "D2783": "D2790", "D2712": "D2790",
+    # posterior composite (white) fillings -> amalgam (silver) allowance
+    "D2391": "D2140", "D2392": "D2150", "D2393": "D2160", "D2394": "D2161",
+}
+
+
+def load_fee_schedules():
+    """Return (schedules, names): schedules[sched_id][cdt_code] = allowed amount.
+    Each carrier's fee_amount in 06_fee_schedules IS its contracted allowed amount."""
+    schedules = defaultdict(dict)
+    names = {}
+    for s in csv.DictReader(open(os.path.join(DATA_DIR, "06_fee_schedules/fee_schedules.csv"))):
+        names[s["fee_schedule_id"]] = s["description"]
+    for i in csv.DictReader(open(os.path.join(DATA_DIR, "06_fee_schedules/fee_schedule_items.csv"))):
+        amt = i["fee_amount"]
+        if amt and amt not in ("0", "0.00"):
+            schedules[i["fee_schedule_id"]][i["procedure_code"]] = float(amt)
+    return schedules, names
+
+
+def detect_fee_schedule(procs, schedules, names):
+    """Identify a patient's carrier fee schedule by matching their billed procedure
+    fees against each schedule's allowed amounts (the billed fee == the allowed
+    amount for the patient's own plan). The office UCR schedule is excluded."""
+    best, best_score = None, 0
+    for sid, fees in schedules.items():
+        if names.get(sid, "").upper().startswith("UCR"):
+            continue
+        score = sum(1 for p in procs
+                    if p.get("fee") and fees.get(p["code"]) == round(p["fee"], 2))
+        if score > best_score:
+            best, best_score = sid, score
+    return (best, best_score) if best_score >= 2 else (None, best_score)
+
+
 # ----------------------------------------------------------------------------- data loading
 def load_dataset():
     """Read the practice CSVs into one list of per-patient dicts."""
@@ -577,7 +617,7 @@ class WebAgent:
 
 
 # ----------------------------------------------------------------------------- calculator
-def estimate_patient(patient, benefits, fallback, no_coverage=False):
+def estimate_patient(patient, benefits, fallback, no_coverage=False, fee_schedule=None):
     """Compute (insurance_pays, patient_oop, detail_rows, notes) for one patient.
 
     Each detail row carries a confidence level:
@@ -587,9 +627,14 @@ def estimate_patient(patient, benefits, fallback, no_coverage=False):
       web-estimate     - carrier-typical rates from the web fallback agent
       conservative     - payer reported nothing for this code/category; full
                          fee assumed so the patient is never under-quoted
+
+    fee_schedule: {cdt_code: allowed_amount} for this patient's carrier, used to
+    SIZE alternate-benefit (LEAT) downgrades - the plan pays coinsurance on the
+    cheaper alternative's allowance, and the patient pays the rest.
     """
     detail, notes = [], []
     ins_total = oop_total = 0.0
+    fee_schedule = fee_schedule or {}
 
     ded_by_stc, alt_stcs, freq_limits = {}, set(), {}
     if benefits:
@@ -702,6 +747,7 @@ def estimate_patient(patient, benefits, fallback, no_coverage=False):
         stc = cdt_to_stc(code)
         pat_amt, basis, conf = None, "", ""
         alt_flag = freq_flag = ""
+        applied_share = None  # patient coinsurance share, when priced by coinsurance
 
         # frequency limit already used up this window -> payer denies, patient owes full
         if frequency_exhausted(code, proc.get("tooth")):
@@ -720,6 +766,7 @@ def estimate_patient(patient, benefits, fallback, no_coverage=False):
                 basis = "payer lists this code as non-covered"
             elif "coins" in e:
                 pat_amt, ded_use = apply_coinsurance(fee, e["coins"], stc)
+                applied_share = e["coins"]
                 deducted = f", ${ded_use:.0f} deductible" if ded_use else ""
                 basis = f"per-code coinsurance {e['coins']:.0%} patient share{deducted}"
             else:
@@ -729,6 +776,7 @@ def estimate_patient(patient, benefits, fallback, no_coverage=False):
             share = coins.get(stc, coins.get("35"))
             if share is not None:
                 pat_amt, ded_use = apply_coinsurance(fee, share, stc)
+                applied_share = share
                 deducted = f", ${ded_use:.0f} deductible" if ded_use else ""
                 basis = f"{STC_NAMES.get(stc, stc)} coinsurance {share:.0%} patient share{deducted}"
                 conf = "web-estimate" if fallback else "category"
@@ -739,13 +787,26 @@ def estimate_patient(patient, benefits, fallback, no_coverage=False):
             else:
                 pat_amt, basis, conf = fee, "no benefit info - assume full fee", "conservative"
 
-        # alternate-benefit (downgrade) exposure: crowns/onlays and posterior
-        # composites are the classic downgrade targets. We can flag but not size it
-        # (the 271 carries no downgrade allowance) - so the patient's real OOP on
-        # these could be HIGHER than shown, pending a pre-determination.
-        downgradeable = code in {"D2391", "D2392", "D2393", "D2394"} or stc in ("36", "39")
-        if (plan_wide_alt or stc in alt_stcs) and downgradeable and pat_amt is not None and pat_amt < fee:
+        # alternate-benefit (LEAT) downgrade: crowns and posterior composites are the
+        # classic targets. When the plan flags alternate benefits AND we have the
+        # cheaper alternative's allowed amount in the patient's carrier fee schedule,
+        # SIZE it: insurance pays coinsurance on the alternative's allowance, patient
+        # pays the rest (their coinsurance share + the full material difference).
+        downgradeable = code in DOWNGRADE_MAP
+        if ((plan_wide_alt or stc in alt_stcs) and downgradeable
+                and applied_share is not None and pat_amt is not None and pat_amt < fee):
             alt_flag = "Y"
+            alt_code = DOWNGRADE_MAP.get(code)
+            alt_allowed = fee_schedule.get(alt_code)
+            if alt_allowed and alt_allowed < fee:
+                new_ins = round(alt_allowed * (1 - applied_share), 2)
+                new_pat = round(fee - new_ins, 2)
+                if new_pat > pat_amt:
+                    extra = new_pat - pat_amt
+                    pat_amt = new_pat
+                    basis += (f"; LEAT downgrade to {alt_code} (allowed ${alt_allowed:.0f}) "
+                              f"+${extra:.0f}")
+                    conf = "estimate-downgrade"
 
         # waiting-period exposure on major work (crowns/prostho/oral surgery)
         wait_flag = "Y" if (major_wait_risk and stc in ("36", "39", "40")
@@ -781,12 +842,16 @@ def main():
     stedi = StediAgent(STEDI_API_KEY, PROVIDER_NPI, PROVIDER_NAME)
     web = WebAgent(OPENAI_API_KEY, OPENAI_MODEL)
     patients = load_dataset()
+    fee_schedules, sched_names = load_fee_schedules()
     rows, all_detail = [], []
 
     for p in patients:
         ins = p["insurance"][0] if p["insurance"] else None
         benefits = fallback = None
         notes = []
+        # detect this patient's carrier fee schedule (to size LEAT downgrades)
+        sid, score = detect_fee_schedule(p["completed"] + p["pending"], fee_schedules, sched_names)
+        pat_schedule = fee_schedules.get(sid, {})
 
         if not ins:
             covstat, source = "NO INSURANCE", "none"
@@ -840,7 +905,11 @@ def main():
                 fallback = (shares, ded, amax)
 
         no_cov = not ins or covstat.startswith("INACTIVE")
-        ins_pays, oop, detail, calc_notes = estimate_patient(p, benefits, fallback, no_coverage=no_cov)
+        ins_pays, oop, detail, calc_notes = estimate_patient(
+            p, benefits, fallback, no_coverage=no_cov, fee_schedule=pat_schedule)
+        if sid and any(d.get("alt_benefit_downgrade_risk") == "Y" for d in detail):
+            notes.append(f"downgrades sized against carrier fee schedule "
+                         f"'{sched_names.get(sid, sid)}' (match score {score})")
         notes += calc_notes
         all_detail += detail
 

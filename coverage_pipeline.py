@@ -80,10 +80,11 @@ def cdt_to_stc(code):
 # Least Expensive Alternative Treatment (LEAT) downgrade map: a premium procedure
 # the plan may reimburse at a cheaper alternative's allowance.
 DOWNGRADE_MAP = {
-    # porcelain crowns -> BASE-METAL crown allowance (D2791). This is the standard,
-    # more aggressive LEAT target; NOT high-noble D2790 ($745) or noble D2792 ($740).
-    "D2740": "D2791", "D2750": "D2791", "D2751": "D2791", "D2752": "D2791",
-    "D2783": "D2791", "D2712": "D2791",
+    # all-porcelain/ceramic crowns -> PORCELAIN-FUSED-TO-BASE-METAL allowance (D2751).
+    # PFM is the nearest tooth-colored alternative - the realistic LEAT target for a
+    # visible tooth. NOT full-cast bare metal (D2791 $666), which plans reserve for
+    # back molars, and NOT high-noble/noble PFM (D2750/D2752, higher allowance).
+    "D2740": "D2751", "D2783": "D2751", "D2712": "D2751",
     # posterior composite (white) fillings -> amalgam (silver) allowance
     "D2391": "D2140", "D2392": "D2150", "D2393": "D2160", "D2394": "D2161",
 }
@@ -637,7 +638,8 @@ class WebAgent:
 
 
 # ----------------------------------------------------------------------------- calculator
-def estimate_patient(patient, benefits, fallback, no_coverage=False, fee_schedule=None):
+def estimate_patient(patient, benefits, fallback, no_coverage=False, fee_schedule=None,
+                     apply_downgrade=False):
     """Compute (insurance_pays, patient_oop, detail_rows, notes) for one patient.
 
     Each detail row carries a confidence level:
@@ -653,7 +655,7 @@ def estimate_patient(patient, benefits, fallback, no_coverage=False, fee_schedul
     cheaper alternative's allowance, and the patient pays the rest.
     """
     detail, notes = [], []
-    ins_total = oop_total = downgrade_total = 0.0
+    ins_total = oop_total = 0.0
     fee_schedule = fee_schedule or {}
 
     ded_by_stc, alt_stcs, freq_limits = {}, set(), {}
@@ -816,19 +818,19 @@ def estimate_patient(patient, benefits, fallback, no_coverage=False, fee_schedul
         # the headline OOP stays the straight-coinsurance number the payer actually
         # supports. Same rule applies to every alt-benefit patient (Suzy, Carl, Ellis).
         flaggable = code in {"D2391", "D2392", "D2393", "D2394"} or stc in ("36", "39")
-        downgrade_exposure = 0.0
         if ((plan_wide_alt or stc in alt_stcs) and flaggable
                 and applied_share is not None and pat_amt is not None and pat_amt < fee):
             alt_flag = "Y"
             alt_code = DOWNGRADE_MAP.get(code)
             alt_allowed = fee_schedule.get(alt_code) if alt_code else None
             if alt_allowed and alt_allowed < fee:
-                downgraded_ins = round(alt_allowed * (1 - applied_share), 2)
-                downgraded_pat = round(fee - downgraded_ins, 2)
-                downgrade_exposure = round(max(downgraded_pat - pat_amt, 0), 2)
-                if downgrade_exposure:
-                    basis += (f"; IF downgraded to {alt_code} (base-metal, allowed "
-                              f"${alt_allowed:.0f}) patient would owe +${downgrade_exposure:.0f}")
+                # in the downgrade scenario, insurance pays coinsurance on the cheaper
+                # allowance (deductible already consumed above); patient pays the rest
+                if apply_downgrade:
+                    pat_amt = round(fee - alt_allowed * (1 - applied_share), 2)
+                    basis += f"; downgraded to {alt_code} (base-metal allowed ${alt_allowed:.0f})"
+                else:
+                    basis += f"; alt-benefit downgrade may apply (base-metal {alt_code} ${alt_allowed:.0f})"
 
         # waiting-period exposure on major work (crowns/prostho/oral surgery)
         wait_flag = "Y" if (major_wait_risk and stc in ("36", "39", "40")
@@ -843,22 +845,16 @@ def estimate_patient(patient, benefits, fallback, no_coverage=False, fee_schedul
 
         ins_total += ins_pay
         oop_total += pat_amt
-        downgrade_total += downgrade_exposure
         detail.append({
             "patient": patient["name"], "procedure_code": code, "description": proc["desc"],
             "tooth": proc["tooth"], "fee": f"{fee:.2f}",
             "insurance_pays_est": f"{ins_pay:.2f}", "patient_oop_est": f"{pat_amt:.2f}",
-            "downgrade_exposure": f"{downgrade_exposure:.2f}" if downgrade_exposure else "",
             "basis": basis, "confidence": conf,
             "prior_auth_required": "Y" if percode.get(code, {}).get("prior_auth") else "",
             "alt_benefit_downgrade_risk": alt_flag,
             "frequency_limit_reached": freq_flag,
             "waiting_period_risk": wait_flag,
         })
-    if downgrade_total:
-        notes.append(f"IF the plan's alternate-benefit downgrade is applied, patient could owe "
-                     f"an additional ~${downgrade_total:.0f} (base-metal allowance; not confirmed "
-                     f"by eligibility - verify with a pre-determination)")
     return ins_total, oop_total, detail, notes
 
 
@@ -937,7 +933,22 @@ def main():
             p, benefits, fallback, no_coverage=no_cov, fee_schedule=pat_schedule)
         notes += calc_notes
         all_detail += detail
-        downgrade_exposure_total = sum(float(d.get("downgrade_exposure") or 0) for d in detail)
+
+        # true downgrade exposure = full second-scenario recompute (with the base-metal
+        # downgrade applied) minus the straight total. This correctly accounts for the
+        # annual-max interaction - a downgrade lowers insurance payment, which can keep
+        # the plan under its max and change how much the patient really pays.
+        downgrade_exposure_total = 0.0
+        if any(d.get("alt_benefit_downgrade_risk") == "Y" for d in detail):
+            _, dg_oop, _, _ = estimate_patient(
+                p, benefits, fallback, no_coverage=no_cov, fee_schedule=pat_schedule,
+                apply_downgrade=True)
+            downgrade_exposure_total = round(max(dg_oop - oop, 0), 2)
+            if downgrade_exposure_total:
+                notes.append(f"IF the plan's alternate-benefit downgrade is applied (crowns paid at "
+                             f"the PFM base-metal allowance), patient total would be ${dg_oop:.0f} - "
+                             f"i.e. +${downgrade_exposure_total:.0f}; not confirmed by eligibility, "
+                             f"verify with a pre-determination")
 
         pending_total = sum(x["fee"] for x in p["pending"])
         recent = "; ".join(f"{c['code']} {c['desc']}".strip()[:38] for c in p["completed"][:5])

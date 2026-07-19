@@ -1,0 +1,43 @@
+{
+ "errors": [
+  {
+   "field": "AAA",
+   "description": "Subscriber/Insured Not Found",
+   "location": "Loop 2100C",
+   "possibleResolutions": "Call the Real-Time Eligibility Check API first to verify and update patient identity and demographic data elements, then call the Coordination of Benefits API again. Be sure to compare the response values against the request values to identify any payer corrections (for example, the payer may send a corrected `memberId` in the response).",
+   "code": "75",
+   "followupAction": "Please Correct and Resubmit"
+  }
+ ],
+ "meta": {
+  "applicationMode": "production",
+  "traceId": "01KXXSZG215V5A69J89NE6K212",
+  "outboundTraceId": "01KXXSZG215V5A69J89NE6K212"
+ },
+ "payer": {
+  "name": "Aetna",
+  "payerIdentification": "AETNA-USH"
+ },
+ "provider": {
+  "providerOrgName": "Ghasem Darian",
+  "npi": "1942363775"
+ },
+ "subscriber": {
+  "memberId": "370622370",
+  "firstName": "Charles",
+  "lastName": "Ellis",
+  "dateOfBirth": "1955-06-07",
+  "ssn": "370622370",
+  "aaaErrors": [
+   {
+    "field": "AAA",
+    "description": "Subscriber/Insured Not Found",
+    "location": "Loop 2100C",
+    "possibleResolutions": "Call the Real-Time Eligibility Check API first to verify and update patient identity and demographic data elements, then call the Coordination of Benefits API again. Be sure to compare the response values against the request values to identify any payer corrections (for example, the payer may send a corrected `memberId` in the response).",
+    "code": "75",
+    "followupAction": "Please Correct and Resubmit"
+   }
+  ]
+ },
+ "id": "ec_019f7b9f-c041-7973-8efb-fb8313010269"
+}

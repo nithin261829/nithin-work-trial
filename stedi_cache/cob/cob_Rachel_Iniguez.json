@@ -1,0 +1,42 @@
+{
+ "errors": [
+  {
+   "field": "AAA",
+   "description": "Subscriber/Insured Not Found",
+   "location": "Loop 2100C",
+   "possibleResolutions": "Call the Real-Time Eligibility Check API first to verify and update patient identity and demographic data elements, then call the Coordination of Benefits API again. Be sure to compare the response values against the request values to identify any payer corrections (for example, the payer may send a corrected `memberId` in the response).",
+   "code": "75",
+   "followupAction": "Please Correct and Resubmit"
+  }
+ ],
+ "meta": {
+  "applicationMode": "production",
+  "traceId": "01KXXSZCZQTJAGY0XETP9QTR0V",
+  "outboundTraceId": "01KXXSZCZQTJAGY0XETP9QTR0V"
+ },
+ "payer": {
+  "name": "CIGNA",
+  "payerIdentification": "CIGNA-HCIN"
+ },
+ "provider": {
+  "providerOrgName": "Ghasem Darian",
+  "npi": "1942363775"
+ },
+ "subscriber": {
+  "memberId": "U12168927",
+  "firstName": "Rachel",
+  "lastName": "Iniguez",
+  "dateOfBirth": "1957-01-06",
+  "aaaErrors": [
+   {
+    "field": "AAA",
+    "description": "Subscriber/Insured Not Found",
+    "location": "Loop 2100C",
+    "possibleResolutions": "Call the Real-Time Eligibility Check API first to verify and update patient identity and demographic data elements, then call the Coordination of Benefits API again. Be sure to compare the response values against the request values to identify any payer corrections (for example, the payer may send a corrected `memberId` in the response).",
+    "code": "75",
+    "followupAction": "Please Correct and Resubmit"
+   }
+  ]
+ },
+ "id": "ec_019f7b9f-b3f7-7c52-84ca-91fa9db9fedf"
+}

@@ -1,0 +1,54 @@
+{
+ "benefitsInformation": [
+  {
+   "benefitsDateInformation": {
+    "benefitBegin": "2026-01-01"
+   },
+   "code": "1",
+   "name": "Active Coverage",
+   "serviceTypeCodes": [
+    "1"
+   ],
+   "serviceTypes": [
+    "Medical Care"
+   ]
+  }
+ ],
+ "coordinationOfBenefits": {
+  "classification": "MemberFoundNoCob",
+  "instanceExists": false,
+  "coverageOverlap": false,
+  "benefitOverlap": false,
+  "primacyDetermined": null
+ },
+ "errors": [],
+ "meta": {
+  "applicationMode": "production",
+  "traceId": "01KXXSWAC9CWKYM9XSZVFB8RBX",
+  "outboundTraceId": "01KXXSWAC9CWKYM9XSZVFB8RBX"
+ },
+ "payer": {
+  "name": "Aetna",
+  "payerIdentification": "AETNA-USH"
+ },
+ "provider": {
+  "providerOrgName": "GHASEM DARIAN",
+  "npi": "1942363775"
+ },
+ "subscriber": {
+  "memberId": "102256326100",
+  "firstName": "CARL",
+  "lastName": "THOMPSON",
+  "middleName": "R",
+  "gender": "M",
+  "dateOfBirth": "1951-07-18",
+  "address": {
+   "address1": "808 E MISSOURI AVE",
+   "address2": "UNIT 220",
+   "city": "PHOENIX",
+   "state": "AZ",
+   "postalCode": "85014"
+  }
+ },
+ "id": "ec_019f7b9e-2938-7d43-87c7-9a062a9b8418"
+}

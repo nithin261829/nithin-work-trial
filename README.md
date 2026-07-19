@@ -101,7 +101,12 @@ CSV writers             report + detail + extended patients.csv
 - Estimates use **office fees**, not payer-contracted allowed amounts.
 - Eligibility is checked as of **today**; patients scheduling far out should be
   re-verified near the appointment (`dateOfService` supports this).
-- **Coordination of Benefits** (secondary coverage) is not yet checked.
+- **Coordination of Benefits** was checked where possible: Aetna confirmed
+  **no other coverage** for Carl Thompson and El-khatib Suzy (MemberFoundNoCob).
+  Cigna returned "Subscriber Not Found" from its COB data source for all eight
+  Cigna patients (inconclusive, not negative), and Delta Dental, UHC, Humana,
+  and EMI do not support COB checks via Stedi - those patients would need a
+  front-desk "do you have other insurance?" question instead.
 - Claims in `05_claims/claims_history.csv` with SUBMITTED/CREATED status could be
   tracked via Stedi's 276/277 claim-status API.
 

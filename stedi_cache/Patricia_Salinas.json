@@ -1,0 +1,102 @@
+{
+ "meta": {
+  "senderId": "STEDI",
+  "submitterId": "117151744",
+  "applicationMode": "production",
+  "traceId": "01KXXJY7KB2WMATHDB839MNM88",
+  "outboundTraceId": "01KXXJY7KB2WMATHDB839MNM88"
+ },
+ "controlNumber": "23785438",
+ "reassociationKey": "23785438",
+ "tradingPartnerServiceId": "SX110",
+ "provider": {
+  "providerName": "Dental Practice",
+  "entityIdentifier": "Provider",
+  "entityType": "Non-Person Entity",
+  "npi": "1999999984"
+ },
+ "subscriber": {
+  "memberId": "24772171573",
+  "firstName": "Patricia",
+  "lastName": "Salinas",
+  "middleName": "M",
+  "gender": "F",
+  "entityIdentifier": "Insured or Subscriber",
+  "entityType": "Person",
+  "dateOfBirth": "19880422",
+  "groupNumber": "COMM8582",
+  "address": {
+   "address1": "8832 N 42Nd Ave",
+   "city": "Phoenix",
+   "state": "AZ",
+   "postalCode": "85051"
+  }
+ },
+ "subscriberTraceNumbers": [
+  {
+   "traceTypeCode": "1",
+   "traceType": "Current Transaction Trace Numbers",
+   "referenceIdentification": "01KXXJY7M117T4NGXA3S73Y7HF",
+   "originatingCompanyIdentifier": "3117151744"
+  }
+ ],
+ "payer": {
+  "entityIdentifier": "Payer",
+  "entityType": "Non-Person Entity",
+  "name": "EMI Health",
+  "payorIdentification": "SX110"
+ },
+ "planInformation": {
+  "groupNumber": "COMM8582"
+ },
+ "planStatus": [
+  {
+   "statusCode": "6",
+   "status": "Inactive",
+   "serviceTypeCodes": [
+    "30"
+   ]
+  },
+  {
+   "statusCode": "6",
+   "status": "Inactive",
+   "serviceTypeCodes": [
+    "35"
+   ]
+  }
+ ],
+ "benefitsInformation": [
+  {
+   "code": "6",
+   "name": "Inactive",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "30"
+   ],
+   "serviceTypes": [
+    "Health Benefit Plan Coverage"
+   ]
+  },
+  {
+   "code": "6",
+   "name": "Inactive",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "35"
+   ],
+   "serviceTypes": [
+    "Dental Care"
+   ],
+   "benefitsDateInformation": {
+    "eligibility": "20260719",
+    "eligibilityEnd": "20260701"
+   }
+  }
+ ],
+ "errors": [],
+ "x12": "ISA*00*          *00*          *ZZ*STEDI          *01*117151744      *260719*1021*^*00501*023785438*0*P*`~GS*HB*STEDI*117151744*20260719*1021*1*X*005010X279A1~ST*271*0001*005010X279A1~BHT*0022*11*01KXXJY7KB2WMATHDB839MNM88*20260719*1021~HL*1**20*1~NM1*PR*2*EMI Health*****PI*SX110~HL*2*1*21*1~NM1*1P*2*Dental Practice*****XX*1999999984~HL*3*2*22*0~TRN*1*01KXXJY7M117T4NGXA3S73Y7HF*3117151744~NM1*IL*1*Salinas*Patricia*M***MI*24772171573~REF*6P*COMM8582~N3*8832 N 42Nd Ave~N4*Phoenix*AZ*85051~DMG*D8*19880422*F~EB*6*IND*30~EB*6*IND*35~DTP*307*D8*20260719~DTP*357*D8*20260701~SE*18*0001~GE*1*1~IEA*1*023785438~",
+ "eligibilitySearchId": "019f7b2f-1e6b-7681-aef7-d8f03bc81961",
+ "id": "ec_019f7b2f-1e6a-72e2-a851-6375742cd5c8"
+}

@@ -1,0 +1,815 @@
+{
+ "meta": {
+  "senderId": "STEDI",
+  "submitterId": "117151744",
+  "applicationMode": "production",
+  "traceId": "01KXXMB5F06CWF07J2PCWE46AK",
+  "outboundTraceId": "01KXXMB5F06CWF07J2PCWE46AK"
+ },
+ "controlNumber": "995227840",
+ "reassociationKey": "995227840",
+ "tradingPartnerServiceId": "60054",
+ "provider": {
+  "providerName": "Darian",
+  "providerFirstName": "Ghasem",
+  "middleName": "K.",
+  "entityIdentifier": "Provider",
+  "entityType": "Person",
+  "npi": "1942363775"
+ },
+ "subscriber": {
+  "memberId": "102214875000",
+  "firstName": "CHARLES",
+  "lastName": "ELLIS",
+  "middleName": "B",
+  "gender": "M",
+  "entityIdentifier": "Insured or Subscriber",
+  "entityType": "Person",
+  "dateOfBirth": "19550607",
+  "groupNumber": "000003-AZ",
+  "planNumber": "000003-AZ000028",
+  "groupDescription": "MA Individual - Arizona",
+  "address": {
+   "address1": "808 E MISSOURI AVE UNIT 336",
+   "city": "PHOENIX",
+   "state": "AZ",
+   "postalCode": "85014"
+  }
+ },
+ "subscriberTraceNumbers": [
+  {
+   "traceTypeCode": "1",
+   "traceType": "Current Transaction Trace Numbers",
+   "referenceIdentification": "01KXXMB5F7GXZ6V46EYC5RMGQP",
+   "originatingCompanyIdentifier": "3117151744"
+  }
+ ],
+ "payer": {
+  "entityIdentifier": "Payer",
+  "entityType": "Non-Person Entity",
+  "name": "AETNA INC",
+  "payorIdentification": "953402799"
+ },
+ "planInformation": {
+  "planNumber": "000003-AZ000028",
+  "groupNumber": "000003-AZ",
+  "groupDescription": "MA Individual - Arizona"
+ },
+ "planDateInformation": {
+  "planBegin": "20260101",
+  "eligibilityBegin": "20260101",
+  "service": "20260719"
+ },
+ "planStatus": [
+  {
+   "statusCode": "1",
+   "status": "Active Coverage",
+   "planDetails": "Aetna Medicare Eagle (PPO)",
+   "serviceTypeCodes": [
+    "30"
+   ]
+  }
+ ],
+ "benefitsInformation": [
+  {
+   "code": "W",
+   "name": "Other Source of Data",
+   "benefitsRelatedEntity": {
+    "entityIdentifier": "Payer",
+    "entityType": "Non-Person Entity",
+    "entityName": "Aetna Medicare",
+    "address": {
+     "address1": "PO Box 981106",
+     "city": "El Paso",
+     "state": "TX",
+     "postalCode": "79998"
+    }
+   },
+   "benefitsRelatedEntities": [
+    {
+     "entityIdentifier": "Payer",
+     "entityType": "Non-Person Entity",
+     "entityName": "Aetna Medicare",
+     "address": {
+      "address1": "PO Box 981106",
+      "city": "El Paso",
+      "state": "TX",
+      "postalCode": "79998"
+     }
+    }
+   ]
+  },
+  {
+   "code": "1",
+   "name": "Active Coverage",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "30"
+   ],
+   "serviceTypes": [
+    "Health Benefit Plan Coverage"
+   ],
+   "insuranceTypeCode": "PR",
+   "insuranceType": "Preferred Provider Organization (PPO)",
+   "planCoverage": "Aetna Medicare Eagle (PPO)",
+   "additionalInformation": [
+    {
+     "description": "Medicare"
+    }
+   ]
+  },
+  {
+   "code": "C",
+   "name": "Deductible",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "30"
+   ],
+   "serviceTypes": [
+    "Health Benefit Plan Coverage"
+   ],
+   "timeQualifierCode": "23",
+   "timeQualifier": "Calendar Year",
+   "benefitAmount": "0",
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable"
+  },
+  {
+   "code": "C",
+   "name": "Deductible",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "30"
+   ],
+   "serviceTypes": [
+    "Health Benefit Plan Coverage"
+   ],
+   "timeQualifierCode": "29",
+   "timeQualifier": "Remaining",
+   "benefitAmount": "0",
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable"
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "30"
+   ],
+   "serviceTypes": [
+    "Health Benefit Plan Coverage"
+   ],
+   "timeQualifierCode": "23",
+   "timeQualifier": "Calendar Year",
+   "benefitAmount": "3000",
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "additionalInformation": [
+    {
+     "description": "Annual Maximum"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "30"
+   ],
+   "serviceTypes": [
+    "Health Benefit Plan Coverage"
+   ],
+   "timeQualifierCode": "29",
+   "timeQualifier": "Remaining",
+   "benefitAmount": "3000",
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "additionalInformation": [
+    {
+     "description": "Annual Maximum"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "serviceTypeCodes": [
+    "30"
+   ],
+   "serviceTypes": [
+    "Health Benefit Plan Coverage"
+   ],
+   "additionalInformation": [
+    {
+     "description": "ALTERNATE BENEFITS MAY APPLY"
+    }
+   ]
+  },
+  {
+   "code": "D",
+   "name": "Benefit Description",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "30"
+   ],
+   "serviceTypes": [
+    "Health Benefit Plan Coverage"
+   ],
+   "additionalInformation": [
+    {
+     "description": "Standard Dental Network,Careington Medicare - Dental,Connection Dental Network"
+    }
+   ]
+  },
+  {
+   "code": "A",
+   "name": "Co-Insurance",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "41",
+    "23"
+   ],
+   "serviceTypes": [
+    "Routine (Preventive) Dental",
+    "Diagnostic Dental"
+   ],
+   "benefitPercent": "0",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes"
+  },
+  {
+   "code": "A",
+   "name": "Co-Insurance",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "25",
+    "26",
+    "24",
+    "28"
+   ],
+   "serviceTypes": [
+    "Restorative",
+    "Endodontics",
+    "Periodontics",
+    "Adjunctive Dental Services"
+   ],
+   "benefitPercent": "0.2",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes"
+  },
+  {
+   "code": "A",
+   "name": "Co-Insurance",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "36",
+    "39"
+   ],
+   "serviceTypes": [
+    "Dental Crowns",
+    "Prosthodontics"
+   ],
+   "benefitPercent": "0.5",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes"
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "41",
+    "25",
+    "36",
+    "26",
+    "24",
+    "39",
+    "28",
+    "23"
+   ],
+   "serviceTypes": [
+    "Routine (Preventive) Dental",
+    "Restorative",
+    "Dental Crowns",
+    "Endodontics",
+    "Periodontics",
+    "Prosthodontics",
+    "Adjunctive Dental Services",
+    "Diagnostic Dental"
+   ],
+   "benefitAmount": "0",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes"
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "41",
+    "23"
+   ],
+   "serviceTypes": [
+    "Routine (Preventive) Dental",
+    "Diagnostic Dental"
+   ],
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "benefitsServiceDelivery": [
+    {
+     "quantityQualifierCode": "FL",
+     "quantityQualifier": "Units",
+     "quantity": "2",
+     "timePeriodQualifierCode": "23",
+     "timePeriodQualifier": "Calendar Year"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "41",
+    "23"
+   ],
+   "serviceTypes": [
+    "Routine (Preventive) Dental",
+    "Diagnostic Dental"
+   ],
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "benefitsServiceDelivery": [
+    {
+     "quantityQualifierCode": "FL",
+     "quantityQualifier": "Units",
+     "quantity": "2",
+     "timePeriodQualifierCode": "29",
+     "timePeriodQualifier": "Remaining"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "25"
+   ],
+   "serviceTypes": [
+    "Restorative"
+   ],
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "benefitsServiceDelivery": [
+    {
+     "quantityQualifierCode": "FL",
+     "quantityQualifier": "Units",
+     "quantity": "2",
+     "timePeriodQualifierCode": "23",
+     "timePeriodQualifier": "Calendar Year",
+     "numOfPeriods": "1"
+    }
+   ],
+   "additionalInformation": [
+    {
+     "description": "per Tooth"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "25"
+   ],
+   "serviceTypes": [
+    "Restorative"
+   ],
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "benefitsServiceDelivery": [
+    {
+     "quantityQualifierCode": "FL",
+     "quantityQualifier": "Units",
+     "quantity": "2",
+     "timePeriodQualifierCode": "29",
+     "timePeriodQualifier": "Remaining"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "36"
+   ],
+   "serviceTypes": [
+    "Dental Crowns"
+   ],
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "benefitsServiceDelivery": [
+    {
+     "quantityQualifierCode": "FL",
+     "quantityQualifier": "Units",
+     "quantity": "1",
+     "timePeriodQualifierCode": "23",
+     "timePeriodQualifier": "Calendar Year",
+     "numOfPeriods": "5"
+    }
+   ],
+   "additionalInformation": [
+    {
+     "description": "per Tooth"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "36"
+   ],
+   "serviceTypes": [
+    "Dental Crowns"
+   ],
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "benefitsServiceDelivery": [
+    {
+     "quantityQualifierCode": "FL",
+     "quantityQualifier": "Units",
+     "quantity": "1",
+     "timePeriodQualifierCode": "29",
+     "timePeriodQualifier": "Remaining"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "26"
+   ],
+   "serviceTypes": [
+    "Endodontics"
+   ],
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "benefitsServiceDelivery": [
+    {
+     "quantityQualifierCode": "FL",
+     "quantityQualifier": "Units",
+     "quantity": "1",
+     "timePeriodQualifierCode": "32",
+     "timePeriodQualifier": "Lifetime"
+    }
+   ],
+   "additionalInformation": [
+    {
+     "description": "per Tooth"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "26"
+   ],
+   "serviceTypes": [
+    "Endodontics"
+   ],
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "benefitsServiceDelivery": [
+    {
+     "quantityQualifierCode": "FL",
+     "quantityQualifier": "Units",
+     "quantity": "1",
+     "timePeriodQualifierCode": "29",
+     "timePeriodQualifier": "Remaining"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "24"
+   ],
+   "serviceTypes": [
+    "Periodontics"
+   ],
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "benefitsServiceDelivery": [
+    {
+     "quantityQualifierCode": "FL",
+     "quantityQualifier": "Units",
+     "quantity": "1",
+     "timePeriodQualifierCode": "23",
+     "timePeriodQualifier": "Calendar Year",
+     "numOfPeriods": "2"
+    }
+   ],
+   "additionalInformation": [
+    {
+     "description": "per Quadrant"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "24"
+   ],
+   "serviceTypes": [
+    "Periodontics"
+   ],
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "benefitsServiceDelivery": [
+    {
+     "quantityQualifierCode": "FL",
+     "quantityQualifier": "Units",
+     "quantity": "1",
+     "timePeriodQualifierCode": "29",
+     "timePeriodQualifier": "Remaining"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "39"
+   ],
+   "serviceTypes": [
+    "Prosthodontics"
+   ],
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "benefitsServiceDelivery": [
+    {
+     "quantityQualifierCode": "FL",
+     "quantityQualifier": "Units",
+     "quantity": "1",
+     "timePeriodQualifierCode": "23",
+     "timePeriodQualifier": "Calendar Year",
+     "numOfPeriods": "5"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "39"
+   ],
+   "serviceTypes": [
+    "Prosthodontics"
+   ],
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "benefitsServiceDelivery": [
+    {
+     "quantityQualifierCode": "FL",
+     "quantityQualifier": "Units",
+     "quantity": "1",
+     "timePeriodQualifierCode": "29",
+     "timePeriodQualifier": "Remaining"
+    }
+   ]
+  },
+  {
+   "code": "G",
+   "name": "Out of Pocket (Stop Loss)",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "27"
+   ],
+   "serviceTypes": [
+    "Maxillofacial Prosthetics"
+   ],
+   "timeQualifierCode": "23",
+   "timeQualifier": "Calendar Year",
+   "benefitAmount": "8950",
+   "inPlanNetworkIndicatorCode": "N",
+   "inPlanNetworkIndicator": "No",
+   "additionalInformation": [
+    {
+     "description": "INT Med AND RX"
+    }
+   ]
+  },
+  {
+   "code": "G",
+   "name": "Out of Pocket (Stop Loss)",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "27"
+   ],
+   "serviceTypes": [
+    "Maxillofacial Prosthetics"
+   ],
+   "timeQualifierCode": "29",
+   "timeQualifier": "Remaining",
+   "benefitAmount": "8950",
+   "inPlanNetworkIndicatorCode": "N",
+   "inPlanNetworkIndicator": "No"
+  },
+  {
+   "code": "A",
+   "name": "Co-Insurance",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "41",
+    "25",
+    "26",
+    "24",
+    "28",
+    "23"
+   ],
+   "serviceTypes": [
+    "Routine (Preventive) Dental",
+    "Restorative",
+    "Endodontics",
+    "Periodontics",
+    "Adjunctive Dental Services",
+    "Diagnostic Dental"
+   ],
+   "benefitPercent": "0.5",
+   "inPlanNetworkIndicatorCode": "N",
+   "inPlanNetworkIndicator": "No"
+  },
+  {
+   "code": "A",
+   "name": "Co-Insurance",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "36",
+    "39"
+   ],
+   "serviceTypes": [
+    "Dental Crowns",
+    "Prosthodontics"
+   ],
+   "benefitPercent": "0.7",
+   "inPlanNetworkIndicatorCode": "N",
+   "inPlanNetworkIndicator": "No"
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "25"
+   ],
+   "serviceTypes": [
+    "Restorative"
+   ],
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "additionalInformation": [
+    {
+     "description": "Shares Frequencies with D2140,D2160,D2161,D2330,D2331,D2332,D2335,D2390,D2391,D2392,D2393,D2394"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "36"
+   ],
+   "serviceTypes": [
+    "Dental Crowns"
+   ],
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "additionalInformation": [
+    {
+     "description": "Shares Frequencies with D2740,D2750,D2751,D2753,D2780,D2781,D2782,D2783,D2790,D2791,D2792"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "24"
+   ],
+   "serviceTypes": [
+    "Periodontics"
+   ],
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "additionalInformation": [
+    {
+     "description": "Shares Frequencies with D4342"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "39"
+   ],
+   "serviceTypes": [
+    "Prosthodontics"
+   ],
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "additionalInformation": [
+    {
+     "description": "Shares Frequencies with D5130,D5877"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "23"
+   ],
+   "serviceTypes": [
+    "Diagnostic Dental"
+   ],
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "additionalInformation": [
+    {
+     "description": "Shares Frequencies with D0150"
+    }
+   ]
+  },
+  {
+   "code": "I",
+   "name": "Non-Covered",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "38"
+   ],
+   "serviceTypes": [
+    "Orthodontics"
+   ],
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable"
+  }
+ ],
+ "errors": [],
+ "x12": "ISA*00*          *00*          *ZZ*STEDI          *01*117151744      *260719*1246*^*00501*995227840*0*P*`~GS*HB*STEDI*117151744*20260719*124628*1*X*005010X279A1~ST*271*1001*005010X279A1~BHT*0022*11*01KXXMB5F06CWF07J2PCWE46AK*20260719*12462841~HL*1**20*1~NM1*PR*2*AETNA INC*****PI*953402799~HL*2*1*21*1~NM1*1P*1*Darian*Ghasem*K.***XX*1942363775~HL*3*2*22*0~TRN*1*01KXXMB5F7GXZ6V46EYC5RMGQP*3117151744~NM1*IL*1*ELLIS*CHARLES*B***MI*102214875000~REF*18*000003-AZ000028~REF*6P*000003-AZ*MA Individual - Arizona~N3*808 E MISSOURI AVE UNIT 336~N4*PHOENIX*AZ*85014~DMG*D8*19550607*M~DTP*346*D8*20260101~DTP*472*D8*20260719~DTP*356*D8*20260101~EB*W~LS*2120~NM1*PR*2*Aetna Medicare~N3*PO Box 981106~N4*El Paso*TX*79998~LE*2120~EB*1*IND*30*PR*Aetna Medicare Eagle (PPO)~MSG*Medicare~EB*C*IND*30***23*0*****W~EB*C*IND*30***29*0*****W~EB*F*IND*30***23*3000*****W~MSG*Annual Maximum~EB*F*IND*30***29*3000*****W~MSG*Annual Maximum~EB*F**30~MSG*ALTERNATE BENEFITS MAY APPLY~EB*D*IND*30~MSG*Standard Dental Network,Careington Medicare - Dental,Connection Dental Network~EB*A*IND*41^23*****0****Y~EB*A*IND*25^26^24^28*****.2****Y~EB*A*IND*36^39*****.5****Y~EB*B*IND*41^25^36^26^24^39^28^23****0*****Y~EB*F*IND*41^23*********W~HSD*FL*2***23~EB*F*IND*41^23*********W~HSD*FL*2***29~EB*F*IND*25*********W~HSD*FL*2***23*1~MSG*per Tooth~EB*F*IND*25*********W~HSD*FL*2***29~EB*F*IND*36*********W~HSD*FL*1***23*5~MSG*per Tooth~EB*F*IND*36*********W~HSD*FL*1***29~EB*F*IND*26*********W~HSD*FL*1***32~MSG*per Tooth~EB*F*IND*26*********W~HSD*FL*1***29~EB*F*IND*24*********W~HSD*FL*1***23*2~MSG*per Quadrant~EB*F*IND*24*********W~HSD*FL*1***29~EB*F*IND*39*********W~HSD*FL*1***23*5~EB*F*IND*39*********W~HSD*FL*1***29~EB*G*IND*27***23*8950*****N~MSG*INT Med AND RX~EB*G*IND*27***29*8950*****N~EB*A*IND*41^25^26^24^28^23*****.5****N~EB*A*IND*36^39*****.7****N~EB*F*IND*25*********W~MSG*Shares Frequencies with D2140,D2160,D2161,D2330,D2331,D2332,D2335,D2390,D2391,D2392,D2393,D2394~EB*F*IND*36*********W~MSG*Shares Frequencies with D2740,D2750,D2751,D2753,D2780,D2781,D2782,D2783,D2790,D2791,D2792~EB*F*IND*24*********W~MSG*Shares Frequencies with D4342~EB*F*IND*39*********W~MSG*Shares Frequencies with D5130,D5877~EB*F*IND*23*********W~MSG*Shares Frequencies with D0150~EB*I*IND*38*********W~SE*84*1001~GE*1*1~IEA*1*995227840~",
+ "eligibilitySearchId": "019f7b45-95e0-7551-ad4a-e6357cdf3d8f",
+ "id": "ec_019f7b45-95e0-7551-ad4a-e62eda286d49"
+}

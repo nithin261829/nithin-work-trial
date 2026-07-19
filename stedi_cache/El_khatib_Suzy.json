@@ -1,0 +1,838 @@
+{
+ "meta": {
+  "senderId": "STEDI",
+  "submitterId": "117151744",
+  "applicationMode": "production",
+  "traceId": "01KXXMB27YMBTEZKHEGS891WNF",
+  "outboundTraceId": "01KXXMB27YMBTEZKHEGS891WNF"
+ },
+ "controlNumber": "995277757",
+ "reassociationKey": "995277757",
+ "tradingPartnerServiceId": "60054",
+ "provider": {
+  "providerName": "Darian",
+  "providerFirstName": "Ghasem",
+  "middleName": "K.",
+  "entityIdentifier": "Provider",
+  "entityType": "Person",
+  "npi": "1942363775"
+ },
+ "subscriber": {
+  "memberId": "W273801084",
+  "firstName": "SUZY",
+  "lastName": "EL-KHATIB",
+  "gender": "F",
+  "entityIdentifier": "Insured or Subscriber",
+  "entityType": "Person",
+  "dateOfBirth": "19670727",
+  "groupNumber": "013835903300010",
+  "planNumber": "0138359",
+  "groupDescription": "ARIZONA CENTER FOR HEMATOLOGY AND O",
+  "address": {
+   "address1": "7444 W BANFF LN",
+   "city": "PEORIA",
+   "state": "AZ",
+   "postalCode": "85381"
+  }
+ },
+ "subscriberTraceNumbers": [
+  {
+   "traceTypeCode": "1",
+   "traceType": "Current Transaction Trace Numbers",
+   "referenceIdentification": "01KXXMB28JJDE8NAJSB3FE7MX4",
+   "originatingCompanyIdentifier": "3117151744"
+  }
+ ],
+ "payer": {
+  "entityIdentifier": "Payer",
+  "entityType": "Non-Person Entity",
+  "name": "AETNA INC",
+  "payorIdentification": "953402799"
+ },
+ "planInformation": {
+  "planNumber": "0138359",
+  "groupNumber": "013835903300010",
+  "groupDescription": "ARIZONA CENTER FOR HEMATOLOGY AND O",
+  "idCardSerialNumber": "273801084"
+ },
+ "planDateInformation": {
+  "latestVisitOrConsultation": "20260214",
+  "planBegin": "20251101",
+  "eligibilityBegin": "20230809",
+  "service": "20260719"
+ },
+ "planStatus": [
+  {
+   "statusCode": "1",
+   "status": "Active Coverage",
+   "planDetails": "PPO Dental 2000",
+   "serviceTypeCodes": [
+    "30"
+   ]
+  }
+ ],
+ "benefitsInformation": [
+  {
+   "code": "W",
+   "name": "Other Source of Data",
+   "benefitsRelatedEntity": {
+    "entityIdentifier": "Payer",
+    "entityType": "Non-Person Entity",
+    "entityName": "Aetna Dental",
+    "address": {
+     "address1": "PO Box 14094",
+     "city": "Lexington",
+     "state": "KY",
+     "postalCode": "40512"
+    }
+   },
+   "benefitsRelatedEntities": [
+    {
+     "entityIdentifier": "Payer",
+     "entityType": "Non-Person Entity",
+     "entityName": "Aetna Dental",
+     "address": {
+      "address1": "PO Box 14094",
+      "city": "Lexington",
+      "state": "KY",
+      "postalCode": "40512"
+     }
+    }
+   ]
+  },
+  {
+   "code": "1",
+   "name": "Active Coverage",
+   "coverageLevelCode": "EMP",
+   "coverageLevel": "Employee Only",
+   "serviceTypeCodes": [
+    "30"
+   ],
+   "serviceTypes": [
+    "Health Benefit Plan Coverage"
+   ],
+   "insuranceTypeCode": "PR",
+   "insuranceType": "Preferred Provider Organization (PPO)",
+   "planCoverage": "PPO Dental 2000"
+  },
+  {
+   "code": "C",
+   "name": "Deductible",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "30"
+   ],
+   "serviceTypes": [
+    "Health Benefit Plan Coverage"
+   ],
+   "timeQualifierCode": "23",
+   "timeQualifier": "Calendar Year",
+   "benefitAmount": "50",
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "additionalInformation": [
+    {
+     "description": "Dental"
+    }
+   ]
+  },
+  {
+   "code": "C",
+   "name": "Deductible",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "30"
+   ],
+   "serviceTypes": [
+    "Health Benefit Plan Coverage"
+   ],
+   "timeQualifierCode": "29",
+   "timeQualifier": "Remaining",
+   "benefitAmount": "50",
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "additionalInformation": [
+    {
+     "description": "Dental"
+    }
+   ]
+  },
+  {
+   "code": "A",
+   "name": "Co-Insurance",
+   "coverageLevelCode": "EMP",
+   "coverageLevel": "Employee Only",
+   "serviceTypeCodes": [
+    "30"
+   ],
+   "serviceTypes": [
+    "Health Benefit Plan Coverage"
+   ],
+   "benefitPercent": "0",
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "additionalInformation": [
+    {
+     "description": "Preventative"
+    }
+   ]
+  },
+  {
+   "code": "A",
+   "name": "Co-Insurance",
+   "coverageLevelCode": "EMP",
+   "coverageLevel": "Employee Only",
+   "serviceTypeCodes": [
+    "30"
+   ],
+   "serviceTypes": [
+    "Health Benefit Plan Coverage"
+   ],
+   "benefitPercent": "0.2",
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "additionalInformation": [
+    {
+     "description": "Basic"
+    }
+   ]
+  },
+  {
+   "code": "A",
+   "name": "Co-Insurance",
+   "coverageLevelCode": "EMP",
+   "coverageLevel": "Employee Only",
+   "serviceTypeCodes": [
+    "30"
+   ],
+   "serviceTypes": [
+    "Health Benefit Plan Coverage"
+   ],
+   "benefitPercent": "0.5",
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "additionalInformation": [
+    {
+     "description": "Major,Ortho"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "30"
+   ],
+   "serviceTypes": [
+    "Health Benefit Plan Coverage"
+   ],
+   "timeQualifierCode": "23",
+   "timeQualifier": "Calendar Year",
+   "benefitAmount": "1500",
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "additionalInformation": [
+    {
+     "description": "DENTAL"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "30"
+   ],
+   "serviceTypes": [
+    "Health Benefit Plan Coverage"
+   ],
+   "timeQualifierCode": "29",
+   "timeQualifier": "Remaining",
+   "benefitAmount": "1402",
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "additionalInformation": [
+    {
+     "description": "DENTAL"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "30"
+   ],
+   "serviceTypes": [
+    "Health Benefit Plan Coverage"
+   ],
+   "timeQualifierCode": "32",
+   "timeQualifier": "Lifetime",
+   "benefitAmount": "1500",
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "additionalInformation": [
+    {
+     "description": "Orthodontics"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "30"
+   ],
+   "serviceTypes": [
+    "Health Benefit Plan Coverage"
+   ],
+   "timeQualifierCode": "33",
+   "timeQualifier": "Lifetime Remaining",
+   "benefitAmount": "1500",
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "additionalInformation": [
+    {
+     "description": "Orthodontics"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "EMP",
+   "coverageLevel": "Employee Only",
+   "serviceTypeCodes": [
+    "30"
+   ],
+   "serviceTypes": [
+    "Health Benefit Plan Coverage"
+   ],
+   "additionalInformation": [
+    {
+     "description": "MISSING TOOTH CLAUSE APPLIES"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "EMP",
+   "coverageLevel": "Employee Only",
+   "serviceTypeCodes": [
+    "30"
+   ],
+   "serviceTypes": [
+    "Health Benefit Plan Coverage"
+   ],
+   "additionalInformation": [
+    {
+     "description": "COMMERCIAL,CHLD TO 26 OR 26 IF FT STUDENT"
+    }
+   ]
+  },
+  {
+   "code": "D",
+   "name": "Benefit Description",
+   "coverageLevelCode": "EMP",
+   "coverageLevel": "Employee Only",
+   "serviceTypeCodes": [
+    "30"
+   ],
+   "serviceTypes": [
+    "Health Benefit Plan Coverage"
+   ],
+   "additionalInformation": [
+    {
+     "description": "STANDARD DENTAL NETWORK,PPO II NETWORK,DENTAL EXTEND NETWORK"
+    }
+   ]
+  },
+  {
+   "code": "A",
+   "name": "Co-Insurance",
+   "coverageLevelCode": "EMP",
+   "coverageLevel": "Employee Only",
+   "serviceTypeCodes": [
+    "23",
+    "41"
+   ],
+   "serviceTypes": [
+    "Diagnostic Dental",
+    "Routine (Preventive) Dental"
+   ],
+   "benefitPercent": "0",
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable"
+  },
+  {
+   "code": "A",
+   "name": "Co-Insurance",
+   "coverageLevelCode": "EMP",
+   "coverageLevel": "Employee Only",
+   "serviceTypeCodes": [
+    "24",
+    "25",
+    "26",
+    "28"
+   ],
+   "serviceTypes": [
+    "Periodontics",
+    "Restorative",
+    "Endodontics",
+    "Adjunctive Dental Services"
+   ],
+   "benefitPercent": "0.2",
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable"
+  },
+  {
+   "code": "A",
+   "name": "Co-Insurance",
+   "coverageLevelCode": "EMP",
+   "coverageLevel": "Employee Only",
+   "serviceTypeCodes": [
+    "36",
+    "38",
+    "39"
+   ],
+   "serviceTypes": [
+    "Dental Crowns",
+    "Orthodontics",
+    "Prosthodontics"
+   ],
+   "benefitPercent": "0.5",
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable"
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "EMP",
+   "coverageLevel": "Employee Only",
+   "serviceTypeCodes": [
+    "23"
+   ],
+   "serviceTypes": [
+    "Diagnostic Dental"
+   ],
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "benefitsServiceDelivery": [
+    {
+     "quantityQualifierCode": "FL",
+     "quantityQualifier": "Units",
+     "quantity": "2",
+     "timePeriodQualifierCode": "23",
+     "timePeriodQualifier": "Calendar Year",
+     "numOfPeriods": "1"
+    }
+   ],
+   "additionalInformation": [
+    {
+     "description": "PER FULL MOUTH"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "EMP",
+   "coverageLevel": "Employee Only",
+   "serviceTypeCodes": [
+    "23"
+   ],
+   "serviceTypes": [
+    "Diagnostic Dental"
+   ],
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "benefitsDateInformation": {
+    "latestVisitOrConsultation": "20260214"
+   },
+   "benefitsServiceDelivery": [
+    {
+     "quantityQualifierCode": "FL",
+     "quantityQualifier": "Units",
+     "quantity": "1",
+     "timePeriodQualifierCode": "29",
+     "timePeriodQualifier": "Remaining"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "EMP",
+   "coverageLevel": "Employee Only",
+   "serviceTypeCodes": [
+    "24"
+   ],
+   "serviceTypes": [
+    "Periodontics"
+   ],
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "benefitsServiceDelivery": [
+    {
+     "quantityQualifierCode": "FL",
+     "quantityQualifier": "Units",
+     "quantity": "1",
+     "unitForMeasurementCode": "Months",
+     "sampleSelectionModulus": "24",
+     "unitForMeasurementQualifierCode": "MO",
+     "unitForMeasurementQualifier": "Months"
+    }
+   ],
+   "additionalInformation": [
+    {
+     "description": "PER QUADRANT"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "EMP",
+   "coverageLevel": "Employee Only",
+   "serviceTypeCodes": [
+    "36"
+   ],
+   "serviceTypes": [
+    "Dental Crowns"
+   ],
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "benefitsServiceDelivery": [
+    {
+     "quantityQualifierCode": "FL",
+     "quantityQualifier": "Units",
+     "quantity": "1",
+     "unitForMeasurementCode": "Months",
+     "sampleSelectionModulus": "60",
+     "unitForMeasurementQualifierCode": "MO",
+     "unitForMeasurementQualifier": "Months"
+    }
+   ],
+   "additionalInformation": [
+    {
+     "description": "TOOTH NUMBER 01 TO 32"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "EMP",
+   "coverageLevel": "Employee Only",
+   "serviceTypeCodes": [
+    "39"
+   ],
+   "serviceTypes": [
+    "Prosthodontics"
+   ],
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "benefitsServiceDelivery": [
+    {
+     "quantityQualifierCode": "FL",
+     "quantityQualifier": "Units",
+     "quantity": "1",
+     "unitForMeasurementCode": "Months",
+     "sampleSelectionModulus": "60",
+     "unitForMeasurementQualifierCode": "MO",
+     "unitForMeasurementQualifier": "Months"
+    }
+   ],
+   "additionalInformation": [
+    {
+     "description": "TOOTH NUMBER 01 TO 16"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "EMP",
+   "coverageLevel": "Employee Only",
+   "serviceTypeCodes": [
+    "41"
+   ],
+   "serviceTypes": [
+    "Routine (Preventive) Dental"
+   ],
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "benefitsServiceDelivery": [
+    {
+     "quantityQualifierCode": "VS",
+     "quantityQualifier": "Visits",
+     "quantity": "2",
+     "timePeriodQualifierCode": "23",
+     "timePeriodQualifier": "Calendar Year",
+     "numOfPeriods": "1"
+    }
+   ],
+   "additionalInformation": [
+    {
+     "description": "DENTAL PROPHYLAXIS COUNTER"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "EMP",
+   "coverageLevel": "Employee Only",
+   "serviceTypeCodes": [
+    "41"
+   ],
+   "serviceTypes": [
+    "Routine (Preventive) Dental"
+   ],
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "benefitsDateInformation": {
+    "latestVisitOrConsultation": "20260214"
+   },
+   "benefitsServiceDelivery": [
+    {
+     "quantityQualifierCode": "VS",
+     "quantityQualifier": "Visits",
+     "quantity": "1",
+     "timePeriodQualifierCode": "29",
+     "timePeriodQualifier": "Remaining"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "EMP",
+   "coverageLevel": "Employee Only",
+   "serviceTypeCodes": [
+    "23",
+    "41"
+   ],
+   "serviceTypes": [
+    "Diagnostic Dental",
+    "Routine (Preventive) Dental"
+   ],
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "DEDUCTIBLE DOES NOT APPLY"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "EMP",
+   "coverageLevel": "Employee Only",
+   "serviceTypeCodes": [
+    "23",
+    "24",
+    "25",
+    "26",
+    "28",
+    "36",
+    "38",
+    "39",
+    "41"
+   ],
+   "serviceTypes": [
+    "Diagnostic Dental",
+    "Periodontics",
+    "Restorative",
+    "Endodontics",
+    "Adjunctive Dental Services",
+    "Dental Crowns",
+    "Orthodontics",
+    "Prosthodontics",
+    "Routine (Preventive) Dental"
+   ],
+   "quantityQualifierCode": "S7",
+   "quantityQualifier": "Age, High Value",
+   "benefitQuantity": "99",
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable"
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "EMP",
+   "coverageLevel": "Employee Only",
+   "serviceTypeCodes": [
+    "23"
+   ],
+   "serviceTypes": [
+    "Diagnostic Dental"
+   ],
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "additionalInformation": [
+    {
+     "description": "Shares frequency with D0145,D0150,D0180"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "EMP",
+   "coverageLevel": "Employee Only",
+   "serviceTypeCodes": [
+    "24"
+   ],
+   "serviceTypes": [
+    "Periodontics"
+   ],
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "additionalInformation": [
+    {
+     "description": "Shares frequency with D4342"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "EMP",
+   "coverageLevel": "Employee Only",
+   "serviceTypeCodes": [
+    "36"
+   ],
+   "serviceTypes": [
+    "Dental Crowns"
+   ],
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "additionalInformation": [
+    {
+     "description": "Shares frequency with D2961,D2962,D2975,D2510-D2794,ALTERNATE BENEFITS MAY APPLY"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "EMP",
+   "coverageLevel": "Employee Only",
+   "serviceTypeCodes": [
+    "38"
+   ],
+   "serviceTypes": [
+    "Orthodontics"
+   ],
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "additionalInformation": [
+    {
+     "description": "DEDUCTIBLE DOES NOT APPLY"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "EMP",
+   "coverageLevel": "Employee Only",
+   "serviceTypeCodes": [
+    "39"
+   ],
+   "serviceTypes": [
+    "Prosthodontics"
+   ],
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "additionalInformation": [
+    {
+     "description": "Shares frequency with D5130,D5877,D6110,D6112,D6114,D6116,D6119,D5284-D5286,D5863-D5864"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "EMP",
+   "coverageLevel": "Employee Only",
+   "serviceTypeCodes": [
+    "41"
+   ],
+   "serviceTypes": [
+    "Routine (Preventive) Dental"
+   ],
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "additionalInformation": [
+    {
+     "description": "Shares frequency with D1120,D4346"
+    }
+   ]
+  },
+  {
+   "code": "I",
+   "name": "Non-Covered",
+   "coverageLevelCode": "EMP",
+   "coverageLevel": "Employee Only",
+   "serviceTypeCodes": [
+    "27"
+   ],
+   "serviceTypes": [
+    "Maxillofacial Prosthetics"
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "EMP",
+   "coverageLevel": "Employee Only",
+   "serviceTypeCodes": [
+    "23",
+    "24",
+    "25",
+    "26",
+    "28",
+    "36",
+    "38",
+    "39",
+    "41"
+   ],
+   "serviceTypes": [
+    "Diagnostic Dental",
+    "Periodontics",
+    "Restorative",
+    "Endodontics",
+    "Adjunctive Dental Services",
+    "Dental Crowns",
+    "Orthodontics",
+    "Prosthodontics",
+    "Routine (Preventive) Dental"
+   ],
+   "inPlanNetworkIndicatorCode": "N",
+   "inPlanNetworkIndicator": "No",
+   "additionalInformation": [
+    {
+     "description": "PAYMENT IS BASED ON THE PREFERRED GENERAL DENTIST'S NEGOTIATED FEES"
+    }
+   ]
+  }
+ ],
+ "errors": [],
+ "x12": "ISA*00*          *00*          *ZZ*STEDI          *01*117151744      *260719*1246*^*00501*995277757*0*P*`~GS*HB*STEDI*117151744*20260719*124624*1*X*005010X279A1~ST*271*1001*005010X279A1~BHT*0022*11*01KXXMB27YMBTEZKHEGS891WNF*20260719*12462464~HL*1**20*1~NM1*PR*2*AETNA INC*****PI*953402799~HL*2*1*21*1~NM1*1P*1*Darian*Ghasem*K.***XX*1942363775~HL*3*2*22*0~TRN*1*01KXXMB28JJDE8NAJSB3FE7MX4*3117151744~NM1*IL*1*EL-KHATIB*SUZY****MI*W273801084~REF*18*0138359~REF*6P*013835903300010*ARIZONA CENTER FOR HEMATOLOGY AND O~REF*GH*273801084~N3*7444 W BANFF LN~N4*PEORIA*AZ*85381~DMG*D8*19670727*F~DTP*346*D8*20251101~DTP*472*D8*20260719~DTP*356*D8*20230809~EB*W~LS*2120~NM1*PR*2*Aetna Dental~N3*PO Box 14094~N4*Lexington*KY*40512~LE*2120~EB*1*EMP*30*PR*PPO Dental 2000~EB*C*IND*30***23*50*****W~MSG*Dental~EB*C*IND*30***29*50*****W~MSG*Dental~EB*A*EMP*30*****0****W~MSG*Preventative~EB*A*EMP*30*****.2****W~MSG*Basic~EB*A*EMP*30*****.5****W~MSG*Major,Ortho~EB*F*IND*30***23*1500*****W~MSG*DENTAL~EB*F*IND*30***29*1402*****W~MSG*DENTAL~EB*F*IND*30***32*1500*****W~MSG*Orthodontics~EB*F*IND*30***33*1500*****W~MSG*Orthodontics~EB*F*EMP*30~MSG*MISSING TOOTH CLAUSE APPLIES~EB*F*EMP*30~MSG*COMMERCIAL,CHLD TO 26 OR 26 IF FT STUDENT~EB*D*EMP*30~MSG*STANDARD DENTAL NETWORK,PPO II NETWORK,DENTAL EXTEND NETWORK~EB*A*EMP*23^41*****0****W~EB*A*EMP*24^25^26^28*****.2****W~EB*A*EMP*36^38^39*****.5****W~EB*F*EMP*23*********W~HSD*FL*2***23*1~MSG*PER FULL MOUTH~EB*F*EMP*23*********W~HSD*FL*1***29~DTP*304*D8*20260214~EB*F*EMP*24*********W~HSD*FL*1*MO*24~MSG*PER QUADRANT~EB*F*EMP*36*********W~HSD*FL*1*MO*60~MSG*TOOTH NUMBER 01 TO 32~EB*F*EMP*39*********W~HSD*FL*1*MO*60~MSG*TOOTH NUMBER 01 TO 16~EB*F*EMP*41*********W~HSD*VS*2***23*1~MSG*DENTAL PROPHYLAXIS COUNTER~EB*F*EMP*41*********W~HSD*VS*1***29~DTP*304*D8*20260214~EB*F*EMP*23^41*********Y~MSG*DEDUCTIBLE DOES NOT APPLY~EB*F*EMP*23^24^25^26^28^36^38^39^41******S7*99**W~EB*F*EMP*23*********W~MSG*Shares frequency with D0145,D0150,D0180~EB*F*EMP*24*********W~MSG*Shares frequency with D4342~EB*F*EMP*36*********W~MSG*Shares frequency with D2961,D2962,D2975,D2510-D2794,ALTERNATE BENEFITS MAY APPLY~EB*F*EMP*38*********W~MSG*DEDUCTIBLE DOES NOT APPLY~EB*F*EMP*39*********W~MSG*Shares frequency with D5130,D5877,D6110,D6112,D6114,D6116,D6119,D5284-D5286,D5863-D5864~EB*F*EMP*41*********W~MSG*Shares frequency with D1120,D4346~EB*I*EMP*27~EB*F*EMP*23^24^25^26^28^36^38^39^41*********N~MSG*PAYMENT IS BASED ON THE PREFERRED GENERAL DENTIST'S NEGOTIATED FEES~SE*92*1001~GE*1*1~IEA*1*995277757~",
+ "eligibilitySearchId": "019f7b45-88fd-79b2-8f24-83ddae60a3ff",
+ "id": "ec_019f7b45-88fd-79b2-8f24-83c5fa9b05f7"
+}

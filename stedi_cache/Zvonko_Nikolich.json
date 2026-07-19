@@ -1,0 +1,1009 @@
+{
+ "meta": {
+  "senderId": "STEDI",
+  "submitterId": "117151744",
+  "applicationMode": "production",
+  "traceId": "01KXXK078GGEB8YSWHGR8YN5GK",
+  "outboundTraceId": "01KXXK078GGEB8YSWHGR8YN5GK"
+ },
+ "controlNumber": "823255861",
+ "reassociationKey": "823255861",
+ "tradingPartnerServiceId": "62308",
+ "provider": {
+  "providerName": "Dental Practice",
+  "entityIdentifier": "Provider",
+  "entityType": "Non-Person Entity",
+  "npi": "1999999984"
+ },
+ "subscriber": {
+  "memberId": "U4916388801",
+  "firstName": "ZVONKO",
+  "lastName": "NIKOLICH",
+  "gender": "M",
+  "entityIdentifier": "Insured or Subscriber",
+  "entityType": "Person",
+  "dateOfBirth": "19750531",
+  "groupNumber": "0630199",
+  "planNetworkIdNumber": "DENTL",
+  "groupDescription": "SPRUCE TECHNOLOGY, INC.",
+  "planNetworkDescription": "TOTAL",
+  "address": {
+   "address1": "373 E CORONADO RD UNIT 8",
+   "city": "PHOENIX",
+   "state": "AZ",
+   "postalCode": "850041526"
+  }
+ },
+ "subscriberTraceNumbers": [
+  {
+   "traceTypeCode": "1",
+   "traceType": "Current Transaction Trace Numbers",
+   "referenceIdentification": "01KXXK07999M1P7RVXYDJ2RHB2",
+   "originatingCompanyIdentifier": "3117151744"
+  }
+ ],
+ "payer": {
+  "entityIdentifier": "Payer",
+  "entityType": "Non-Person Entity",
+  "name": "CHLIC",
+  "payorIdentification": "CIGNA",
+  "contactInformation": {
+   "name": "CUSTOMER SERVICE",
+   "contacts": [
+    {
+     "communicationMode": "Telephone",
+     "communicationNumber": "8002446224"
+    },
+    {
+     "communicationMode": "Uniform Resource Locator (URL)",
+     "communicationNumber": "cignaforhcp.cigna.com"
+    }
+   ]
+  }
+ },
+ "planInformation": {
+  "groupNumber": "0630199",
+  "groupDescription": "SPRUCE TECHNOLOGY, INC.",
+  "planNetworkIdNumber": "DENTL",
+  "planNetworkIdDescription": "TOTAL",
+  "priorIdNumber": "U49163888"
+ },
+ "planDateInformation": {
+  "planBegin": "20260101",
+  "planEnd": "20261231",
+  "eligibilityBegin": "20210701"
+ },
+ "planStatus": [
+  {
+   "statusCode": "1",
+   "status": "Active Coverage",
+   "planDetails": "Dental PPO",
+   "serviceTypeCodes": [
+    "30"
+   ]
+  },
+  {
+   "statusCode": "1",
+   "status": "Active Coverage",
+   "serviceTypeCodes": [
+    "35"
+   ]
+  },
+  {
+   "statusCode": "1",
+   "status": "Active Coverage",
+   "serviceTypeCodes": [
+    "23",
+    "24",
+    "25",
+    "26",
+    "28",
+    "36",
+    "39",
+    "4",
+    "41",
+    "7"
+   ]
+  }
+ ],
+ "benefitsInformation": [
+  {
+   "code": "1",
+   "name": "Active Coverage",
+   "serviceTypeCodes": [
+    "30"
+   ],
+   "serviceTypes": [
+    "Health Benefit Plan Coverage"
+   ],
+   "insuranceTypeCode": "PR",
+   "insuranceType": "Preferred Provider Organization (PPO)",
+   "planCoverage": "Dental PPO"
+  },
+  {
+   "code": "I",
+   "name": "Non-Covered",
+   "serviceTypeCodes": [
+    "27",
+    "32",
+    "38"
+   ],
+   "serviceTypes": [
+    "Maxillofacial Prosthetics",
+    "Plan Waiting Period",
+    "Orthodontics"
+   ],
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable"
+  },
+  {
+   "code": "1",
+   "name": "Active Coverage",
+   "serviceTypeCodes": [
+    "35"
+   ],
+   "serviceTypes": [
+    "Dental Care"
+   ]
+  },
+  {
+   "code": "C",
+   "name": "Deductible",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "35"
+   ],
+   "serviceTypes": [
+    "Dental Care"
+   ],
+   "timeQualifierCode": "23",
+   "timeQualifier": "Calendar Year",
+   "benefitAmount": "50",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable"
+  },
+  {
+   "code": "C",
+   "name": "Deductible",
+   "coverageLevelCode": "FAM",
+   "coverageLevel": "Family",
+   "serviceTypeCodes": [
+    "35"
+   ],
+   "serviceTypes": [
+    "Dental Care"
+   ],
+   "timeQualifierCode": "23",
+   "timeQualifier": "Calendar Year",
+   "benefitAmount": "150",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable"
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "35"
+   ],
+   "serviceTypes": [
+    "Dental Care"
+   ],
+   "timeQualifierCode": "23",
+   "timeQualifier": "Calendar Year",
+   "benefitAmount": "1800",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable"
+  },
+  {
+   "code": "1",
+   "name": "Active Coverage",
+   "serviceTypeCodes": [
+    "23",
+    "24",
+    "25",
+    "26",
+    "28",
+    "36",
+    "39",
+    "4",
+    "41",
+    "7"
+   ],
+   "serviceTypes": [
+    "Diagnostic Dental",
+    "Periodontics",
+    "Restorative",
+    "Endodontics",
+    "Adjunctive Dental Services",
+    "Dental Crowns",
+    "Prosthodontics",
+    "Diagnostic X-Ray",
+    "Routine (Preventive) Dental",
+    "Anesthesia"
+   ],
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable"
+  },
+  {
+   "code": "A",
+   "name": "Co-Insurance",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "23"
+   ],
+   "serviceTypes": [
+    "Diagnostic Dental"
+   ],
+   "benefitPercent": "0",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "additionalInformation": [
+    {
+     "description": "D0120 D0140 D0145 D0150 D0160 D0170 D0180 D0372 D0373 D0374 D0387 D0388 D0389 D0415 D0461 D0600 D0606 D4910 D4920 D9995 D9996"
+    }
+   ]
+  },
+  {
+   "code": "C",
+   "name": "Deductible",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "23"
+   ],
+   "serviceTypes": [
+    "Diagnostic Dental"
+   ],
+   "timeQualifierCode": "23",
+   "timeQualifier": "Calendar Year",
+   "benefitAmount": "0",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "additionalInformation": [
+    {
+     "description": "D0120 D0140 D0145 D0150 D0160 D0170 D0180 D0372 D0373 D0374 D0387 D0388 D0389 D0415 D0461 D0600 D0606 D4910 D4920 D9995 D9996"
+    }
+   ]
+  },
+  {
+   "code": "C",
+   "name": "Deductible",
+   "coverageLevelCode": "FAM",
+   "coverageLevel": "Family",
+   "serviceTypeCodes": [
+    "23"
+   ],
+   "serviceTypes": [
+    "Diagnostic Dental"
+   ],
+   "timeQualifierCode": "23",
+   "timeQualifier": "Calendar Year",
+   "benefitAmount": "0",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "additionalInformation": [
+    {
+     "description": "D0120 D0140 D0145 D0150 D0160 D0170 D0180 D0372 D0373 D0374 D0387 D0388 D0389 D0415 D0461 D0600 D0606 D4910 D4920 D9995 D9996"
+    }
+   ]
+  },
+  {
+   "code": "A",
+   "name": "Co-Insurance",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "24"
+   ],
+   "serviceTypes": [
+    "Periodontics"
+   ],
+   "benefitPercent": "0",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "additionalInformation": [
+    {
+     "description": "D4346"
+    }
+   ]
+  },
+  {
+   "code": "A",
+   "name": "Co-Insurance",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "24"
+   ],
+   "serviceTypes": [
+    "Periodontics"
+   ],
+   "benefitPercent": "0.2",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "additionalInformation": [
+    {
+     "description": "D4271"
+    }
+   ]
+  },
+  {
+   "code": "A",
+   "name": "Co-Insurance",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "24"
+   ],
+   "serviceTypes": [
+    "Periodontics"
+   ],
+   "benefitPercent": "0.5",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "additionalInformation": [
+    {
+     "description": "D3428 D3429 D3431 D3432 D4210 D4211 D4212 D4240 D4241 D4245 D4249 D4260 D4261 D4263 D4264 D4265 D4266 D4267 D4268 D4270 D4273 D4274 D4275 D4276 D4277 D4278 D4283 D4285 D4286 D4341 D4342 D4355 D4381"
+    }
+   ]
+  },
+  {
+   "code": "C",
+   "name": "Deductible",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "24"
+   ],
+   "serviceTypes": [
+    "Periodontics"
+   ],
+   "timeQualifierCode": "23",
+   "timeQualifier": "Calendar Year",
+   "benefitAmount": "0",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "additionalInformation": [
+    {
+     "description": "D4346"
+    }
+   ]
+  },
+  {
+   "code": "C",
+   "name": "Deductible",
+   "coverageLevelCode": "FAM",
+   "coverageLevel": "Family",
+   "serviceTypeCodes": [
+    "24"
+   ],
+   "serviceTypes": [
+    "Periodontics"
+   ],
+   "timeQualifierCode": "23",
+   "timeQualifier": "Calendar Year",
+   "benefitAmount": "0",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "additionalInformation": [
+    {
+     "description": "D4346"
+    }
+   ]
+  },
+  {
+   "code": "A",
+   "name": "Co-Insurance",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "25"
+   ],
+   "serviceTypes": [
+    "Restorative"
+   ],
+   "benefitPercent": "0.2",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "additionalInformation": [
+    {
+     "description": "D2140 D2150 D2160 D2161 D2330 D2331 D2332 D2335 D2391 D2392 D2393 D2394 D2910 D2915 D2940 D2941 D2951 D2976 D2989 D2991 D5725"
+    }
+   ]
+  },
+  {
+   "code": "A",
+   "name": "Co-Insurance",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "25"
+   ],
+   "serviceTypes": [
+    "Restorative"
+   ],
+   "benefitPercent": "0.5",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "additionalInformation": [
+    {
+     "description": "D2410 D2420 D2430 D2510 D2520 D2530 D2542 D2543 D2544 D2610 D2620 D2630 D2642 D2643 D2644 D2650 D2651 D2652 D2662 D2663 D2664 D2949 D5227 D5228"
+    }
+   ]
+  },
+  {
+   "code": "A",
+   "name": "Co-Insurance",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "26"
+   ],
+   "serviceTypes": [
+    "Endodontics"
+   ],
+   "benefitPercent": "0.2",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "additionalInformation": [
+    {
+     "description": "D3427 D3911"
+    }
+   ]
+  },
+  {
+   "code": "A",
+   "name": "Co-Insurance",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "26"
+   ],
+   "serviceTypes": [
+    "Endodontics"
+   ],
+   "benefitPercent": "0.5",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "additionalInformation": [
+    {
+     "description": "D3110 D3120 D3220 D3221 D3230 D3240 D3310 D3320 D3330 D3331 D3332 D3333 D3346 D3347 D3348 D3351 D3352 D3353 D3355 D3356 D3357 D3410 D3421 D3425 D3426 D3430 D3450 D3471 D3472 D3473 D3501 D3502 D3503 D3920 D3921 D3950"
+    }
+   ]
+  },
+  {
+   "code": "A",
+   "name": "Co-Insurance",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "28"
+   ],
+   "serviceTypes": [
+    "Adjunctive Dental Services"
+   ],
+   "benefitPercent": "0",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "additionalInformation": [
+    {
+     "description": "D9110 D9912"
+    }
+   ]
+  },
+  {
+   "code": "A",
+   "name": "Co-Insurance",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "28"
+   ],
+   "serviceTypes": [
+    "Adjunctive Dental Services"
+   ],
+   "benefitPercent": "0.2",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "additionalInformation": [
+    {
+     "description": "D9128 D9129 D9910 D9911 D9930 D9942 D9943 D9950 D9951 D9952"
+    }
+   ]
+  },
+  {
+   "code": "A",
+   "name": "Co-Insurance",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "28"
+   ],
+   "serviceTypes": [
+    "Adjunctive Dental Services"
+   ],
+   "benefitPercent": "0.5",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "additionalInformation": [
+    {
+     "description": "D9938 D9939 D9940 D9944 D9945 D9946 D9947 D9948 D9949 D9954 D9955 D9956 D9957 D9959"
+    }
+   ]
+  },
+  {
+   "code": "C",
+   "name": "Deductible",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "28"
+   ],
+   "serviceTypes": [
+    "Adjunctive Dental Services"
+   ],
+   "timeQualifierCode": "23",
+   "timeQualifier": "Calendar Year",
+   "benefitAmount": "0",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "additionalInformation": [
+    {
+     "description": "D9110 D9912"
+    }
+   ]
+  },
+  {
+   "code": "C",
+   "name": "Deductible",
+   "coverageLevelCode": "FAM",
+   "coverageLevel": "Family",
+   "serviceTypeCodes": [
+    "28"
+   ],
+   "serviceTypes": [
+    "Adjunctive Dental Services"
+   ],
+   "timeQualifierCode": "23",
+   "timeQualifier": "Calendar Year",
+   "benefitAmount": "0",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "additionalInformation": [
+    {
+     "description": "D9110 D9912"
+    }
+   ]
+  },
+  {
+   "code": "A",
+   "name": "Co-Insurance",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "36"
+   ],
+   "serviceTypes": [
+    "Dental Crowns"
+   ],
+   "benefitPercent": "0.2",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "additionalInformation": [
+    {
+     "description": "D2920 D2980"
+    }
+   ]
+  },
+  {
+   "code": "A",
+   "name": "Co-Insurance",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "36"
+   ],
+   "serviceTypes": [
+    "Dental Crowns"
+   ],
+   "benefitPercent": "0.5",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "additionalInformation": [
+    {
+     "description": "D2710 D2712 D2720 D2721 D2722 D2740 D2750 D2751 D2752 D2753 D2780 D2781 D2782 D2783 D2790 D2791 D2792 D2794 D2799 D2928 D2929 D2930 D2931 D2932 D2933 D2934 D2950 D2952 D2953 D2954 D2957 D2960 D2961 D2962 D2970 D2971 D2975 D5863 D5864 D5865 D5866 D6085"
+    }
+   ]
+  },
+  {
+   "code": "A",
+   "name": "Co-Insurance",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "39"
+   ],
+   "serviceTypes": [
+    "Prosthodontics"
+   ],
+   "benefitPercent": "0.2",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "additionalInformation": [
+    {
+     "description": "D5410 D5411 D5421 D5422 D5510 D5511 D5512 D5520 D5610 D5611 D5612 D5620 D5621 D5622 D5630 D5640 D5650 D5660 D5670 D5671 D5710 D5711 D5720 D5721 D5730 D5731 D5740 D5741 D5750 D5751 D5760 D5761 D5765 D5850 D5851 D6930 D6980 D9120"
+    }
+   ]
+  },
+  {
+   "code": "A",
+   "name": "Co-Insurance",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "39"
+   ],
+   "serviceTypes": [
+    "Prosthodontics"
+   ],
+   "benefitPercent": "0.5",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "additionalInformation": [
+    {
+     "description": "D5110 D5120 D5130 D5140 D5211 D5212 D5213 D5214 D5221 D5222 D5223 D5224 D5225 D5226 D5281 D5282 D5283 D5284 D5286 D5810 D5811 D5820 D5821 D5860 D5861 D5876 D5999 D6053 D6054 D6058 D6059 D6060 D6061 D6062 D6063 D6064 D6065 D6066 D6067 D6068 D6069 D6070 D6071 D6072"
+    },
+    {
+     "description": "D6073 D6074 D6075 D6076 D6077 D6078 D6079 D6082 D6083 D6084 D6086 D6087 D6088 D6089 D6090 D6092 D6093 D6094 D6096 D6097 D6098 D6099 D6110 D6111 D6112 D6113 D6114 D6115 D6116 D6117 D6118 D6119 D6120 D6121 D6122 D6123 D6193 D6194 D6195 D6196 D6197 D6198 D6205 D6210"
+    },
+    {
+     "description": "D6211 D6212 D6214 D6240 D6241 D6242 D6243 D6245 D6250 D6251 D6252 D6545 D6548 D6549 D6600 D6601 D6602 D6603 D6604 D6605 D6606 D6607 D6608 D6609 D6610 D6611 D6612 D6613 D6614 D6615 D6624 D6634 D6710 D6720 D6721 D6722 D6740 D6750 D6751 D6752 D6753 D6780 D6781 D6782"
+    },
+    {
+     "description": "D6783 D6784 D6790 D6791 D6792 D6793 D6794 D6795 D6970 D6972 D6973 D6975 D6976 D6977"
+    }
+   ]
+  },
+  {
+   "code": "A",
+   "name": "Co-Insurance",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "4"
+   ],
+   "serviceTypes": [
+    "Diagnostic X-Ray"
+   ],
+   "benefitPercent": "0",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "additionalInformation": [
+    {
+     "description": "D0210 D0220 D0230 D0240 D0251 D0270 D0272 D0273 D0274 D0277 D0330 D0391 D0701 D0705 D0706 D0707 D0708 D0709"
+    }
+   ]
+  },
+  {
+   "code": "C",
+   "name": "Deductible",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "4"
+   ],
+   "serviceTypes": [
+    "Diagnostic X-Ray"
+   ],
+   "timeQualifierCode": "23",
+   "timeQualifier": "Calendar Year",
+   "benefitAmount": "0",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "additionalInformation": [
+    {
+     "description": "D0210 D0220 D0230 D0240 D0251 D0270 D0272 D0273 D0274 D0277 D0330 D0391 D0701 D0705 D0706 D0707 D0708 D0709"
+    }
+   ]
+  },
+  {
+   "code": "C",
+   "name": "Deductible",
+   "coverageLevelCode": "FAM",
+   "coverageLevel": "Family",
+   "serviceTypeCodes": [
+    "4"
+   ],
+   "serviceTypes": [
+    "Diagnostic X-Ray"
+   ],
+   "timeQualifierCode": "23",
+   "timeQualifier": "Calendar Year",
+   "benefitAmount": "0",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "additionalInformation": [
+    {
+     "description": "D0210 D0220 D0230 D0240 D0251 D0270 D0272 D0273 D0274 D0277 D0330 D0391 D0701 D0705 D0706 D0707 D0708 D0709"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "4"
+   ],
+   "serviceTypes": [
+    "Diagnostic X-Ray"
+   ],
+   "quantityQualifierCode": "VS",
+   "quantityQualifier": "Visits",
+   "benefitQuantity": "1",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "benefitsServiceDelivery": [
+    {
+     "unitForMeasurementCode": "Months",
+     "sampleSelectionModulus": "36",
+     "unitForMeasurementQualifierCode": "MO",
+     "unitForMeasurementQualifier": "Months"
+    }
+   ],
+   "additionalInformation": [
+    {
+     "description": "D0210 D0330"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "4"
+   ],
+   "serviceTypes": [
+    "Diagnostic X-Ray"
+   ],
+   "timeQualifierCode": "23",
+   "timeQualifier": "Calendar Year",
+   "quantityQualifierCode": "VS",
+   "quantityQualifier": "Visits",
+   "benefitQuantity": "2",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "additionalInformation": [
+    {
+     "description": "D0270 D0272 D0273 D0274 D0277"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "4"
+   ],
+   "serviceTypes": [
+    "Diagnostic X-Ray"
+   ],
+   "timeQualifierCode": "29",
+   "timeQualifier": "Remaining",
+   "quantityQualifierCode": "VS",
+   "quantityQualifier": "Visits",
+   "benefitQuantity": "1",
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "additionalInformation": [
+    {
+     "description": "D0270 D0272 D0273 D0274 D0277"
+    }
+   ]
+  },
+  {
+   "code": "A",
+   "name": "Co-Insurance",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "41"
+   ],
+   "serviceTypes": [
+    "Routine (Preventive) Dental"
+   ],
+   "benefitPercent": "0",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "additionalInformation": [
+    {
+     "description": "D1110 D1354 D1355 D1555 D1556 D1557 D1558 D1701 D1702 D1703 D1704 D1705 D1706 D1707 D1708 D1709 D1710 D1711 D1712 D1713 D1714 D1720 D1781 D1782 D1783"
+    }
+   ]
+  },
+  {
+   "code": "A",
+   "name": "Co-Insurance",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "41"
+   ],
+   "serviceTypes": [
+    "Routine (Preventive) Dental"
+   ],
+   "benefitPercent": "0.2",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "additionalInformation": [
+    {
+     "description": "D1550 D1551 D1552 D1553"
+    }
+   ]
+  },
+  {
+   "code": "C",
+   "name": "Deductible",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "41"
+   ],
+   "serviceTypes": [
+    "Routine (Preventive) Dental"
+   ],
+   "timeQualifierCode": "23",
+   "timeQualifier": "Calendar Year",
+   "benefitAmount": "0",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "additionalInformation": [
+    {
+     "description": "D1110 D1354 D1355 D1555 D1556 D1557 D1558 D1701 D1702 D1703 D1704 D1705 D1706 D1707 D1708 D1709 D1710 D1711 D1712 D1713 D1714 D1720 D1781 D1782 D1783"
+    }
+   ]
+  },
+  {
+   "code": "C",
+   "name": "Deductible",
+   "coverageLevelCode": "FAM",
+   "coverageLevel": "Family",
+   "serviceTypeCodes": [
+    "41"
+   ],
+   "serviceTypes": [
+    "Routine (Preventive) Dental"
+   ],
+   "timeQualifierCode": "23",
+   "timeQualifier": "Calendar Year",
+   "benefitAmount": "0",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "additionalInformation": [
+    {
+     "description": "D1110 D1354 D1355 D1555 D1556 D1557 D1558 D1701 D1702 D1703 D1704 D1705 D1706 D1707 D1708 D1709 D1710 D1711 D1712 D1713 D1714 D1720 D1781 D1782 D1783"
+    }
+   ]
+  },
+  {
+   "code": "A",
+   "name": "Co-Insurance",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "7"
+   ],
+   "serviceTypes": [
+    "Anesthesia"
+   ],
+   "benefitPercent": "0.2",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "additionalInformation": [
+    {
+     "description": "D9220 D9221 D9222 D9223 D9224 D9225 D9239 D9241 D9242 D9243"
+    }
+   ]
+  },
+  {
+   "code": "C",
+   "name": "Deductible",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "35"
+   ],
+   "serviceTypes": [
+    "Dental Care"
+   ],
+   "timeQualifierCode": "29",
+   "timeQualifier": "Remaining",
+   "benefitAmount": "50",
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable"
+  },
+  {
+   "code": "C",
+   "name": "Deductible",
+   "coverageLevelCode": "FAM",
+   "coverageLevel": "Family",
+   "serviceTypeCodes": [
+    "35"
+   ],
+   "serviceTypes": [
+    "Dental Care"
+   ],
+   "timeQualifierCode": "29",
+   "timeQualifier": "Remaining",
+   "benefitAmount": "150",
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable"
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "35"
+   ],
+   "serviceTypes": [
+    "Dental Care"
+   ],
+   "timeQualifierCode": "29",
+   "timeQualifier": "Remaining",
+   "benefitAmount": "1652",
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable"
+  }
+ ],
+ "errors": [],
+ "x12": "ISA*00*          *00*          *ZZ*STEDI          *01*117151744      *260719*1622*^*00501*823255861*0*P*`~GS*HB*STEDI*117151744*20260719*1123*823255861*X*005010X279A1~ST*271*823255861*005010X279A1~BHT*0022*11*01KXXK078GGEB8YSWHGR8YN5GK*20260719*162300~HL*1**20*1~NM1*PR*2*CHLIC*****PI*CIGNA~PER*IC*CUSTOMER SERVICE*TE*8002446224*UR*cignaforhcp.cigna.com~HL*2*1*21*1~NM1*1P*2*Dental Practice*****XX*1999999984~HL*3*2*22*0~TRN*1*01KXXK07999M1P7RVXYDJ2RHB2*3117151744~NM1*IL*1*NIKOLICH*ZVONKO****MI*U4916388801~REF*6P*0630199*SPRUCE TECHNOLOGY, INC.~REF*Q4*U49163888~REF*N6*DENTL*TOTAL~N3*373 E CORONADO RD UNIT 8~N4*PHOENIX*AZ*850041526~DMG*D8*19750531*M~INS*Y*18*001*25~DTP*346*D8*20260101~DTP*347*D8*20261231~DTP*356*D8*20210701~EB*1**30*PR*Dental PPO~EB*I**27^32^38********N*W~EB*1**35~EB*C*IND*35***23*50****N*W~EB*C*FAM*35***23*150****N*W~EB*F*IND*35***23*1800****N*W~EB*1**23^24^25^26^28^36^39^4^41^7********N*W~EB*A*IND*23*****0***N*W~MSG*D0120 D0140 D0145 D0150 D0160 D0170 D0180 D0372 D0373 D0374 D0387 D0388 D0389 D0415 D0461 D0600 D0606 D4910 D4920 D9995 D9996~EB*C*IND*23***23*0****N*W~MSG*D0120 D0140 D0145 D0150 D0160 D0170 D0180 D0372 D0373 D0374 D0387 D0388 D0389 D0415 D0461 D0600 D0606 D4910 D4920 D9995 D9996~EB*C*FAM*23***23*0****N*W~MSG*D0120 D0140 D0145 D0150 D0160 D0170 D0180 D0372 D0373 D0374 D0387 D0388 D0389 D0415 D0461 D0600 D0606 D4910 D4920 D9995 D9996~EB*A*IND*24*****0***N*W~MSG*D4346~EB*A*IND*24*****.2***N*W~MSG*D4271~EB*A*IND*24*****.5***N*W~MSG*D3428 D3429 D3431 D3432 D4210 D4211 D4212 D4240 D4241 D4245 D4249 D4260 D4261 D4263 D4264 D4265 D4266 D4267 D4268 D4270 D4273 D4274 D4275 D4276 D4277 D4278 D4283 D4285 D4286 D4341 D4342 D4355 D4381~EB*C*IND*24***23*0****N*W~MSG*D4346~EB*C*FAM*24***23*0****N*W~MSG*D4346~EB*A*IND*25*****.2***N*W~MSG*D2140 D2150 D2160 D2161 D2330 D2331 D2332 D2335 D2391 D2392 D2393 D2394 D2910 D2915 D2940 D2941 D2951 D2976 D2989 D2991 D5725~EB*A*IND*25*****.5***N*W~MSG*D2410 D2420 D2430 D2510 D2520 D2530 D2542 D2543 D2544 D2610 D2620 D2630 D2642 D2643 D2644 D2650 D2651 D2652 D2662 D2663 D2664 D2949 D5227 D5228~EB*A*IND*26*****.2***N*W~MSG*D3427 D3911~EB*A*IND*26*****.5***N*W~MSG*D3110 D3120 D3220 D3221 D3230 D3240 D3310 D3320 D3330 D3331 D3332 D3333 D3346 D3347 D3348 D3351 D3352 D3353 D3355 D3356 D3357 D3410 D3421 D3425 D3426 D3430 D3450 D3471 D3472 D3473 D3501 D3502 D3503 D3920 D3921 D3950~EB*A*IND*28*****0***N*W~MSG*D9110 D9912~EB*A*IND*28*****.2***N*W~MSG*D9128 D9129 D9910 D9911 D9930 D9942 D9943 D9950 D9951 D9952~EB*A*IND*28*****.5***N*W~MSG*D9938 D9939 D9940 D9944 D9945 D9946 D9947 D9948 D9949 D9954 D9955 D9956 D9957 D9959~EB*C*IND*28***23*0****N*W~MSG*D9110 D9912~EB*C*FAM*28***23*0****N*W~MSG*D9110 D9912~EB*A*IND*36*****.2***N*W~MSG*D2920 D2980~EB*A*IND*36*****.5***N*W~MSG*D2710 D2712 D2720 D2721 D2722 D2740 D2750 D2751 D2752 D2753 D2780 D2781 D2782 D2783 D2790 D2791 D2792 D2794 D2799 D2928 D2929 D2930 D2931 D2932 D2933 D2934 D2950 D2952 D2953 D2954 D2957 D2960 D2961 D2962 D2970 D2971 D2975 D5863 D5864 D5865 D5866 D6085~EB*A*IND*39*****.2***N*W~MSG*D5410 D5411 D5421 D5422 D5510 D5511 D5512 D5520 D5610 D5611 D5612 D5620 D5621 D5622 D5630 D5640 D5650 D5660 D5670 D5671 D5710 D5711 D5720 D5721 D5730 D5731 D5740 D5741 D5750 D5751 D5760 D5761 D5765 D5850 D5851 D6930 D6980 D9120~EB*A*IND*39*****.5***N*W~MSG*D5110 D5120 D5130 D5140 D5211 D5212 D5213 D5214 D5221 D5222 D5223 D5224 D5225 D5226 D5281 D5282 D5283 D5284 D5286 D5810 D5811 D5820 D5821 D5860 D5861 D5876 D5999 D6053 D6054 D6058 D6059 D6060 D6061 D6062 D6063 D6064 D6065 D6066 D6067 D6068 D6069 D6070 D6071 D6072~MSG*D6073 D6074 D6075 D6076 D6077 D6078 D6079 D6082 D6083 D6084 D6086 D6087 D6088 D6089 D6090 D6092 D6093 D6094 D6096 D6097 D6098 D6099 D6110 D6111 D6112 D6113 D6114 D6115 D6116 D6117 D6118 D6119 D6120 D6121 D6122 D6123 D6193 D6194 D6195 D6196 D6197 D6198 D6205 D6210~MSG*D6211 D6212 D6214 D6240 D6241 D6242 D6243 D6245 D6250 D6251 D6252 D6545 D6548 D6549 D6600 D6601 D6602 D6603 D6604 D6605 D6606 D6607 D6608 D6609 D6610 D6611 D6612 D6613 D6614 D6615 D6624 D6634 D6710 D6720 D6721 D6722 D6740 D6750 D6751 D6752 D6753 D6780 D6781 D6782~MSG*D6783 D6784 D6790 D6791 D6792 D6793 D6794 D6795 D6970 D6972 D6973 D6975 D6976 D6977~EB*A*IND*4*****0***N*W~MSG*D0210 D0220 D0230 D0240 D0251 D0270 D0272 D0273 D0274 D0277 D0330 D0391 D0701 D0705 D0706 D0707 D0708 D0709~EB*C*IND*4***23*0****N*W~MSG*D0210 D0220 D0230 D0240 D0251 D0270 D0272 D0273 D0274 D0277 D0330 D0391 D0701 D0705 D0706 D0707 D0708 D0709~EB*C*FAM*4***23*0****N*W~MSG*D0210 D0220 D0230 D0240 D0251 D0270 D0272 D0273 D0274 D0277 D0330 D0391 D0701 D0705 D0706 D0707 D0708 D0709~EB*F*IND*4******VS*1*N*W~HSD***MO*36~MSG*D0210 D0330~EB*F*IND*4***23***VS*2*N*W~MSG*D0270 D0272 D0273 D0274 D0277~EB*F*IND*4***29***VS*1**W~MSG*D0270 D0272 D0273 D0274 D0277~EB*A*IND*41*****0***N*W~MSG*D1110 D1354 D1355 D1555 D1556 D1557 D1558 D1701 D1702 D1703 D1704 D1705 D1706 D1707 D1708 D1709 D1710 D1711 D1712 D1713 D1714 D1720 D1781 D1782 D1783~EB*A*IND*41*****.2***N*W~MSG*D1550 D1551 D1552 D1553~EB*C*IND*41***23*0****N*W~MSG*D1110 D1354 D1355 D1555 D1556 D1557 D1558 D1701 D1702 D1703 D1704 D1705 D1706 D1707 D1708 D1709 D1710 D1711 D1712 D1713 D1714 D1720 D1781 D1782 D1783~EB*C*FAM*41***23*0****N*W~MSG*D1110 D1354 D1355 D1555 D1556 D1557 D1558 D1701 D1702 D1703 D1704 D1705 D1706 D1707 D1708 D1709 D1710 D1711 D1712 D1713 D1714 D1720 D1781 D1782 D1783~EB*A*IND*7*****.2***N*W~MSG*D9220 D9221 D9222 D9223 D9224 D9225 D9239 D9241 D9242 D9243~EB*C*IND*35***29*50*****W~EB*C*FAM*35***29*150*****W~EB*F*IND*35***29*1652*****W~SE*99*823255861~GE*1*823255861~IEA*1*823255861~",
+ "eligibilitySearchId": "019f7b30-1d0f-7cd0-95cc-43f763861ab8",
+ "id": "ec_019f7b30-1d0e-7062-921f-b1ed6f36a26e"
+}

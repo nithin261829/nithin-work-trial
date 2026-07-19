@@ -1,0 +1,4100 @@
+{
+ "meta": {
+  "senderId": "STEDI",
+  "submitterId": "117151744",
+  "applicationMode": "production",
+  "traceId": "01KXXK00F8NYMV8CPH80DKKHNF",
+  "outboundTraceId": "01KXXK00F8NYMV8CPH80DKKHNF"
+ },
+ "controlNumber": "823255645",
+ "reassociationKey": "823255645",
+ "tradingPartnerServiceId": "62308",
+ "provider": {
+  "providerName": "Dental Practice",
+  "entityIdentifier": "Provider",
+  "entityType": "Non-Person Entity",
+  "npi": "1999999984"
+ },
+ "subscriber": {
+  "memberId": "59H6A7L8201",
+  "firstName": "ROMAN",
+  "lastName": "GOMEZ ESPINOSA",
+  "gender": "M",
+  "entityIdentifier": "Insured or Subscriber",
+  "entityType": "Person",
+  "dateOfBirth": "19530729",
+  "groupNumber": "2501434",
+  "planNetworkIdNumber": "CD005",
+  "groupDescription": "BRAVO HEALTH PENNSYLVANIA CDH MEDICARE",
+  "planNetworkDescription": "CIGNA FOR SENIORS",
+  "address": {
+   "address1": "4232 N 10TH PL",
+   "city": "PHOENIX",
+   "state": "AZ",
+   "postalCode": "850144436"
+  }
+ },
+ "subscriberTraceNumbers": [
+  {
+   "traceTypeCode": "1",
+   "traceType": "Current Transaction Trace Numbers",
+   "referenceIdentification": "01KXXK00FJVEZCPHJHRSHK2T5P",
+   "originatingCompanyIdentifier": "3117151744"
+  }
+ ],
+ "payer": {
+  "entityIdentifier": "Payer",
+  "entityType": "Non-Person Entity",
+  "name": "Cigna Dental Health, Inc.",
+  "payorIdentification": "CIGNA",
+  "contactInformation": {
+   "contacts": [
+    {
+     "communicationMode": "Telephone",
+     "communicationNumber": "8002446224"
+    },
+    {
+     "communicationMode": "Uniform Resource Locator (URL)",
+     "communicationNumber": "cignaforhcp.cigna.com"
+    }
+   ]
+  }
+ },
+ "planInformation": {
+  "groupNumber": "2501434",
+  "groupDescription": "BRAVO HEALTH PENNSYLVANIA CDH MEDICARE",
+  "planNetworkIdNumber": "CD005",
+  "planNetworkIdDescription": "CIGNA FOR SENIORS",
+  "priorIdNumber": "59H6A7L82"
+ },
+ "planDateInformation": {
+  "planBegin": "20260101",
+  "planEnd": "20261231",
+  "eligibilityBegin": "20260101"
+ },
+ "planStatus": [
+  {
+   "statusCode": "1",
+   "status": "Active Coverage",
+   "planDetails": "Dental HMO",
+   "serviceTypeCodes": [
+    "30"
+   ]
+  },
+  {
+   "statusCode": "1",
+   "status": "Active Coverage",
+   "serviceTypeCodes": [
+    "35"
+   ]
+  },
+  {
+   "statusCode": "1",
+   "status": "Active Coverage",
+   "serviceTypeCodes": [
+    "23",
+    "24",
+    "25",
+    "26",
+    "28",
+    "36",
+    "38",
+    "39",
+    "4",
+    "41",
+    "7"
+   ]
+  }
+ ],
+ "benefitsInformation": [
+  {
+   "code": "1",
+   "name": "Active Coverage",
+   "serviceTypeCodes": [
+    "30"
+   ],
+   "serviceTypes": [
+    "Health Benefit Plan Coverage"
+   ],
+   "insuranceTypeCode": "HM",
+   "insuranceType": "Health Maintenance Organization (HMO)",
+   "planCoverage": "Dental HMO",
+   "timeQualifierCode": "23",
+   "timeQualifier": "Calendar Year"
+  },
+  {
+   "code": "I",
+   "name": "Non-Covered",
+   "serviceTypeCodes": [
+    "23",
+    "24",
+    "25",
+    "26",
+    "27",
+    "28",
+    "36",
+    "38",
+    "39",
+    "4",
+    "41",
+    "7"
+   ],
+   "serviceTypes": [
+    "Diagnostic Dental",
+    "Periodontics",
+    "Restorative",
+    "Endodontics",
+    "Maxillofacial Prosthetics",
+    "Adjunctive Dental Services",
+    "Dental Crowns",
+    "Orthodontics",
+    "Prosthodontics",
+    "Diagnostic X-Ray",
+    "Routine (Preventive) Dental",
+    "Anesthesia"
+   ],
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "N",
+   "inPlanNetworkIndicator": "No"
+  },
+  {
+   "code": "I",
+   "name": "Non-Covered",
+   "serviceTypeCodes": [
+    "27"
+   ],
+   "serviceTypes": [
+    "Maxillofacial Prosthetics"
+   ],
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes"
+  },
+  {
+   "code": "1",
+   "name": "Active Coverage",
+   "serviceTypeCodes": [
+    "35"
+   ],
+   "serviceTypes": [
+    "Dental Care"
+   ]
+  },
+  {
+   "code": "1",
+   "name": "Active Coverage",
+   "serviceTypeCodes": [
+    "23",
+    "24",
+    "25",
+    "26",
+    "28",
+    "36",
+    "38",
+    "39",
+    "4",
+    "41",
+    "7"
+   ],
+   "serviceTypes": [
+    "Diagnostic Dental",
+    "Periodontics",
+    "Restorative",
+    "Endodontics",
+    "Adjunctive Dental Services",
+    "Dental Crowns",
+    "Orthodontics",
+    "Prosthodontics",
+    "Diagnostic X-Ray",
+    "Routine (Preventive) Dental",
+    "Anesthesia"
+   ],
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes"
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "23"
+   ],
+   "serviceTypes": [
+    "Diagnostic Dental"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "0",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D0120 D0140 D0150 D0170 D0171 D0180 D0190 D0191 D0372 D0373 D0374 D0387 D0388 D0389 D0415 D0417 D0418 D0419 D0425 D0426 D0431 D0460 D0600 D0601 D0602 D0603 D9995 D9996"
+    },
+    {
+     "description": "Specialist only."
+    },
+    {
+     "description": "D0606"
+    },
+    {
+     "description": "D0160"
+    },
+    {
+     "description": "D0461"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "23",
+    "41"
+   ],
+   "serviceTypes": [
+    "Diagnostic Dental",
+    "Routine (Preventive) Dental"
+   ],
+   "timeQualifierCode": "23",
+   "timeQualifier": "Calendar Year",
+   "quantityQualifierCode": "VS",
+   "quantityQualifier": "Visits",
+   "benefitQuantity": "2",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes"
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "23",
+    "4"
+   ],
+   "serviceTypes": [
+    "Diagnostic Dental",
+    "Diagnostic X-Ray"
+   ],
+   "timeQualifierCode": "32",
+   "timeQualifier": "Lifetime",
+   "quantityQualifierCode": "VS",
+   "quantityQualifier": "Visits",
+   "benefitQuantity": "0",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes"
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "23"
+   ],
+   "serviceTypes": [
+    "Diagnostic Dental"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "60",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D4910"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "24"
+   ],
+   "serviceTypes": [
+    "Periodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "0",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D4921"
+    },
+    {
+     "description": "D4286"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "24",
+    "28",
+    "39"
+   ],
+   "serviceTypes": [
+    "Periodontics",
+    "Adjunctive Dental Services",
+    "Prosthodontics"
+   ],
+   "timeQualifierCode": "23",
+   "timeQualifier": "Calendar Year",
+   "quantityQualifierCode": "VS",
+   "quantityQualifier": "Visits",
+   "benefitQuantity": "1",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes"
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "24"
+   ],
+   "serviceTypes": [
+    "Periodontics"
+   ],
+   "timeQualifierCode": "23",
+   "timeQualifier": "Calendar Year",
+   "benefitAmount": "0",
+   "quantityQualifierCode": "VS",
+   "quantityQualifier": "Visits",
+   "benefitQuantity": "1",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D4346"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "24"
+   ],
+   "serviceTypes": [
+    "Periodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "40",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D4381"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "24"
+   ],
+   "serviceTypes": [
+    "Periodontics"
+   ],
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "benefitsServiceDelivery": [
+    {
+     "quantityQualifierCode": "VS",
+     "quantityQualifier": "Visits",
+     "quantity": "8",
+     "unitForMeasurementCode": "Years",
+     "sampleSelectionModulus": "1",
+     "timePeriodQualifierCode": "29",
+     "timePeriodQualifier": "Remaining",
+     "numOfPeriods": "8",
+     "unitForMeasurementQualifierCode": "YR",
+     "unitForMeasurementQualifier": "Years"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "24"
+   ],
+   "serviceTypes": [
+    "Periodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "60",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D4342"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "24"
+   ],
+   "serviceTypes": [
+    "Periodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "75",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D4355"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "24"
+   ],
+   "serviceTypes": [
+    "Periodontics"
+   ],
+   "timeQualifierCode": "32",
+   "timeQualifier": "Lifetime",
+   "quantityQualifierCode": "VS",
+   "quantityQualifier": "Visits",
+   "benefitQuantity": "1",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D4355"
+    },
+    {
+     "description": "Unlimited when treated in CA"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "24"
+   ],
+   "serviceTypes": [
+    "Periodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "100",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D4211 D4212 D4341"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "24"
+   ],
+   "serviceTypes": [
+    "Periodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "150",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D3431 D4241 D4265 D4274"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "24"
+   ],
+   "serviceTypes": [
+    "Periodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "200",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D3429 D4278 D4283 D4285"
+    },
+    {
+     "description": "D4264"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "24"
+   ],
+   "serviceTypes": [
+    "Periodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "250",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D4210"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "24"
+   ],
+   "serviceTypes": [
+    "Periodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "275",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D3428 D4263"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "24"
+   ],
+   "serviceTypes": [
+    "Periodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "300",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D4240 D4245 D4273 D4276"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "24"
+   ],
+   "serviceTypes": [
+    "Periodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "325",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D4261"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "24"
+   ],
+   "serviceTypes": [
+    "Periodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "350",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D4249"
+    },
+    {
+     "description": "D4266"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "24"
+   ],
+   "serviceTypes": [
+    "Periodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "375",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D3432"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "24"
+   ],
+   "serviceTypes": [
+    "Periodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "400",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D4270"
+    },
+    {
+     "description": "D4267"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "24"
+   ],
+   "serviceTypes": [
+    "Periodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "410",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D4275 D4277"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "24"
+   ],
+   "serviceTypes": [
+    "Periodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "575",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D4260"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "25"
+   ],
+   "serviceTypes": [
+    "Restorative"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "0",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D2140 D2150 D2160 D2161 D2330 D2331 D2332 D2335 D2390 D2391 D2392 D2393 D2394 D2976 D2991"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "25"
+   ],
+   "serviceTypes": [
+    "Restorative"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "10",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D2940 D2981 D2982 D2990"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "25"
+   ],
+   "serviceTypes": [
+    "Restorative"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "15",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D2951"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "25"
+   ],
+   "serviceTypes": [
+    "Restorative"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "43",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D2910 D2915"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "25"
+   ],
+   "serviceTypes": [
+    "Restorative"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "155",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D2989"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "25"
+   ],
+   "serviceTypes": [
+    "Restorative"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "410",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D2510 D2520 D2530"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "25"
+   ],
+   "serviceTypes": [
+    "Restorative"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "470",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D2542 D2543 D2544"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "26"
+   ],
+   "serviceTypes": [
+    "Endodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "0",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D3910 D3911 D3950"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "26"
+   ],
+   "serviceTypes": [
+    "Endodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "38",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D3110 D3120"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "26"
+   ],
+   "serviceTypes": [
+    "Endodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "87",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D3220 D3221 D3222"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "26"
+   ],
+   "serviceTypes": [
+    "Endodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "105",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D3356"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "26"
+   ],
+   "serviceTypes": [
+    "Endodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "115",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D3430"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "26"
+   ],
+   "serviceTypes": [
+    "Endodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "125",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D3355"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "26"
+   ],
+   "serviceTypes": [
+    "Endodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "155",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D3331 D3332 D3333 D3357"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "26"
+   ],
+   "serviceTypes": [
+    "Endodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "165",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D3426"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "26"
+   ],
+   "serviceTypes": [
+    "Endodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "330",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D3310"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "26"
+   ],
+   "serviceTypes": [
+    "Endodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "390",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D3320"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "26"
+   ],
+   "serviceTypes": [
+    "Endodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "415",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D3410"
+    },
+    {
+     "description": "D3471"
+    },
+    {
+     "description": "D3472"
+    },
+    {
+     "description": "D3473"
+    },
+    {
+     "description": "D3501"
+    },
+    {
+     "description": "D3502"
+    },
+    {
+     "description": "D3503"
+    },
+    {
+     "description": "D3921"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "26"
+   ],
+   "serviceTypes": [
+    "Endodontics"
+   ],
+   "timeQualifierCode": "32",
+   "timeQualifier": "Lifetime",
+   "quantityQualifierCode": "VS",
+   "quantityQualifier": "Visits",
+   "benefitQuantity": "1",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes"
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "26"
+   ],
+   "serviceTypes": [
+    "Endodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "455",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D3421"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "26"
+   ],
+   "serviceTypes": [
+    "Endodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "470",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D3346"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "26"
+   ],
+   "serviceTypes": [
+    "Endodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "480",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D3425"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "26"
+   ],
+   "serviceTypes": [
+    "Endodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "530",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D3330 D3347"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "26"
+   ],
+   "serviceTypes": [
+    "Endodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "675",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D3348"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "28"
+   ],
+   "serviceTypes": [
+    "Adjunctive Dental Services"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "0",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D9110 D9410 D9430 D9450 D9936 D9961 D9987 D9990"
+    },
+    {
+     "description": "D2956"
+    },
+    {
+     "description": "D9943"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "28",
+    "39"
+   ],
+   "serviceTypes": [
+    "Adjunctive Dental Services",
+    "Prosthodontics"
+   ],
+   "timeQualifierCode": "7",
+   "timeQualifier": "Day",
+   "quantityQualifierCode": "P6",
+   "quantityQualifier": "Number of Services or Procedures",
+   "benefitQuantity": "0",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes"
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "28"
+   ],
+   "serviceTypes": [
+    "Adjunctive Dental Services"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "25",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D9939"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "28"
+   ],
+   "serviceTypes": [
+    "Adjunctive Dental Services"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "35",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D9630"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "28"
+   ],
+   "serviceTypes": [
+    "Adjunctive Dental Services"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "40",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D9440 D9986"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "28"
+   ],
+   "serviceTypes": [
+    "Adjunctive Dental Services"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "42",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D9610"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "28"
+   ],
+   "serviceTypes": [
+    "Adjunctive Dental Services"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "60",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D9951"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "28"
+   ],
+   "serviceTypes": [
+    "Adjunctive Dental Services"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "62",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D9612"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "28"
+   ],
+   "serviceTypes": [
+    "Adjunctive Dental Services"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "83",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D9938"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "28"
+   ],
+   "serviceTypes": [
+    "Adjunctive Dental Services"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "105",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D9945"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "28"
+   ],
+   "serviceTypes": [
+    "Adjunctive Dental Services"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "110",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D9941"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "28"
+   ],
+   "serviceTypes": [
+    "Adjunctive Dental Services"
+   ],
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "benefitsServiceDelivery": [
+    {
+     "quantityQualifierCode": "VS",
+     "quantityQualifier": "Visits",
+     "quantity": "1",
+     "unitForMeasurementCode": "Years",
+     "sampleSelectionModulus": "1",
+     "timePeriodQualifierCode": "29",
+     "timePeriodQualifier": "Remaining",
+     "numOfPeriods": "1",
+     "unitForMeasurementQualifierCode": "YR",
+     "unitForMeasurementQualifier": "Years"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "28"
+   ],
+   "serviceTypes": [
+    "Adjunctive Dental Services"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "125",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D9946"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "28"
+   ],
+   "serviceTypes": [
+    "Adjunctive Dental Services"
+   ],
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "benefitsServiceDelivery": [
+    {
+     "quantityQualifierCode": "VS",
+     "quantityQualifier": "Visits",
+     "quantity": "1",
+     "unitForMeasurementCode": "Years",
+     "sampleSelectionModulus": "2",
+     "timePeriodQualifierCode": "29",
+     "timePeriodQualifier": "Remaining",
+     "numOfPeriods": "1",
+     "unitForMeasurementQualifierCode": "YR",
+     "unitForMeasurementQualifier": "Years"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "28"
+   ],
+   "serviceTypes": [
+    "Adjunctive Dental Services"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "200",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D9613"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "28"
+   ],
+   "serviceTypes": [
+    "Adjunctive Dental Services"
+   ],
+   "quantityQualifierCode": "S8",
+   "quantityQualifier": "Age, Low Value",
+   "benefitQuantity": "17",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "benefitsServiceDelivery": [
+    {
+     "quantityQualifierCode": "FL",
+     "quantityQualifier": "Units",
+     "quantity": "1",
+     "unitForMeasurementCode": "Days",
+     "sampleSelectionModulus": "1",
+     "unitForMeasurementQualifierCode": "DA",
+     "unitForMeasurementQualifier": "Days"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "28"
+   ],
+   "serviceTypes": [
+    "Adjunctive Dental Services"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "260",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D9944 D9952"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "36"
+   ],
+   "serviceTypes": [
+    "Dental Crowns"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "0",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D2975"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "36"
+   ],
+   "serviceTypes": [
+    "Dental Crowns"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "10",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D2953 D2980"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "36"
+   ],
+   "serviceTypes": [
+    "Dental Crowns"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "43",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D2920"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "36"
+   ],
+   "serviceTypes": [
+    "Dental Crowns"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "105",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D2960"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "36"
+   ],
+   "serviceTypes": [
+    "Dental Crowns"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "125",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D2950 D2952 D2954 D6085"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "36"
+   ],
+   "serviceTypes": [
+    "Dental Crowns"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "130",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D2799"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "36"
+   ],
+   "serviceTypes": [
+    "Dental Crowns"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "150",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D2929 D2930 D2931 D2932 D2933 D2934"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "36"
+   ],
+   "serviceTypes": [
+    "Dental Crowns"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "155",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D2928"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "36"
+   ],
+   "serviceTypes": [
+    "Dental Crowns"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "245",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D2710"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "36"
+   ],
+   "serviceTypes": [
+    "Dental Crowns"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "325",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D2721"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "36"
+   ],
+   "serviceTypes": [
+    "Dental Crowns"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "345",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D2722"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "36"
+   ],
+   "serviceTypes": [
+    "Dental Crowns"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "354",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D2961"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "36"
+   ],
+   "serviceTypes": [
+    "Dental Crowns"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "355",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D2712"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "36"
+   ],
+   "serviceTypes": [
+    "Dental Crowns"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "365",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D2720"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "36"
+   ],
+   "serviceTypes": [
+    "Dental Crowns"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "410",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D2781"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "36"
+   ],
+   "serviceTypes": [
+    "Dental Crowns"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "425",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D2791"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "36"
+   ],
+   "serviceTypes": [
+    "Dental Crowns"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "435",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D2782 D2792"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "36"
+   ],
+   "serviceTypes": [
+    "Dental Crowns"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "460",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D2780"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "36"
+   ],
+   "serviceTypes": [
+    "Dental Crowns"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "475",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D2752"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "36"
+   ],
+   "serviceTypes": [
+    "Dental Crowns"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "490",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D2783"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "36"
+   ],
+   "serviceTypes": [
+    "Dental Crowns"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "500",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D2751 D2790"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "36"
+   ],
+   "serviceTypes": [
+    "Dental Crowns"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "525",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D2740 D2750 D2794"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "36"
+   ],
+   "serviceTypes": [
+    "Dental Crowns"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "550",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D2753"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "36"
+   ],
+   "serviceTypes": [
+    "Dental Crowns"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "620",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D2962"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "38"
+   ],
+   "serviceTypes": [
+    "Orthodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "0",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D0470"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "39"
+   ],
+   "serviceTypes": [
+    "Prosthodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "0",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D6197 D6980"
+    },
+    {
+     "description": "D6196"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "39"
+   ],
+   "serviceTypes": [
+    "Prosthodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "25",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D5410 D5411 D5421 D5422 D5621 D5622 D5850 D5851"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "39"
+   ],
+   "serviceTypes": [
+    "Prosthodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "50",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D5511 D5512 D5520 D5611 D5612 D5640 D5650"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "39"
+   ],
+   "serviceTypes": [
+    "Prosthodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "60",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D5630 D5660"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "39"
+   ],
+   "serviceTypes": [
+    "Prosthodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "75",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D6089 D6092 D6096 D6193 D6930"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "39"
+   ],
+   "serviceTypes": [
+    "Prosthodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "100",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D5730 D5731 D5740 D5741 D6093"
+    },
+    {
+     "description": "D6080"
+    },
+    {
+     "description": "D6180"
+    },
+    {
+     "description": "D6280"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "39"
+   ],
+   "serviceTypes": [
+    "Prosthodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "130",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D6793"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "39"
+   ],
+   "serviceTypes": [
+    "Prosthodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "175",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D5750 D5751 D5760 D5761"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "39"
+   ],
+   "serviceTypes": [
+    "Prosthodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "200",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D5710 D5711 D5720 D5721 D5876"
+    },
+    {
+     "description": "D5711"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "39"
+   ],
+   "serviceTypes": [
+    "Prosthodontics"
+   ],
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "benefitsServiceDelivery": [
+    {
+     "quantityQualifierCode": "VS",
+     "quantityQualifier": "Visits",
+     "quantity": "1",
+     "unitForMeasurementCode": "Years",
+     "sampleSelectionModulus": "2",
+     "timePeriodQualifierCode": "29",
+     "timePeriodQualifier": "Remaining",
+     "numOfPeriods": "1",
+     "unitForMeasurementQualifierCode": "YR",
+     "unitForMeasurementQualifier": "Years"
+    }
+   ],
+   "additionalInformation": [
+    {
+     "description": "D5710"
+    },
+    {
+     "description": "When treated in IL"
+    },
+    {
+     "description": "D5711"
+    },
+    {
+     "description": "D5710 D5720 D5730 D5740 D5750 D5760"
+    },
+    {
+     "description": "Unlimited when treated in CA"
+    },
+    {
+     "description": "D5711 D5721 D5731 D5741 D5751 D5761"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "39"
+   ],
+   "serviceTypes": [
+    "Prosthodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "245",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D6205"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "39"
+   ],
+   "serviceTypes": [
+    "Prosthodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "250",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D5820"
+    },
+    {
+     "description": "D5821"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "39"
+   ],
+   "serviceTypes": [
+    "Prosthodontics"
+   ],
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "benefitsServiceDelivery": [
+    {
+     "quantityQualifierCode": "VS",
+     "quantityQualifier": "Visits",
+     "quantity": "1",
+     "unitForMeasurementCode": "Years",
+     "sampleSelectionModulus": "5",
+     "timePeriodQualifierCode": "29",
+     "timePeriodQualifier": "Remaining",
+     "numOfPeriods": "1",
+     "unitForMeasurementQualifierCode": "YR",
+     "unitForMeasurementQualifier": "Years"
+    }
+   ],
+   "additionalInformation": [
+    {
+     "description": "D5820"
+    },
+    {
+     "description": "Unlimited when treated in CA"
+    },
+    {
+     "description": "D5821"
+    },
+    {
+     "description": "D5810"
+    },
+    {
+     "description": "D5811"
+    },
+    {
+     "description": "D5110 D5130 D6110 D6114"
+    },
+    {
+     "description": "D5120 D5140 D6111 D6115"
+    },
+    {
+     "description": "D5211 D5213 D5221 D5223 D5225 D6112 D6116"
+    },
+    {
+     "description": "D5212 D5214 D5222 D5224 D5226 D6113 D6117"
+    },
+    {
+     "description": "D6058 D6059 D6060 D6061 D6062 D6063 D6064 D6065 D6066 D6067 D6082 D6083 D6084 D6086 D6087 D6088 D6094 D6097"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "39"
+   ],
+   "serviceTypes": [
+    "Prosthodontics"
+   ],
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "benefitsServiceDelivery": [
+    {
+     "quantityQualifierCode": "VS",
+     "quantityQualifier": "Visits",
+     "quantity": "1",
+     "unitForMeasurementCode": "Years",
+     "sampleSelectionModulus": "5",
+     "timePeriodQualifierCode": "29",
+     "timePeriodQualifier": "Remaining",
+     "numOfPeriods": "1",
+     "unitForMeasurementQualifierCode": "YR",
+     "unitForMeasurementQualifier": "Years"
+    }
+   ],
+   "additionalInformation": [
+    {
+     "description": "D6602 D6603 D6604 D6605 D6606 D6607 D6610 D6611 D6612 D6613 D6614 D6615 D6624 D6634"
+    },
+    {
+     "description": "Unlimited when treated in AZ, CA"
+    },
+    {
+     "description": "D6205 D6210 D6211 D6212 D6214 D6240 D6241 D6242 D6243 D6245"
+    },
+    {
+     "description": "D6068 D6069 D6070 D6071 D6072 D6073 D6074 D6075 D6076 D6077 D6098 D6099 D6120 D6121 D6122 D6123 D6194 D6195 D6740 D6750 D6751 D6752 D6753 D6780 D6781 D6782 D6784 D6790 D6791 D6792 D6794"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "39"
+   ],
+   "serviceTypes": [
+    "Prosthodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "265",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D6548"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "39"
+   ],
+   "serviceTypes": [
+    "Prosthodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "280",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D6549"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "39"
+   ],
+   "serviceTypes": [
+    "Prosthodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "300",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D5810"
+    },
+    {
+     "description": "D5811"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "39"
+   ],
+   "serviceTypes": [
+    "Prosthodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "310",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D5211 D5212 D5221 D5222"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "39"
+   ],
+   "serviceTypes": [
+    "Prosthodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "350",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D6100"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "39"
+   ],
+   "serviceTypes": [
+    "Prosthodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "405",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D6604 D6612"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "39"
+   ],
+   "serviceTypes": [
+    "Prosthodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "415",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D6605 D6613"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "39"
+   ],
+   "serviceTypes": [
+    "Prosthodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "425",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D5110 D5120 D5130 D5140 D5223 D5224 D6211 D6781 D6791"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "39"
+   ],
+   "serviceTypes": [
+    "Prosthodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "430",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D6606 D6614"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "39"
+   ],
+   "serviceTypes": [
+    "Prosthodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "440",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D6607"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "39"
+   ],
+   "serviceTypes": [
+    "Prosthodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "450",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D5213 D5214 D5225 D5226 D6212 D6615 D6782 D6792"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "39"
+   ],
+   "serviceTypes": [
+    "Prosthodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "460",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D6602 D6610"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "39"
+   ],
+   "serviceTypes": [
+    "Prosthodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "470",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D6624 D6634"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "39"
+   ],
+   "serviceTypes": [
+    "Prosthodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "475",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D6242 D6751"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "39"
+   ],
+   "serviceTypes": [
+    "Prosthodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "480",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D6603 D6611 D6780 D6784 D6794"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "39"
+   ],
+   "serviceTypes": [
+    "Prosthodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "500",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D6118 D6119 D6210 D6243 D6750"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "39"
+   ],
+   "serviceTypes": [
+    "Prosthodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "525",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D6214 D6240 D6241 D6245 D6740 D6752 D6753 D6790"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "39"
+   ],
+   "serviceTypes": [
+    "Prosthodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "700",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D6060 D6063 D6070 D6073 D6082 D6086 D6098 D6121"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "39"
+   ],
+   "serviceTypes": [
+    "Prosthodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "725",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D6061 D6064 D6071 D6074 D6087 D6099 D6122"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "39"
+   ],
+   "serviceTypes": [
+    "Prosthodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "740",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D6083"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "39"
+   ],
+   "serviceTypes": [
+    "Prosthodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "750",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D6059 D6062 D6066 D6067 D6069 D6072 D6076 D6077 D6084 D6088 D6094 D6097 D6120 D6123 D6194 D6195"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "39"
+   ],
+   "serviceTypes": [
+    "Prosthodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "800",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D6058 D6065 D6068 D6075"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "39"
+   ],
+   "serviceTypes": [
+    "Prosthodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "850",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D6110 D6111 D6114 D6115"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "39"
+   ],
+   "serviceTypes": [
+    "Prosthodontics"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "950",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D6112 D6113 D6116 D6117"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "4"
+   ],
+   "serviceTypes": [
+    "Diagnostic X-Ray"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "0",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D0210 D0220 D0230 D0240 D0250 D0251 D0270 D0272 D0273 D0274 D0277 D0330 D0701 D0705 D0706 D0707 D0708 D0709"
+    },
+    {
+     "description": "D0391"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "4"
+   ],
+   "serviceTypes": [
+    "Diagnostic X-Ray"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "240",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D0368"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "4"
+   ],
+   "serviceTypes": [
+    "Diagnostic X-Ray"
+   ],
+   "timeQualifierCode": "23",
+   "timeQualifier": "Calendar Year",
+   "quantityQualifierCode": "VS",
+   "quantityQualifier": "Visits",
+   "benefitQuantity": "1",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D0251 D0705"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "41"
+   ],
+   "serviceTypes": [
+    "Routine (Preventive) Dental"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "0",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D1206 D1310 D1320 D1321 D1354 D1355 D9932 D9933 D9934 D9935"
+    },
+    {
+     "description": "Specialist only."
+    },
+    {
+     "description": "D1701 D1702 D1703 D1704"
+    },
+    {
+     "description": "D1110"
+    },
+    {
+     "description": "D1208"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "7"
+   ],
+   "serviceTypes": [
+    "Anesthesia"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "0",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D9210 D9211 D9212 D9215 D9219"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "7"
+   ],
+   "serviceTypes": [
+    "Anesthesia"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "42",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D9230"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "7"
+   ],
+   "serviceTypes": [
+    "Anesthesia"
+   ],
+   "timeQualifierCode": "7",
+   "timeQualifier": "Day",
+   "quantityQualifierCode": "P6",
+   "quantityQualifier": "Number of Services or Procedures",
+   "benefitQuantity": "1",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes"
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "7"
+   ],
+   "serviceTypes": [
+    "Anesthesia"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "95",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D9239"
+    },
+    {
+     "description": "D9222"
+    },
+    {
+     "description": "D9223"
+    },
+    {
+     "description": "D9224"
+    },
+    {
+     "description": "D9225"
+    },
+    {
+     "description": "D9243"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "7"
+   ],
+   "serviceTypes": [
+    "Anesthesia"
+   ],
+   "timeQualifierCode": "7",
+   "timeQualifier": "Day",
+   "quantityQualifierCode": "P6",
+   "quantityQualifier": "Number of Services or Procedures",
+   "benefitQuantity": "3",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D9223"
+    },
+    {
+     "description": "Unlimited when treated in CA, TX"
+    },
+    {
+     "description": "D9225"
+    },
+    {
+     "description": "D9243"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "23"
+   ],
+   "serviceTypes": [
+    "Diagnostic Dental"
+   ],
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "benefitsServiceDelivery": [
+    {
+     "quantityQualifierCode": "VS",
+     "quantityQualifier": "Visits",
+     "quantity": "4",
+     "unitForMeasurementCode": "Years",
+     "sampleSelectionModulus": "1",
+     "timePeriodQualifierCode": "29",
+     "timePeriodQualifier": "Remaining",
+     "numOfPeriods": "3",
+     "unitForMeasurementQualifierCode": "YR",
+     "unitForMeasurementQualifier": "Years"
+    }
+   ],
+   "additionalInformation": [
+    {
+     "description": "D0120 D0150 D0180"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "23"
+   ],
+   "serviceTypes": [
+    "Diagnostic Dental"
+   ],
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "benefitsServiceDelivery": [
+    {
+     "quantityQualifierCode": "VS",
+     "quantityQualifier": "Visits",
+     "quantity": "1",
+     "unitForMeasurementCode": "Years",
+     "sampleSelectionModulus": "3",
+     "timePeriodQualifierCode": "29",
+     "timePeriodQualifier": "Remaining",
+     "numOfPeriods": "1",
+     "unitForMeasurementQualifierCode": "YR",
+     "unitForMeasurementQualifier": "Years"
+    }
+   ],
+   "additionalInformation": [
+    {
+     "description": "D0372 D0387"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "24"
+   ],
+   "serviceTypes": [
+    "Periodontics"
+   ],
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "benefitsServiceDelivery": [
+    {
+     "quantityQualifierCode": "VS",
+     "quantityQualifier": "Visits",
+     "quantity": "1",
+     "unitForMeasurementCode": "Years",
+     "sampleSelectionModulus": "1",
+     "timePeriodQualifierCode": "29",
+     "timePeriodQualifier": "Remaining",
+     "numOfPeriods": "1",
+     "unitForMeasurementQualifierCode": "YR",
+     "unitForMeasurementQualifier": "Years"
+    }
+   ],
+   "additionalInformation": [
+    {
+     "description": "D4341 D4342"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "25"
+   ],
+   "serviceTypes": [
+    "Restorative"
+   ],
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "benefitsServiceDelivery": [
+    {
+     "quantityQualifierCode": "VS",
+     "quantityQualifier": "Visits",
+     "quantity": "1",
+     "unitForMeasurementCode": "Years",
+     "sampleSelectionModulus": "5",
+     "timePeriodQualifierCode": "29",
+     "timePeriodQualifier": "Remaining",
+     "numOfPeriods": "1",
+     "unitForMeasurementQualifierCode": "YR",
+     "unitForMeasurementQualifier": "Years"
+    }
+   ],
+   "additionalInformation": [
+    {
+     "description": "D2510 D2520 D2530 D2542 D2543 D2544"
+    },
+    {
+     "description": "Unlimited when treated in CA"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "36"
+   ],
+   "serviceTypes": [
+    "Dental Crowns"
+   ],
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "benefitsServiceDelivery": [
+    {
+     "quantityQualifierCode": "VS",
+     "quantityQualifier": "Visits",
+     "quantity": "1",
+     "unitForMeasurementCode": "Years",
+     "sampleSelectionModulus": "5",
+     "timePeriodQualifierCode": "29",
+     "timePeriodQualifier": "Remaining",
+     "numOfPeriods": "1",
+     "unitForMeasurementQualifierCode": "YR",
+     "unitForMeasurementQualifier": "Years"
+    }
+   ],
+   "additionalInformation": [
+    {
+     "description": "D2710 D2712 D2720 D2721 D2722 D2740 D2750 D2751 D2752 D2753 D2780 D2781 D2782 D2783 D2790 D2791 D2792 D2794 D2928"
+    },
+    {
+     "description": "Unlimited when treated in CA"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "41"
+   ],
+   "serviceTypes": [
+    "Routine (Preventive) Dental"
+   ],
+   "timeQualifierCode": "23",
+   "timeQualifier": "Calendar Year",
+   "quantityQualifierCode": "S7",
+   "quantityQualifier": "Age, High Value",
+   "benefitQuantity": "200",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "benefitsServiceDelivery": [
+    {
+     "quantityQualifierCode": "VS",
+     "quantityQualifier": "Visits",
+     "quantity": "2",
+     "timePeriodQualifierCode": "29",
+     "timePeriodQualifier": "Remaining",
+     "numOfPeriods": "2"
+    }
+   ],
+   "additionalInformation": [
+    {
+     "description": "D1206 D1208"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "41"
+   ],
+   "serviceTypes": [
+    "Routine (Preventive) Dental"
+   ],
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "benefitsServiceDelivery": [
+    {
+     "quantityQualifierCode": "VS",
+     "quantityQualifier": "Visits",
+     "quantity": "2",
+     "unitForMeasurementCode": "Years",
+     "sampleSelectionModulus": "1",
+     "timePeriodQualifierCode": "29",
+     "timePeriodQualifier": "Remaining",
+     "numOfPeriods": "2",
+     "unitForMeasurementQualifierCode": "YR",
+     "unitForMeasurementQualifier": "Years"
+    }
+   ],
+   "additionalInformation": [
+    {
+     "description": "D1354 D1355"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "4"
+   ],
+   "serviceTypes": [
+    "Diagnostic X-Ray"
+   ],
+   "timeQualifierCode": "30",
+   "timeQualifier": "Exceeded",
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "benefitsServiceDelivery": [
+    {
+     "quantityQualifierCode": "VS",
+     "quantityQualifier": "Visits",
+     "quantity": "1",
+     "unitForMeasurementCode": "Years",
+     "sampleSelectionModulus": "3",
+     "unitForMeasurementQualifierCode": "YR",
+     "unitForMeasurementQualifier": "Years"
+    }
+   ],
+   "additionalInformation": [
+    {
+     "description": "D0210 D0709"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "4"
+   ],
+   "serviceTypes": [
+    "Diagnostic X-Ray"
+   ],
+   "authOrCertIndicator": "N",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "benefitsServiceDelivery": [
+    {
+     "quantityQualifierCode": "VS",
+     "quantityQualifier": "Visits",
+     "quantity": "1",
+     "unitForMeasurementCode": "Years",
+     "sampleSelectionModulus": "3",
+     "timePeriodQualifierCode": "29",
+     "timePeriodQualifier": "Remaining",
+     "numOfPeriods": "1",
+     "unitForMeasurementQualifierCode": "YR",
+     "unitForMeasurementQualifier": "Years"
+    }
+   ],
+   "additionalInformation": [
+    {
+     "description": "D0330 D0701"
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "Co-Payment",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "35"
+   ],
+   "serviceTypes": [
+    "Dental Care"
+   ],
+   "timeQualifierCode": "27",
+   "timeQualifier": "Visit",
+   "benefitAmount": "0",
+   "inPlanNetworkIndicatorCode": "W",
+   "inPlanNetworkIndicator": "Not Applicable",
+   "additionalInformation": [
+    {
+     "description": "Patient charge schedule M2709"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "23",
+    "41"
+   ],
+   "serviceTypes": [
+    "Diagnostic Dental",
+    "Routine (Preventive) Dental"
+   ],
+   "timeQualifierCode": "29",
+   "timeQualifier": "Remaining",
+   "quantityQualifierCode": "VS",
+   "quantityQualifier": "Visits",
+   "benefitQuantity": "2",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes"
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "23",
+    "4"
+   ],
+   "serviceTypes": [
+    "Diagnostic Dental",
+    "Diagnostic X-Ray"
+   ],
+   "timeQualifierCode": "33",
+   "timeQualifier": "Lifetime Remaining",
+   "quantityQualifierCode": "VS",
+   "quantityQualifier": "Visits",
+   "benefitQuantity": "0",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes"
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "24",
+    "28",
+    "39"
+   ],
+   "serviceTypes": [
+    "Periodontics",
+    "Adjunctive Dental Services",
+    "Prosthodontics"
+   ],
+   "timeQualifierCode": "29",
+   "timeQualifier": "Remaining",
+   "quantityQualifierCode": "VS",
+   "quantityQualifier": "Visits",
+   "benefitQuantity": "1",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes"
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "24"
+   ],
+   "serviceTypes": [
+    "Periodontics"
+   ],
+   "timeQualifierCode": "33",
+   "timeQualifier": "Lifetime Remaining",
+   "quantityQualifierCode": "VS",
+   "quantityQualifier": "Visits",
+   "benefitQuantity": "1",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D4355"
+    },
+    {
+     "description": "Unlimited when treated in CA"
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "26"
+   ],
+   "serviceTypes": [
+    "Endodontics"
+   ],
+   "timeQualifierCode": "33",
+   "timeQualifier": "Lifetime Remaining",
+   "quantityQualifierCode": "VS",
+   "quantityQualifier": "Visits",
+   "benefitQuantity": "1",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes"
+  },
+  {
+   "code": "F",
+   "name": "Limitations",
+   "coverageLevelCode": "IND",
+   "coverageLevel": "Individual",
+   "serviceTypeCodes": [
+    "4"
+   ],
+   "serviceTypes": [
+    "Diagnostic X-Ray"
+   ],
+   "timeQualifierCode": "29",
+   "timeQualifier": "Remaining",
+   "quantityQualifierCode": "VS",
+   "quantityQualifier": "Visits",
+   "benefitQuantity": "1",
+   "inPlanNetworkIndicatorCode": "Y",
+   "inPlanNetworkIndicator": "Yes",
+   "additionalInformation": [
+    {
+     "description": "D0251 D0705"
+    }
+   ]
+  },
+  {
+   "code": "L",
+   "name": "Primary Care Provider",
+   "serviceTypeCodes": [
+    "35"
+   ],
+   "serviceTypes": [
+    "Dental Care"
+   ],
+   "benefitsRelatedEntity": {
+    "entityIdentifier": "Primary Care Provider",
+    "entityType": "Non-Person Entity",
+    "entityName": "WINNING SMILES",
+    "address": {
+     "address1": "5555 N 7TH ST",
+     "address2": "STE 142",
+     "city": "PHOENIX",
+     "state": "AZ",
+     "postalCode": "85014"
+    }
+   },
+   "benefitsRelatedEntities": [
+    {
+     "entityIdentifier": "Primary Care Provider",
+     "entityType": "Non-Person Entity",
+     "entityName": "WINNING SMILES",
+     "address": {
+      "address1": "5555 N 7TH ST",
+      "address2": "STE 142",
+      "city": "PHOENIX",
+      "state": "AZ",
+      "postalCode": "85014"
+     }
+    }
+   ]
+  }
+ ],
+ "errors": [],
+ "x12": "ISA*00*          *00*          *ZZ*STEDI          *01*117151744      *260719*1622*^*00501*823255645*0*P*`~GS*HB*STEDI*117151744*20260719*1122*823255645*X*005010X279A1~ST*271*823255645*005010X279A1~BHT*0022*11*01KXXK00F8NYMV8CPH80DKKHNF*20260719*162253~HL*1**20*1~NM1*PR*2*Cigna Dental Health, Inc.*****PI*CIGNA~PER*IC**TE*8002446224*UR*cignaforhcp.cigna.com~HL*2*1*21*1~NM1*1P*2*Dental Practice*****XX*1999999984~HL*3*2*22*0~TRN*1*01KXXK00FJVEZCPHJHRSHK2T5P*3117151744~NM1*IL*1*GOMEZ ESPINOSA*ROMAN****MI*59H6A7L8201~REF*6P*2501434*BRAVO HEALTH PENNSYLVANIA CDH MEDICARE~REF*Q4*59H6A7L82~REF*N6*CD005*CIGNA FOR SENIORS~N3*4232 N 10TH PL~N4*PHOENIX*AZ*850144436~DMG*D8*19530729*M~INS*Y*18*001*25~DTP*346*D8*20260101~DTP*347*D8*20261231~DTP*356*D8*20260101~EB*1**30*HM*Dental HMO*23~EB*I**23^24^25^26^27^28^36^38^39^4^41^7********N*N~EB*I**27********N*Y~EB*1**35~EB*1**23^24^25^26^28^36^38^39^4^41^7********N*Y~EB*B*IND*23***27*0****N*Y~MSG*D0120 D0140 D0150 D0170 D0171 D0180 D0190 D0191 D0372 D0373 D0374 D0387 D0388 D0389 D0415 D0417 D0418 D0419 D0425 D0426 D0431 D0460 D0600 D0601 D0602 D0603 D9995 D9996~MSG*Specialist only.~MSG*D0606~MSG*D0160~MSG*D0461~EB*F*IND*23^41***23***VS*2*N*Y~EB*F*IND*23^4***32***VS*0*N*Y~EB*B*IND*23***27*60****N*Y~MSG*D4910~EB*B*IND*24***27*0****N*Y~MSG*D4921~MSG*D4286~EB*F*IND*24^28^39***23***VS*1*N*Y~EB*B*IND*24***23*0**VS*1*N*Y~MSG*D4346~EB*B*IND*24***27*40****N*Y~MSG*D4381~EB*F*IND*24********N*Y~HSD*VS*8*YR*1*29*8~EB*B*IND*24***27*60****N*Y~MSG*D4342~EB*B*IND*24***27*75****N*Y~MSG*D4355~EB*F*IND*24***32***VS*1*N*Y~MSG*D4355~MSG*Unlimited when treated in CA~EB*B*IND*24***27*100****N*Y~MSG*D4211 D4212 D4341~EB*B*IND*24***27*150****N*Y~MSG*D3431 D4241 D4265 D4274~EB*B*IND*24***27*200****N*Y~MSG*D3429 D4278 D4283 D4285~MSG*D4264~EB*B*IND*24***27*250****N*Y~MSG*D4210~EB*B*IND*24***27*275****N*Y~MSG*D3428 D4263~EB*B*IND*24***27*300****N*Y~MSG*D4240 D4245 D4273 D4276~EB*B*IND*24***27*325****N*Y~MSG*D4261~EB*B*IND*24***27*350****N*Y~MSG*D4249~MSG*D4266~EB*B*IND*24***27*375****N*Y~MSG*D3432~EB*B*IND*24***27*400****N*Y~MSG*D4270~MSG*D4267~EB*B*IND*24***27*410****N*Y~MSG*D4275 D4277~EB*B*IND*24***27*575****N*Y~MSG*D4260~EB*B*IND*25***27*0****N*Y~MSG*D2140 D2150 D2160 D2161 D2330 D2331 D2332 D2335 D2390 D2391 D2392 D2393 D2394 D2976 D2991~EB*B*IND*25***27*10****N*Y~MSG*D2940 D2981 D2982 D2990~EB*B*IND*25***27*15****N*Y~MSG*D2951~EB*B*IND*25***27*43****N*Y~MSG*D2910 D2915~EB*B*IND*25***27*155****N*Y~MSG*D2989~EB*B*IND*25***27*410****N*Y~MSG*D2510 D2520 D2530~EB*B*IND*25***27*470****N*Y~MSG*D2542 D2543 D2544~EB*B*IND*26***27*0****N*Y~MSG*D3910 D3911 D3950~EB*B*IND*26***27*38****N*Y~MSG*D3110 D3120~EB*B*IND*26***27*87****N*Y~MSG*D3220 D3221 D3222~EB*B*IND*26***27*105****N*Y~MSG*D3356~EB*B*IND*26***27*115****N*Y~MSG*D3430~EB*B*IND*26***27*125****N*Y~MSG*D3355~EB*B*IND*26***27*155****N*Y~MSG*D3331 D3332 D3333 D3357~EB*B*IND*26***27*165****N*Y~MSG*D3426~EB*B*IND*26***27*330****N*Y~MSG*D3310~EB*B*IND*26***27*390****N*Y~MSG*D3320~EB*B*IND*26***27*415****N*Y~MSG*D3410~MSG*D3471~MSG*D3472~MSG*D3473~MSG*D3501~MSG*D3502~MSG*D3503~MSG*D3921~EB*F*IND*26***32***VS*1*N*Y~EB*B*IND*26***27*455****N*Y~MSG*D3421~EB*B*IND*26***27*470****N*Y~MSG*D3346~EB*B*IND*26***27*480****N*Y~MSG*D3425~EB*B*IND*26***27*530****N*Y~MSG*D3330 D3347~EB*B*IND*26***27*675****N*Y~MSG*D3348~EB*B*IND*28***27*0****N*Y~MSG*D9110 D9410 D9430 D9450 D9936 D9961 D9987 D9990~MSG*D2956~MSG*D9943~EB*F*IND*28^39***7***P6*0*N*Y~EB*B*IND*28***27*25****N*Y~MSG*D9939~EB*B*IND*28***27*35****N*Y~MSG*D9630~EB*B*IND*28***27*40****N*Y~MSG*D9440 D9986~EB*B*IND*28***27*42****N*Y~MSG*D9610~EB*B*IND*28***27*60****N*Y~MSG*D9951~EB*B*IND*28***27*62****N*Y~MSG*D9612~EB*B*IND*28***27*83****N*Y~MSG*D9938~EB*B*IND*28***27*105****N*Y~MSG*D9945~EB*B*IND*28***27*110****N*Y~MSG*D9941~EB*F*IND*28********N*Y~HSD*VS*1*YR*1*29*1~EB*B*IND*28***27*125****N*Y~MSG*D9946~EB*F*IND*28********N*Y~HSD*VS*1*YR*2*29*1~EB*B*IND*28***27*200****N*Y~MSG*D9613~EB*F*IND*28******S8*17*N*Y~HSD*FL*1*DA*1~EB*B*IND*28***27*260****N*Y~MSG*D9944 D9952~EB*B*IND*36***27*0****N*Y~MSG*D2975~EB*B*IND*36***27*10****N*Y~MSG*D2953 D2980~EB*B*IND*36***27*43****N*Y~MSG*D2920~EB*B*IND*36***27*105****N*Y~MSG*D2960~EB*B*IND*36***27*125****N*Y~MSG*D2950 D2952 D2954 D6085~EB*B*IND*36***27*130****N*Y~MSG*D2799~EB*B*IND*36***27*150****N*Y~MSG*D2929 D2930 D2931 D2932 D2933 D2934~EB*B*IND*36***27*155****N*Y~MSG*D2928~EB*B*IND*36***27*245****N*Y~MSG*D2710~EB*B*IND*36***27*325****N*Y~MSG*D2721~EB*B*IND*36***27*345****N*Y~MSG*D2722~EB*B*IND*36***27*354****N*Y~MSG*D2961~EB*B*IND*36***27*355****N*Y~MSG*D2712~EB*B*IND*36***27*365****N*Y~MSG*D2720~EB*B*IND*36***27*410****N*Y~MSG*D2781~EB*B*IND*36***27*425****N*Y~MSG*D2791~EB*B*IND*36***27*435****N*Y~MSG*D2782 D2792~EB*B*IND*36***27*460****N*Y~MSG*D2780~EB*B*IND*36***27*475****N*Y~MSG*D2752~EB*B*IND*36***27*490****N*Y~MSG*D2783~EB*B*IND*36***27*500****N*Y~MSG*D2751 D2790~EB*B*IND*36***27*525****N*Y~MSG*D2740 D2750 D2794~EB*B*IND*36***27*550****N*Y~MSG*D2753~EB*B*IND*36***27*620****N*Y~MSG*D2962~EB*B*IND*38***27*0****N*Y~MSG*D0470~EB*B*IND*39***27*0****N*Y~MSG*D6197 D6980~MSG*D6196~EB*B*IND*39***27*25****N*Y~MSG*D5410 D5411 D5421 D5422 D5621 D5622 D5850 D5851~EB*B*IND*39***27*50****N*Y~MSG*D5511 D5512 D5520 D5611 D5612 D5640 D5650~EB*B*IND*39***27*60****N*Y~MSG*D5630 D5660~EB*B*IND*39***27*75****N*Y~MSG*D6089 D6092 D6096 D6193 D6930~EB*B*IND*39***27*100****N*Y~MSG*D5730 D5731 D5740 D5741 D6093~MSG*D6080~MSG*D6180~MSG*D6280~EB*B*IND*39***27*130****N*Y~MSG*D6793~EB*B*IND*39***27*175****N*Y~MSG*D5750 D5751 D5760 D5761~EB*B*IND*39***27*200****N*Y~MSG*D5710 D5711 D5720 D5721 D5876~MSG*D5711~EB*F*IND*39********N*Y~HSD*VS*1*YR*2*29*1~MSG*D5710~MSG*When treated in IL~MSG*D5711~MSG*D5710 D5720 D5730 D5740 D5750 D5760~MSG*Unlimited when treated in CA~MSG*D5711 D5721 D5731 D5741 D5751 D5761~EB*B*IND*39***27*245****N*Y~MSG*D6205~EB*B*IND*39***27*250****N*Y~MSG*D5820~MSG*D5821~EB*F*IND*39********N*Y~HSD*VS*1*YR*5*29*1~MSG*D5820~MSG*Unlimited when treated in CA~MSG*D5821~MSG*D5810~MSG*D5811~MSG*D5110 D5130 D6110 D6114~MSG*D5120 D5140 D6111 D6115~MSG*D5211 D5213 D5221 D5223 D5225 D6112 D6116~MSG*D5212 D5214 D5222 D5224 D5226 D6113 D6117~MSG*D6058 D6059 D6060 D6061 D6062 D6063 D6064 D6065 D6066 D6067 D6082 D6083 D6084 D6086 D6087 D6088 D6094 D6097~EB*F*IND*39********N*Y~HSD*VS*1*YR*5*29*1~MSG*D6602 D6603 D6604 D6605 D6606 D6607 D6610 D6611 D6612 D6613 D6614 D6615 D6624 D6634~MSG*Unlimited when treated in AZ, CA~MSG*D6205 D6210 D6211 D6212 D6214 D6240 D6241 D6242 D6243 D6245~MSG*D6068 D6069 D6070 D6071 D6072 D6073 D6074 D6075 D6076 D6077 D6098 D6099 D6120 D6121 D6122 D6123 D6194 D6195 D6740 D6750 D6751 D6752 D6753 D6780 D6781 D6782 D6784 D6790 D6791 D6792 D6794~EB*B*IND*39***27*265****N*Y~MSG*D6548~EB*B*IND*39***27*280****N*Y~MSG*D6549~EB*B*IND*39***27*300****N*Y~MSG*D5810~MSG*D5811~EB*B*IND*39***27*310****N*Y~MSG*D5211 D5212 D5221 D5222~EB*B*IND*39***27*350****N*Y~MSG*D6100~EB*B*IND*39***27*405****N*Y~MSG*D6604 D6612~EB*B*IND*39***27*415****N*Y~MSG*D6605 D6613~EB*B*IND*39***27*425****N*Y~MSG*D5110 D5120 D5130 D5140 D5223 D5224 D6211 D6781 D6791~EB*B*IND*39***27*430****N*Y~MSG*D6606 D6614~EB*B*IND*39***27*440****N*Y~MSG*D6607~EB*B*IND*39***27*450****N*Y~MSG*D5213 D5214 D5225 D5226 D6212 D6615 D6782 D6792~EB*B*IND*39***27*460****N*Y~MSG*D6602 D6610~EB*B*IND*39***27*470****N*Y~MSG*D6624 D6634~EB*B*IND*39***27*475****N*Y~MSG*D6242 D6751~EB*B*IND*39***27*480****N*Y~MSG*D6603 D6611 D6780 D6784 D6794~EB*B*IND*39***27*500****N*Y~MSG*D6118 D6119 D6210 D6243 D6750~EB*B*IND*39***27*525****N*Y~MSG*D6214 D6240 D6241 D6245 D6740 D6752 D6753 D6790~EB*B*IND*39***27*700****N*Y~MSG*D6060 D6063 D6070 D6073 D6082 D6086 D6098 D6121~EB*B*IND*39***27*725****N*Y~MSG*D6061 D6064 D6071 D6074 D6087 D6099 D6122~EB*B*IND*39***27*740****N*Y~MSG*D6083~EB*B*IND*39***27*750****N*Y~MSG*D6059 D6062 D6066 D6067 D6069 D6072 D6076 D6077 D6084 D6088 D6094 D6097 D6120 D6123 D6194 D6195~EB*B*IND*39***27*800****N*Y~MSG*D6058 D6065 D6068 D6075~EB*B*IND*39***27*850****N*Y~MSG*D6110 D6111 D6114 D6115~EB*B*IND*39***27*950****N*Y~MSG*D6112 D6113 D6116 D6117~EB*B*IND*4***27*0****N*Y~MSG*D0210 D0220 D0230 D0240 D0250 D0251 D0270 D0272 D0273 D0274 D0277 D0330 D0701 D0705 D0706 D0707 D0708 D0709~MSG*D0391~EB*B*IND*4***27*240****N*Y~MSG*D0368~EB*F*IND*4***23***VS*1*N*Y~MSG*D0251 D0705~EB*B*IND*41***27*0****N*Y~MSG*D1206 D1310 D1320 D1321 D1354 D1355 D9932 D9933 D9934 D9935~MSG*Specialist only.~MSG*D1701 D1702 D1703 D1704~MSG*D1110~MSG*D1208~EB*B*IND*7***27*0****N*Y~MSG*D9210 D9211 D9212 D9215 D9219~EB*B*IND*7***27*42****N*Y~MSG*D9230~EB*F*IND*7***7***P6*1*N*Y~EB*B*IND*7***27*95****N*Y~MSG*D9239~MSG*D9222~MSG*D9223~MSG*D9224~MSG*D9225~MSG*D9243~EB*F*IND*7***7***P6*3*N*Y~MSG*D9223~MSG*Unlimited when treated in CA, TX~MSG*D9225~MSG*D9243~EB*F*IND*23********N*Y~HSD*VS*4*YR*1*29*3~MSG*D0120 D0150 D0180~EB*F*IND*23********N*Y~HSD*VS*1*YR*3*29*1~MSG*D0372 D0387~EB*F*IND*24********N*Y~HSD*VS*1*YR*1*29*1~MSG*D4341 D4342~EB*F*IND*25********N*Y~HSD*VS*1*YR*5*29*1~MSG*D2510 D2520 D2530 D2542 D2543 D2544~MSG*Unlimited when treated in CA~EB*F*IND*36********N*Y~HSD*VS*1*YR*5*29*1~MSG*D2710 D2712 D2720 D2721 D2722 D2740 D2750 D2751 D2752 D2753 D2780 D2781 D2782 D2783 D2790 D2791 D2792 D2794 D2928~MSG*Unlimited when treated in CA~EB*F*IND*41***23***S7*200*N*Y~HSD*VS*2***29*2~MSG*D1206 D1208~EB*F*IND*41********N*Y~HSD*VS*2*YR*1*29*2~MSG*D1354 D1355~EB*F*IND*4***30*****N*Y~HSD*VS*1*YR*3~MSG*D0210 D0709~EB*F*IND*4********N*Y~HSD*VS*1*YR*3*29*1~MSG*D0330 D0701~EB*B*IND*35***27*0~MSG*Patient charge schedule M2709~EB*F*IND*23^41***29***VS*2**Y~EB*F*IND*23^4***33***VS*0**Y~EB*F*IND*24^28^39***29***VS*1**Y~EB*F*IND*24***33***VS*1**Y~MSG*D4355~MSG*Unlimited when treated in CA~EB*F*IND*26***33***VS*1**Y~EB*F*IND*4***29***VS*1**Y~MSG*D0251 D0705~EB*L**35~LS*2120~NM1*P3*2*WINNING SMILES~N3*5555 N 7TH ST*STE 142~N4*PHOENIX*AZ*85014~LE*2120~SE*398*823255645~GE*1*823255645~IEA*1*823255645~",
+ "eligibilitySearchId": "019f7b30-01e8-74e2-81d1-d646812694b6",
+ "id": "ec_019f7b30-01e7-76d3-86ef-abcd1484e766"
+}

@@ -35,6 +35,13 @@ import sys
 import time
 import urllib.request
 from collections import defaultdict
+from datetime import date, timedelta
+
+# "today" comes from the system clock (override with REFERENCE_DATE=YYYY-MM-DD for
+# reproducible runs against a fixed dataset snapshot).
+TODAY = (date.fromisoformat(os.environ["REFERENCE_DATE"])
+         if os.environ.get("REFERENCE_DATE") else date.today())
+RECENCY_CUTOFF = TODAY - timedelta(days=365)   # treatment older than this is stale
 
 # ----------------------------------------------------------------------------- config
 DATA_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -177,15 +184,12 @@ def load_dataset():
     # only treatment planned within the last 12 months is an active quote; older
     # "pending" procedures are abandoned treatment plans (e.g. a crown planned in
     # 2021 and never done) and must not be counted as owed today.
-    from datetime import date
-    recency_cutoff = date(2025, 7, 19)  # 12 months before "today" (2026-07-19)
-
     def _is_recent(proc):
         ds = (proc.get("date") or "")[:10]
         if not ds:
             return True  # undated -> keep (can't prove it's stale)
         try:
-            return date.fromisoformat(ds) >= recency_cutoff
+            return date.fromisoformat(ds) >= RECENCY_CUTOFF
         except ValueError:
             return True
 
@@ -689,9 +693,6 @@ def estimate_patient(patient, benefits, fallback, no_coverage=False, fee_schedul
                          "actual out-of-pocket is likely LOWER after coordination of benefits")
     else:
         coins, percode, ded_left, max_left = None, {}, 0, 0
-
-    from datetime import date
-    TODAY = date(2026, 7, 19)
 
     def _ymd(s):
         try:

@@ -174,12 +174,27 @@ def load_dataset():
             "priority": i["priority"],
         })
 
+    # only treatment planned within the last 12 months is an active quote; older
+    # "pending" procedures are abandoned treatment plans (e.g. a crown planned in
+    # 2021 and never done) and must not be counted as owed today.
+    from datetime import date
+    recency_cutoff = date(2025, 7, 19)  # 12 months before "today" (2026-07-19)
+
+    def _is_recent(proc):
+        ds = (proc.get("date") or "")[:10]
+        if not ds:
+            return True  # undated -> keep (can't prove it's stale)
+        try:
+            return date.fromisoformat(ds) >= recency_cutoff
+        except ValueError:
+            return True
+
     out = []
     for pt in patients:
         pid = pt["patient_id"]
         d = procs_by_patient[pid]
         targets = json.loads(pt["procedure_codes"]) if pt.get("procedure_codes") else []
-        pending = d["pending"]
+        pending = [x for x in d["pending"] if _is_recent(x)]
         if TARGET_ONLY and targets:
             pending = [x for x in pending if x["code"] in targets]
         out.append({

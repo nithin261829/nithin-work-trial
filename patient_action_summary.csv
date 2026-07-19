@@ -1,7 +1,7 @@
 patient_name,treatment,carrier,coverage_status,treatment_fee,insurance_pays_est,patient_oop_est,downgrade_exposure_if_applied,confidence_flags,recommended_action
 Roy Otterbein,crown,NONE,NO INSURANCE,4432.00,0.00,4432.00,,none,"Uninsured - offer in-house discount; discovery found inactive UHC policy, confirm"
 Marisa Delmonte,implant,"CIGNA, Dental",ACTIVE (verified via Stedi),4125.00,376.00,3749.00,,none,Standard - quote estimate and schedule
-El-khatib Suzy,crown,Aetna,ACTIVE (verified via Stedi),3489.00,1402.00,2087.00,505.50,downgrade,Alternate-benefit may apply - could add ~$506; send pre-determination
+El-khatib Suzy,crown,Aetna,ACTIVE (verified via Stedi),3489.00,1402.00,2087.00,92.00,downgrade,Alternate-benefit may apply - could add ~$92; send pre-determination
 Patricia Salinas,crown,EMI Health TDA,INACTIVE (terminated per Stedi 271),1845.00,0.00,1845.00,,none,Coverage TERMINATED - collect full fee or help re-enroll
 Felipe Leyva,bridge,Cigna DHMO,ACTIVE (verified via Stedi),1045.00,3.00,1042.00,,frequency-denial,A procedure repeats inside its frequency window - not covered
 Gonzales Jesse,crown,***UHC  5000-100-50-50-,ACTIVE (verified via Stedi),1928.00,964.00,964.00,,secondary,"Has SECONDARY (Medicare) - run secondary eligibility, OOP likely lower"

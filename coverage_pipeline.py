@@ -200,7 +200,14 @@ def load_dataset():
         targets = json.loads(pt["procedure_codes"]) if pt.get("procedure_codes") else []
         pending = [x for x in d["pending"] if _is_recent(x)]
         if TARGET_ONLY and targets:
-            pending = [x for x in pending if x["code"] in targets]
+            # keep the target codes PLUS any lab fee on the same treatment plan - a
+            # denture/crown lab fee is part of that treatment and is 100% patient
+            # (DHMO copays never include the lab), so excluding it understates OOP.
+            target_plans = {tp for x in pending if x["code"] in targets
+                            for tp in (x.get("treatment_plans") or ())}
+            pending = [x for x in pending if x["code"] in targets
+                       or ("lab" in x.get("desc", "").lower()
+                           and set(x.get("treatment_plans") or ()) & target_plans)]
         out.append({
             "name": pt["patient_name"],
             "dob": pt["birth_date"],

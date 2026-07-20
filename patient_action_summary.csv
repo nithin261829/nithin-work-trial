@@ -3,11 +3,11 @@ Marisa Delmonte,implant,"CIGNA, Dental",ACTIVE (verified via Stedi),4125.00,376.
 El-khatib Suzy,crown,Aetna,ACTIVE (verified via Stedi),3489.00,1402.00,2087.00,92.00,downgrade,Alternate-benefit may apply - could add ~$92; send pre-determination
 Roy Otterbein,crown,NONE,NO INSURANCE,1890.00,0.00,1890.00,,none,"Uninsured - offer in-house discount; discovery found inactive UHC policy, confirm"
 Patricia Salinas,crown,EMI Health TDA,INACTIVE (terminated per Stedi 271),1845.00,0.00,1845.00,,none,Coverage TERMINATED - collect full fee or help re-enroll
+Roman Gomez Espinosa,denture,Cigna DHMO,ACTIVE (verified via Stedi),2200.00,400.00,1800.00,,waiting-period,VERIFY no waiting period (recent enrollee)
+Rachel Iniguez,denture,Cigna DHMO,ACTIVE (verified via Stedi),2556.00,1046.00,1510.00,,none,Standard - quote estimate and schedule
 Felipe Leyva,bridge,Cigna DHMO,ACTIVE (verified via Stedi),1045.00,3.00,1042.00,,frequency-denial,A procedure repeats inside its frequency window - not covered
 Gonzales Jesse,crown,***UHC  5000-100-50-50-,ACTIVE (verified via Stedi),1928.00,964.00,964.00,,secondary,"Has SECONDARY (Medicare) - run secondary eligibility, OOP likely lower"
-Roman Gomez Espinosa,denture,Cigna DHMO,ACTIVE (verified via Stedi),1300.00,400.00,900.00,,waiting-period,VERIFY no waiting period (recent enrollee)
 Charles Ellis,denture,Aetna Medicare 3000,ACTIVE (verified via Stedi),1756.00,878.00,878.00,,"waiting-period,downgrade",VERIFY no waiting period (recent enrollee) | Alternate-benefit may apply - send pre-determination
-Rachel Iniguez,denture,Cigna DHMO,ACTIVE (verified via Stedi),1706.00,1046.00,660.00,,none,Standard - quote estimate and schedule
 John Johnson,denture,***UHC,ACTIVE (verified via Stedi),1232.00,616.00,616.00,,secondary,"Has SECONDARY (Medicare) - run secondary eligibility, OOP likely lower"
 Carl Thompson,implant,AETNA  DENTAL PLAN,ACTIVE (verified via Stedi),698.00,112.00,586.00,,waiting-period,VERIFY no waiting period (recent enrollee)
 Lorena Quinones,crown,***Delta Dental AZ,ACTIVE (verified via Stedi),936.00,443.00,493.00,,none,Standard - quote estimate and schedule
